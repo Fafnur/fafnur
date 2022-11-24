@@ -39,3 +39,12 @@ testem.log
 Thumbs.db
 
 .angular
+
+# Custom
+package-lock.json
+yarn.lock
+.env
+/apps/**/.env
+/apps/**/routes.txt
+#/apps/**/sitemap.xml Revert after adding sitemap generator
+/libs/**/source.xlf
