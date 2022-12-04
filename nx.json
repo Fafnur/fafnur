@@ -1,6 +1,13 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "npmScope": "fafnur",
+  "affected": {
+    "defaultBase": "develop"
+  },
+  "cli": {
+    "packageManager": "yarn",
+    "defaultCollection": "@nrwl/angular"
+  },
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",
@@ -47,7 +54,12 @@
       "unitTestRunner": "jest"
     },
     "@nrwl/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "changeDetection": "OnPush"
+    },
+    "@schematics/angular:component": {
+      "style": "scss",
+      "changeDetection": "OnPush"
     }
   },
   "defaultProject": "fafn.ru"
