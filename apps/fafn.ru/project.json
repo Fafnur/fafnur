@@ -4,6 +4,15 @@
   "projectType": "application",
   "sourceRoot": "apps/fafn.ru/src",
   "prefix": "fafnur",
+  "i18n": {
+    "sourceLocale": "en-US",
+    "locales": {
+      "ru-RU": {
+        "translation": "libs/russia/localization/src/lib/messages.xlf",
+        "baseHref": ""
+      }
+    }
+  },
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -11,7 +20,7 @@
       "options": {
         "outputPath": "dist/apps/fafn.ru",
         "index": "apps/fafn.ru/src/index.html",
-        "main": "apps/fafn.ru/src/main.ts",
+        "main": "apps/fafn.ru/src/main.browser.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/fafn.ru/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
@@ -21,6 +30,12 @@
       },
       "configurations": {
         "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/fafn.ru/src/environments/environment.ts",
+              "with": "apps/fafn.ru/src/environments/environment.prod.ts"
+            }
+          ],
           "budgets": [
             {
               "type": "initial",
@@ -77,6 +92,77 @@
         "jestConfig": "apps/fafn.ru/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "server": {
+      "executor": "@angular-devkit/build-angular:server",
+      "options": {
+        "outputPath": "dist/apps/fafn.ru/server",
+        "main": "apps/fafn.ru/server.ts",
+        "tsConfig": "apps/fafn.ru/tsconfig.server.json",
+        "stylePreprocessorOptions": {
+          "includePaths": ["apps/fafn.ru/src/styles"]
+        },
+        "inlineStyleLanguage": "scss",
+        "localize": false
+      },
+      "configurations": {
+        "production": {
+          "localize": ["en-IN"],
+          "bundleDependencies": true,
+          "fileReplacements": [
+            {
+              "replace": "apps/fafn.ru/src/environments/environment.ts",
+              "with": "apps/fafn.ru/src/environments/environment.prod.ts"
+            }
+          ]
+        },
+        "development": {
+          "localize": ["en-IN"],
+          "optimization": false,
+          "sourceMap": true,
+          "extractLicenses": false
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "serve-ssr": {
+      "executor": "@nguniversal/builders:ssr-dev-server",
+      "options": {
+        "browserTarget": "fafn.ru:build",
+        "serverTarget": "fafn.ru:server"
+      },
+      "configurations": {
+        "production": {
+          "browserTarget": "fafn.ru:build:production",
+          "serverTarget": "fafn.ru:server:production"
+        },
+        "development": {
+          "browserTarget": "fafn.ru:build:development",
+          "serverTarget": "fafn.ru:server:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "prerender": {
+      "executor": "@nguniversal/builders:prerender",
+      "options": {
+        "browserTarget": "fafn.ru:build",
+        "serverTarget": "fafn.ru:server",
+        "routesFile": "apps/fafn.ru/dynamic-routes.txt",
+        "guessRoutes": false
+      },
+      "configurations": {
+        "production": {
+          "browserTarget": "fafn.ru:build:production",
+          "serverTarget": "fafn.ru:server:production",
+          "routesFile": "apps/fafn.ru/dynamic-routes.txt"
+        },
+        "development": {
+          "browserTarget": "fafn.ru:build:development",
+          "serverTarget": "fafn.ru:server:development"
+        }
+      },
+      "defaultConfiguration": "production"
     }
   },
   "tags": []
