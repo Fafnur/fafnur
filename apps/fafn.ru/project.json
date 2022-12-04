@@ -21,7 +21,7 @@
         "outputPath": "dist/apps/fafn.ru",
         "index": "apps/fafn.ru/src/index.html",
         "main": "apps/fafn.ru/src/main.browser.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": ["apps/fafn.ru/src/polyfills.ts", "zone.js"],
         "tsConfig": "apps/fafn.ru/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/fafn.ru/src/favicon.ico", "apps/fafn.ru/src/assets"],

@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { LayoutComponent } from '@fafnur/ui/layout';
+
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: LayoutComponent,
-  //   children: [],
-  // },
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [],
+  },
 ];
 
 @NgModule({

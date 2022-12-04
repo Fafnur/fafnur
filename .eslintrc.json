@@ -66,7 +66,7 @@
         "simple-import-sort/imports": [
           "error",
           {
-            "groups": [["^\\u0000"], ["^@?(?!angular-samples)\\w"], ["^@angular-samples?\\w"], ["^\\w"], ["^[^.]"], ["^\\."]]
+            "groups": [["^\\u0000"], ["^@?(?!fafnur)\\w"], ["^@fafnur?\\w"], ["^\\w"], ["^[^.]"], ["^\\."]]
           }
         ],
         "sort-imports": "off",
