@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { LayoutComponent } from '@fafnur/ui/layout';
+import { LayoutComponent } from '@loaney/components';
 
 const routes: Routes = [
   {

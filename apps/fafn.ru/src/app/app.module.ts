@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LayoutModule } from '@loaney/components';
 
 import { LocalizationModule } from '@fafnur/russia/localization';
-import { LayoutModule } from '@fafnur/ui/layout';
 
 import { AppComponent } from './app.component';
 import { AppCoreModule } from './app.core.module';
