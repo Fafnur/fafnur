@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@fafnur/core/environments": ["libs/core/environments/src/index.ts"],
+      "@fafnur/russia/home/page": ["libs/russia/home/page/src/index.ts"],
       "@fafnur/russia/localization": ["libs/russia/localization/src/index.ts"]
     }
   },

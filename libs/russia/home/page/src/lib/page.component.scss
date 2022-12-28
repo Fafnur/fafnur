@@ -1,0 +1,111 @@
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 1rem;
+  margin: 0;
+  color: #212121;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: whitesmoke;
+  color: black;
+}
+
+a {
+  color: #00695c;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer .container {
+  border-top: 1px solid lightgray;
+  padding: 1rem;
+}
+
+.copy {
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  margin: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0.25rem 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.brand {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #00695c;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.logo svg {
+  width: 100%;
+}
+
+.slogan {
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+@media (min-width: 500px) {
+  footer .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .copy {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 920px;
+  }
+}

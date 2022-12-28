@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutComponent } from '@loaney/components';
+import { LayoutComponent, LayoutModule } from '@loaney/components';
 
 const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    children: [],
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('@fafnur/russia/home/page').then((modules) => modules.PageModule),
+      },
+    ],
   },
 ];
 
 @NgModule({
   imports: [
+    LayoutModule,
     RouterModule.forRoot(routes, {
       anchorScrolling: 'enabled',
       initialNavigation: 'enabledBlocking',

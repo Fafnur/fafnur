@@ -6,6 +6,7 @@ import { Environments } from '@fafnur/core/environments';
 
 export const environment: Environments = {
   production: false,
+  host: 'http://localhost',
   apiHost: 'http://localhost:8080',
 };
 
