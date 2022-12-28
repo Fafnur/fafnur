@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$fafnur-primary: mat.define-palette(mat.$green-palette, A700);
+$fafnur-accent: mat.define-palette(mat.$amber-palette);
+$fafnur-warn: mat.define-palette(mat.$red-palette);
+
+$fafnur-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $fafnur-primary,
+      accent: $fafnur-accent,
+      warn: $fafnur-warn,
+    ),
+    typography: mat.define-typography-config(),
+  )
+);
+
+@include mat.all-component-themes($fafnur-theme);

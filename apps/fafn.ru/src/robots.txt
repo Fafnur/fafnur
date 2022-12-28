@@ -1,0 +1,7 @@
+User-agent: *
+
+User-agent: Yandex
+Clean-param: bonus&utm_source&utm_medium&utm_campaign&utm_term&utm_content&click_id&appstore&platform
+
+Host: https://fafn.ru
+Sitemap: https://fafn.ru/sitemap.xml

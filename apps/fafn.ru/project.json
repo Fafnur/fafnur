@@ -24,13 +24,24 @@
         "polyfills": ["apps/fafn.ru/src/polyfills.ts", "zone.js"],
         "tsConfig": "apps/fafn.ru/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/fafn.ru/src/favicon.ico", "apps/fafn.ru/src/assets"],
+        "assets": [
+          "apps/fafn.ru/src/assets",
+          "apps/fafn.ru/src/favicon.ico",
+          "apps/fafn.ru/src/site.webmanifest",
+          "apps/fafn.ru/src/sitemap.xml",
+          "apps/fafn.ru/src/robots.txt",
+          "apps/fafn.ru/src/browserconfig.xml"
+        ],
         "styles": ["apps/fafn.ru/src/styles.scss"],
         "scripts": [],
         "localize": ["ru-RU"]
       },
       "configurations": {
         "production": {
+          "index": {
+            "input": "apps/russian/lk/src/index.prod.html",
+            "output": "index.html"
+          },
           "fileReplacements": [
             {
               "replace": "apps/fafn.ru/src/environments/environment.ts",
@@ -41,7 +52,7 @@
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumError": "2mb"
             },
             {
               "type": "anyComponentStyle",
