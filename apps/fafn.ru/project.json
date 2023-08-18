@@ -2,25 +2,50 @@
   "name": "fafn.ru",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "fafnur",
+  "prefix": "angular-fafn.ru",
   "sourceRoot": "apps/fafn.ru/src",
   "tags": [],
+  "i18n": {
+    "sourceLocale": "en-US",
+    "locales": {
+      "ru": {
+        "translation": "apps/fafn.ru/src/i18n/messages.xlf",
+        "baseHref": ""
+      }
+    }
+  },
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/fafn.ru",
+        "customWebpackConfig": {
+          "path": "apps/fafn.ru/webpack.config.ts"
+        },
+        "outputPath": "dist/apps/fafn.ru/browser",
         "index": "apps/fafn.ru/src/index.html",
         "main": "apps/fafn.ru/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/fafn.ru/tsconfig.app.json",
-        "assets": ["apps/fafn.ru/src/favicon.ico", "apps/fafn.ru/src/assets"],
+        "assets": [
+          "apps/fafn.ru/src/favicon.ico",
+          "apps/fafn.ru/src/sitemap.xml",
+          "apps/fafn.ru/src/site.webmanifest",
+          "apps/fafn.ru/src/browserconfig.xml",
+          "apps/fafn.ru/src/robots.txt",
+          "apps/fafn.ru/src/assets"
+        ],
         "styles": ["apps/fafn.ru/src/styles.scss"],
-        "scripts": []
+        "allowedCommonJsDependencies": ["hammerjs"],
+        "scripts": [],
+        "localize": ["ru"]
       },
       "configurations": {
         "production": {
+          "index": {
+            "input": "apps/fafn.ru/src/index.prod.html",
+            "output": "index.html"
+          },
           "budgets": [
             {
               "type": "initial",
@@ -30,10 +55,11 @@
             {
               "type": "anyComponentStyle",
               "maximumWarning": "2kb",
-              "maximumError": "4kb"
+              "maximumError": "10kb"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "sourceMap": true
         },
         "development": {
           "buildOptimizer": false,
@@ -47,7 +73,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nx/angular:webpack-dev-server",
       "configurations": {
         "production": {
           "browserTarget": "fafn.ru:build:production"
@@ -84,6 +110,61 @@
           "codeCoverage": true
         }
       }
+    },
+    "server": {
+      "executor": "@nx/angular:webpack-server",
+      "options": {
+        "outputPath": "dist/apps/fafn.ru/server",
+        "main": "apps/fafn.ru/server.ts",
+        "tsConfig": "apps/fafn.ru/tsconfig.server.json",
+        "localize": ["ru"]
+      },
+      "configurations": {
+        "production": {
+          "outputHashing": "media"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "sourceMap": true,
+          "extractLicenses": false,
+          "vendorChunk": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve-ssr": {
+      "executor": "@nguniversal/builders:ssr-dev-server",
+      "configurations": {
+        "development": {
+          "browserTarget": "fafn.ru:build:development",
+          "serverTarget": "fafn.ru:server:development"
+        },
+        "production": {
+          "browserTarget": "fafn.ru:build:production",
+          "serverTarget": "fafn.ru:server:production"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "prerender": {
+      "executor": "@nguniversal/builders:prerender",
+      "options": {
+        "routes": ["/"],
+        "routesFile": "apps/fafn.ru/dynamic-routes.txt",
+        "guessRoutes": false
+      },
+      "configurations": {
+        "production": {
+          "browserTarget": "fafn.ru:build:production",
+          "serverTarget": "fafn.ru:server:production"
+        },
+        "development": {
+          "browserTarget": "fafn.ru:build:development",
+          "serverTarget": "fafn.ru:server:development"
+        }
+      },
+      "defaultConfiguration": "production"
     }
   }
 }
