@@ -1,0 +1,13 @@
+a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--mat-toolbar-container-text-color);
+}
+
+svg {
+  fill: var(--mat-toolbar-container-text-color);
+  height: 25px;
+}

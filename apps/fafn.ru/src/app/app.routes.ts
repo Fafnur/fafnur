@@ -2,7 +2,7 @@ import { Route } from '@angular/router';
 
 // import { PostLayoutComponent } from '@angular-blog/posts/ui/layout';
 // import { FooterComponent } from '@angular-blog/ui/footer';
-// import { HeaderComponent } from '@angular-blog/ui/header';
+import { HeaderComponent } from '@fafnur/ui/header';
 import { LayoutComponent } from '@fafnur/ui/layout';
 
 export const appRoutes: Route[] = [
@@ -10,11 +10,11 @@ export const appRoutes: Route[] = [
     path: '',
     component: LayoutComponent,
     children: [
-      //     {
-      //       path: '',
-      //       component: HeaderComponent,
-      //       outlet: 'header',
-      //     },
+      {
+        path: '',
+        component: HeaderComponent,
+        outlet: 'header',
+      },
       //     {
       //       path: '',
       //       component: FooterComponent,
