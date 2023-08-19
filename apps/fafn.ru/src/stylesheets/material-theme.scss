@@ -1,9 +1,10 @@
 @use '@angular/material' as mat;
+@use 'sass:map';
 
 @include mat.core();
 
 $fafnur-primary: mat.define-palette(mat.$teal-palette, 800);
-$fafnur-accent: mat.define-palette(mat.$purple-palette, 700);
+$fafnur-accent: mat.define-palette(mat.$deep-purple-palette, 700);
 
 $dark-theme: mat.define-dark-theme(
   (
@@ -29,6 +30,18 @@ $light-theme: mat.define-light-theme(
 
 @include mat.all-component-themes($dark-theme);
 
+:root {
+  --fafnur-color-primary: #{mat.get-color-from-palette(mat.$teal-palette, 400)};
+  --fafnur-color-accent: #{mat.get-color-from-palette(mat.$deep-purple-palette, 300)};
+  --fafnur-color-warning: #{mat.get-color-from-palette(mat.$orange-palette, 400)};
+  --fafnur-color-danger: #{mat.get-color-from-palette(mat.$red-palette, 500)};
+}
+
 html[data-theme='light'] {
   @include mat.all-component-colors($light-theme);
+
+  --fafnur-color-primary: #{mat.get-color-from-palette(mat.$teal-palette, 800)};
+  --fafnur-color-accent: #{mat.get-color-from-palette(mat.$deep-purple-palette, 700)};
+  --fafnur-color-warning: #{mat.get-color-from-palette(mat.$orange-palette, 800)};
+  --fafnur-color-danger: #{mat.get-color-from-palette(mat.$red-palette, 900)};
 }
