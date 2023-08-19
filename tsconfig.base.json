@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@fafnur/core": ["libs/core/src/index.ts"],
+      "@fafnur/errors/not-found/page": ["libs/errors/not-found/page/src/index.ts"],
+      "@fafnur/home/page": ["libs/home/page/src/index.ts"],
+      "@fafnur/ui/container": ["libs/ui/container/src/index.ts"],
+      "@fafnur/ui/footer": ["libs/ui/footer/src/index.ts"],
+      "@fafnur/ui/grid": ["libs/ui/grid/src/index.ts"],
+      "@fafnur/ui/header": ["libs/ui/header/src/index.ts"],
+      "@fafnur/ui/layout": ["libs/ui/layout/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
