@@ -2,6 +2,126 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="6825985703977042800" datatype="html">
+        <source>Page not found</source>
+        <target state="translated">Страница не найдена</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/errors/not-found/page/src/lib/not-found-page.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">TItle</note>
+        <note priority="1" from="meaning">Page not found</note>
+      </trans-unit>
+      <trans-unit id="7405990827241830832" datatype="html">
+        <source>Perhaps you were looking for pages</source>
+        <target state="translated">Возможно, вы искали страницы:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/errors/not-found/page/src/lib/not-found-page.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Perhaps you were looking for pages</note>
+        <note priority="1" from="meaning">Page not found</note>
+      </trans-unit>
+      <trans-unit id="5968640387139845124" datatype="html">
+        <source>Home</source>
+        <target state="translated">Главная</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/errors/not-found/page/src/lib/not-found-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Home</note>
+        <note priority="1" from="meaning">Main page</note>
+      </trans-unit>
+      <trans-unit id="3779008255669373586" datatype="html">
+        <source>About</source>
+        <target state="translated">Обо мне</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/errors/not-found/page/src/lib/not-found-page.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">About</note>
+        <note priority="1" from="meaning">Main page</note>
+      </trans-unit>
+      <trans-unit id="4833305344788309016" datatype="html">
+        <source>Home</source>
+        <target state="translated">Главная</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Title</note>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
+      <trans-unit id="1483829549005365634" datatype="html">
+        <source>©<x id="INTERPOLATION" equiv-text="{{ year }}"/> All rights reserved</source>
+        <target state="translated">©<x id="INTERPOLATION" equiv-text="{{ year }}"/> Все права защищены, но это не точно.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/copyright/copyright.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">All rights reserved</note>
+        <note priority="1" from="meaning">Footer Copyright</note>
+      </trans-unit>
+      <trans-unit id="7463594830761471599" datatype="html">
+        <source>Open about page</source>
+        <target state="translated">Открыть страницу обо мне</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/header/src/lib/about/about.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">About</note>
+        <note priority="1" from="meaning">Header Menu</note>
+      </trans-unit>
+      <trans-unit id="8289799187836769426" datatype="html">
+        <source>Go to github</source>
+        <target state="translated">Перейти на github</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/header/src/lib/github/github.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Github</note>
+        <note priority="1" from="meaning">Header Menu</note>
+      </trans-unit>
+      <trans-unit id="6810571022162406279" datatype="html">
+        <source>Go to home page</source>
+        <target state="translated">Перейти на главную страницу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/header/src/lib/logo/logo.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Logo</note>
+        <note priority="1" from="meaning">Header Menu</note>
+      </trans-unit>
+      <trans-unit id="5550469707247059084" datatype="html">
+        <source>Close main menu</source>
+        <target state="translated">Закрыть меню</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/header/src/lib/menu/menu.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Close menu</note>
+        <note priority="1" from="meaning">Header Menu</note>
+      </trans-unit>
+      <trans-unit id="2866694304181508174" datatype="html">
+        <source>Toggle main menu</source>
+        <target state="translated">Открыть или закрыть меню</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/header/src/lib/menu/menu.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Toogle menu</note>
+        <note priority="1" from="meaning">Header Menu</note>
+      </trans-unit>
+      <trans-unit id="8070137563185546415" datatype="html">
+        <source>Toggle dark and light modes</source>
+        <target state="translated">Переключить темный и светлый режимы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/header/src/lib/theme-switcher/theme-switcher.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Theme Switcher</note>
+        <note priority="1" from="meaning">Header</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
