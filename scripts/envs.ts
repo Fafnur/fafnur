@@ -27,7 +27,7 @@ function generateDynamicRoutes(project: string): void {
 //   }
 // }
 
-const project = 'blog';
+const project = 'fafn.ru';
 
 generateEnvs(project);
 generateDynamicRoutes(project);
