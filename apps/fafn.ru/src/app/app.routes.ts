@@ -30,10 +30,10 @@ export const appRoutes: Route[] = [
       //         },
       //       ],
       //     },
-      //     {
-      //       path: 'about',
-      //       loadComponent: () => import('@angular-blog/about/page').then((modules) => modules.AboutPageComponent),
-      //     },
+      {
+        path: '',
+        loadComponent: () => import('@fafnur/home/page').then((modules) => modules.HomePageComponent),
+      },
       //     {
       //       path: '**',
       //       loadComponent: () => import('@angular-blog/errors/not-found/page').then((modules) => modules.NotFoundPageComponent),
