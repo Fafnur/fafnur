@@ -6,4 +6,5 @@ export * from './lib/metrics/google-analytics.service';
 export * from './lib/metrics/metric.service';
 export * from './lib/metrics/yandex-metrika.service';
 export * from './lib/navigation/navigation.interface';
+export * from './lib/social/social';
 export * from './lib/window/window.service';

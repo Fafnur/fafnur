@@ -23,7 +23,8 @@
       "@fafnur/ui/footer": ["libs/ui/footer/src/index.ts"],
       "@fafnur/ui/grid": ["libs/ui/grid/src/index.ts"],
       "@fafnur/ui/header": ["libs/ui/header/src/index.ts"],
-      "@fafnur/ui/layout": ["libs/ui/layout/src/index.ts"]
+      "@fafnur/ui/layout": ["libs/ui/layout/src/index.ts"],
+      "@fafnur/ui/title": ["libs/ui/title/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

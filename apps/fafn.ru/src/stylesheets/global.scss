@@ -18,4 +18,8 @@ body {
 
 a {
   color: var(--fafnur-color-primary);
+
+  &:hover {
+    color: var(--fafnur-color-primary-active);
+  }
 }

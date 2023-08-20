@@ -1,17 +1,18 @@
-import { NgFor } from '@angular/common';
+import { NgForOf } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { IconService, SOCIAL_ICONS, SOCIAL_LINKS } from '@fafnur/core';
+import { TitleComponent } from '@fafnur/ui/title';
 
 @Component({
-  selector: 'fafnur-social',
+  selector: 'fafnur-socials',
   templateUrl: './social.component.html',
   styleUrls: ['./social.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [NgFor, MatIconModule, MatButtonModule],
+  imports: [TitleComponent, MatButtonModule, MatIconModule, NgForOf],
 })
 export class SocialComponent {
   readonly links = SOCIAL_LINKS;
