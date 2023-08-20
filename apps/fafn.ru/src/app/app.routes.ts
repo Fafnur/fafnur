@@ -1,9 +1,9 @@
 import { Route } from '@angular/router';
 
+import { AsideComponent } from '@fafnur/ui/aside';
 import { FooterComponent } from '@fafnur/ui/footer';
 import { HeaderComponent } from '@fafnur/ui/header';
 import { ContentLayoutComponent, LayoutComponent } from '@fafnur/ui/layout';
-import { AsideComponent } from '@fafnur/ui/aside';
 
 export const appRoutes: Route[] = [
   {
@@ -32,6 +32,10 @@ export const appRoutes: Route[] = [
           {
             path: '',
             loadComponent: () => import('@fafnur/home/page').then((modules) => modules.HomePageComponent),
+          },
+          {
+            path: 'about',
+            loadComponent: () => import('@fafnur/about/page').then((modules) => modules.AboutPageComponent),
           },
         ],
       },

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@fafnur/about/page": ["libs/about/page/src/index.ts"],
       "@fafnur/core": ["libs/core/src/index.ts"],
       "@fafnur/errors/not-found/page": ["libs/errors/not-found/page/src/index.ts"],
       "@fafnur/home/page": ["libs/home/page/src/index.ts"],
