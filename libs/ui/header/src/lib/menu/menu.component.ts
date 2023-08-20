@@ -5,12 +5,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
+import { AsideComponent } from '@fafnur/ui/aside';
+
 @Component({
   selector: 'fafnur-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [NgFor, RouterLink, RouterLinkActive, MatIconModule, MatButtonModule, MatSidenavModule],
+  imports: [NgFor, RouterLink, RouterLinkActive, MatIconModule, MatButtonModule, MatSidenavModule, AsideComponent],
 })
 export class MenuComponent {}
