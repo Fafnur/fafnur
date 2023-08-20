@@ -18,6 +18,7 @@
       "@fafnur/core": ["libs/core/src/index.ts"],
       "@fafnur/errors/not-found/page": ["libs/errors/not-found/page/src/index.ts"],
       "@fafnur/home/page": ["libs/home/page/src/index.ts"],
+      "@fafnur/ui/aside": ["libs/ui/aside/src/index.ts"],
       "@fafnur/ui/container": ["libs/ui/container/src/index.ts"],
       "@fafnur/ui/footer": ["libs/ui/footer/src/index.ts"],
       "@fafnur/ui/grid": ["libs/ui/grid/src/index.ts"],
