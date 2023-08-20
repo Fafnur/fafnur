@@ -14,7 +14,7 @@ export const SOCIAL_LINKS: (NavigationLink & { icon: string })[] = [
   },
   {
     route: 'https://www.linkedin.com/in/fafnur',
-    label: 'linkedin',
+    label: 'LinkedIn',
     icon: 'linkedin',
   },
   {
