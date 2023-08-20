@@ -1,5 +1,6 @@
 export * from './lib/cookies/cookie.service';
 export * from './lib/icons/icon.service';
+export * from './lib/icons/icons';
 export * from './lib/meta/meta.service';
 export * from './lib/metrics/google-analytics.service';
 export * from './lib/metrics/metric.service';

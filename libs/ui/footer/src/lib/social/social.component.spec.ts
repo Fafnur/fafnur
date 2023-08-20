@@ -4,15 +4,15 @@ import { MockModule } from 'ng-mocks';
 
 import { IconService } from '@fafnur/core';
 
-import { MarketsComponent } from './markets.component';
+import { SocialComponent } from './social.component';
 
 describe('MarketsComponent', () => {
-  let component: MarketsComponent;
-  let fixture: ComponentFixture<MarketsComponent>;
+  let component: SocialComponent;
+  let fixture: ComponentFixture<SocialComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MarketsComponent, MockModule(MatIconModule)],
+      imports: [SocialComponent, MockModule(MatIconModule)],
       providers: [
         {
           provide: IconService,
@@ -24,7 +24,7 @@ describe('MarketsComponent', () => {
       ],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(MarketsComponent);
+    fixture = TestBed.createComponent(SocialComponent);
     component = fixture.componentInstance;
   });
 

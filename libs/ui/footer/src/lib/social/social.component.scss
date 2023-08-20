@@ -1,0 +1,18 @@
+@use 'libs/ui/grid/mixins' as grid;
+
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+a {
+  line-height: 1;
+  color: var(--mat-toolbar-container-text-color);
+
+  &:hover {
+    color: var(--fafnur-color-primary);
+  }
+}

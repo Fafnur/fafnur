@@ -1,0 +1,11 @@
+<a
+  mat-icon-button
+  [href]="link.route"
+  target="_blank"
+  i18n-aria-label="Header Social|Open Social"
+  attr.aria-label="Open {{ link.route }}"
+  rel="nofollow"
+  *ngFor="let link of links"
+>
+  <mat-icon [svgIcon]="link.icon"></mat-icon>
+</a>
