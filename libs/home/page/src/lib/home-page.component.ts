@@ -4,6 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PostGroup } from '@fafnur/posts/common';
 import { PostListComponent } from '@fafnur/posts/ui/list';
 import { TitleComponent } from '@fafnur/ui/title';
+import { PromoComponent } from './promo/promo.component';
 
 @Component({
   selector: 'fafnur-home-page',
@@ -11,7 +12,7 @@ import { TitleComponent } from '@fafnur/ui/title';
   styleUrls: ['./home-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [TitleComponent, PostListComponent, NgForOf],
+  imports: [TitleComponent, PostListComponent, NgForOf, PromoComponent],
 })
 export class HomePageComponent {
   readonly content: PostGroup[] = [
