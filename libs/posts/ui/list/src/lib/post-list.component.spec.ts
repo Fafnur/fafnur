@@ -12,10 +12,11 @@ describe('PostListComponent', () => {
 
     fixture = TestBed.createComponent(PostListComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
+    fixture.detectChanges();
+
     expect(component).toBeTruthy();
   });
 });

@@ -1,0 +1,26 @@
+@use 'libs/ui/grid/mixins' as grid;
+
+:host {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+mat-card {
+  display: flex;
+  width: 100%;
+}
+mat-card-content {
+  flex: 1 1 auto;
+}
+
+a:not([mat-button]) {
+  background-color: white;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 10rem;
+}
+
+.date {
+  font-size: 0.9rem;
+}

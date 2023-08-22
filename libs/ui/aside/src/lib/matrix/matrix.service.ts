@@ -8,7 +8,7 @@ import { finalize, interval, Subject, takeUntil, tap } from 'rxjs';
   providedIn: 'root',
 })
 export class MatrixService {
-  private fontSize = 10;
+  private fontSize = 12;
   private drops: number[] = [];
 
   private matrix = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}'.split('');
@@ -49,6 +49,7 @@ export class MatrixService {
     element.addEventListener('click', this.resetFn);
 
     this.document.body.append(element);
+    this.document.body.style.setProperty('overflow', 'hidden');
 
     return element;
   }
@@ -64,6 +65,7 @@ export class MatrixService {
             this.canvas.removeEventListener('click', this.resetFn);
             this.document.dispatchEvent(new Event('matrixFinish'));
             this.canvas.remove();
+            this.document.body.style.setProperty('overflow', 'initial');
           })
         )
         .subscribe();

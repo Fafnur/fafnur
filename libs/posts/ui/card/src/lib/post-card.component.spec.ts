@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { PostCardComponent } from './post-card.component';
 
 describe('PostCardComponent', () => {
@@ -12,10 +13,11 @@ describe('PostCardComponent', () => {
 
     fixture = TestBed.createComponent(PostCardComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
+    fixture.detectChanges();
+
     expect(component).toBeTruthy();
   });
 });
