@@ -21,5 +21,10 @@ a {
 
   &:hover {
     color: var(--fafnur-color-primary-active);
+
+    mat-icon,
+    svg {
+      color: var(--mat-toolbar-container-text-color);
+    }
   }
 }
