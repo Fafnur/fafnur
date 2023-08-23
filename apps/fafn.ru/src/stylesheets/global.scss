@@ -15,3 +15,16 @@ body {
   background-color: var(--mat-toolbar-container-background-color);
   color: var(--mat-toolbar-container-text-color);
 }
+
+a {
+  color: var(--fafnur-color-primary);
+
+  &:hover {
+    color: var(--fafnur-color-primary-active);
+
+    mat-icon,
+    svg {
+      color: var(--mat-toolbar-container-text-color);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use 'libs/ui/grid/mixins' as grid;
+
+:host {
+  margin: 1rem 0;
+}
+
+.is-aside {
+  display: none;
+
+  @include grid.media-tablet-up() {
+    display: block;
+  }
+}

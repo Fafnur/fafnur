@@ -1,3 +1,7 @@
-<fafnur-container>
-  <h1 i18n="Home Page|Title">Home</h1>
-</fafnur-container>
+<fafnur-title i18n="Home Page|Title">Александр Серенко </fafnur-title>
+<fafnur-promo></fafnur-promo>
+
+<ng-container *ngFor="let group of content">
+  <fafnur-title level="small"># {{ group.title }}</fafnur-title>
+  <fafnur-post-list [posts]="group.posts"></fafnur-post-list>
+</ng-container>

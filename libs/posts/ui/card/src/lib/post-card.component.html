@@ -1,0 +1,18 @@
+<mat-card>
+  <a
+    target="_blank"
+    rel="nofollow"
+    [href]="post.route"
+    [ngStyle]="post.image | postCardImage"
+    i18n-aria-label="Post Card|Image"
+    aria-label="Go to post"
+  >
+  </a>
+  <mat-card-content>
+    <p class="date">{{ post.created | date : 'shortDate' }}</p>
+    <p>{{ post.title }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button target="_blank" rel="nofollow" i18n="Post Card|Read more" [href]="post.route">Read more</a>
+  </mat-card-actions>
+</mat-card>

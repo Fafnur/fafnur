@@ -76,15 +76,15 @@ export const META_CONFIG = new InjectionToken<Partial<MetaConfig>>('MetaConfig')
  * @publicApi
  */
 export const META_CONFIG_DEFAULT: MetaConfig = {
-  title: 'Loaney',
-  description: 'Loaney website',
-  hostname: 'https://loaney.com',
-  siteName: 'Loaney',
+  title: 'Fafnur',
+  description: 'Fafnur website',
+  hostname: 'https://fafn,ru',
+  siteName: 'Fafnur',
   type: 'website',
-  image: '/assets/images/loaney.jpg',
+  image: '/assets/images/site.jpg',
   imageType: 'image/jpeg',
-  imageWidth: '703',
-  imageHeight: '333',
+  imageWidth: '1920',
+  imageHeight: '1024',
 };
 
 export const ROBOT_NO_INDEX: MetaDefinition = {

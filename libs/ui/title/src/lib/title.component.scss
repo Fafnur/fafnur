@@ -1,0 +1,41 @@
+@use 'libs/ui/grid/mixins' as grid;
+
+:host {
+  display: block;
+  margin: 1rem 0;
+  font-weight: 500;
+
+  &.is-small {
+    font-size: 1.15rem;
+  }
+  &.is-medium {
+    font-size: 1.25rem;
+  }
+  &.is-large {
+    font-size: 1.5rem;
+  }
+
+  @include grid.media-tablet() {
+    &.is-small {
+      font-size: 1.25rem;
+    }
+    &.is-medium {
+      font-size: 1.35rem;
+    }
+    &.is-large {
+      font-size: 1.75rem;
+    }
+  }
+
+  @include grid.media-web() {
+    &.is-small {
+      font-size: 1.25rem;
+    }
+    &.is-medium {
+      font-size: 1.5rem;
+    }
+    &.is-large {
+      font-size: 2rem;
+    }
+  }
+}
