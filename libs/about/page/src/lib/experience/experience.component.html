@@ -1,0 +1,16 @@
+<fafnur-title level="small" i18n="About Page|Experience Title">Experience</fafnur-title>
+<fafnur-row *ngFor="let experience of experiences">
+  <fafnur-column tablet="5" web="4">
+    <div class="experience-period">
+      <span [innerHTML]="experience.start | replaceSpaces"></span> — <span [innerHTML]="experience.end | replaceSpaces"></span>
+    </div>
+    <div class="experience-time" [innerHTML]="experience.time | replaceSpaces"></div>
+  </fafnur-column>
+  <fafnur-column tablet="7" web="8">
+    <div class="experience-company" [innerHTML]="experience.company"></div>
+    <div>{{ experience.post }}</div>
+    <ul>
+      <li *ngFor="let desc of experience.description">{{ desc }}</li>
+    </ul>
+  </fafnur-column>
+</fafnur-row>

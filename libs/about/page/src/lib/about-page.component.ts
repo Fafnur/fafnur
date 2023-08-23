@@ -1,7 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { ColumnComponent, RowComponent, TabletDirective, WebDirective } from '@fafnur/ui/grid';
-import { TitleComponent } from '@fafnur/ui/title';
+import { ExperienceComponent } from './experience/experience.component';
+import { StackComponent } from './stack/stack.component';
+import { WhoComponent } from './who/who.component';
 
 @Component({
   selector: 'fafnur-about-page',
@@ -9,6 +10,6 @@ import { TitleComponent } from '@fafnur/ui/title';
   styleUrls: ['./about-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [TitleComponent, RowComponent, ColumnComponent, TabletDirective, WebDirective],
+  imports: [WhoComponent, ExperienceComponent, StackComponent],
 })
 export class AboutPageComponent {}
