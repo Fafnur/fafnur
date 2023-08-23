@@ -4,7 +4,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PostGroup } from '@fafnur/posts/common';
 import { PostListComponent } from '@fafnur/posts/ui/list';
 import { TitleComponent } from '@fafnur/ui/title';
-import { PromoComponent } from './promo/promo.component';
 
 @Component({
   selector: 'fafnur-home-page',
@@ -12,7 +11,7 @@ import { PromoComponent } from './promo/promo.component';
   styleUrls: ['./home-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [TitleComponent, PostListComponent, NgForOf, PromoComponent],
+  imports: [TitleComponent, PostListComponent, NgForOf],
 })
 export class HomePageComponent {
   readonly content: PostGroup[] = [
@@ -79,7 +78,7 @@ export class HomePageComponent {
           created: '2022-04-03',
         },
         {
-          image: '/assets/images/habr/6.jpg',
+          image: '/assets/images/habr/6.png',
           title: 'Разработка приложений на Typescript с использованием Nx',
           route: 'https://habr.com/ru/post/652453/',
           created: '2022-02-19',
