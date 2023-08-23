@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { ColumnComponent, RowComponent, TabletDirective, WebDirective } from '@fafnur/ui/grid';
 import { TitleComponent } from '@fafnur/ui/title';
 
 @Component({
@@ -8,6 +9,6 @@ import { TitleComponent } from '@fafnur/ui/title';
   styleUrls: ['./about-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [TitleComponent],
+  imports: [TitleComponent, RowComponent, ColumnComponent, TabletDirective, WebDirective],
 })
 export class AboutPageComponent {}
