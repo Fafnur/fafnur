@@ -49,6 +49,7 @@ export class MatrixService {
     element.addEventListener('click', this.resetFn);
 
     this.document.body.append(element);
+    this.document.body.scrollTop = 0;
     this.document.body.style.setProperty('overflow', 'hidden');
 
     return element;
