@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { MetricService } from '@fafnur/core';
 import { TitleComponent } from '@fafnur/ui/title';
 
 @Component({
@@ -10,4 +11,10 @@ import { TitleComponent } from '@fafnur/ui/title';
   standalone: true,
   imports: [TitleComponent],
 })
-export class CollaborationComponent {}
+export class CollaborationComponent {
+  constructor(private readonly metricService: MetricService) {}
+
+  onCollaboration(): void {
+    this.metricService.send('collaboration');
+  }
+}

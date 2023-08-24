@@ -13,6 +13,6 @@
     <p>{{ post.title }}</p>
   </mat-card-content>
   <mat-card-actions>
-    <a mat-button target="_blank" rel="nofollow" i18n="Post Card|Read more" [href]="post.route">Read more</a>
+    <a mat-button target="_blank" rel="nofollow" i18n="Post Card|Read more" [href]="post.route" (click)="onGoPost(post.route)">Read more</a>
   </mat-card-actions>
 </mat-card>

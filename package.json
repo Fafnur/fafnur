@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nx serve fafn.ru",
     "build": "nx build fafn.ru",
-    "prerender": "nx run fafn.ru:prerender:production && ts-node scripts/minifier.ts && ts-node scripts/light-mode.ts",
+    "prerender": "ts-node scripts/sitemap.ts && nx run fafn.ru:prerender:production && ts-node scripts/minifier.ts && ts-node scripts/light-mode.ts",
     "ssr": "node dist/apps/fafn.ru/server/ru/main.js",
     "extract-i18n": "nx extract-i18n fafn.ru --out-file=apps/fafn.ru/src/i18n/source.xlf",
     "load": "ts-node --project=apps/fafn.ru/tsconfig.contentfull.json apps/fafn.ru/src/load-content.ts",

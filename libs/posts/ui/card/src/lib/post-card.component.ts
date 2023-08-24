@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { Post } from '@fafnur/posts/common';
 
 import { PostCardImagePipe } from './post-card-image.pipe';
+import { MetricService } from '@fafnur/core';
 
 @Component({
   selector: 'fafnur-post-card',
@@ -17,4 +18,15 @@ import { PostCardImagePipe } from './post-card-image.pipe';
 })
 export class PostCardComponent {
   @Input({ required: true }) post!: Post;
+
+  constructor(private readonly metricService: MetricService) {}
+
+  onGoPost(post: string): void {
+    this.metricService.send('post', {
+      ga: {
+        eventValue: post,
+      },
+      ym: { value: post },
+    });
+  }
 }

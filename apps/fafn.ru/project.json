@@ -150,7 +150,7 @@
     "prerender": {
       "executor": "@nguniversal/builders:prerender",
       "options": {
-        "routes": ["/"],
+        "routes": ["/", "/about"],
         "routesFile": "apps/fafn.ru/dynamic-routes.txt",
         "guessRoutes": false
       },
