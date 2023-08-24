@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MockComponents } from 'ng-mocks';
+
+import { TitleComponent } from '@fafnur/ui/title';
 
 import { WhoComponent } from './who.component';
 
@@ -8,15 +11,16 @@ describe('WhoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WhoComponent],
+      imports: [WhoComponent, MockComponents(TitleComponent)],
     }).compileComponents();
 
     fixture = TestBed.createComponent(WhoComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
+    fixture.detectChanges();
+
     expect(component).toBeTruthy();
   });
 });

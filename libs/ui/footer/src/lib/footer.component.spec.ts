@@ -5,6 +5,7 @@ import { ContainerComponent } from '@fafnur/ui/container';
 
 import { CopyrightComponent } from './copyright/copyright.component';
 import { FooterComponent } from './footer.component';
+import { SocialComponent } from './social/social.component';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
@@ -12,7 +13,7 @@ describe('FooterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FooterComponent, MockComponents(ContainerComponent, CopyrightComponent)],
+      imports: [FooterComponent, MockComponents(ContainerComponent, CopyrightComponent, SocialComponent)],
     }).compileComponents();
 
     fixture = TestBed.createComponent(FooterComponent);

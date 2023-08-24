@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MockComponents } from 'ng-mocks';
+
+import { TitleComponent } from '@fafnur/ui/title';
 
 import { StackComponent } from './stack.component';
 
@@ -8,15 +11,16 @@ describe('StackComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StackComponent],
+      imports: [StackComponent, MockComponents(TitleComponent)],
     }).compileComponents();
 
     fixture = TestBed.createComponent(StackComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
+    fixture.detectChanges();
+
     expect(component).toBeTruthy();
   });
 });
