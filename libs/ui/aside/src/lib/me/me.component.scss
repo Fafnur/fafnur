@@ -1,0 +1,31 @@
+@use 'libs/ui/grid/mixins' as grid;
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+  @include grid.media-web() {
+    flex-direction: row;
+  }
+}
+
+img {
+  width: 200px;
+  border-radius: 0.5rem;
+
+  @include grid.media-tablet() {
+    width: 100%;
+  }
+
+  @include grid.media-web() {
+    width: 100px;
+  }
+}
+
+p {
+  &:first-child {
+    margin-top: 0;
+  }
+}
