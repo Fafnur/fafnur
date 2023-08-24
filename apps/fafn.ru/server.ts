@@ -28,7 +28,7 @@ export function app(): express.Express {
     '*.*',
     express.static(distFolder, {
       maxAge: '1y',
-    }),
+    })
   );
 
   // All regular routes use the Universal engine
@@ -51,7 +51,7 @@ export function app(): express.Express {
 }
 
 function run(): void {
-  const port = process.env['PORT'] || 4001;
+  const port = process.env['PORT'] || 4002;
 
   // Start up the Node server
   const server = app();
