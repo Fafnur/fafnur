@@ -1,6 +1,7 @@
 import { NgIf } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MockComponents, MockModule } from 'ng-mocks';
 
 import { MetricService } from '@fafnur/core';
@@ -15,7 +16,7 @@ describe('MatrixComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MatrixComponent, NgIf, MockComponents(TitleComponent), MockModule(MatButtonModule)],
+      imports: [MatrixComponent, NgIf, MockComponents(TitleComponent), MockModule(MatButtonModule), MockModule(MatIconModule)],
       providers: [
         {
           provide: MatrixService,

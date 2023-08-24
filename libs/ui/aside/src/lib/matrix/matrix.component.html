@@ -2,6 +2,11 @@
   <fafnur-title i18n="Aside|Matrix Title">Choose a path</fafnur-title>
   <p i18n="Aside|Matrix Description">Remember... All I'm Offering Is The Truth. Nothing More.</p>
   <p>
-    <button mat-raised-button color="warn" (click)="onSelect()">Select</button>
+    <button mat-icon-button color="warn" aria-label="pill" (click)="onSelect()">
+      <mat-icon svgIcon="pill"></mat-icon>
+    </button>
+    <button mat-icon-button color="accent" aria-label="pill" (click)="onCancel()">
+      <mat-icon svgIcon="pill"></mat-icon>
+    </button>
   </p>
 </ng-container>
