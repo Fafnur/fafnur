@@ -36,9 +36,6 @@ export interface GoogleAnalyticsConfig {
    * Paths for reset referer
    */
   paths: string[];
-
-  platform?: string;
-  appstore?: string;
 }
 
 /**
@@ -218,20 +215,15 @@ export class GoogleAnalyticsService {
    * @param values Custom values for GA
    * @param data Custom data on GA
    */
-  sendEvent(action: string, payload?: Partial<GoogleAnalyticsEvent>, values?: object, data?: unknown): void {
+  sendEvent(action: string, payload?: Partial<GoogleAnalyticsEvent>, values?: object): void {
     try {
       /* eslint-disable @typescript-eslint/naming-convention */
-      this.gtag(
-        'event',
-        action,
-        {
-          event_category: payload?.eventCategory,
-          event_label: payload?.eventLabel,
-          value: payload?.eventValue,
-          ...values,
-        },
-        data
-      );
+      this.gtag('event', action, {
+        event_category: payload?.eventCategory,
+        event_label: payload?.eventLabel,
+        value: payload?.eventValue,
+        ...values,
+      });
       /* eslint-enable @typescript-eslint/naming-convention */
     } catch (error) {
       /* empty */
@@ -256,7 +248,6 @@ export class GoogleAnalyticsService {
         // eslint-disable-next-line @typescript-eslint/naming-convention
         this.set({ page_referrer: this.document.defaultView?.location.origin ?? '' });
       }
-      this.set({ dimension3: this.config.platform, dimension4: this.config.appstore });
 
       for (const key of this.config.ids) {
         /* eslint-disable @typescript-eslint/naming-convention */

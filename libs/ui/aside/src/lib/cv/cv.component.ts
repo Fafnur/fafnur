@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { MetricService } from '@fafnur/core';
 import { TitleComponent } from '@fafnur/ui/title';
 
 @Component({
@@ -10,4 +11,10 @@ import { TitleComponent } from '@fafnur/ui/title';
   standalone: true,
   imports: [TitleComponent],
 })
-export class CvComponent {}
+export class CvComponent {
+  constructor(private readonly metricService: MetricService) {}
+
+  onDownload(): void {
+    this.metricService.send('download-cv');
+  }
+}

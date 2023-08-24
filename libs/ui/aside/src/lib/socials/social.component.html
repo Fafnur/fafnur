@@ -7,8 +7,9 @@
     i18n-aria-label="Aside|Social Open"
     attr.aria-label="Open {{ link.route }}"
     rel="nofollow"
+    (click)="onGoSocial(link.icon)"
   >
     <mat-icon [svgIcon]="link.icon"></mat-icon>
   </a>
-  <a [href]="link.route" target="_blank" rel="nofollow">{{ link.label }}</a>
+  <a [href]="link.route" target="_blank" rel="nofollow" (click)="onGoSocial(link.icon)">{{ link.label }}</a>
 </div>

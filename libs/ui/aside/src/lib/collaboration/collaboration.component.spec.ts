@@ -1,4 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MockComponent } from 'ng-mocks';
+
+import { MetricService } from '@fafnur/core';
+import { TitleComponent } from '@fafnur/ui/title';
 
 import { CollaborationComponent } from './collaboration.component';
 
@@ -9,6 +13,15 @@ describe('CollaborationComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [CollaborationComponent],
+      declarations: [MockComponent(TitleComponent)],
+      providers: [
+        {
+          provide: MetricService,
+          useValue: {
+            send: jest.fn(),
+          },
+        },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CollaborationComponent);

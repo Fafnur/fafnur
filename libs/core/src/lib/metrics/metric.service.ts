@@ -82,8 +82,6 @@ export const METRIC_CONFIG = new InjectionToken<Partial<MetricConfig>>('MetricCo
 })
 export class MetricService {
   private readonly enabled: boolean;
-  private readonly platform?: string;
-  private readonly appstore?: string;
 
   constructor(
     private readonly yandexMetrikaService: YandexMetrikaService,
@@ -97,7 +95,7 @@ export class MetricService {
     this.enabled = isPlatformBrowser(this.platformId);
 
     if (this.enabled) {
-      this.googleAnalyticsService.init({ ...this.config, platform: this.platform, appstore: this.appstore });
+      this.googleAnalyticsService.init(this.config);
       this.yandexMetrikaService.init(this.config);
 
       this.router.events
