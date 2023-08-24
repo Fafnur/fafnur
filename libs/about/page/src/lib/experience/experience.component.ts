@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { ColumnComponent, RowComponent, TabletDirective, WebDirective } from '@fafnur/ui/grid';
 import { TitleComponent } from '@fafnur/ui/title';
+
 import { ReplaceSpacesPipe } from './replace-spaces.pipe';
 
 interface Experience {

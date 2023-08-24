@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { StackComponent } from './stack.component';
 
 describe('StackComponent', () => {

@@ -3,10 +3,10 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
+import { MetricService } from '@fafnur/core';
 import { Post } from '@fafnur/posts/common';
 
 import { PostCardImagePipe } from './post-card-image.pipe';
-import { MetricService } from '@fafnur/core';
 
 @Component({
   selector: 'fafnur-post-card',

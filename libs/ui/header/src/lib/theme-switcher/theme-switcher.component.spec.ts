@@ -3,7 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MockModule } from 'ng-mocks';
 
-import { WindowService } from '@angular-blog/core';
+import { WindowService } from '@fafnur/core';
 
 import { ThemeSwitcherComponent } from './theme-switcher.component';
 

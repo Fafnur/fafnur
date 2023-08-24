@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MockComponents } from 'ng-mocks';
 
-import { ContainerComponent } from '@angular-blog/ui/container';
+import { ContainerComponent } from '@fafnur/ui/container';
 
 import { AboutPageComponent } from './about-page.component';
 
