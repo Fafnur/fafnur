@@ -359,8 +359,8 @@
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
       <trans-unit id="7364705231609398320" datatype="html">
-        <source>Разработка новых численных методов для уравнений в частных производных для газовой, магнитной газовой динамики.</source>
-        <target state="translated">2 года 6 месяцев</target>
+        <source>Development of new numerical methods for partial differential equations for gas, magnetic gas dynamics.</source>
+        <target state="translated">Разработка новых численных методов для уравнений в частных производных для газовой, магнитной газовой динамики.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">85</context>
@@ -655,7 +655,7 @@
         </context-group>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
-      <trans-unit id="898903205048687817" datatype="html">
+      <trans-unit id="3260391733820288756" datatype="html">
         <source>Articles on Habr</source>
         <target state="translated">Статьи на Хабре</target>
         <context-group purpose="location">
@@ -707,6 +707,11 @@
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">70</context>
         </context-group>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
+      <trans-unit id="5032561840836419957" datatype="html">
+        <source>Typescript app development using Nx</source>
+        <target state="translated">Разработка приложений на Typescript с использованием Nx</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">76</context>
@@ -830,7 +835,7 @@
         </context-group>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
-      <trans-unit id="589433356172602522" datatype="html">
+      <trans-unit id="1509183472758215694" datatype="html">
         <source>Banx. Implementing Browser Fingerprinting in Angular.</source>
         <target state="translated">Banx. Реализация отпечатков пальцев браузера в Angular.</target>
         <context-group purpose="location">
@@ -839,8 +844,8 @@
         </context-group>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
-      <trans-unit id="1509183472758215694" datatype="html">
-        <source>Banx. Implementing Browser Fingerprinting in Angular.</source>
+      <trans-unit id="2845217862239996275" datatype="html">
+        <source>Banx. Creating a user event tracker in Angular..</source>
         <target state="translated">Banx. Создание трекера событий пользователя в Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
@@ -866,7 +871,7 @@
         </context-group>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
-      <trans-unit id="2269803251360576859" datatype="html">
+      <trans-unit id="2755096291648641635" datatype="html">
         <source>Test task in Angular. Introduction.</source>
         <target state="translated">Тестовое задание на Angular. Введение.</target>
         <context-group purpose="location">
@@ -875,8 +880,8 @@
         </context-group>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
-      <trans-unit id="2755096291648641635" datatype="html">
-        <source>Test task in Angular. Introduction.</source>
+      <trans-unit id="2013558130007247843" datatype="html">
+        <source>Banx. Creating a fake API with json-server.</source>
         <target state="translated">Тестовое задание на Angular. Введение.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
