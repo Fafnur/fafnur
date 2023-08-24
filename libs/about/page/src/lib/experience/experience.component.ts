@@ -60,7 +60,8 @@ export class ExperienceComponent {
       end: $localize`:About Experience|:march 2019`,
       time: $localize`:About Experience|:1 year 6 months`,
       description: [
-        $localize`:About Experience|:Game development on Unity3d and Unreal engine 4.', 'Creation of sites and web applications`,
+        $localize`:About Experience|:Game development on Unity3d and Unreal engine 4.`,
+        $localize`:About Experience|:Creation of sites and web applications`,
       ],
     },
     {
