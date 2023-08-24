@@ -33,11 +33,15 @@ export function app(): express.Express {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
-    const prerender = join(distFolder, req.path, 'index.html');
+    let prerender = join(distFolder, req.path, 'index.html');
 
     if (existsSync(prerender)) {
       const { themePreference } = req.cookies;
-      res.sendFile(themePreference === 'light' ? prerender.replace('browser/ru', 'browser/ru/light') : prerender);
+
+      if (typeof themePreference === 'string' && themePreference === 'light') {
+        prerender = prerender.replace('browser/ru', 'browser/ru/light');
+      }
+      res.sendFile(prerender);
     } else {
       // Disable SSR, because we use prerender for all pages
       // res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
