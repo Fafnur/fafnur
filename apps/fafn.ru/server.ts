@@ -14,7 +14,7 @@ export function app(): express.Express {
   const server = express();
   server.use(cookieParser());
 
-  const distFolder = join(process.cwd(), 'dist/apps/blog/browser/ru');
+  const distFolder = join(process.cwd(), 'dist/apps/fafn.ru/browser/ru');
   // const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
