@@ -1,9 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MockComponents } from 'ng-mocks';
 
-import { ContainerComponent } from '@angular-blog/ui/container';
+import { ContainerComponent } from '@fafnur/ui/container';
 
 import { AboutPageComponent } from './about-page.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { StackComponent } from './stack/stack.component';
+import { WhoComponent } from './who/who.component';
 
 describe('AboutPageComponent', () => {
   let component: AboutPageComponent;
@@ -11,7 +14,7 @@ describe('AboutPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboutPageComponent, MockComponents(ContainerComponent)],
+      imports: [AboutPageComponent, MockComponents(ContainerComponent, WhoComponent, ExperienceComponent, StackComponent)],
     }).compileComponents();
 
     fixture = TestBed.createComponent(AboutPageComponent);

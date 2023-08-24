@@ -7,7 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { tap } from 'rxjs';
 
-import { CookieService, WindowService } from '@fafnur/core';
+import { CookieService, MetricService, WindowService } from '@fafnur/core';
 
 @Component({
   selector: 'fafnur-theme-switcher',
@@ -26,6 +26,7 @@ export class ThemeSwitcherComponent implements OnInit {
     private readonly windowService: WindowService,
     private readonly cookieService: CookieService,
     private readonly destroyRef: DestroyRef,
+    private readonly metricService: MetricService,
     @Inject(DOCUMENT) private readonly document: Document
   ) {}
 
@@ -57,5 +58,6 @@ export class ThemeSwitcherComponent implements OnInit {
 
   onToggle(): void {
     this.control.patchValue(!this.isDark);
+    this.metricService.send('toggle-theme');
   }
 }

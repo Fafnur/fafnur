@@ -12,8 +12,7 @@ describe('CollaborationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CollaborationComponent],
-      declarations: [MockComponent(TitleComponent)],
+      imports: [CollaborationComponent, MockComponent(TitleComponent)],
       providers: [
         {
           provide: MetricService,

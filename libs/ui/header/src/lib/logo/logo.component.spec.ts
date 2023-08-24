@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { RouterLink } from '@angular/router';
+import { MockDirectives } from 'ng-mocks';
 
 import { LogoComponent } from './logo.component';
 
@@ -9,7 +10,7 @@ describe('LogoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LogoComponent, RouterTestingModule],
+      imports: [LogoComponent, MockDirectives(RouterLink)],
     }).compileComponents();
 
     fixture = TestBed.createComponent(LogoComponent);

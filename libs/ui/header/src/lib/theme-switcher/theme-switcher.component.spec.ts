@@ -3,7 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MockModule } from 'ng-mocks';
 
-import { WindowService } from '@angular-blog/core';
+import { CookieService, MetricService, WindowService } from '@fafnur/core';
 
 import { ThemeSwitcherComponent } from './theme-switcher.component';
 
@@ -22,6 +22,19 @@ describe('ThemeSwitcherComponent', () => {
               localStorage: { getItem: () => null, setItem: () => undefined },
               matchMedia: () => ({ matches: true }),
             },
+          },
+        },
+        {
+          provide: CookieService,
+          useValue: {
+            get: jest.fn(),
+            set: jest.fn(),
+          },
+        },
+        {
+          provide: MetricService,
+          useValue: {
+            send: jest.fn(),
           },
         },
       ],

@@ -1,4 +1,6 @@
+import { NgFor } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MockModule } from 'ng-mocks';
 
@@ -12,14 +14,13 @@ describe('MarketsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SocialComponent, MockModule(MatIconModule)],
+      imports: [SocialComponent, NgFor, MockModule(MatIconModule), MockModule(MatButtonModule)],
       providers: [
         {
           provide: IconService,
           useValue: {
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            add: (name: string, source: string) => undefined,
-          } as IconService,
+            add: jest.fn(),
+          },
         },
       ],
     }).compileComponents();

@@ -1,9 +1,10 @@
-import { CommonModule } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MockComponents, MockModule } from 'ng-mocks';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { MockComponents, MockDirectives, MockModule } from 'ng-mocks';
 
 import { AsideComponent } from '@fafnur/ui/aside';
 
@@ -17,11 +18,12 @@ describe('MenuComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         MenuComponent,
-        CommonModule,
+        NgFor,
         MockModule(MatIconModule),
         MockModule(MatButtonModule),
         MockModule(MatSidenavModule),
         MockComponents(AsideComponent),
+        MockDirectives(RouterLink, RouterLinkActive),
       ],
     }).compileComponents();
 

@@ -5,4 +5,7 @@ globalThis.ngJest = {
     errorOnUnknownProperties: true,
   },
 };
+// eslint-disable-next-line import/first
+import '@angular/localize/init';
+// eslint-disable-next-line import/first
 import 'jest-preset-angular/setup-jest';
