@@ -56,6 +56,6 @@ export class LanguageSwitcherComponent implements OnInit {
   onToggle(): void {
     this.control.patchValue(!this.isRussian);
     this.metricService.send('toggle-lang');
-    // this.windowService.window.location.href = `${this.windowService.window.location.origin}/${this.lang}`;
+    this.windowService.window.location.href = `${this.windowService.window.location.origin}/${this.lang}`;
   }
 }
