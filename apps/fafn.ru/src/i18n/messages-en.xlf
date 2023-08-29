@@ -4,7 +4,6 @@
     <body>
       <trans-unit id="8886645571949924143" datatype="html">
         <source>Experience</source>
-        <target state="translated">Опыт</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.html</context>
           <context context-type="linenumber">1</context>
@@ -14,7 +13,6 @@
       </trans-unit>
       <trans-unit id="9088444293822786734" datatype="html">
         <source>LLC &quot;Information Technologies&quot;, Novosibirsk</source>
-        <target state="translated">ООО &quot;Информационные Технологии&quot;, Новосибирск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">30</context>
@@ -23,7 +21,6 @@
       </trans-unit>
       <trans-unit id="7324071276110613084" datatype="html">
         <source>Layout designer</source>
-        <target state="translated">Верстальщик</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">31</context>
@@ -32,7 +29,6 @@
       </trans-unit>
       <trans-unit id="7096487005438374878" datatype="html">
         <source>September 2011</source>
-        <target state="translated">Сентябрь 2011</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">32</context>
@@ -41,7 +37,6 @@
       </trans-unit>
       <trans-unit id="3850634883445513877" datatype="html">
         <source>february 2012</source>
-        <target state="translated">февраль 2012</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">33</context>
@@ -50,7 +45,6 @@
       </trans-unit>
       <trans-unit id="1442880605164035001" datatype="html">
         <source>6 months</source>
-        <target state="translated">6 месяцев</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">34</context>
@@ -59,7 +53,6 @@
       </trans-unit>
       <trans-unit id="4995463987272927270" datatype="html">
         <source>Layout of sites according to the layout.</source>
-        <target state="translated">Верстка сайтов по макету на внутренней системе компании.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">35</context>
@@ -68,7 +61,6 @@
       </trans-unit>
       <trans-unit id="8759200022154956511" datatype="html">
         <source>NPP Microprocessor Technologies LLC, Novosibirsk,</source>
-        <target state="translated">ООО &quot;НПП Микропроцессорные технологии&quot;, Новосибирск.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">38</context>
@@ -77,7 +69,6 @@
       </trans-unit>
       <trans-unit id="1410883347460535988" datatype="html">
         <source>Programmer</source>
-        <target state="translated">Программист</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">39</context>
@@ -90,7 +81,6 @@
       </trans-unit>
       <trans-unit id="5832113267053577015" datatype="html">
         <source>February 2012</source>
-        <target state="translated">Февраль 2012</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">40</context>
@@ -99,7 +89,6 @@
       </trans-unit>
       <trans-unit id="272761762270772025" datatype="html">
         <source>february 2015</source>
-        <target state="translated">февраль 2015</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">41</context>
@@ -108,7 +97,6 @@
       </trans-unit>
       <trans-unit id="1288718859925796755" datatype="html">
         <source>3 years</source>
-        <target state="translated">3 года</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">42</context>
@@ -117,7 +105,6 @@
       </trans-unit>
       <trans-unit id="3572145420709323082" datatype="html">
         <source>Creation and support of the company website.</source>
-        <target state="translated">Создание и поддержка сайта компании</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">43</context>
@@ -126,7 +113,6 @@
       </trans-unit>
       <trans-unit id="2472384993931967989" datatype="html">
         <source>OOO Glavweb, Novosibirsk,</source>
-        <target state="translated">ООО &quot;Главвеб&quot;, Новосибирск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">46</context>
@@ -135,7 +121,6 @@
       </trans-unit>
       <trans-unit id="5756241174525358310" datatype="html">
         <source>January 2015</source>
-        <target state="translated">Январь 2015</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -144,7 +129,6 @@
       </trans-unit>
       <trans-unit id="8806823051957509126" datatype="html">
         <source>january 2017</source>
-        <target state="translated">январь 2017</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">49</context>
@@ -153,7 +137,6 @@
       </trans-unit>
       <trans-unit id="8209582849693189688" datatype="html">
         <source>2 years 1 month</source>
-        <target state="translated">2 года 1 месяц</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">50</context>
@@ -162,7 +145,6 @@
       </trans-unit>
       <trans-unit id="2913480692161950318" datatype="html">
         <source>UI/UX development for several marketing agencies.</source>
-        <target state="translated">Разработка front-end составляющей (верстка, интеграция) для нескольких маркетинговых агентств.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">52</context>
@@ -171,7 +153,6 @@
       </trans-unit>
       <trans-unit id="5136140281775356906" datatype="html">
         <source>Back-end development in PHP (symfony, yii, cake).</source>
-        <target state="translated">Разработка back-end части на PHP (symfony, yii, cake).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">53</context>
@@ -180,7 +161,6 @@
       </trans-unit>
       <trans-unit id="6008925738539545274" datatype="html">
         <source>Training new frontend developers</source>
-        <target state="translated">Обучение новых сотрудников frontend-у.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">54</context>
@@ -189,7 +169,6 @@
       </trans-unit>
       <trans-unit id="5138989389544074716" datatype="html">
         <source>LLC FTM PM, Novosibirsk,</source>
-        <target state="translated">ООО &quot;ФТМ ПМ&quot;, Новосибирск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">58</context>
@@ -198,7 +177,6 @@
       </trans-unit>
       <trans-unit id="35255064933533398" datatype="html">
         <source>CEO</source>
-        <target state="translated">Директор</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">59</context>
@@ -207,7 +185,6 @@
       </trans-unit>
       <trans-unit id="6563713617569409693" datatype="html">
         <source>October 2017</source>
-        <target state="translated">Октябрь 2017</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">60</context>
@@ -216,7 +193,6 @@
       </trans-unit>
       <trans-unit id="6984166666042268922" datatype="html">
         <source>march 2019</source>
-        <target state="translated">март 2019</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">61</context>
@@ -225,7 +201,6 @@
       </trans-unit>
       <trans-unit id="432512811874972343" datatype="html">
         <source>1 year 6 months</source>
-        <target state="translated">1 год 6 месяцев</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">62</context>
@@ -234,7 +209,6 @@
       </trans-unit>
       <trans-unit id="3937637564579659860" datatype="html">
         <source>Game development on Unity3d and Unreal engine 4.</source>
-        <target state="translated">Разработка игр на Unity3d и Unreal engine 4.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -243,7 +217,6 @@
       </trans-unit>
       <trans-unit id="3373600251246790456" datatype="html">
         <source>Creation of sites and web applications</source>
-        <target state="translated">Создание сайтов и веб-приложений.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">65</context>
@@ -252,7 +225,6 @@
       </trans-unit>
       <trans-unit id="4563480281679354726" datatype="html">
         <source>SGUPS NIL ITT, Novosibirsk,</source>
-        <target state="translated">СГУПС НИЛ ИТТ, Новосибирск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">69</context>
@@ -261,7 +233,6 @@
       </trans-unit>
       <trans-unit id="6155285859971870960" datatype="html">
         <source>Engineer</source>
-        <target state="translated">Инженер</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">70</context>
@@ -270,7 +241,6 @@
       </trans-unit>
       <trans-unit id="312061479284097193" datatype="html">
         <source>August 2016</source>
-        <target state="translated">Август 2016</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">71</context>
@@ -279,7 +249,6 @@
       </trans-unit>
       <trans-unit id="7721866004492726961" datatype="html">
         <source>may 2019</source>
-        <target state="translated">май 2019</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">72</context>
@@ -288,7 +257,6 @@
       </trans-unit>
       <trans-unit id="3593115263448220338" datatype="html">
         <source>2 years 10 months</source>
-        <target state="translated">2 года 10 месяцев</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">73</context>
@@ -297,7 +265,6 @@
       </trans-unit>
       <trans-unit id="7264730206790934431" datatype="html">
         <source>Development of an ontology editor using OWL and integration with OWL-based inference systems.</source>
-        <target state="translated">Разработка редактора онтологий с использованием OWL и интеграцией с системами логического вывода основанными на OWL.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">75</context>
@@ -306,7 +273,6 @@
       </trans-unit>
       <trans-unit id="6526162122153692493" datatype="html">
         <source>Stack: Angular, Spring (inference systems), Symfony (cloud storage, OWL generation), Postgresql.</source>
-        <target state="translated">Стек: Angular, Spring (системы логического вывода), Symfony (облачное хранилище, генерация OWL), Postgresql.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">76</context>
@@ -315,7 +281,6 @@
       </trans-unit>
       <trans-unit id="1610680242611978445" datatype="html">
         <source>Institute of Computational Mathematics and Mathematical Geophysics SB RAS, Novosibirsk,</source>
-        <target state="translated">Институт вычислительной математики и математической геофизики СО РАН, Новосибирск.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">80</context>
@@ -324,7 +289,6 @@
       </trans-unit>
       <trans-unit id="739872905656384817" datatype="html">
         <source>Junior Research Fellow</source>
-        <target state="translated">Младший научный сотрудник</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">81</context>
@@ -333,7 +297,6 @@
       </trans-unit>
       <trans-unit id="5221661098428225451" datatype="html">
         <source>July 2018</source>
-        <target state="translated">Июль 2018</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">82</context>
@@ -342,7 +305,6 @@
       </trans-unit>
       <trans-unit id="3986791618890291619" datatype="html">
         <source>december 2020</source>
-        <target state="translated">Декабрь 2020</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">83</context>
@@ -351,7 +313,6 @@
       </trans-unit>
       <trans-unit id="6990997841138240105" datatype="html">
         <source>2 years 6 months</source>
-        <target state="translated">2 года 6 месяцев</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">84</context>
@@ -360,7 +321,6 @@
       </trans-unit>
       <trans-unit id="7364705231609398320" datatype="html">
         <source>Development of new numerical methods for partial differential equations for gas, magnetic gas dynamics.</source>
-        <target state="translated">Разработка новых численных методов для уравнений в частных производных для газовой, магнитной газовой динамики.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">86</context>
@@ -369,7 +329,6 @@
       </trans-unit>
       <trans-unit id="381807893664766456" datatype="html">
         <source>LLC &quot;RUSINTERFINANS&quot;, Novosibirsk,</source>
-        <target state="translated">ООО МКК &quot;РУСИНТЕРФИНАНС &quot;, Новосибирск.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">90</context>
@@ -378,7 +337,6 @@
       </trans-unit>
       <trans-unit id="2601494370153657721" datatype="html">
         <source>Frontend developer</source>
-        <target state="translated">Фронтенд-разработчик</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">91</context>
@@ -387,7 +345,6 @@
       </trans-unit>
       <trans-unit id="6126325114713199981" datatype="html">
         <source>September 2018</source>
-        <target state="translated">Сентябрь 2018</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">92</context>
@@ -396,7 +353,6 @@
       </trans-unit>
       <trans-unit id="4932860787433946388" datatype="html">
         <source>until now</source>
-        <target state="translated">по настоящее время</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">93</context>
@@ -405,7 +361,6 @@
       </trans-unit>
       <trans-unit id="5151098055660854912" datatype="html">
         <source>5 years</source>
-        <target state="translated">5 лет</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">94</context>
@@ -414,7 +369,6 @@
       </trans-unit>
       <trans-unit id="4078545682106732924" datatype="html">
         <source>Migrating old code to new stack: angular, nx, ngrx, universal, l18n.</source>
-        <target state="translated">Миграция старого кода на новый стек: angular, nx, ngrx, universal, l18n.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">96</context>
@@ -423,7 +377,6 @@
       </trans-unit>
       <trans-unit id="4658533152944130297" datatype="html">
         <source>Management of the front-end development team (setting tasks, rallies, code review).</source>
-        <target state="translated">Управление командой фронтенд разработки (постановка задач, митинги, code review).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">97</context>
@@ -432,7 +385,6 @@
       </trans-unit>
       <trans-unit id="2739800253266217903" datatype="html">
         <source>Development of new services on a new stack.</source>
-        <target state="translated">Разработка новых сервисов на новом стеке.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
           <context context-type="linenumber">98</context>
@@ -441,7 +393,6 @@
       </trans-unit>
       <trans-unit id="1292537627609351833" datatype="html">
         <source>Stack</source>
-        <target state="translated">Стек</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/stack/stack.component.html</context>
           <context context-type="linenumber">1</context>
@@ -451,7 +402,6 @@
       </trans-unit>
       <trans-unit id="4410774756615645020" datatype="html">
         <source>My technology stack that I use:</source>
-        <target state="translated">Мой стек технологий, который я использую и популизирую:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/stack/stack.component.html</context>
           <context context-type="linenumber">2</context>
@@ -461,7 +411,6 @@
       </trans-unit>
       <trans-unit id="437038136532525960" datatype="html">
         <source> The Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold, and maintain Angular applications directly from a command shell. </source>
-        <target state="translated">CLI для создания приложений и компонентов angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/stack/stack.component.html</context>
           <context context-type="linenumber">6,9</context>
@@ -471,7 +420,6 @@
       </trans-unit>
       <trans-unit id="3492529539029281832" datatype="html">
         <source> Next generation build system with first class monorepo support and powerful integrations. </source>
-        <target state="translated">монорепозиторий для разработки enterprise приложений.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/stack/stack.component.html</context>
           <context context-type="linenumber">13,15</context>
@@ -481,7 +429,6 @@
       </trans-unit>
       <trans-unit id="3174265973857330972" datatype="html">
         <source>Reactive State for Angular.</source>
-        <target state="translated">реализация Redux в Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/stack/stack.component.html</context>
           <context context-type="linenumber">19</context>
@@ -491,7 +438,6 @@
       </trans-unit>
       <trans-unit id="6708547179271438877" datatype="html">
         <source>Server-side rendering (SSR) with Angular Universal.</source>
-        <target state="translated">Server-side rendering в Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/stack/stack.component.html</context>
           <context context-type="linenumber">23</context>
@@ -501,7 +447,6 @@
       </trans-unit>
       <trans-unit id="6307161889774014824" datatype="html">
         <source>GraphQL is the developer-friendly query language for the modern web.</source>
-        <target state="translated">GraphQL клиент для Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/stack/stack.component.html</context>
           <context context-type="linenumber">27</context>
@@ -511,7 +456,6 @@
       </trans-unit>
       <trans-unit id="2769375971433070505" datatype="html">
         <source> A JavaScript library providing an easy to use api for interacting with iOS and Android platform APIs. </source>
-        <target state="translated">разработка нативных мобильный приложений на Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/stack/stack.component.html</context>
           <context context-type="linenumber">31,33</context>
@@ -521,7 +465,6 @@
       </trans-unit>
       <trans-unit id="7321814795356606537" datatype="html">
         <source> NestJS is a framework for building efficient, scalable Node.js web applications. </source>
-        <target state="translated">Node.js платформа для создания эффективных, надежных и масштабируемых серверных приложений.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/stack/stack.component.html</context>
           <context context-type="linenumber">37,39</context>
@@ -531,7 +474,6 @@
       </trans-unit>
       <trans-unit id="2486245417934227413" datatype="html">
         <source>Who am I?</source>
-        <target state="translated">Кто я?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/who/who.component.html</context>
           <context context-type="linenumber">1</context>
@@ -540,8 +482,8 @@
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
       <trans-unit id="7093006767639050264" datatype="html">
-        <source> I&apos;m a frontend developer with 7 years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes JavaScript, TypeScript, Redux, Git, and a monorepo approach.</source>
-        <target state="translated"> Я фронтенд-разработчик с более чем 7-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, NX, Universal (SSR), Localization, Redux, TypeScript и JavaScript.</target>
+        <source> I&apos;m a frontend developer with 7 years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes JavaScript, TypeScript, Redux, Git, and a monorepo approach.
+        </source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/who/who.component.html</context>
           <context context-type="linenumber">2,5</context>
@@ -550,8 +492,8 @@
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
       <trans-unit id="8489109122447697373" datatype="html">
-        <source> Throughout my career, I&apos;ve developed enterprise applications for the fintech industry, working on projects that have delivered significant value to my clients. I take pride in my ability to work collaboratively with cross-functional teams to deliver high-quality software solutions.</source>
-        <target state="translated"> Сейчас я работаю в международной финтех компании, где отвечаю за разработку и поддержку проектов для микрофинонсирования в нескольких странах.</target>
+        <source> Throughout my career, I&apos;ve developed enterprise applications for the fintech industry, working on projects that have delivered significant value to my clients. I take pride in my ability to work collaboratively with cross-functional teams to deliver high-quality software solutions.
+        </source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/who/who.component.html</context>
           <context context-type="linenumber">6,10</context>
@@ -560,8 +502,8 @@
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
       <trans-unit id="8473513758338701634" datatype="html">
-        <source> In addition to my work, I also write articles about Angular on Medium, sharing my knowledge and insights with the wider development community.</source>
-        <target state="translated">Я активно делюсь знаниями и опытом в своем блоге на Хабре и Medium. Кроме того, веду группы в Telegram и ВК о фронтенде.</target>
+        <source> In addition to my work, I also write articles about Angular on Medium, sharing my knowledge and insights with the wider development community.
+        </source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/who/who.component.html</context>
           <context context-type="linenumber">11,14</context>
@@ -570,8 +512,8 @@
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
       <trans-unit id="5660833851775973419" datatype="html">
-        <source> I believe in the importance of continuously learning and improving, and I&apos;m always seeking out new challenges and opportunities to expand my skill set.</source>
-        <target state="translated">Вы можете посмотреть мои работы в профиле на GitHub. Я всегда стремлюсь к совершенствованию своих навыков и изучению новых технологий. Ищу интересные и сложные задачи, которые позволят мне реализовать свой потенциал и принести пользу обществу.е.</target>
+        <source> I believe in the importance of continuously learning and improving, and I&apos;m always seeking out new challenges and opportunities to expand my skill set.
+        </source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/who/who.component.html</context>
           <context context-type="linenumber">15,18</context>
@@ -581,7 +523,6 @@
       </trans-unit>
       <trans-unit id="6825985703977042800" datatype="html">
         <source>Page not found</source>
-        <target state="translated">Страница не найдена</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/errors/not-found/page/src/lib/not-found-page.component.html</context>
           <context context-type="linenumber">3</context>
@@ -591,7 +532,6 @@
       </trans-unit>
       <trans-unit id="7405990827241830832" datatype="html">
         <source>Perhaps you were looking for pages</source>
-        <target state="translated">Возможно, вы искали страницы:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/errors/not-found/page/src/lib/not-found-page.component.html</context>
           <context context-type="linenumber">4</context>
@@ -601,7 +541,6 @@
       </trans-unit>
       <trans-unit id="5968640387139845124" datatype="html">
         <source>Home</source>
-        <target state="translated">Главная</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/errors/not-found/page/src/lib/not-found-page.component.html</context>
           <context context-type="linenumber">6</context>
@@ -611,7 +550,6 @@
       </trans-unit>
       <trans-unit id="3779008255669373586" datatype="html">
         <source>About</source>
-        <target state="translated">Обо мне</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/errors/not-found/page/src/lib/not-found-page.component.html</context>
           <context context-type="linenumber">7</context>
@@ -621,7 +559,6 @@
       </trans-unit>
       <trans-unit id="6630082902969793556" datatype="html">
         <source>Demo projects from article series</source>
-        <target state="translated">Демо проекты из циклов статей</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">19</context>
@@ -630,7 +567,6 @@
       </trans-unit>
       <trans-unit id="6940195335809214446" datatype="html">
         <source>Static Blog with Angular and Contentful</source>
-        <target state="translated">Статичный блог на Angular и Contentful</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">23</context>
@@ -639,7 +575,6 @@
       </trans-unit>
       <trans-unit id="9100390768245341265" datatype="html">
         <source>An example of a simple news site with Redux</source>
-        <target state="translated">Пример простого новостного сайта с Redux</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">29</context>
@@ -648,7 +583,6 @@
       </trans-unit>
       <trans-unit id="7699992573151974720" datatype="html">
         <source>An example of a business card site with a product catalog</source>
-        <target state="translated">Пример сайта визитки с каталогом товаров</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">35</context>
@@ -657,7 +591,6 @@
       </trans-unit>
       <trans-unit id="3260391733820288756" datatype="html">
         <source>Articles on Habr</source>
-        <target state="translated">Статьи на Хабре</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">42</context>
@@ -666,7 +599,6 @@
       </trans-unit>
       <trans-unit id="1505637652356326366" datatype="html">
         <source>Creating a Static Blog with Angular and Contentful</source>
-        <target state="translated">Создание статичного блога на Angular и Contentful</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">46</context>
@@ -675,7 +607,6 @@
       </trans-unit>
       <trans-unit id="2484503724990933126" datatype="html">
         <source>How I ported a blog from CakePHP to Angular</source>
-        <target state="translated">Как я переносил блог из CakePHP в Angular</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">52</context>
@@ -684,7 +615,6 @@
       </trans-unit>
       <trans-unit id="14625527706038744" datatype="html">
         <source>How Evercookie works in 2023</source>
-        <target state="translated">Как работает Evercookie в 2023 году</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">58</context>
@@ -693,7 +623,6 @@
       </trans-unit>
       <trans-unit id="6054137379746794114" datatype="html">
         <source>Redux in Angular. Roundtrip</source>
-        <target state="translated">Redux в Angular. Туда и обратно</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -702,7 +631,6 @@
       </trans-unit>
       <trans-unit id="2212048611318036894" datatype="html">
         <source>How I made a business card website in Angular</source>
-        <target state="translated">Как я делал сайт визитку на Angular</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">70</context>
@@ -711,7 +639,6 @@
       </trans-unit>
       <trans-unit id="5032561840836419957" datatype="html">
         <source>Typescript app development using Nx</source>
-        <target state="translated">Разработка приложений на Typescript с использованием Nx</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">76</context>
@@ -720,7 +647,6 @@
       </trans-unit>
       <trans-unit id="232744151085347939" datatype="html">
         <source>How Angular drives front-end developers into enterprise bondage</source>
-        <target state="translated">Как Angular загоняет фронтенд разработчиков в enterprise-кабалу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">82</context>
@@ -729,7 +655,6 @@
       </trans-unit>
       <trans-unit id="1027950716627366089" datatype="html">
         <source>How I wrote a test task in Angular and why some developers should not be given a test task</source>
-        <target state="translated">Как я писал тестовое задание на Angular и почему некоторым разработчикам не стоит давать тестовое задание</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">88</context>
@@ -738,7 +663,6 @@
       </trans-unit>
       <trans-unit id="4143621318736472967" datatype="html">
         <source>Posts on Medium</source>
-        <target state="translated">Статьи на Медиуме</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">95</context>
@@ -747,7 +671,6 @@
       </trans-unit>
       <trans-unit id="7809441180041670349" datatype="html">
         <source>Transferring an Angular project to standalone components.</source>
-        <target state="translated">Перевод Angular проекта на standalone компоненты.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">99</context>
@@ -756,7 +679,6 @@
       </trans-unit>
       <trans-unit id="6153072101170542821" datatype="html">
         <source>Creating Material font and svg icons without Angular Material.</source>
-        <target state="translated">Создание иконок Material font и svg без Angular Material.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">105</context>
@@ -765,7 +687,6 @@
       </trans-unit>
       <trans-unit id="5886444610050826920" datatype="html">
         <source>Redux in Angular. State management using standard Angular tools.</source>
-        <target state="translated">Redux в Angular. State management стандартными средствами Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">111</context>
@@ -774,7 +695,6 @@
       </trans-unit>
       <trans-unit id="6550027754171242736" datatype="html">
         <source>Redux in Angular. Introduction.</source>
-        <target state="translated">Redux в Angular. Введение.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">117</context>
@@ -783,7 +703,6 @@
       </trans-unit>
       <trans-unit id="6277717435613795732" datatype="html">
         <source>Setting up husky in an Angular project. Migration from version 4 to version 8.</source>
-        <target state="translated">Настройка husky в проекте Angular. Миграция с 4 до 8 версии.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">123</context>
@@ -792,7 +711,6 @@
       </trans-unit>
       <trans-unit id="115341050822206188" datatype="html">
         <source>Using SVG Icons with Angular Material</source>
-        <target state="translated">Использование SVG иконок с помощью Angular Material.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">129</context>
@@ -801,7 +719,6 @@
       </trans-unit>
       <trans-unit id="8465800614492063589" datatype="html">
         <source>Typed Forms in Angular</source>
-        <target state="translated">Типизированные формы в Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">135</context>
@@ -810,7 +727,6 @@
       </trans-unit>
       <trans-unit id="8850038021083115491" datatype="html">
         <source>Business card website in Angular. Introduction</source>
-        <target state="translated">Сайт-визитка на Angular. Введение.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">141</context>
@@ -819,7 +735,6 @@
       </trans-unit>
       <trans-unit id="3144935865840460438" datatype="html">
         <source>Setting up Angular Universal with Angular Localization</source>
-        <target state="translated">Настройка Angular Universal с Angular Localization.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">147</context>
@@ -828,7 +743,6 @@
       </trans-unit>
       <trans-unit id="2231997757437114107" datatype="html">
         <source>Banx. Designing Registration with Angular</source>
-        <target state="translated">Banx. Проектирование регистрации на Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">153</context>
@@ -837,7 +751,6 @@
       </trans-unit>
       <trans-unit id="1509183472758215694" datatype="html">
         <source>Banx. Implementing Browser Fingerprinting in Angular.</source>
-        <target state="translated">Banx. Реализация отпечатков пальцев браузера в Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">159</context>
@@ -846,7 +759,6 @@
       </trans-unit>
       <trans-unit id="2845217862239996275" datatype="html">
         <source>Banx. Creating a user event tracker in Angular..</source>
-        <target state="translated">Banx. Создание трекера событий пользователя в Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">165</context>
@@ -855,7 +767,6 @@
       </trans-unit>
       <trans-unit id="2749756035763561280" datatype="html">
         <source>Banx. Flexible templates with routerOutlet in Angular.</source>
-        <target state="translated">Banx. Гибкие шаблоны с routerOutlet в Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">171</context>
@@ -864,7 +775,6 @@
       </trans-unit>
       <trans-unit id="4260223690714262771" datatype="html">
         <source>Banx. Building the NestJS API + TypeOrm + Mariadb.</source>
-        <target state="translated">Banx. Создание API NestJS + TypeOrm + Mariadb.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">177</context>
@@ -873,7 +783,6 @@
       </trans-unit>
       <trans-unit id="2755096291648641635" datatype="html">
         <source>Test task in Angular. Introduction.</source>
-        <target state="translated">Тестовое задание на Angular. Введение.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">183</context>
@@ -882,7 +791,6 @@
       </trans-unit>
       <trans-unit id="2013558130007247843" datatype="html">
         <source>Banx. Creating a fake API with json-server.</source>
-        <target state="translated">Тестовое задание на Angular. Введение.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">189</context>
@@ -891,7 +799,6 @@
       </trans-unit>
       <trans-unit id="8392631872928464419" datatype="html">
         <source>Banx. Basics of layout in Angular using the example of creating error pages.</source>
-        <target state="translated">Banx. Основы верстки в Angular на примере создания страниц ошибок.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">195</context>
@@ -900,7 +807,6 @@
       </trans-unit>
       <trans-unit id="8222971968103800475" datatype="html">
         <source>Angular docs. App Navigation: Routing in Views.</source>
-        <target state="translated">Angular docs. Навигация в приложении: маршрутизация в представлениях.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">201</context>
@@ -909,7 +815,6 @@
       </trans-unit>
       <trans-unit id="623784307265173532" datatype="html">
         <source>Banx. Creating a basic layout in Angular.</source>
-        <target state="translated">Banx. Создание базового лейаута в Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">207</context>
@@ -918,7 +823,6 @@
       </trans-unit>
       <trans-unit id="1302662368491290860" datatype="html">
         <source>Angular docs. Style Priorities.</source>
-        <target state="translated">Angular docs. Приоритеты стилей.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">213</context>
@@ -927,7 +831,6 @@
       </trans-unit>
       <trans-unit id="8678626004872692755" datatype="html">
         <source>Banx. Creating an Nx workspace for Angular</source>
-        <target state="translated">Banx. Создание Nx workspace для Angular.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">219</context>
@@ -936,7 +839,6 @@
       </trans-unit>
       <trans-unit id="6176078413321865328" datatype="html">
         <source>CSS solutions. Creating a Grid, Columns and Grids</source>
-        <target state="translated">CSS решения. Создание сетки, колонок и гридов.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">225</context>
@@ -945,7 +847,6 @@
       </trans-unit>
       <trans-unit id="5863573638974429597" datatype="html">
         <source>CSS solutions. Fixed block plus adaptive block.</source>
-        <target state="translated">CSS решения. Фиксированный блок плюс адаптивный блок.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">231</context>
@@ -954,7 +855,6 @@
       </trans-unit>
       <trans-unit id="6178135703658783350" datatype="html">
         <source>Angular component testing with Jest</source>
-        <target state="translated">Angular тестирование component с помощью Jest.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">237</context>
@@ -963,7 +863,6 @@
       </trans-unit>
       <trans-unit id="2740892339758687206" datatype="html">
         <source>Architecture of enterprise Angular applications using Nx monorepository</source>
-        <target state="translated">Архитектура enterprise Angular приложений с использованием монорепозитория Nx.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">243</context>
@@ -972,7 +871,6 @@
       </trans-unit>
       <trans-unit id="8459271107477379425" datatype="html">
         <source>Structure and approaches to organizing actions, selectors, reducers and effects in Ngrx and Nx</source>
-        <target state="translated">Структура и подходы к организации экшенов, селекторов, редьюсеров и эффектов в Ngrx и Nx.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">250</context>
@@ -981,7 +879,6 @@
       </trans-unit>
       <trans-unit id="8933597494119949692" datatype="html">
         <source>Redux in Angular. Managing states in Angular with Ngrx and Nx.</source>
-        <target state="translated">Redux в Angular. Управление состояниями в Angular с помощью Ngrx и Nx.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">256</context>
@@ -990,7 +887,6 @@
       </trans-unit>
       <trans-unit id="9033253736232976631" datatype="html">
         <source>Infinite Scroll in Angular 9 with Intersection Observer API.</source>
-        <target state="translated">Бесконечный скролл в Angular 9 с помощью Intersection Observer API.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">262</context>
@@ -999,7 +895,6 @@
       </trans-unit>
       <trans-unit id="1852731468415592986" datatype="html">
         <source>What is it like to learn JavaScript in 2020</source>
-        <target state="translated">Каково учить JavaScript в 2020</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">268</context>
@@ -1008,7 +903,6 @@
       </trans-unit>
       <trans-unit id="1441858209960034128" datatype="html">
         <source>GraphQL API integration in Angular app</source>
-        <target state="translated">Интеграция GraphQL API в Angular приложение</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">274</context>
@@ -1017,7 +911,6 @@
       </trans-unit>
       <trans-unit id="6458800098944798543" datatype="html">
         <source>Create a mono repository based on angular/cli without Nx or Lerna</source>
-        <target state="translated">Создаем моно репозиторий на основе angular/cli без Nx или Lerna</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">280</context>
@@ -1026,7 +919,6 @@
       </trans-unit>
       <trans-unit id="4903388520292012940" datatype="html">
         <source>GraphQL API for Angular with NX and Nest</source>
-        <target state="translated">GraphQL API для Angular с помощью NX и Nest</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">286</context>
@@ -1035,7 +927,6 @@
       </trans-unit>
       <trans-unit id="2543783394213063589" datatype="html">
         <source>Development of a slider (carousel) on Angular with Rxjs</source>
-        <target state="translated">Разработка слайдера (карусели) на Angular c Rxjs</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">292</context>
@@ -1044,7 +935,6 @@
       </trans-unit>
       <trans-unit id="8538604849407542635" datatype="html">
         <source>How to choose the right front-end framework or why you can&apos;t trust the comparison of frameworks</source>
-        <target state="translated">Как правильно выбрать фронтенд framework или почему нельзя верить сравнению фреймверков</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">299</context>
@@ -1053,7 +943,6 @@
       </trans-unit>
       <trans-unit id="6241960160714253634" datatype="html">
         <source>Test your knowledge of JavaScript syntax in the game &quot;What will be displayed&quot;</source>
-        <target state="translated">Проверь себя на знание синтаксиса JavaScript в игре &quot;Что выведется&quot;</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">305</context>
@@ -1062,7 +951,6 @@
       </trans-unit>
       <trans-unit id="600639064708594182" datatype="html">
         <source>BEM and the naming problem. Speeding up and standardizing naming in HTML and CSS</source>
-        <target state="translated">БЭМ и проблема наименования. Ускоряем и стандартизируем нейминг в HTML и CSS</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">311</context>
@@ -1071,7 +959,6 @@
       </trans-unit>
       <trans-unit id="1118927391281197766" datatype="html">
         <source>The seven deadly sins of a coder</source>
-        <target state="translated">Семь смертных грехов верстальщика</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">317</context>
@@ -1080,7 +967,6 @@
       </trans-unit>
       <trans-unit id="2573328625649902877" datatype="html">
         <source>Basics of layout in Angular with Redux and Nx. Part 1. Layout Header and Navbar.</source>
-        <target state="translated">Основы верстки в Angular c Redux и Nx. Часть 1. Верстка Header и Navbar.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">323</context>
@@ -1089,7 +975,6 @@
       </trans-unit>
       <trans-unit id="1724263729211207056" datatype="html">
         <source>The Seven Deadly Sins of a Frontend/JavaScript Developer</source>
-        <target state="translated">Семь смертных грехов Фронтенд/JavaScript разработчика.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">329</context>
@@ -1098,7 +983,6 @@
       </trans-unit>
       <trans-unit id="3779715989186695866" datatype="html">
         <source>Go to post</source>
-        <target state="translated">Перейти к статье</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/posts/ui/card/src/lib/post-card.component.html</context>
           <context context-type="linenumber">8</context>
@@ -1108,7 +992,6 @@
       </trans-unit>
       <trans-unit id="943835409198661709" datatype="html">
         <source>Read more</source>
-        <target state="translated">Подробнее</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/posts/ui/card/src/lib/post-card.component.html</context>
           <context context-type="linenumber">16</context>
@@ -1118,7 +1001,6 @@
       </trans-unit>
       <trans-unit id="7289761207647303419" datatype="html">
         <source>Collaboration</source>
-        <target state="translated">Сотрудничество</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/aside/src/lib/collaboration/collaboration.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1128,7 +1010,6 @@
       </trans-unit>
       <trans-unit id="7715394583136395731" datatype="html">
         <source> For cooperation, please write to the telegram: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;//t.me/fafnur&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; (click)=&quot;onCollaboration()&quot;&gt;"/>@fafnur<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target state="translated">По вопросам сотрудничества, пишите в телеграм: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;//t.me/fafnur&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; (click)=&quot;onCollaboration()&quot;&gt;"/>@fafnur<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/aside/src/lib/collaboration/collaboration.component.html</context>
           <context context-type="linenumber">2,4</context>
@@ -1138,7 +1019,6 @@
       </trans-unit>
       <trans-unit id="5954812168919645216" datatype="html">
         <source>Resume</source>
-        <target state="translated">Резюме</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/aside/src/lib/cv/cv.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1148,7 +1028,6 @@
       </trans-unit>
       <trans-unit id="7143983364604290782" datatype="html">
         <source> Download <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/assets/docs/serenko.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; (click)=&quot;onDownload()&quot;&gt;"/> PDF<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target state="translated">Скачать <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/assets/docs/serenko.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; (click)=&quot;onDownload()&quot;&gt;"/> PDF<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/aside/src/lib/cv/cv.component.html</context>
           <context context-type="linenumber">2,3</context>
@@ -1158,7 +1037,6 @@
       </trans-unit>
       <trans-unit id="9159353103210215877" datatype="html">
         <source>Choose a path</source>
-        <target state="translated">Выбери путь</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/aside/src/lib/matrix/matrix.component.html</context>
           <context context-type="linenumber">2</context>
@@ -1168,7 +1046,6 @@
       </trans-unit>
       <trans-unit id="4820814609834463834" datatype="html">
         <source>Remember... All I&apos;m Offering Is The Truth. Nothing More.</source>
-        <target state="translated">Помни: Я лишь предлагаю узнать правду, ничего больше.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/aside/src/lib/matrix/matrix.component.html</context>
           <context context-type="linenumber">3</context>
@@ -1178,7 +1055,6 @@
       </trans-unit>
       <trans-unit id="4264961513568848329" datatype="html">
         <source>About</source>
-        <target state="translated">Обо мне</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/aside/src/lib/me/me.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1188,7 +1064,6 @@
       </trans-unit>
       <trans-unit id="3643520486137037192" datatype="html">
         <source>Front-end Developer, Angular evangelist, Nx apologist, NodeJS warlock. Writing about the frontend.</source>
-        <target state="translated">Фронтендер, Angular евангелист, Nx апологет, NodeJS чернокнижник. Пишу статьи про фронтенд.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/aside/src/lib/me/me.component.html</context>
           <context context-type="linenumber">4</context>
@@ -1198,7 +1073,6 @@
       </trans-unit>
       <trans-unit id="2829378117491363619" datatype="html">
         <source>Connect me</source>
-        <target state="translated">Свяжитесь со мной</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/aside/src/lib/socials/social.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1208,7 +1082,6 @@
       </trans-unit>
       <trans-unit id="1483829549005365634" datatype="html">
         <source>©<x id="INTERPOLATION" equiv-text="{{ year }}"/> All rights reserved</source>
-        <target state="translated">©<x id="INTERPOLATION" equiv-text="{{ year }}"/> Все права защищены, но это не точно.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/footer/src/lib/copyright/copyright.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1218,7 +1091,6 @@
       </trans-unit>
       <trans-unit id="7463594830761471599" datatype="html">
         <source>Open about page</source>
-        <target state="translated">Открыть страницу обо мне</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/header/src/lib/about/about.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1228,7 +1100,6 @@
       </trans-unit>
       <trans-unit id="8289799187836769426" datatype="html">
         <source>Go to github</source>
-        <target state="translated">Перейти на github</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/header/src/lib/github/github.component.html</context>
           <context context-type="linenumber">6</context>
@@ -1247,7 +1118,6 @@
       </trans-unit>
       <trans-unit id="736455299481182523" datatype="html">
         <source>Toggle language</source>
-        <target state="translated">Переключить язык</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/header/src/lib/language-switcher/language-switcher.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1257,7 +1127,6 @@
       </trans-unit>
       <trans-unit id="6810571022162406279" datatype="html">
         <source>Go to home page</source>
-        <target state="translated">Перейти на главную страницу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/header/src/lib/logo/logo.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1267,7 +1136,6 @@
       </trans-unit>
       <trans-unit id="5550469707247059084" datatype="html">
         <source>Close main menu</source>
-        <target state="translated">Закрыть меню</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/header/src/lib/menu/menu.component.html</context>
           <context context-type="linenumber">7</context>
@@ -1277,7 +1145,6 @@
       </trans-unit>
       <trans-unit id="2866694304181508174" datatype="html">
         <source>Toggle main menu</source>
-        <target state="translated">Открыть или закрыть меню</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/header/src/lib/menu/menu.component.html</context>
           <context context-type="linenumber">17</context>
