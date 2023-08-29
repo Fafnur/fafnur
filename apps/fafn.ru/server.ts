@@ -33,7 +33,7 @@ export function app(locale: string): express.Express {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
-    let prerender = join(distFolder, req.path.slice(0, -3), 'index.html');
+    let prerender = join(distFolder, req.path.slice(3), 'index.html');
 
     if (existsSync(prerender)) {
       const { themePreference } = req.cookies;
