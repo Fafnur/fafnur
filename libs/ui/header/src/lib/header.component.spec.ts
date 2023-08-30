@@ -8,7 +8,6 @@ import { AboutComponent } from './about/about.component';
 import { GithubComponent } from './github/github.component';
 import { HeaderComponent } from './header.component';
 import { HomeComponent } from './home/home.component';
-import { LanguageSwitcherComponent } from './language-switcher/language-switcher.component';
 import { LogoComponent } from './logo/logo.component';
 import { MenuComponent } from './menu/menu.component';
 import { ThemeSwitcherComponent } from './theme-switcher/theme-switcher.component';
@@ -28,8 +27,7 @@ describe('HeaderComponent', () => {
           MenuComponent,
           AboutComponent,
           GithubComponent,
-          HomeComponent,
-          LanguageSwitcherComponent
+          HomeComponent
         ),
         MockModule(MatToolbarModule),
       ],
