@@ -27,9 +27,10 @@ function fromDir(startPath: string, filter: string): string[] {
 }
 
 function run(project: string): void {
+  let files = fromDir(`./dist/apps/${project}/browser`, 'index.html');
+
   for (const lang of ['ru', 'en']) {
-    let files = fromDir(`./dist/apps/${project}/browser/${lang}`, 'index.html');
-    files = files.filter((file) => file.indexOf(`/browser/${lang}/light`) < 0);
+    files = files.filter((file) => file.indexOf('/browser/ru/light') < 0);
 
     if (!existsSync(`./dist/apps/${project}/browser/${lang}/light`)) {
       mkdirSync(`./dist/apps/${project}/browser/${lang}/light`);
@@ -44,18 +45,19 @@ function run(project: string): void {
         const dirs = folders.split('/');
 
         dirs.forEach((dir, index, arr) => {
-          const dirPath = join(`./dist/apps/${project}/browser/${lang}/light`, ...arr.slice(0, index + 1));
+          const dirPath = join(`./dist/apps/${project}/browser/ru/light`, ...arr.slice(0, index + 1));
           if (!existsSync(dirPath)) {
             mkdirSync(dirPath);
           }
         });
       }
 
-      writeFileSync(file.replace(`browser/${lang}`, `browser/${lang}/light`), data);
+      writeFileSync(file.replace('browser/ru', 'browser/ru/light'), data);
     }
   }
 
   output.log({ title: `Successfully ran target light mode for project ${project}` });
+  console.log(files);
 }
 
 run(process.env.PROJECT ?? 'fafn.ru');
