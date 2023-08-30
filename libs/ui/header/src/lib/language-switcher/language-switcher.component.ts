@@ -14,14 +14,10 @@ import { MetricService } from '@fafnur/core';
   imports: [MatIconModule, MatButtonModule, NgIf],
 })
 export class LanguageSwitcherComponent {
-  constructor(private readonly metricService: MetricService, @Inject(LOCALE_ID) private readonly localeId: string) {}
-
-  get lang(): string {
-    return this.localeId === 'ru' ? 'en' : 'ru';
-  }
+  constructor(private readonly metricService: MetricService, @Inject(LOCALE_ID) public readonly localeId: string) {}
 
   get path(): string {
-    return `/${this.lang}`;
+    return `/${this.localeId === 'ru' ? 'en' : 'ru'}`;
   }
 
   onToggle(): void {
