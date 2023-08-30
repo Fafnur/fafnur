@@ -10,11 +10,7 @@
     "locales": {
       "ru": {
         "translation": "apps/fafn.ru/src/i18n/messages.xlf",
-        "baseHref": "/ru"
-      },
-      "en": {
-        "translation": "apps/fafn.ru/src/i18n/messages-en.xlf",
-        "baseHref": "/en"
+        "baseHref": ""
       }
     }
   },
@@ -42,7 +38,7 @@
         "styles": ["apps/fafn.ru/src/styles.scss"],
         "allowedCommonJsDependencies": ["hammerjs"],
         "scripts": [],
-        "localize": ["ru", "en"]
+        "localize": ["ru"]
       },
       "configurations": {
         "production": {
@@ -66,7 +62,6 @@
           "sourceMap": true
         },
         "development": {
-          "localize": ["ru"],
           "buildOptimizer": false,
           "optimization": false,
           "vendorChunk": true,
@@ -122,14 +117,13 @@
         "outputPath": "dist/apps/fafn.ru/server",
         "main": "apps/fafn.ru/server.ts",
         "tsConfig": "apps/fafn.ru/tsconfig.server.json",
-        "localize": ["ru", "en"]
+        "localize": ["ru"]
       },
       "configurations": {
         "production": {
           "outputHashing": "media"
         },
         "development": {
-          "localize": ["ru"],
           "buildOptimizer": false,
           "optimization": false,
           "sourceMap": true,

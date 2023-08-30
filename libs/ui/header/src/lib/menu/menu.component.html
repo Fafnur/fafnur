@@ -1,19 +1,15 @@
 <mat-sidenav-container (click)="sidenav.toggle()">
   <mat-sidenav #sidenav class="sidenav" mode="side" position="start" [fixedInViewport]="true" [fixedTopGap]="0" [fixedBottomGap]="0">
     <header>
-      <fafnur-home></fafnur-home>
-      <fafnur-about></fafnur-about>
-      <fafnur-github></fafnur-github>
       <button mat-icon-button i18n-aria-label="Header Menu|Close menu" aria-label="Close main menu">
         <mat-icon>close</mat-icon>
       </button>
     </header>
-    <div>
+    <nav>
       <fafnur-aside></fafnur-aside>
-    </div>
+    </nav>
   </mat-sidenav>
 </mat-sidenav-container>
-
 <button mat-icon-button i18n-aria-label="Header Menu|Toogle menu" aria-label="Toggle main menu" (click)="sidenav.toggle()">
   <mat-icon>menu</mat-icon>
 </button>
