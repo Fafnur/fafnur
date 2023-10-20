@@ -26,7 +26,7 @@ export function app(): express.Express {
   // Serve static files from /browser
   server.get(
     '*.*',
-    express.static(distFolder, {
+    express.static(join(distFolder, 'ru'), {
       maxAge: '1y',
     })
   );
