@@ -26,16 +26,17 @@ export function app(): express.Express {
   server.set('views', distFolder);
 
   // Serve static files from /browser
-  server.get(
-    '*.*',
-    express.static(join(distFolder, 'ru'), {
-      maxAge: '1y',
-    }),
-  );
 
   server.get('/', (req, res) => res.redirect(`/${defaultLocale}/`));
 
   locales.forEach((locale) => {
+    server.get(
+      `/${locale}/*.*`,
+      express.static(join(distFolder, locale), {
+        maxAge: '1y',
+      }),
+    );
+
     server.get(`/${locale}$`, (req, res) => res.redirect(`/${defaultLocale}/`));
 
     // All regular routes use the Universal engine
