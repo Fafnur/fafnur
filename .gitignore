@@ -57,3 +57,5 @@ yarn.lock
 /apps/**/routes/blog.routes.ts
 /apps/**/routes/blog-*.routes.ts
 
+
+.nx/cache

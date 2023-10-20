@@ -13,3 +13,5 @@ yarn.lock
 .angular
 /junit
 junit.xml
+
+/.nx/cache
