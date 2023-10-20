@@ -1,3 +1,5 @@
+@use 'libs/ui/grid/mixins' as grid;
+
 :host {
   display: block;
 }
@@ -14,5 +16,14 @@ fafnur-container {
 
   > span {
     flex: 1 1 auto;
+  }
+}
+
+fafnur-home,
+fafnur-github {
+  display: none;
+
+  @include grid.media-tablet-up() {
+    display: block;
   }
 }
