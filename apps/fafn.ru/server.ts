@@ -10,11 +10,13 @@ import { join } from 'node:path';
 import bootstrap from './src/main.server';
 
 // The Express app is exported so that it can be used by serverless Functions.
-export function app(locale: string): express.Express {
+export function app(): express.Express {
   const server = express();
   server.use(cookieParser());
+  const locales = ['ru', 'en'];
+  const defaultLocale = 'ru';
 
-  const distFolder = join(process.cwd(), `dist/apps/fafn.ru/browser/${locale}`);
+  const distFolder = join(process.cwd(), `dist/apps/fafn.ru/browser`);
   // const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
@@ -28,27 +30,38 @@ export function app(locale: string): express.Express {
     '*.*',
     express.static(join(distFolder, 'ru'), {
       maxAge: '1y',
-    })
+    }),
   );
 
-  // All regular routes use the Universal engine
-  server.get('*', (req, res) => {
-    let prerender = join(distFolder, req.path.slice(3), 'index.html');
+  server.get('/', (req, res) => res.redirect(`/${defaultLocale}/`));
 
-    if (existsSync(prerender)) {
-      const { themePreference } = req.cookies;
+  locales.forEach((locale) => {
+    server.get(`/${locale}$`, (req, res) => res.redirect(`/${defaultLocale}/`));
 
-      if (typeof themePreference === 'string' && themePreference === 'light') {
-        prerender = prerender.replace(`browser/${locale}`, `browser/${locale}/light`);
+    // All regular routes use the Universal engine
+    server.get(`/${locale}/*`, (req, res) => {
+      let prerender = join(distFolder, req.path, 'index.html');
+
+      if (existsSync(prerender)) {
+        const { themePreference } = req.cookies;
+
+        if (typeof themePreference === 'string' && themePreference === 'light') {
+          prerender = prerender.replace(`browser/${locale}`, `browser/${locale}/light`);
+        }
+        res.sendFile(prerender);
+      } else {
+        // Disable SSR, because we use prerender for all pages
+        // res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+
+        res.statusCode = 404;
+        res.sendFile(join(distFolder, locale, '/not-found', 'index.html'));
       }
-      res.sendFile(prerender);
-    } else {
-      // Disable SSR, because we use prerender for all pages
-      // res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+    });
+  });
 
-      res.statusCode = 404;
-      res.sendFile(join(distFolder, '/not-found', 'index.html'));
-    }
+  server.get(`*`, (req, res) => {
+    res.statusCode = 404;
+    res.sendFile(join(distFolder, 'ru', '/not-found', 'index.html'));
   });
 
   return server;
@@ -56,10 +69,9 @@ export function app(locale: string): express.Express {
 
 function run(): void {
   const port = process.env['PORT'] || 4002;
-  const locale = process.env['LOCALE'] || 'ru';
 
   // Start up the Node server
-  const server = app(locale);
+  const server = app();
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
