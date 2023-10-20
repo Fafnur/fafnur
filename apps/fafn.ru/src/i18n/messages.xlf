@@ -17,7 +17,7 @@
         <target state="translated">ООО &quot;Информационные Технологии&quot;, Новосибирск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -26,7 +26,7 @@
         <target state="translated">Верстальщик</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">30</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -35,7 +35,7 @@
         <target state="translated">Сентябрь 2011</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -44,7 +44,7 @@
         <target state="translated">февраль 2012</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">32</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -53,7 +53,7 @@
         <target state="translated">6 месяцев</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">33</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -62,7 +62,7 @@
         <target state="translated">Верстка сайтов по макету на внутренней системе компании.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">34</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -71,7 +71,7 @@
         <target state="translated">ООО &quot;НПП Микропроцессорные технологии&quot;, Новосибирск.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">37</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -80,11 +80,11 @@
         <target state="translated">Программист</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">38</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -93,7 +93,7 @@
         <target state="translated">Февраль 2012</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -102,7 +102,7 @@
         <target state="translated">февраль 2015</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">40</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -111,7 +111,7 @@
         <target state="translated">3 года</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">41</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -120,7 +120,7 @@
         <target state="translated">Создание и поддержка сайта компании</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">42</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -129,7 +129,7 @@
         <target state="translated">ООО &quot;Главвеб&quot;, Новосибирск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">45</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -138,7 +138,7 @@
         <target state="translated">Январь 2015</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">47</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -147,7 +147,7 @@
         <target state="translated">январь 2017</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">48</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -156,7 +156,7 @@
         <target state="translated">2 года 1 месяц</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">49</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -165,7 +165,7 @@
         <target state="translated">Разработка front-end составляющей (верстка, интеграция) для нескольких маркетинговых агентств.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -174,7 +174,7 @@
         <target state="translated">Разработка back-end части на PHP (symfony, yii, cake).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">52</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -183,7 +183,7 @@
         <target state="translated">Обучение новых сотрудников frontend-у.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -192,7 +192,7 @@
         <target state="translated">ООО &quot;ФТМ ПМ&quot;, Новосибирск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">57</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -201,7 +201,7 @@
         <target state="translated">Директор</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -210,7 +210,7 @@
         <target state="translated">Октябрь 2017</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -219,7 +219,7 @@
         <target state="translated">март 2019</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">60</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -228,7 +228,7 @@
         <target state="translated">1 год 6 месяцев</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">61</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -237,7 +237,7 @@
         <target state="translated">Разработка игр на Unity3d и Unreal engine 4.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">64</context>
+          <context context-type="linenumber">63</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -246,7 +246,7 @@
         <target state="translated">Создание сайтов и веб-приложений.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">64</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -255,7 +255,7 @@
         <target state="translated">СГУПС НИЛ ИТТ, Новосибирск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">69</context>
+          <context context-type="linenumber">68</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -264,7 +264,7 @@
         <target state="translated">Инженер</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">70</context>
+          <context context-type="linenumber">69</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -273,7 +273,7 @@
         <target state="translated">Август 2016</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">71</context>
+          <context context-type="linenumber">70</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -282,7 +282,7 @@
         <target state="translated">май 2019</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">71</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -291,7 +291,7 @@
         <target state="translated">2 года 10 месяцев</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">73</context>
+          <context context-type="linenumber">72</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -300,7 +300,7 @@
         <target state="translated">Разработка редактора онтологий с использованием OWL и интеграцией с системами логического вывода основанными на OWL.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">74</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -309,7 +309,7 @@
         <target state="translated">Стек: Angular, Spring (системы логического вывода), Symfony (облачное хранилище, генерация OWL), Postgresql.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">75</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -318,7 +318,7 @@
         <target state="translated">Институт вычислительной математики и математической геофизики СО РАН, Новосибирск.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">80</context>
+          <context context-type="linenumber">79</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -327,7 +327,7 @@
         <target state="translated">Младший научный сотрудник</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">80</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -336,7 +336,7 @@
         <target state="translated">Июль 2018</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">82</context>
+          <context context-type="linenumber">81</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -345,7 +345,7 @@
         <target state="translated">Декабрь 2020</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">83</context>
+          <context context-type="linenumber">82</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -354,7 +354,7 @@
         <target state="translated">2 года 6 месяцев</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">84</context>
+          <context context-type="linenumber">83</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -363,7 +363,7 @@
         <target state="translated">Разработка новых численных методов для уравнений в частных производных для газовой, магнитной газовой динамики.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">86</context>
+          <context context-type="linenumber">85</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -372,7 +372,7 @@
         <target state="translated">ООО МКК &quot;РУСИНТЕРФИНАНС &quot;, Новосибирск.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="linenumber">89</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -381,7 +381,7 @@
         <target state="translated">Фронтенд-разработчик</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="linenumber">90</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -390,7 +390,7 @@
         <target state="translated">Сентябрь 2018</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">92</context>
+          <context context-type="linenumber">91</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -399,7 +399,7 @@
         <target state="translated">по настоящее время</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">92</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -408,7 +408,7 @@
         <target state="translated">5 лет</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">93</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -417,7 +417,7 @@
         <target state="translated">Миграция старого кода на новый стек: angular, nx, ngrx, universal, l18n.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">96</context>
+          <context context-type="linenumber">95</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -426,7 +426,7 @@
         <target state="translated">Управление командой фронтенд разработки (постановка задач, митинги, code review).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">96</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -435,7 +435,7 @@
         <target state="translated">Разработка новых сервисов на новом стеке.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/experience/experience.component.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -1245,16 +1245,6 @@
         <note priority="1" from="description">Home</note>
         <note priority="1" from="meaning">Header Menu</note>
       </trans-unit>
-      <trans-unit id="736455299481182523" datatype="html">
-        <source>Toggle language</source>
-        <target state="translated">Переключить язык</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/ui/header/src/lib/language-switcher/language-switcher.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-        <note priority="1" from="description">Language Switcher</note>
-        <note priority="1" from="meaning">Header</note>
-      </trans-unit>
       <trans-unit id="6810571022162406279" datatype="html">
         <source>Go to home page</source>
         <target state="translated">Перейти на главную страницу</target>
@@ -1270,7 +1260,7 @@
         <target state="translated">Закрыть меню</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/header/src/lib/menu/menu.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="linenumber">4</context>
         </context-group>
         <note priority="1" from="description">Close menu</note>
         <note priority="1" from="meaning">Header Menu</note>
@@ -1280,7 +1270,7 @@
         <target state="translated">Открыть или закрыть меню</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/header/src/lib/menu/menu.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">13</context>
         </context-group>
         <note priority="1" from="description">Toogle menu</note>
         <note priority="1" from="meaning">Header Menu</note>

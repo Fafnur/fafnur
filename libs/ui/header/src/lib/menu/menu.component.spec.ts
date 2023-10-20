@@ -8,9 +8,6 @@ import { MockComponents, MockDirectives, MockModule } from 'ng-mocks';
 
 import { AsideComponent } from '@fafnur/ui/aside';
 
-import { AboutComponent } from '../about/about.component';
-import { GithubComponent } from '../github/github.component';
-import { HomeComponent } from '../home/home.component';
 import { MenuComponent } from './menu.component';
 
 describe('MenuComponent', () => {
@@ -21,11 +18,12 @@ describe('MenuComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         MenuComponent,
+        NgFor,
         MockModule(MatIconModule),
         MockModule(MatButtonModule),
         MockModule(MatSidenavModule),
-        MockComponents(AboutComponent, GithubComponent, HomeComponent, AsideComponent),
-        MockDirectives(NgFor, RouterLink, RouterLinkActive),
+        MockComponents(AsideComponent),
+        MockDirectives(RouterLink, RouterLinkActive),
       ],
     }).compileComponents();
 
