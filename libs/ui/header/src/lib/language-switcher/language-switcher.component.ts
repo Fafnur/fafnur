@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -13,18 +13,18 @@ import { MetricService } from '@fafnur/core';
   standalone: true,
   imports: [MatIconModule, MatButtonModule, NgIf],
 })
-export class LanguageSwitcherComponent {
+export class LanguageSwitcherComponent implements OnInit {
+  path!: string;
+  lang!: string;
+
   constructor(
     private readonly metricService: MetricService,
-    @Inject(LOCALE_ID) private readonly localeId: string,
+    @Inject(LOCALE_ID) public readonly localeId: string,
   ) {}
 
-  get lang(): string {
-    return this.localeId === 'ru' ? 'en' : 'ru';
-  }
-
-  get path(): string {
-    return `/${this.lang}/`;
+  ngOnInit(): void {
+    this.lang = this.localeId === 'ru' ? 'en' : 'ru';
+    this.path = this.localeId === 'ru' ? 'https://en.fafn.ru' : 'https://fafn.ru';
   }
 
   onToggle(): void {

@@ -37,7 +37,7 @@ function run(project: string): void {
 
     for (const file of files) {
       const fileContent = readFileSync(file, 'utf8');
-      const data = fileContent.replace('<html', '<html data-theme="light"');
+      const dataLight = fileContent.replace('<html', '<html data-theme="light"');
       const folders = file.slice(file.indexOf(`/${lang}`) + 4, -11);
 
       if (folders.length) {
@@ -51,7 +51,7 @@ function run(project: string): void {
         });
       }
 
-      writeFileSync(file.replace(`browser/${lang}`, `browser/${lang}/light`), data);
+      writeFileSync(file.replace(`browser/${lang}`, `browser/${lang}/light`), dataLight);
     }
   }
 

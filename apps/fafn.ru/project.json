@@ -10,11 +10,11 @@
     "locales": {
       "ru": {
         "translation": "apps/fafn.ru/src/i18n/messages.xlf",
-        "baseHref": "/ru"
+        "baseHref": ""
       },
       "en": {
         "translation": "apps/fafn.ru/src/i18n/messages-en.xlf",
-        "baseHref": "/en"
+        "baseHref": ""
       }
     }
   },
@@ -34,8 +34,6 @@
         "assets": [
           "apps/fafn.ru/src/favicon.ico",
           "apps/fafn.ru/src/sitemap.xml",
-          "apps/fafn.ru/src/site.webmanifest",
-          "apps/fafn.ru/src/browserconfig.xml",
           "apps/fafn.ru/src/robots.txt",
           "apps/fafn.ru/src/assets"
         ],
