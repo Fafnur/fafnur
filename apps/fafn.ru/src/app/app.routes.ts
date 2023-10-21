@@ -36,6 +36,8 @@ export const appRoutes: Route[] = [
             data: {
               sitemap: {
                 loc: '/',
+                lastmod: '2023-10-21',
+                changefreq: 'weekly',
               },
             },
           },
@@ -45,6 +47,8 @@ export const appRoutes: Route[] = [
             data: {
               sitemap: {
                 loc: '/about',
+                lastmod: '2023-10-21',
+                changefreq: 'weekly',
               },
               meta: {
                 title: 'Все о Fafnur',

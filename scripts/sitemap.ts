@@ -49,7 +49,7 @@ function parseSitemapConfig(source: string): Partial<SitemapConfig> {
   sitemapConfig = sitemapConfig + '}';
   sitemapConfig = sitemapConfig.replace(
     /(\w+:)|(\w+ :)/g,
-    (matchedStr: string) => '"' + matchedStr.substring(0, matchedStr.length - 1) + '":'
+    (matchedStr: string) => '"' + matchedStr.substring(0, matchedStr.length - 1) + '":',
   );
 
   return JSON.parse(sitemapConfig);
@@ -62,9 +62,11 @@ function getSitemapUrl(sitemap: Partial<SitemapConfig>, appHost: string): string
   if (sitemap.loc) {
     routes.add(sitemap.loc.length > 0 ? sitemap.loc : '/');
   }
-  return `<url><loc>${appHost}${sitemap.loc !== '/' ? sitemap.loc : ''}</loc><lastmod>${
+  return `<url><loc>${appHost}/ru${sitemap.loc}</loc><lastmod>${sitemap.lastmod ?? new Date().toISOString()}</lastmod><changefreq>${
+    sitemap.changefreq ?? 'weekly'
+  }</changefreq><priority>${sitemap.priority ?? 0.8}</priority></url><url><loc>${appHost}/en${sitemap.loc}</loc><lastmod>${
     sitemap.lastmod ?? new Date().toISOString()
-  }</lastmod><changefreq>${sitemap.changefreq ?? 'daily'}</changefreq><priority>${sitemap.priority ?? 0.8}</priority></url>`;
+  }</lastmod><changefreq>${sitemap.changefreq ?? 'weekly'}</changefreq><priority>${sitemap.priority ?? 0.8}</priority></url>`;
 }
 
 function getUrls(appHost: string, app: string, excludes: string[] = []): string {
@@ -95,13 +97,13 @@ export function run(app?: string, appHost?: string, excludes: string[] = [], sit
     app = 'fafn.ru';
   }
   if (!appHost) {
-    appHost = process.env['NX_APP_HOST'] ?? 'http://localhost';
+    appHost = process.env['NX_APP_HOST'] ?? 'https://fafn.ru';
   }
   const urls = getUrls(appHost, app, excludes);
   fs.writeFileSync(
     `apps/${app}/src/${sitemap}`,
     // eslint-disable-next-line max-len
-    `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`
+    `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`,
   );
   const routePaths = [...Array.from(routes), '/not-found'].sort().join('\n');
   fs.writeFileSync(`apps/${app}/dynamic-routes.txt`, routePaths);

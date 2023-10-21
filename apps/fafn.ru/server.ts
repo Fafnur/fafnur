@@ -1,6 +1,5 @@
 import 'zone.js/node';
 
-// import { APP_BASE_HREF } from '@angular/common';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as cookieParser from 'cookie-parser';
 import * as express from 'express';
@@ -10,11 +9,11 @@ import { join } from 'node:path';
 import bootstrap from './src/main.server';
 
 // The Express app is exported so that it can be used by serverless Functions.
-export function app(): express.Express {
+export function app(locale: string): express.Express {
   const server = express();
   server.use(cookieParser());
 
-  const distFolder = join(process.cwd(), 'dist/apps/fafn.ru/browser/ru');
+  const distFolder = join(process.cwd(), `dist/apps/fafn.ru/browser/${locale}`);
   // const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
@@ -25,10 +24,10 @@ export function app(): express.Express {
 
   // Serve static files from /browser
   server.get(
-    '*.*',
+    `*.*`,
     express.static(distFolder, {
       maxAge: '1y',
-    })
+    }),
   );
 
   // All regular routes use the Universal engine
@@ -39,7 +38,7 @@ export function app(): express.Express {
       const { themePreference } = req.cookies;
 
       if (typeof themePreference === 'string' && themePreference === 'light') {
-        prerender = prerender.replace('browser/ru', 'browser/ru/light');
+        prerender = prerender.replace(`browser/${locale}`, `browser/${locale}/light`);
       }
       res.sendFile(prerender);
     } else {
@@ -56,9 +55,10 @@ export function app(): express.Express {
 
 function run(): void {
   const port = process.env['PORT'] || 4002;
+  const locale = process.env['LOCALE'] || 'ru';
 
   // Start up the Node server
-  const server = app();
+  const server = app(locale);
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });

@@ -3,7 +3,6 @@ import { provideRouter, withEnabledBlockingInitialNavigation, withInMemoryScroll
 
 import { META_CONFIG, MetaConfig, MetaService, METRIC_CONFIG, MetricConfig, MetricService } from '@fafnur/core';
 
-// import { MetaService, MetricService } from '@angular-blog/core';
 import { appRoutes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -14,7 +13,7 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({
         anchorScrolling: 'enabled',
         scrollPositionRestoration: 'enabled',
-      })
+      }),
     ),
     {
       provide: APP_ID,
