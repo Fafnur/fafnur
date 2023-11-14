@@ -42,6 +42,12 @@ export class HomePageComponent {
       title: $localize`:Home Page|:Articles on Habr`,
       posts: [
         {
+          image: '/assets/images/habr/9.jpg',
+          title: $localize`:Home Page|:Yandex Cup 2023. How I solved the problem with type definition in Typescript`,
+          route: 'https://habr.com/ru/articles/770646/',
+          created: '2023-10-30',
+        },
+        {
           image: '/assets/images/habr/1.jpg',
           title: $localize`:Home Page|:Creating a Static Blog with Angular and Contentful`,
           route: 'https://habr.com/ru/articles/754928/',
@@ -94,6 +100,12 @@ export class HomePageComponent {
     {
       title: $localize`:Home Page|:Posts on Medium`,
       posts: [
+        {
+          image: '/assets/images/medium/40.jpg',
+          title: $localize`:Home Page|:Migration on NX 17.`,
+          route: 'https://medium.com/p/0b523ae6aa22',
+          created: '2023-10-24',
+        },
         {
           image: '/assets/images/medium/1.webp',
           title: $localize`:Home Page|:Transferring an Angular project to standalone components.`,
