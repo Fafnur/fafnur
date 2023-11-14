@@ -17,6 +17,14 @@ community.
 I believe in the importance of continuously learning and improving, and I'm always seeking out new challenges and opportunities to expand
 my skill set.
 
+### Articles
+
+[Yandex Cup 2023. How I solved the problem with type definition in Typescript](https://habr.com/ru/articles/770646/)
+[Creating a Static Blog with Angular and Contentful](https://habr.com/ru/articles/754928/)
+[How I ported a blog from CakePHP to Angular](https://habr.com/ru/articles/754884/)
+[Migration on NX 17](https://medium.com/p/0b523ae6aa22)
+[Transferring an Angular project to standalone components](https://medium.com/p/be9003ae4c29)
+
 ### Languages and Technologies
 
 [![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white&link=https://github.com/Fafnur/)](https://github.com/Fafnur/)
