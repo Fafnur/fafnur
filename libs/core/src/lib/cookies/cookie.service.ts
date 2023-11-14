@@ -10,7 +10,10 @@ import { Inject, Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class CookieService {
-  constructor(private readonly platform: Platform, @Inject(DOCUMENT) private readonly document: Document) {}
+  constructor(
+    private readonly platform: Platform,
+    @Inject(DOCUMENT) private readonly document: Document,
+  ) {}
 
   get(name: string): string | null {
     if (!this.platform.isBrowser) {
@@ -25,7 +28,7 @@ export class CookieService {
   set(
     name: string,
     value: string,
-    options?: Partial<{ expires: Date; path: string; domain: string; secure: string; sameSite: string }>
+    options?: Partial<{ expires: Date; path: string; domain: string; secure: string; sameSite: string }>,
   ): void {
     if (this.platform.isBrowser) {
       let cookieString = `${encodeURIComponent(name)}=${encodeURIComponent(value)};`;

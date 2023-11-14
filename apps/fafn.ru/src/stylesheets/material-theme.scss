@@ -28,22 +28,21 @@ $light-theme: mat.define-light-theme(
   )
 );
 
-@include mat.all-component-themes($dark-theme);
+@include mat.all-component-themes($light-theme);
 
 :root {
-  --fafnur-color-primary: #{mat.get-color-from-palette(mat.$teal-palette, 400)};
-  --fafnur-color-primary-active: #{mat.get-color-from-palette(mat.$teal-palette, 200)};
-  --fafnur-color-accent: #{mat.get-color-from-palette(mat.$deep-purple-palette, 300)};
-  --fafnur-color-warning: #{mat.get-color-from-palette(mat.$orange-palette, 400)};
-  --fafnur-color-danger: #{mat.get-color-from-palette(mat.$red-palette, 500)};
-}
-
-html[data-theme='light'] {
-  @include mat.all-component-colors($light-theme);
-
   --fafnur-color-primary: #{mat.get-color-from-palette(mat.$teal-palette, 800)};
   --fafnur-color-primary-active: #{mat.get-color-from-palette(mat.$teal-palette, 600)};
   --fafnur-color-accent: #{mat.get-color-from-palette(mat.$deep-purple-palette, 700)};
   --fafnur-color-warning: #{mat.get-color-from-palette(mat.$orange-palette, 800)};
   --fafnur-color-danger: #{mat.get-color-from-palette(mat.$red-palette, 900)};
+}
+
+html[data-theme='dark'] {
+  @include mat.all-component-colors($dark-theme);
+  --fafnur-color-primary: #{mat.get-color-from-palette(mat.$teal-palette, 400)};
+  --fafnur-color-primary-active: #{mat.get-color-from-palette(mat.$teal-palette, 200)};
+  --fafnur-color-accent: #{mat.get-color-from-palette(mat.$deep-purple-palette, 300)};
+  --fafnur-color-warning: #{mat.get-color-from-palette(mat.$orange-palette, 400)};
+  --fafnur-color-danger: #{mat.get-color-from-palette(mat.$red-palette, 500)};
 }
