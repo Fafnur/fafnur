@@ -21,6 +21,7 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "---- App ----": "",
+    "release": "ts-node ./scripts/release.ts",
     "---- Hooks ----": "",
     "prepare": "husky install"
   },
