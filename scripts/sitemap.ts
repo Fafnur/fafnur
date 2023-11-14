@@ -95,7 +95,7 @@ export function run(app?: string, appHost?: string, excludes: string[] = [], sit
     app = 'fafn.ru';
   }
   if (!appHost) {
-    appHost = process.env['NX_APP_HOST'] ?? 'https://fafn.ru';
+    appHost = 'https://fafn.ru';
   }
   const urls = getUrls(appHost, app, excludes);
   fs.writeFileSync(
@@ -103,8 +103,8 @@ export function run(app?: string, appHost?: string, excludes: string[] = [], sit
     // eslint-disable-next-line max-len
     `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`,
   );
-  const routePaths = [...Array.from(routes), '/not-found'].sort().join('\n');
-  fs.writeFileSync(`apps/${app}/dynamic-routes.txt`, routePaths);
+  // const routePaths = [...Array.from(routes), '/not-found'].sort().join('\n');
+  // fs.writeFileSync(`apps/${app}/dynamic-routes.txt`, routePaths);
 }
 
 run();
