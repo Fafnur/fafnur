@@ -664,6 +664,15 @@
         </context-group>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
+      <trans-unit id="3405612595826339974" datatype="html">
+        <source>Yandex Cup 2023. How I solved the problem with type definition in Typescript</source>
+        <target state="translated">Решение задачи про определение типа в Typescript с Yandex Cup 2023</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
       <trans-unit id="1505637652356326366" datatype="html">
         <source>Creating a Static Blog with Angular and Contentful</source>
         <target state="translated">Создание статичного блога на Angular и Contentful</target>
@@ -742,6 +751,15 @@
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
           <context context-type="linenumber">95</context>
+        </context-group>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
+      <trans-unit id="8407205568788587011" datatype="html">
+        <source>Миграция на NX 17.</source>
+        <target state="translated">Перевод Angular проекта на standalone компоненты.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/home/page/src/lib/home-page.component.ts</context>
+          <context context-type="linenumber">105</context>
         </context-group>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
