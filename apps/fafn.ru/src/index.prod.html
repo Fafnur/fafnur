@@ -29,7 +29,7 @@
         let theme = ('; ' + document.cookie).split(`; themePreference=`).pop().split(';')[0];
         if (!theme) {
           theme = 'light';
-          document.cookie = 'themePreference=light;expires=Mon, 01 Jun 2037 07:00:00 GMT;SameSite=None;';
+          document.cookie = 'themePreference=light;expires=Mon, 01 Jun 2037 07:00:00 GMT;SameSite=Lax;';
         }
         document.documentElement.setAttribute('data-theme', theme);
       }
