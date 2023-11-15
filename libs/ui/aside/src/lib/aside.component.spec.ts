@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MockComponents } from 'ng-mocks';
 
+import { AmpComponent } from './amp/amp.component';
 import { AsideComponent } from './aside.component';
 import { CollaborationComponent } from './collaboration/collaboration.component';
 import { CvComponent } from './cv/cv.component';
@@ -14,7 +15,10 @@ describe('AsideComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AsideComponent, MockComponents(SocialComponent, CollaborationComponent, MatrixComponent, CvComponent, MeComponent)],
+      imports: [
+        AsideComponent,
+        MockComponents(SocialComponent, CollaborationComponent, MatrixComponent, CvComponent, MeComponent, AmpComponent),
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(AsideComponent);
