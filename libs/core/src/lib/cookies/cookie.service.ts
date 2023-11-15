@@ -45,7 +45,7 @@ export class CookieService {
       if (options?.sameSite) {
         cookieString += 'sameSite=' + options.sameSite + ';';
       } else {
-        cookieString += 'sameSite=None;';
+        cookieString += 'sameSite=Lax;';
       }
       cookieString += 'secure;';
 
