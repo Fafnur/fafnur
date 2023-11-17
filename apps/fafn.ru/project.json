@@ -33,6 +33,7 @@
           "apps/fafn.ru/src/favicon.ico",
           "apps/fafn.ru/src/sitemap.xml",
           "apps/fafn.ru/src/robots.txt",
+          "apps/fafn.ru/src/ads.txt",
           "apps/fafn.ru/src/assets"
         ],
         "styles": ["apps/fafn.ru/src/styles.scss"],
