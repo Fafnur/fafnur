@@ -57,6 +57,20 @@ export const appRoutes: Route[] = [
               },
             },
           },
+          {
+            path: 'privacy',
+            loadComponent: () => import('@fafnur/privacy/page').then((modules) => modules.PrivacyPageComponent),
+            data: {
+              sitemap: {
+                loc: '/about',
+                lastmod: '2023-11-20',
+                changefreq: 'weekly',
+              },
+              meta: {
+                title: 'Privacy Fafnur',
+              },
+            },
+          },
         ],
       },
       {
