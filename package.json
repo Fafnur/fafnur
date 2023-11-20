@@ -1,6 +1,6 @@
 {
   "name": "@fafnur/source",
-  "version": "2023.11.17.1",
+  "version": "2023.11.20.0",
   "license": "MIT",
   "scripts": {
     "start": "nx serve fafn.ru",
