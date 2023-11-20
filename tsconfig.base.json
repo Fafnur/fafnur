@@ -22,6 +22,7 @@
       "@fafnur/posts/common": ["libs/posts/common/src/index.ts"],
       "@fafnur/posts/ui/card": ["libs/posts/ui/card/src/index.ts"],
       "@fafnur/posts/ui/list": ["libs/posts/ui/list/src/index.ts"],
+      "@fafnur/privacy/page": ["libs/privacy/page/src/index.ts"],
       "@fafnur/ui/aside": ["libs/ui/aside/src/index.ts"],
       "@fafnur/ui/container": ["libs/ui/container/src/index.ts"],
       "@fafnur/ui/footer": ["libs/ui/footer/src/index.ts"],
