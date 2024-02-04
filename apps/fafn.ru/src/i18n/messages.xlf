@@ -1174,6 +1174,26 @@
         <note priority="1" from="description">Resume Description</note>
         <note priority="1" from="meaning">Aside</note>
       </trans-unit>
+      <trans-unit id="4300866614563338291" datatype="html">
+        <source>Life</source>
+        <target state="translated">Жизнь</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/aside/src/lib/life/life.component.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <note priority="1" from="description">Title</note>
+        <note priority="1" from="meaning">Life</note>
+      </trans-unit>
+      <trans-unit id="46658901025080749" datatype="html">
+        <source> I share everything wonderful that I meet in life on telegram: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://t.me/fafnur_life&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; (click)=&quot;onLife()&quot;&gt;"/>fafnur_life<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target state="translated">Делюсь всем замечательным, что встречаю в жизни в телеграм <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://t.me/fafnur_life&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; (click)=&quot;onLife()&quot;&gt;"/>fafnur_life<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/aside/src/lib/life/life.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+        <note priority="1" from="description">Description</note>
+        <note priority="1" from="meaning">Life</note>
+      </trans-unit>
       <trans-unit id="9159353103210215877" datatype="html">
         <source>Choose a path</source>
         <target state="translated">Выбери путь</target>
