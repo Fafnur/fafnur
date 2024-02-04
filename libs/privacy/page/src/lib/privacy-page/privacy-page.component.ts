@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { TitleComponent } from '@fafnur/ui/title';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'fafnur-privacy-page',

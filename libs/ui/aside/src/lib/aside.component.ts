@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AmpComponent } from './amp/amp.component';
 import { CollaborationComponent } from './collaboration/collaboration.component';
 import { CvComponent } from './cv/cv.component';
+import { LifeComponent } from './life/life.component';
 import { MatrixComponent } from './matrix/matrix.component';
 import { MeComponent } from './me/me.component';
 import { SocialComponent } from './socials/social.component';
@@ -13,6 +14,6 @@ import { SocialComponent } from './socials/social.component';
   styleUrls: ['./aside.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [SocialComponent, CollaborationComponent, MatrixComponent, CvComponent, MeComponent, AmpComponent],
+  imports: [SocialComponent, CollaborationComponent, MatrixComponent, CvComponent, MeComponent, AmpComponent, LifeComponent],
 })
 export class AsideComponent {}
