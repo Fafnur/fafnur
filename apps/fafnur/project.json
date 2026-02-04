@@ -13,6 +13,7 @@
         "outputPath": "dist/apps/fafnur",
         "browser": "apps/fafnur/src/main.ts",
         "tsConfig": "apps/fafnur/tsconfig.app.json",
+        "polyfills": ["core-js/stable"],
         "inlineStyleLanguage": "scss",
         "assets": [
           {
