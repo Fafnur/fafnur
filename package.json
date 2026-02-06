@@ -15,7 +15,7 @@
     "dep-graph": "nx dep-graph",
     "serve:ssr:angular-crutches": "node dist/angular-crutches/server/server.mjs",
     "---- Release ----": "",
-    "release": "ts-node ./scripts/release.ts",
+    "release": "ts-node tools/scripts/release.ts",
     "---- Hooks ----": "",
     "prepare": "husky install"
   },

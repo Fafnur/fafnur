@@ -1,6 +1,6 @@
 import { output } from '@nx/workspace';
 import { execSync } from 'node:child_process';
-import { writeFileSync, readFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 
 /**
  * Read data
@@ -22,6 +22,7 @@ function getVersion(): string {
   const year = now.getFullYear();
   const month = (now.getMonth() + 1).toString().padStart(2, '0');
   const day = now.getDate().toString().padStart(2, '0');
+  // eslint-disable-next-line @typescript-eslint/no-shadow
   const release = day !== lastDay ? 0 : +lastRelease + 1;
 
   return `${year}.${month}.${day}.${release}`;
