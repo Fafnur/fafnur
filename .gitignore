@@ -58,3 +58,5 @@ junit.xml
 # APPS
 /apps/**/.env
 /apps/**/source.xlf
+
+vitest.config.*.timestamp*
