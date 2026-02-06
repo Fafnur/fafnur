@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   imports: [RouterOutlet],
   selector: 'fafnur-root',
-  template: '<h1>Hello world!</h1><router-outlet/>',
+  template: '<router-outlet/>',
   styleUrl: './app.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

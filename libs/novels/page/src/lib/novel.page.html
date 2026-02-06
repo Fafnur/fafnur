@@ -1,0 +1,17 @@
+<div class="story">
+  @for (line of $lines(); track line.id) {
+    <p>{{ line.text }}</p>
+  }
+</div>
+
+@if ($hasChoices()) {
+  <div class="choices">
+    @for (choice of $choices(); track choice.index) {
+      <button type="button" (click)="choose(choice.index)">
+        {{ choice.text }}
+      </button>
+    }
+  </div>
+} @else {
+  <p>End of story</p>
+}

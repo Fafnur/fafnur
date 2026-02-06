@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fafnur/core": ["libs/core/src/index.ts"]
+      "@fafnur/core": ["libs/core/src/index.ts"],
+      "@fafnur/novels/page": ["libs/novels/page/src/index.ts"],
+      "@fafnur/ui/layout": ["libs/ui/layout/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -67,7 +67,8 @@
       "linter": "eslint",
       "unitTestRunner": "vitest-analog",
       "style": "scss",
-      "prefix": "fafnur"
+      "prefix": "fafnur",
+      "changeDetection": "OnPush"
     },
     "@nx/angular:component": {
       "style": "scss",
