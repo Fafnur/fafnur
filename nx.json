@@ -6,6 +6,9 @@
   "affected": {
     "defaultBase": "develop"
   },
+  "defaultProject": "fafnur",
+  "useInferencePlugins": false,
+  "defaultBase": "develop",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
@@ -60,7 +63,7 @@
       "e2eTestRunner": "playwright",
       "linter": "eslint",
       "style": "scss",
-      "unitTestRunner": "vitest-angular",
+      "unitTestRunner": "vitest-analog",
       "prefix": "fafnur"
     },
     "@nx/angular:library": {

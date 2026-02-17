@@ -68,10 +68,6 @@
     "lint": {
       "executor": "@nx/eslint:lint"
     },
-    "test": {
-      "executor": "@angular/build:unit-test",
-      "options": {}
-    },
     "serve-static": {
       "continuous": true,
       "executor": "@nx/web:file-server",
@@ -80,6 +76,13 @@
         "port": 4200,
         "staticFilePath": "dist/apps/fafnur/browser",
         "spa": true
+      }
+    },
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../../coverage/apps/fafnur"
       }
     }
   }
