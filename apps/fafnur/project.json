@@ -35,7 +35,7 @@
           }
         ],
         "externalDependencies": ["assets/*"],
-        "styles": ["apps/fafnur/src/styles.scss"],
+        "styles": [],
         "server": "apps/fafnur/src/main.server.ts",
         "ssr": {
           "entry": "apps/fafnur/src/server.ts"
@@ -89,7 +89,11 @@
         "buildTarget": "fafnur:build",
         "port": 4200,
         "staticFilePath": "dist/apps/fafnur/browser",
-        "spa": true
+        "spa": true,
+        "brotli": true,
+        "cacheSeconds": 2593000,
+        "sslKey": "ssl/localhost-key.pem",
+        "sslCert": "ssl/localhost-cert.pem"
       }
     },
     "test": {
