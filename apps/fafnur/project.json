@@ -5,6 +5,15 @@
   "prefix": "app",
   "sourceRoot": "apps/fafnur/src",
   "tags": [],
+  "i18n": {
+    "sourceLocale": "en-US",
+    "locales": {
+      "ru": {
+        "translation": "apps/fafnur/i18n/messages.ru.xlf",
+        "subPath": ""
+      }
+    }
+  },
   "targets": {
     "build": {
       "executor": "@angular/build:application",
@@ -13,14 +22,19 @@
         "outputPath": "dist/apps/fafnur",
         "browser": "apps/fafnur/src/main.ts",
         "tsConfig": "apps/fafnur/tsconfig.app.json",
-        "polyfills": ["core-js/stable"],
+        "polyfills": ["@angular/localize/init", "core-js/stable"],
+        "localize": ["ru"],
         "inlineStyleLanguage": "scss",
+        "stylePreprocessorOptions": {
+          "includePaths": ["node_modules", "./"]
+        },
         "assets": [
           {
             "glob": "**/*",
             "input": "apps/fafnur/public"
           }
         ],
+        "externalDependencies": ["assets/*"],
         "styles": ["apps/fafnur/src/styles.scss"],
         "server": "apps/fafnur/src/main.server.ts",
         "ssr": {
@@ -83,6 +97,12 @@
       "outputs": ["{options.reportsDirectory}"],
       "options": {
         "reportsDirectory": "../../coverage/apps/fafnur"
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular/build:extract-i18n",
+      "options": {
+        "buildTarget": "fafnur:build"
       }
     }
   }

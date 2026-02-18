@@ -1,3 +1,4 @@
+/// <reference types="@angular/localize" />
 import { bootstrapApplication, BootstrapContext } from '@angular/platform-browser';
 
 import { App } from './app/app';
