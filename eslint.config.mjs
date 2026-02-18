@@ -10,6 +10,12 @@ export default [
     ignores: ['**/dist', '**/out-tsc', '**/public', '**/vitest.config.*.timestamp*'],
   },
   {
+    files: ['**/*.html'],
+    rules: {
+      '@angular-eslint/template/prefer-self-closing-tags': ['error'],
+    },
+  },
+  {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     rules: {
       '@nx/enforce-module-boundaries': [

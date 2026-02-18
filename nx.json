@@ -76,16 +76,12 @@
     "@nx/angular:component": {
       "style": "scss",
       "changeDetection": "OnPush",
-      "unitTestRunner": "vitest-analog",
-      "prefix": "fafnur",
-      "type": "component"
+      "prefix": "fafnur"
     },
     "@schematics/angular:component": {
       "style": "scss",
-      "unitTestRunner": "vitest-analog",
       "changeDetection": "OnPush",
-      "prefix": "fafnur",
-      "type": "component"
+      "prefix": "fafnur"
     }
   }
 }
