@@ -16,7 +16,7 @@
   },
   "targets": {
     "build": {
-      "executor": "@angular/build:application",
+      "executor": "@nx/angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/fafnur",
@@ -44,6 +44,7 @@
       },
       "configurations": {
         "production": {
+          "indexHtmlTransformer": "apps/fafnur/index-html.transformer.ts",
           "budgets": [
             {
               "type": "initial",
