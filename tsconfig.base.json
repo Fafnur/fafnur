@@ -17,7 +17,10 @@
     "paths": {
       "@fafnur/core": ["libs/core/src/index.ts"],
       "@fafnur/novels/page": ["libs/novels/page/src/index.ts"],
-      "@fafnur/ui/layout": ["libs/ui/layout/src/index.ts"]
+      "@fafnur/ui/layout": ["libs/ui/layout/src/index.ts"],
+      "@fafnur/ui/header": ["libs/ui/header/src/index.ts"],
+      "@fafnur/home/page": ["libs/home/page/src/index.ts"],
+      "@fafnur/ui/footer": ["libs/ui/footer/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
