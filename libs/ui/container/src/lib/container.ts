@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
   template: '<ng-content />',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'container mx-auto px-2 lg:max-w-7xl',
+    class: 'container mx-auto px-4 lg:max-w-7xl',
     '[class]': `$type()`,
   },
 })

@@ -1,5 +1,39 @@
-<fafnur-container>
-  <h1 class="text-3xl font-bold my-2">Hello world!</h1>
-  <p class="my-2">HomePage works!</p>
-  <p><a [routerLink]="paths.novels">Novels</a></p>
-</fafnur-container>
+<!--<fafnur-container>-->
+<!--  <h1 class="text-3xl font-bold my-2">Hello world!</h1>-->
+<!--  <p class="my-2">HomePage works!</p>-->
+<!--  <p><a [routerLink]="paths.novels">Novels</a></p>-->
+<!--</fafnur-container>-->
+
+<section
+  class="relative overflow-hidden transition-colors duration-300 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900"
+>
+  <div class="container mx-auto px-6 py-24 text-center">
+    <!-- Заголовок -->
+    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl dark:text-white">
+      Начать новое
+      <span class="block text-indigo-600 dark:text-indigo-400"> приключение </span>
+    </h1>
+
+    <!-- Подзаголовок -->
+    <p class="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+      Попробуй пройти мой квест и узнай все про меня.
+    </p>
+
+    <!-- Кнопки -->
+    <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a
+        [routerLink]="paths.novels"
+        class="rounded-lg px-6 py-3 text-sm font-semibold bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 transition"
+      >
+        Начать сейчас
+      </a>
+    </div>
+  </div>
+
+  <!-- Декоративный blur -->
+  <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl">
+    <div
+      class="relative left-1/2 aspect-[1155/678] w-[36rem] -translate-x-1/2 bg-gradient-to-tr from-indigo-400 to-purple-400 opacity-20 dark:opacity-10"
+    ></div>
+  </div>
+</section>

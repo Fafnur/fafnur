@@ -14,7 +14,8 @@ type Theme = 'system' | 'light' | 'dark';
   styleUrl: './theme-switcher.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'relative z-0 inline-grid grid-cols-3 gap-0.5 rounded-full bg-gray-950/5 p-0.75 dark:bg-white/10',
+    class:
+      'relative z-0 inline-grid grid-cols-3 gap-0.5 rounded-full bg-gray-950/5 p-0.75 dark:bg-white/10 cursor-pointer',
     role: 'radiogroup',
   },
 })
