@@ -1,17 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { IconMoon } from './icon-moon';
 
-import { ThemeSwitcher } from './theme-switcher';
-
-describe('ThemeSwitcher', () => {
-  let component: ThemeSwitcher;
-  let fixture: ComponentFixture<ThemeSwitcher>;
+describe('IconMoon', () => {
+  let component: IconMoon;
+  let fixture: ComponentFixture<IconMoon>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ThemeSwitcher],
+      imports: [IconMoon],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ThemeSwitcher);
+    fixture = TestBed.createComponent(IconMoon);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
