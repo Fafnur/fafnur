@@ -7,5 +7,8 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './layout.html',
   styleUrl: './layout.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    class: 'bg-white dark:bg-black text-gray-900 dark:text-white',
+  },
 })
 export class Layout {}

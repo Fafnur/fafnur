@@ -1,7 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+ <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="2926990184994420774" datatype="html">
+        <source>Fafnur. Official website. All rights reserved.</source>
+        <target state="translated">Fafnur. Официальный сайт.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/footer.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+        <note priority="1" from="description">Copyright</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

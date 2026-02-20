@@ -22,7 +22,7 @@
         "outputPath": "dist/apps/fafnur",
         "browser": "apps/fafnur/src/main.ts",
         "tsConfig": "apps/fafnur/tsconfig.app.json",
-        "polyfills": ["@angular/localize/init", "core-js/stable"],
+        "polyfills": ["@angular/localize/init", "core-js/actual"],
         "localize": ["ru"],
         "inlineStyleLanguage": "scss",
         "stylePreprocessorOptions": {
@@ -35,7 +35,7 @@
           }
         ],
         "externalDependencies": ["assets/*"],
-        "styles": [],
+        "styles": ["apps/fafnur/src/styles.scss"],
         "server": "apps/fafnur/src/main.server.ts",
         "ssr": {
           "entry": "apps/fafnur/src/server.ts"
@@ -48,7 +48,7 @@
           "budgets": [
             {
               "type": "initial",
-              "maximumWarning": "500kb",
+              "maximumWarning": "700kb",
               "maximumError": "1mb"
             },
             {
