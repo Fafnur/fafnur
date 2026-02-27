@@ -1,10 +1,13 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, numberAttribute } from '@angular/core';
 
 @Component({
   template: '<ng-content/>',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Icon {
-  readonly $width = input<number>(28, { alias: 'width' });
-  readonly $height = input<number>(28, { alias: 'height' });
+  protected defaultWidth = 28;
+  protected defaultHeight = 28;
+
+  readonly $width = input(this.defaultWidth, { alias: 'width', transform: numberAttribute });
+  readonly $height = input(this.defaultHeight, { alias: 'height', transform: numberAttribute });
 }

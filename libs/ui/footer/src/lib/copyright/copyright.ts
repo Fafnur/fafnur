@@ -1,7 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { IconX, IconMedium, IconHabr } from '@fafnur/ui/icons';
+
+import { SocialLink } from './social-link/social-link';
+
 @Component({
   selector: 'fafnur-copyright',
+  imports: [IconX, IconMedium, IconHabr, SocialLink],
   templateUrl: './copyright.html',
   styleUrl: './copyright.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
