@@ -5,13 +5,15 @@
 </div>
 
 @if ($hasChoices()) {
-  <div class="choices">
+  <ul class="list-disc">
     @for (choice of $choices(); track choice.index) {
-      <button type="button" (click)="choose(choice.index)">
-        {{ choice.text }}
-      </button>
+      <li>
+        <button class="underline cursor-pointer" type="button" (click)="choose(choice.index)">
+          {{ choice.text }}
+        </button>
+      </li>
     }
-  </div>
+  </ul>
 } @else {
   <p>End of story</p>
 }
