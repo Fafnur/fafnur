@@ -1,17 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { IconLinkedin } from './icon-linkedin';
 
-import { Copyright } from './copyright';
-
-describe('Copyright', () => {
-  let component: Copyright;
-  let fixture: ComponentFixture<Copyright>;
+describe('IconLinkedin', () => {
+  let component: IconLinkedin;
+  let fixture: ComponentFixture<IconLinkedin>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Copyright],
+      imports: [IconLinkedin],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Copyright);
+    fixture = TestBed.createComponent(IconLinkedin);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

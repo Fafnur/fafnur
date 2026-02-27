@@ -1,17 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Socials } from './socials';
 
-import { Copyright } from './copyright';
-
-describe('Copyright', () => {
-  let component: Copyright;
-  let fixture: ComponentFixture<Copyright>;
+describe('Socials', () => {
+  let component: Socials;
+  let fixture: ComponentFixture<Socials>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Copyright],
+      imports: [Socials],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Copyright);
+    fixture = TestBed.createComponent(Socials);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

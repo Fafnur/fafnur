@@ -1,17 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { IconTelegram } from './icon-telegram';
 
-import { Copyright } from './copyright';
-
-describe('Copyright', () => {
-  let component: Copyright;
-  let fixture: ComponentFixture<Copyright>;
+describe('IconTelegram', () => {
+  let component: IconTelegram;
+  let fixture: ComponentFixture<IconTelegram>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Copyright],
+      imports: [IconTelegram],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Copyright);
+    fixture = TestBed.createComponent(IconTelegram);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

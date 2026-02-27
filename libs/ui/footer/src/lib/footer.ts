@@ -7,10 +7,11 @@ import { Brand } from './brand/brand';
 import { Contacts } from './contacts/contacts';
 import { Copyright } from './copyright/copyright';
 import { Menu } from './menu/menu';
+import { Socials } from './socials/socials';
 
 @Component({
   selector: 'fafnur-footer',
-  imports: [Container, Copyright, Unit, Contacts, Menu, Brand],
+  imports: [Container, Copyright, Unit, Contacts, Menu, Brand, Socials],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
