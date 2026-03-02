@@ -23,7 +23,9 @@
       "@fafnur/ui/footer": ["libs/ui/footer/src/index.ts"],
       "@fafnur/ui/container": ["libs/ui/container/src/index.ts"],
       "@fafnur/ui/unit": ["libs/ui/unit/src/index.ts"],
-      "@fafnur/ui/icons": ["libs/ui/icons/src/index.ts"]
+      "@fafnur/ui/icons": ["libs/ui/icons/src/index.ts"],
+      "@fafnur/about/page": ["libs/about/page/src/index.ts"],
+      "@fafnur/project/page": ["libs/project/page/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
