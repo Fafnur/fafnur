@@ -8,6 +8,7 @@ export const PATHS = {
 
   home: '/',
   about: '/about',
+  project: '/project',
   novels: '/novels',
 } as const;
 

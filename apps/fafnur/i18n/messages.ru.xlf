@@ -1,16 +1,86 @@
- <?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="2926990184994420774" datatype="html">
-        <source>Fafnur. Official website. All rights reserved.</source>
+      <trans-unit id="9087434948841008337" datatype="html">
+        <source>Fafnur</source>
+        <target state="translated">Fafnur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/brand/brand.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <note priority="1" from="description">Brand</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="6721008685464796581" datatype="html">
+        <source>Senior Frontend Developer, Angular evangelist, Nx apologist and NodeJS warlock.</source>
+        <target state="translated">Senior frontend, Angular evangelist, Nx apologist & NodeJS warlock.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/brand/brand.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+        <note priority="1" from="description">Slogan</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="7304891834579269162" datatype="html">
+        <source>Contacts</source>
+        <target state="translated">Контакты</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/contacts/contacts.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <note priority="1" from="description">Contacts</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="7389492709694838370" datatype="html">
+        <source>Fafnur. All rights reserved.</source>
         <target state="translated">Fafnur. Официальный сайт.</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">libs/ui/footer/src/lib/footer.html</context>
-          <context context-type="linenumber">3,5</context>
+          <context context-type="sourcefile">libs/ui/footer/src/lib/copyright/copyright.html</context>
+          <context context-type="linenumber">1,2</context>
         </context-group>
         <note priority="1" from="description">Copyright</note>
         <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="7333840470530299985" datatype="html">
+        <source>Navigation</source>
+        <target state="translated">Навигация</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/menu/menu.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <note priority="1" from="description">Navigation</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="3938161465100539228" datatype="html">
+        <source>Home</source>
+        <target state="translated">Главная</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/menu/menu.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Home</note>
+        <note priority="1" from="meaning">Footer menu</note>
+      </trans-unit>
+      <trans-unit id="5307767755195661974" datatype="html">
+        <source>Project</source>
+        <target state="translated">О&nbsp;проекте</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/menu/menu.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+        <note priority="1" from="description">Project</note>
+        <note priority="1" from="meaning">Footer menu</note>
+      </trans-unit>
+      <trans-unit id="1748529333630067690" datatype="html">
+        <source>About</source>
+        <target state="translated">Обо&nbsp;мне</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/menu/menu.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+        <note priority="1" from="description">About</note>
+        <note priority="1" from="meaning">Footer menu</note>
       </trans-unit>
     </body>
   </file>
