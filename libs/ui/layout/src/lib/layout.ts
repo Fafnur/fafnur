@@ -8,7 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './layout.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'bg-white text-gray-950 dark:bg-gray-950 dark:text-white',
+    class: 'flex flex-col min-h-screen bg-white text-gray-950 dark:bg-gray-950 dark:text-white',
   },
 })
 export class Layout {}

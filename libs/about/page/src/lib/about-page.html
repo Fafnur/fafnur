@@ -1,1 +1,85 @@
-<p>AboutPage works!</p>
+<fafnur-container class="py-8 flex flex-col gap-3">
+  <h3 i18n="About Page|Who Title" class="mt-3">Who am I?</h3>
+  <p i18n="About Page|Who Description First">
+    I'm a frontend developer with 9 years of experience specializing in creating beautiful user interfaces with Angular.
+    My technical stack includes JavaScript, TypeScript, Redux, Git, and a monorepo approach.
+  </p>
+  <p i18n="About Page|Who Description Second">
+    Throughout my career, I've developed enterprise applications for the fintech industry, working on projects that have
+    delivered significant value to my clients. I take pride in my ability to work collaboratively with cross-functional
+    teams to deliver high-quality software solutions.
+  </p>
+  <p i18n="About Page|Who Description Third">
+    In addition to my work, I also write articles about Angular on Medium, sharing my knowledge and insights with the
+    wider development community.
+  </p>
+  <p i18n="About Page|Who Description Fouth">
+    I believe in the importance of continuously learning and improving, and I'm always seeking out new challenges and
+    opportunities to expand my skill set.
+  </p>
+  <h3 i18n="About Page|Stack Title" class="mt-3">Stack</h3>
+  <p i18n="About Page|Stack Description">My technology stack that I use:</p>
+  <ul>
+    <li>
+      <a href="https://angular.io/cli" target="_blank" rel="nofollow">Ng</a> -
+      <span i18n="About Page|Stack Angular Description">
+        The Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold, and maintain
+        Angular applications directly from a command shell.
+      </span>
+    </li>
+    <li>
+      <a href="https://nx.dev/" target="_blank" rel="nofollow">Nx</a> -
+      <span i18n="About Page|Stack Nx Description">
+        Next generation build system with first class monorepo support and powerful integrations.
+      </span>
+    </li>
+    <li>
+      <a href="https://ngrx.io/" target="_blank" rel="nofollow">NGRX</a> -
+      <span i18n="About Page|Stack Redux Description">Reactive State for Angular.</span>
+    </li>
+    <li>
+      <a href="https://angular.io/guide/universal" target="_blank" rel="nofollow">Universal</a> -
+      <span i18n="About Page|Stack SSR Description">Server-side rendering (SSR) with Angular Universal.</span>
+    </li>
+    <li>
+      <a href="https://apollo-angular.com/" target="_blank" rel="nofollow">Apollo Angular</a> -
+      <span i18n="About Page|Stack GraphQL Description"
+        >GraphQL is the developer-friendly query language for the modern web.</span
+      >
+    </li>
+    <li>
+      <a href="https://nativescript.org/" target="_blank" rel="nofollow">Nativescript</a> -
+      <span i18n="About Page|Stack Nativescript Description">
+        A JavaScript library providing an easy to use api for interacting with iOS and Android platform APIs.
+      </span>
+    </li>
+    <li>
+      <a href="https://nestjs.com/" target="_blank" rel="nofollow">NestJS</a> -
+      <span i18n="About Page|Stack NestJS Description">
+        NestJS is a framework for building efficient, scalable Node.js web applications.
+      </span>
+    </li>
+  </ul>
+
+  <h3 i18n="About Page|Experience Title">Experience</h3>
+  @for (experience of experiences; track experience) {
+    <div>
+      <div class="experience-period">
+        <span [innerHTML]="experience.start"></span> —
+        <span [innerHTML]="experience.end"></span>
+      </div>
+      <div class="experience-time" [innerHTML]="experience.time"></div>
+    </div>
+    <div>
+      <div class="experience-company" [innerHTML]="experience.company"></div>
+      <div>{{ experience.post }}</div>
+      @if (experience.description) {
+        <ul>
+          @for (desc of experience.description; track desc) {
+            <li>{{ desc }}</li>
+          }
+        </ul>
+      }
+    </div>
+  }
+</fafnur-container>

@@ -1,1 +1,3 @@
-export * from './lib/project/page/project/page';
+import { ProjectPage } from './lib/project-page';
+
+export default ProjectPage;

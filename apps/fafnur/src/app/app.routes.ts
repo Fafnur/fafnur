@@ -16,6 +16,14 @@ export const appRoutes: Route[] = [
         path: PATHS.home,
         loadComponent: () => import('@fafnur/home/page'),
       },
+      {
+        path: PATHS.about,
+        loadComponent: () => import('@fafnur/about/page'),
+      },
+      {
+        path: PATHS.project,
+        loadComponent: () => import('@fafnur/project/page'),
+      },
     ]),
   },
   {

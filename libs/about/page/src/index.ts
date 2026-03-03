@@ -1,1 +1,3 @@
-export * from './lib/about-page';
+import { AboutPage } from './lib/about-page';
+
+export default AboutPage;
