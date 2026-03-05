@@ -24,9 +24,9 @@ export class ThemeService {
           !!this.document.defaultView?.matchMedia &&
           this.document.defaultView?.matchMedia('(prefers-color-scheme: dark)').matches)
       ) {
-        this.renderer.addClass(this.document.body, 'dark');
+        this.renderer.addClass(this.document.documentElement, 'dark');
       } else {
-        this.renderer.removeClass(this.document.body, 'dark');
+        this.renderer.removeClass(this.document.documentElement, 'dark');
       }
     });
   }
