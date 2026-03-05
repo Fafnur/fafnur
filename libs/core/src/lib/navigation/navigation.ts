@@ -48,8 +48,7 @@ export function getRoute<T extends string>(path: T, params: Record<string, strin
   for (const segment of segments) {
     if (segment.charAt(0) === ':') {
       const paramName = segment.slice(1);
-      const prop = params[paramName];
-      if (prop) {
+      if (paramName in params) {
         routeWithParams.push(params[paramName]);
       } else {
         routeWithParams.push(paramName);

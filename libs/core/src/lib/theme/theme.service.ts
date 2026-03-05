@@ -15,18 +15,16 @@ export class ThemeService {
   );
 
   constructor() {
-    effect(() => {
+    effect((onCleanup) => {
       const theme = this.$currentTheme();
+      const mediaQuery = this.document.defaultView?.matchMedia?.('(prefers-color-scheme: dark)');
 
-      if (
-        theme === 'dark' ||
-        (theme === 'system' &&
-          !!this.document.defaultView?.matchMedia &&
-          this.document.defaultView?.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        this.renderer.addClass(this.document.documentElement, 'dark');
-      } else {
-        this.renderer.removeClass(this.document.documentElement, 'dark');
+      this.applyTheme(!!mediaQuery?.matches);
+
+      if (theme === 'system' && mediaQuery) {
+        const handler = (e: MediaQueryListEvent) => this.applyTheme(e.matches);
+        mediaQuery.addEventListener('change', handler);
+        onCleanup(() => mediaQuery.removeEventListener('change', handler));
       }
     });
   }
@@ -34,5 +32,14 @@ export class ThemeService {
   select(theme: Theme): void {
     this.$currentTheme.set(theme);
     this.document.defaultView?.localStorage.setItem(USER_THEME, theme);
+  }
+
+  private applyTheme(prefersDark: boolean): void {
+    const theme = this.$currentTheme();
+    if (theme === 'dark' || (theme === 'system' && prefersDark)) {
+      this.renderer.addClass(this.document.documentElement, 'dark');
+    } else {
+      this.renderer.removeClass(this.document.documentElement, 'dark');
+    }
   }
 }

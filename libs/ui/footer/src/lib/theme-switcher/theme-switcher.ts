@@ -1,11 +1,9 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
-import { ThemeService } from '@fafnur/core';
+import { Theme, ThemeService } from '@fafnur/core';
 import { IconDisplay, IconMoon, IconSun } from '@fafnur/ui/icons';
 
 import { ThemeRadio } from './theme-radio/theme-radio';
-
-type Theme = 'system' | 'light' | 'dark';
 
 @Component({
   selector: 'fafnur-theme-switcher',
