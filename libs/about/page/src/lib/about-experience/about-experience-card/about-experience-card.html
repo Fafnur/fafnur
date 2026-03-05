@@ -1,0 +1,28 @@
+<div class="relative pl-8 pb-8 last:pb-0">
+  <!-- dot -->
+  <div class="absolute left-0 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-indigo-500 dark:bg-indigo-400 ring-4 ring-white dark:ring-gray-950"></div>
+
+  <div class="flex flex-col gap-2 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 shadow-sm hover:shadow-md transition-shadow">
+    <!-- header -->
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+      <span class="font-semibold text-gray-900 dark:text-white text-base" [innerHTML]="$experience().company"></span>
+      <span class="text-xs text-gray-400 dark:text-gray-500 whitespace-nowrap">
+        {{ $experience().start }} — {{ $experience().end }}
+        <span class="ml-1 px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400">{{ $experience().time }}</span>
+      </span>
+    </div>
+    <!-- post -->
+    <span class="text-sm font-medium text-indigo-600 dark:text-indigo-400">{{ $experience().post }}</span>
+    <!-- description -->
+    @if ($experience().description.length) {
+      <ul class="flex flex-col gap-1 mt-1">
+        @for (desc of $experience().description; track desc) {
+          <li class="flex gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <span class="mt-1.5 w-1 h-1 min-w-1 rounded-full bg-gray-400 dark:bg-gray-600"></span>
+            {{ desc }}
+          </li>
+        }
+      </ul>
+    }
+  </div>
+</div>
