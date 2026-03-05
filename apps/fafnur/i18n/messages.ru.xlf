@@ -2,6 +2,583 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="2486245417934227413" datatype="html">
+        <source>Who am I?</source>
+        <target state="translated">Кто я?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+        <note priority="1" from="description">Who Title</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="3620733998739588846" datatype="html">
+        <source> I&apos;m a frontend developer with 9 years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes JavaScript, TypeScript, Redux, Git, and a monorepo approach. </source>
+        <target state="translated"> Я фронтенд-разработчик с более чем 7-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, NX, Universal (SSR), Localization, Redux, TypeScript и JavaScript.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+        <note priority="1" from="description">Who Description First</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="8783890519714583936" datatype="html">
+        <source> Throughout my career, I&apos;ve developed enterprise applications for the fintech industry, working on projects that have delivered significant value to my clients. I take pride in my ability to work collaboratively with cross-functional teams to deliver high-quality software solutions. </source>
+        <target state="translated"> Сейчас я работаю в международной финтех компании, где отвечаю за разработку и поддержку проектов для микрофинонсирования в нескольких странах.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">8,12</context>
+        </context-group>
+        <note priority="1" from="description">Who Description Second</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="310674257961422389" datatype="html">
+        <source> In addition to my work, I also write articles about Angular on Medium, sharing my knowledge and insights with the wider development community. </source>
+        <target state="translated">Я активно делюсь знаниями и опытом в своем блоге на Хабре и Medium. Кроме того, веду группы в Telegram и ВК о фронтенде.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">13,16</context>
+        </context-group>
+        <note priority="1" from="description">Who Description Third</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="3831604764663723930" datatype="html">
+        <source> I believe in the importance of continuously learning and improving, and I&apos;m always seeking out new challenges and opportunities to expand my skill set. </source>
+        <target state="translated">Вы можете посмотреть мои работы в профиле на GitHub. Я всегда стремлюсь к совершенствованию своих навыков и изучению новых технологий. Ищу интересные и сложные задачи, которые позволят мне реализовать свой потенциал и принести пользу обществу.е.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+        <note priority="1" from="description">Who Description Fouth</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="1292537627609351833" datatype="html">
+        <source>Stack</source>
+        <target state="translated">Стек</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <note priority="1" from="description">Stack Title</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="4410774756615645020" datatype="html">
+        <source>My technology stack that I use:</source>
+        <target state="translated">Мой стек технологий, который я использую и популизирую:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+        <note priority="1" from="description">Stack Description</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="437038136532525960" datatype="html">
+        <source> The Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold, and maintain Angular applications directly from a command shell. </source>
+        <target state="translated">CLI для создания приложений и компонентов angular.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">26,31</context>
+        </context-group>
+        <note priority="1" from="description">Stack Angular Description</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="3492529539029281832" datatype="html">
+        <source> Next generation build system with first class monorepo support and powerful integrations. </source>
+        <target state="translated">монорепозиторий для разработки enterprise приложений.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">33,37</context>
+        </context-group>
+        <note priority="1" from="description">Stack Nx Description</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="3174265973857330972" datatype="html">
+        <source>Reactive State for Angular.</source>
+        <target state="translated">реализация Redux в Angular.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+        <note priority="1" from="description">Stack Redux Description</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="6708547179271438877" datatype="html">
+        <source>Server-side rendering (SSR).</source>
+        <target state="translated">Server-side rendering в Angular.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">42,45</context>
+        </context-group>
+        <note priority="1" from="description">Stack SSR Description</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="6307161889774014824" datatype="html">
+        <source>GraphQL is the developer-friendly query language for the modern web.</source>
+        <target state="translated">GraphQL клиент для Angular.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">47,51</context>
+        </context-group>
+        <note priority="1" from="description">Stack GraphQL Description</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="2769375971433070505" datatype="html">
+        <source> A JavaScript library providing an easy to use api for interacting with iOS and Android platform APIs. </source>
+        <target state="translated">разработка нативных мобильный приложений на Angular.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">53,57</context>
+        </context-group>
+        <note priority="1" from="description">Stack Nativescript Description</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="7321814795356606537" datatype="html">
+        <source> NestJS is a framework for building efficient, scalable Node.js web applications. </source>
+        <target state="translated">Node.js платформа для создания эффективных, надежных и масштабируемых серверных приложений.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">59,64</context>
+        </context-group>
+        <note priority="1" from="description">Stack NestJS Description</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="8886645571949924143" datatype="html">
+        <source>Experience</source>
+        <target state="translated">Опыт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+        <note priority="1" from="description">Experience Title</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="9088444293822786734" datatype="html">
+        <source>LLC &quot;Information Technologies&quot;, Novosibirsk</source>
+        <target state="translated">ООО &quot;Информационные Технологии&quot;, Новосибирск</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="7324071276110613084" datatype="html">
+        <source>Layout designer</source>
+        <target state="translated">Верстальщик</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="7096487005438374878" datatype="html">
+        <source>September 2011</source>
+        <target state="translated">Сентябрь 2011</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="3850634883445513877" datatype="html">
+        <source>february 2012</source>
+        <target state="translated">февраль 2012</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="1442880605164035001" datatype="html">
+        <source>6 months</source>
+        <target state="translated">6 месяцев</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="4995463987272927270" datatype="html">
+        <source>Layout of sites according to the layout.</source>
+        <target state="translated">Верстка сайтов по макету на внутренней системе компании.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="8759200022154956511" datatype="html">
+        <source>NPP Microprocessor Technologies LLC, Novosibirsk,</source>
+        <target state="translated">ООО &quot;НПП Микропроцессорные технологии&quot;, Новосибирск.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="1410883347460535988" datatype="html">
+        <source>Programmer</source>
+        <target state="translated">Программист</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="5832113267053577015" datatype="html">
+        <source>February 2012</source>
+        <target state="translated">Февраль 2012</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="272761762270772025" datatype="html">
+        <source>february 2015</source>
+        <target state="translated">февраль 2015</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="1288718859925796755" datatype="html">
+        <source>3 years</source>
+        <target state="translated">3 года</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="3572145420709323082" datatype="html">
+        <source>Creation and support of the company website.</source>
+        <target state="translated">Создание и поддержка сайта компании</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="2472384993931967989" datatype="html">
+        <source>OOO Glavweb, Novosibirsk,</source>
+        <target state="translated">ООО &quot;Главвеб&quot;, Новосибирск</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="5756241174525358310" datatype="html">
+        <source>January 2015</source>
+        <target state="translated">Январь 2015</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="8806823051957509126" datatype="html">
+        <source>january 2017</source>
+         <target state="translated">январь 2017</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="8209582849693189688" datatype="html">
+        <source>2 years 1 month</source>
+        <target state="translated">2 года 1 месяц</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="2913480692161950318" datatype="html">
+        <source>UI/UX development for several marketing agencies.</source>
+        <target state="translated">Разработка frontend составляющей (верстка, интеграция) для нескольких маркетинговых агентств.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="5136140281775356906" datatype="html">
+        <source>Back-end development in PHP (symfony, yii, cake).</source>
+        <target state="translated">Разработка backend части на PHP (symfony, yii, cake).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="6008925738539545274" datatype="html">
+        <source>Training new frontend developers</source>
+        <target state="translated">Обучение новых сотрудников frontend-у.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="5138989389544074716" datatype="html">
+        <source>LLC FTM PM, Novosibirsk,</source>
+        <target state="translated">ООО &quot;ФТМ ПМ&quot;, Новосибирск</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="35255064933533398" datatype="html">
+        <source>CEO</source>
+        <target state="translated">Разработчик</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="6563713617569409693" datatype="html">
+        <source>October 2017</source>
+        <target state="translated">Октябрь 2017</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="6984166666042268922" datatype="html">
+        <source>march 2019</source>
+        <target state="translated">март 2019</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="432512811874972343" datatype="html">
+        <source>1 year 6 months</source>
+        <target state="translated">1 год 6 месяцев</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="3937637564579659860" datatype="html">
+        <source>Game development on Unity3d and Unreal engine 4.</source>
+        <target state="translated">Разработка игр на Unity3d и Unreal engine 4.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="3373600251246790456" datatype="html">
+        <source>Creation of sites and web applications</source>
+        <target state="translated">Создание сайтов и веб-приложений.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="4563480281679354726" datatype="html">
+        <source>SGUPS NIL ITT, Novosibirsk,</source>
+        <target state="translated">СГУПС НИЛ ИТТ, Новосибирск</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="6155285859971870960" datatype="html">
+        <source>Engineer</source>
+        <target state="translated">Инженер</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="312061479284097193" datatype="html">
+        <source>August 2016</source>
+         <target state="translated">Август 2016</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="7721866004492726961" datatype="html">
+        <source>may 2019</source>
+        <target state="translated">май 2019</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="3593115263448220338" datatype="html">
+        <source>2 years 10 months</source>
+        <target state="translated">2 года 10 месяцев</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="7264730206790934431" datatype="html">
+        <source>Development of an ontology editor using OWL and integration with OWL-based inference systems.</source>
+        <target state="translated">Разработка редактора онтологий с использованием OWL и интеграцией с системами логического вывода основанными на OWL.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="6526162122153692493" datatype="html">
+        <source>Stack: Angular, Spring (inference systems), Symfony (cloud storage, OWL generation), Postgresql.</source>
+        <target state="translated">Стек: Angular, Spring (системы логического вывода), Symfony (облачное хранилище, генерация OWL), Postgresql.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="1610680242611978445" datatype="html">
+        <source>Institute of Computational Mathematics and Mathematical Geophysics SB RAS, Novosibirsk,</source>
+        <target state="translated">Институт вычислительной математики и математической геофизики СО РАН, Новосибирск.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="739872905656384817" datatype="html">
+        <source>Junior Research Fellow</source>
+        <target state="translated">Младший научный сотрудник</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="5221661098428225451" datatype="html">
+        <source>July 2018</source>
+        <target state="translated">Июль 2018</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="3986791618890291619" datatype="html">
+        <source>december 2020</source>
+        <target state="translated">Декабрь 2020</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="6990997841138240105" datatype="html">
+        <source>2 years 6 months</source>
+        <target state="translated">2 года 6 месяцев</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="7364705231609398320" datatype="html">
+        <source>Development of new numerical methods for partial differential equations for gas, magnetic gas dynamics.</source>
+        <target state="translated">Разработка новых численных методов для уравнений в частных производных для газовой, магнитной газовой динамики.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="381807893664766456" datatype="html">
+        <source>LLC &quot;RUSINTERFINANS&quot;, Novosibirsk,</source>
+        <target state="translated">ООО МКК &quot;РУСИНТЕРФИНАНС &quot;, Новосибирск.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="2601494370153657721" datatype="html">
+        <source>Frontend developer</source>
+        <target state="translated">Фронтенд-разработчик</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="6126325114713199981" datatype="html">
+        <source>September 2018</source>
+        <target state="translated">Сентябрь 2018</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="4932860787433946388" datatype="html">
+        <source>until now</source>
+        <target state="translated">по настоящее время</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="5151098055660854912" datatype="html">
+        <source>5 years</source>
+        <target state="translated">5 лет</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="4078545682106732924" datatype="html">
+        <source>Migrating old code to new stack: angular, nx, ngrx, universal, l18n.</source>
+        <target state="translated">Миграция старого кода на новый стек: angular, nx, ngrx, universal, l18n.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="4658533152944130297" datatype="html">
+        <source>Management of the front-end development team (setting tasks, rallies, code review).</source>
+        <target state="translated">Управление командой фронтенд разработки (постановка задач, митинги, code review).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="2739800253266217903" datatype="html">
+        <source>Development of new services on a new stack.</source>
+        <target state="translated">Разработка новых сервисов на новом стеке.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
       <trans-unit id="9087434948841008337" datatype="html">
         <source>Fafnur</source>
         <target state="translated">Fafnur</target>
