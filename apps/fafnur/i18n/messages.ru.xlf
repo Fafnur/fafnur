@@ -639,18 +639,18 @@
         <note priority="1" from="description">Home</note>
         <note priority="1" from="meaning">Footer menu</note>
       </trans-unit>
-      <trans-unit id="5307767755195661974" datatype="html">
-        <source>Project</source>
-        <target state="translated">О&nbsp;проекте</target>
+      <trans-unit id="4548761770830035392" datatype="html">
+        <source>About the adventure</source>
+        <target state="translated">О&nbsp;приключении</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/footer/src/lib/menu/menu.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-        <note priority="1" from="description">Project</note>
+        <note priority="1" from="description">Adventure</note>
         <note priority="1" from="meaning">Footer menu</note>
       </trans-unit>
-      <trans-unit id="1748529333630067690" datatype="html">
-        <source>About</source>
+      <trans-unit id="5420202540646821242" datatype="html">
+        <source>About me</source>
         <target state="translated">Обо&nbsp;мне</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/footer/src/lib/menu/menu.html</context>
