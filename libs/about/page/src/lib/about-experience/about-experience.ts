@@ -16,7 +16,7 @@ export class AboutExperience {
       post: $localize`:About Experience|:Frontend developer`,
       start: $localize`:About Experience|:September 2018`,
       end: $localize`:About Experience|:until now`,
-      time: $localize`:About Experience|:5 years`,
+      time: $localize`:About Experience|:7 years`,
       description: [
         $localize`:About Experience|:Migrating old code to new stack: angular, nx, ngrx, universal, l18n.`,
         $localize`:About Experience|:Management of the front-end development team (setting tasks, rallies, code review).`,
