@@ -9,6 +9,11 @@ export const appRoutes: Route[] = [
     children: withNavigationRoutes([
       {
         path: PATHS.current,
+        loadComponent: () => import('@fafnur/ui/header'),
+        outlet: 'header',
+      },
+      {
+        path: PATHS.current,
         loadComponent: () => import('@fafnur/ui/footer'),
         outlet: 'footer',
       },

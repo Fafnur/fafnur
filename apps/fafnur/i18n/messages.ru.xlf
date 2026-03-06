@@ -14,7 +14,7 @@
       </trans-unit>
       <trans-unit id="3620733998739588846" datatype="html">
         <source> I&apos;m a frontend developer with 9 years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes JavaScript, TypeScript, Redux, Git, and a monorepo approach. </source>
-        <target state="translated"> Я фронтенд-разработчик с более чем 7-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, NX, Universal (SSR), Localization, Redux, TypeScript и JavaScript.</target>
+        <target state="translated"> Я фронтенд-разработчик с более чем 9-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, NX, Flutter, Claude, NxRx, GraphQL, NestJS.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-page.html</context>
           <context context-type="linenumber">4,7</context>
@@ -509,7 +509,7 @@
       </trans-unit>
       <trans-unit id="381807893664766456" datatype="html">
         <source>LLC &quot;RUSINTERFINANS&quot;, Novosibirsk,</source>
-        <target state="translated">ООО МКК &quot;РУСИНТЕРФИНАНС &quot;, Новосибирск.</target>
+        <target state="translated">ООО МКК &quot;РУСИНТЕРФИНАНС&quot;, Новосибирск.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
           <context context-type="linenumber">84</context>
