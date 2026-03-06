@@ -1,7 +1,7 @@
 <section class="flex flex-col gap-4">
   <fafnur-about-title i18n="About Page|Experience Title">Experience</fafnur-about-title>
   <div class="relative flex flex-col ml-3 gap-4">
-    <div class="absolute top-2 bottom-2 left-0 w-px bg-gray-200 dark:bg-gray-700"></div>
+    <div class="absolute top-2 bottom-2 left-0 w-px bg-yellow-200 dark:bg-yellow-700"></div>
     @for (experience of experiences; track experience.company) {
       <fafnur-about-experience-card [experience]="experience" />
     }
