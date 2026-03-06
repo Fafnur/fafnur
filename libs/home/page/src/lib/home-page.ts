@@ -11,7 +11,7 @@ import { HomeCard } from './home-card/home-card';
   styleUrl: './home-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'flex align-middle justify-center min-h-[calc(100vh-4rem)] bg-white dark:bg-mauve-900',
+    class: 'flex align-middle justify-center min-h-[calc(100vh-4rem)]',
   },
 })
 export class HomePage {
