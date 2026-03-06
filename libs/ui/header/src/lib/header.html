@@ -1,3 +1,36 @@
-<fafnur-container>
-  <p>UiHeader works!</p>
+<fafnur-container class="flex items-center justify-between h-16">
+  <a [routerLink]="paths.home" class="text-xl font-bold text-mauve-900 dark:text-white tracking-tight">Fafnur</a>
+  <nav class="flex items-center gap-1">
+    <a
+      fafnurNavLink
+      [routerLink]="paths.home"
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="bg-mauve-200 text-mauve-900 dark:bg-mauve-800 dark:text-white"
+      i18n-aria-label
+      aria-label="Home"
+      i18n="Header nav|Home"
+    >
+      <fafnur-icon-home width="22" height="22" />
+    </a>
+    <a
+      fafnurNavLink
+      [routerLink]="paths.project"
+      routerLinkActive="bg-mauve-200 text-mauve-900 dark:bg-mauve-800 dark:text-white"
+      i18n-aria-label
+      aria-label="Adventure"
+      i18n="Header nav|Adventure"
+    >
+      <fafnur-icon-gamepad width="22" height="22" />
+    </a>
+    <a
+      fafnurNavLink
+      [routerLink]="paths.about"
+      routerLinkActive="bg-mauve-200 text-mauve-900 dark:bg-mauve-800 dark:text-white"
+      i18n-aria-label
+      aria-label="About me"
+      i18n="Header nav|About"
+    >
+      <fafnur-icon-person width="22" height="22" />
+    </a>
+  </nav>
 </fafnur-container>

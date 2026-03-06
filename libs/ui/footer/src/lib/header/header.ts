@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './header.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'block text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400',
+    class: 'block text-sm font-semibold uppercase tracking-wider text-mauve-500 dark:text-mauve-400',
   },
 })
 export class Header {}
