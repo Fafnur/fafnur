@@ -1,7 +1,7 @@
 {
-  "name": "project/page",
+  "name": "adventure/page",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/project/page/src",
+  "sourceRoot": "libs/adventure/page/src",
   "prefix": "fafnur",
   "projectType": "library",
   "tags": [],
@@ -10,7 +10,7 @@
       "executor": "@nx/vitest:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../../../coverage/libs/project/page"
+        "reportsDirectory": "../../../coverage/libs/adventure/page"
       }
     },
     "lint": {

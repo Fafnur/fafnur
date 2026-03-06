@@ -26,8 +26,8 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('@fafnur/about/page'),
       },
       {
-        path: PATHS.project,
-        loadComponent: () => import('@fafnur/project/page'),
+        path: PATHS.adventure,
+        loadComponent: () => import('@fafnur/adventure/page'),
       },
     ]),
   },

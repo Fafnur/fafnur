@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+
 import { Container } from '@fafnur/ui/container';
 
 @Component({
-  selector: 'fafnur-project-page',
+  selector: 'fafnur-adventure-page',
   imports: [Container],
-  templateUrl: './project-page.html',
-  styleUrl: './project-page.scss',
+  templateUrl: './adventure-page.html',
+  styleUrl: './adventure-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectPage {}
+export class AdventurePage {}
