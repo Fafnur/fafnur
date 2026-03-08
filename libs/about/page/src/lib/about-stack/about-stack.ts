@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { AboutTitle } from '../about-title/about-title';
+import { Title } from '@fafnur/ui/title';
+import { Unit } from '@fafnur/ui/unit';
 
 import { AboutStackLink } from './about-stack-link/about-stack-link';
-import { Unit } from '@fafnur/ui/unit';
 
 @Component({
   selector: 'fafnur-about-stack',
-  imports: [AboutTitle, AboutStackLink, Unit],
+  imports: [Title, AboutStackLink, Unit],
   templateUrl: './about-stack.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {

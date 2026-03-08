@@ -26,7 +26,11 @@
       "@fafnur/ui/icons": ["libs/ui/icons/src/index.ts"],
       "@fafnur/about/page": ["libs/about/page/src/index.ts"],
       "@fafnur/adventure/page": ["libs/adventure/page/src/index.ts"],
-      "@fafnur/ui/buttons": ["libs/ui/buttons/src/index.ts"]
+      "@fafnur/ui/buttons": ["libs/ui/buttons/src/index.ts"],
+      "@fafnur/ui/headline": ["libs/ui/headline/src/index.ts"],
+      "@fafnur/ui/link": ["libs/ui/link/src/index.ts"],
+      "@fafnur/ui/common": ["libs/ui/common/src/index.ts"],
+      "@fafnur/ui/title": ["libs/ui/title/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

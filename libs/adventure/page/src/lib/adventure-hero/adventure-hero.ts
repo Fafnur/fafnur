@@ -1,0 +1,15 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+
+import { Unit } from '@fafnur/ui/unit';
+
+@Component({
+  selector: 'fafnur-adventure-hero',
+  imports: [Unit],
+  templateUrl: './adventure-hero.html',
+  styleUrl: './adventure-hero.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    class: 'flex flex-col gap-4',
+  },
+})
+export class AdventureHero {}

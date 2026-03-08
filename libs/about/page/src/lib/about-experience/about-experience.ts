@@ -1,13 +1,18 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { AboutTitle } from '../about-title/about-title';
+import { Title } from '@fafnur/ui/title';
+import { Unit } from '@fafnur/ui/unit';
+
 import { AboutExperienceCard, Experience } from './about-experience-card/about-experience-card';
 
 @Component({
   selector: 'fafnur-about-experience',
-  imports: [AboutExperienceCard, AboutTitle],
+  imports: [AboutExperienceCard, Title, Unit],
   templateUrl: './about-experience.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    class: 'flex flex-col gap-4',
+  },
 })
 export class AboutExperience {
   readonly experiences: Experience[] = [

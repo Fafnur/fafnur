@@ -1,12 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { Title } from '@fafnur/ui/title';
 import { Unit } from '@fafnur/ui/unit';
-
-import { AboutTitle } from '../about-title/about-title';
 
 @Component({
   selector: 'fafnur-about-who',
-  imports: [Unit, AboutTitle],
+  imports: [Unit, Title],
   templateUrl: './about-who.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {

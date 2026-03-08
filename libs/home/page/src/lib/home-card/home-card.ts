@@ -3,11 +3,12 @@ import { RouterLink } from '@angular/router';
 
 import { PATHS } from '@fafnur/core';
 import { Button } from '@fafnur/ui/buttons';
+import { Headline } from '@fafnur/ui/headline';
 import { Unit } from '@fafnur/ui/unit';
 
 @Component({
   selector: 'fafnur-home-card',
-  imports: [RouterLink, Unit, Button],
+  imports: [RouterLink, Unit, Button, Headline],
   templateUrl: './home-card.html',
   styleUrl: './home-card.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

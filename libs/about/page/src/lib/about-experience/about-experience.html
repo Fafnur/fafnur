@@ -1,9 +1,7 @@
-<section class="flex flex-col gap-4">
-  <fafnur-about-title i18n="About Page|Experience Title">Experience</fafnur-about-title>
-  <div class="relative flex flex-col ml-3 gap-4">
-    <div class="absolute top-2 bottom-2 left-0 w-px bg-yellow-200 dark:bg-yellow-700"></div>
-    @for (experience of experiences; track experience.company) {
-      <fafnur-about-experience-card [experience]="experience" />
-    }
-  </div>
-</section>
+<h2 fafnurTitle i18n="About Page|Experience Title">Experience</h2>
+<fafnur-unit class="relative flex flex-col ml-3 gap-4">
+  <fafnur-unit class="block absolute top-2 bottom-2 left-0 w-px bg-yellow-200 dark:bg-yellow-700"></fafnur-unit>
+  @for (experience of experiences; track experience.company) {
+    <fafnur-about-experience-card [experience]="experience" />
+  }
+</fafnur-unit>

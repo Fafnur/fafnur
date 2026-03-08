@@ -1,0 +1,6 @@
+<h2 fafnurTitle i18n="Adventure Whom|Whom">Whom</h2>
+<fafnur-unit class="grid gap-4 sm:grid-cols-3">
+  @for (human of humans; track human.label) {
+    <fafnur-adventure-card [human]="human" />
+  }
+</fafnur-unit>

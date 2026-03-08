@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
-export type ButtonMode = 'primary' | 'secondary' | 'tertiary';
+import { Color } from '@fafnur/ui/common';
 
 @Component({
   selector: 'fafnur-buttons,[fafnurButtons]',
@@ -8,9 +8,9 @@ export type ButtonMode = 'primary' | 'secondary' | 'tertiary';
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm text-white font-semibold transition',
-    '[class.bg-yellow-600.hover:bg-yellow-700]': `$mode() === 'primary'`,
+    '[class.bg-yellow-600.hover:bg-yellow-700]': `$color() === 'primary'`,
   },
 })
 export class Button {
-  readonly $mode = input<ButtonMode>('primary', { alias: 'mode' });
+  readonly $color = input<Color>('primary', { alias: 'color' });
 }
