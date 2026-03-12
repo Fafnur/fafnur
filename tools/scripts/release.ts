@@ -43,10 +43,6 @@ function write(path: string, version: string): void {
 /**
  * Update versions
  */
-function updateVersion(version: string): void {
-  write('package.json', version);
-}
-
 function createGitRelease(version: string): void {
   const branch = `release/v${version}`;
 
@@ -104,13 +100,7 @@ function release(): void {
 
       ignoreRelease = params.includes('blog');
     }
-    ensureCleanDevelopAndMaster();
-    runChecks();
-
-    const brunch = execSync('git rev-parse --abbrev-ref HEAD', {
-      encoding: 'utf8',
-      maxBuffer: 50 * 1024 * 1024,
-    }).trim();
+    const brunch = execSync('git rev-parse --abbrev-ref HEAD', { encoding: 'utf8' }).trim();
 
     if (brunch !== 'develop') {
       output.error({
@@ -119,10 +109,10 @@ function release(): void {
       process.exit(1);
     }
 
-    const lastCommitMessage = execSync('git log --format=%B -n 1 $(git log -1 --pretty=format:"%h") | cat -', {
-      encoding: 'utf8',
-      maxBuffer: 50 * 1024 * 1024,
-    }).trim();
+    ensureCleanDevelopAndMaster();
+    runChecks();
+
+    const lastCommitMessage = execSync('git log --format=%B -n 1 HEAD', { encoding: 'utf8' }).trim();
 
     if (!ignoreRelease && /Merge branch 'release\/v.+?' into develop/gm.test(lastCommitMessage)) {
       output.error({ title: `No new changes detected. If you need to make a release, then use gitlab.\n` });
@@ -132,7 +122,7 @@ function release(): void {
     output.log({ title: 'Starting a new release.' });
 
     const version = getVersion();
-    updateVersion(version);
+    write('package.json', version);
     output.log({ title: 'New version was updated on packages.' });
 
     createGitRelease(version);
