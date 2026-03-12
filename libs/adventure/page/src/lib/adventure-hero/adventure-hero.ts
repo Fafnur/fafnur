@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { Headline } from '@fafnur/ui/headline';
 import { Unit } from '@fafnur/ui/unit';
 
 @Component({
   selector: 'fafnur-adventure-hero',
-  imports: [Unit],
+  imports: [Unit, Headline],
   templateUrl: './adventure-hero.html',
   styleUrl: './adventure-hero.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

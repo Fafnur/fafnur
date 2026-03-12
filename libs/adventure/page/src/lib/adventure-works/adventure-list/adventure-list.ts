@@ -14,8 +14,8 @@ import { AdventureItem } from './adventure-item/adventure-item';
 })
 export class AdventureList {
   readonly list = [
-    $localize`Adventure List|Choose who you are - HR, developer, regular person or just clicked.`,
-    $localize`Adventure List|You answer questions—sometimes technical, sometimes about ice cream and superpowers.`,
-    $localize`Adventure List|You get a description: startup, corporation, legacy, or "you would rewrite everything."`,
+    $localize`:Adventure List|:Choose who you are - HR, developer, regular person or just clicked.`,
+    $localize`:Adventure List|:You answer questions—sometimes technical, sometimes about ice cream and superpowers.`,
+    $localize`:Adventure List|:You get a description: startup, corporation, legacy, or "you would rewrite everything."`,
   ];
 }
