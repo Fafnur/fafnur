@@ -4,17 +4,23 @@ import { InkService } from './ink.service';
 
 const mockStory = vi.hoisted(() => ({
   canContinue: false as boolean,
-  Continue: vi.fn(function () { return null as string | null; }),
+  Continue: vi.fn(function () {
+    return null as string | null;
+  }),
   currentChoices: [] as unknown[],
   ChooseChoiceIndex: vi.fn(),
   state: {
-    toJson: vi.fn(function () { return '{"state":"saved"}'; }),
+    toJson: vi.fn(function () {
+      return '{"state":"saved"}';
+    }),
     LoadJson: vi.fn(),
   },
 }));
 
 vi.mock('inkjs', () => ({
-  Story: vi.fn(function () { return mockStory; }),
+  Story: vi.fn(function () {
+    return mockStory;
+  }),
 }));
 
 describe('InkService', () => {

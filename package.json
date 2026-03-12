@@ -9,7 +9,7 @@
     "watch": "nx build fafnur --watch --configuration development",
     "serve": "nx serve-static fafnur",
     "test": "nx run-many --all --target=test",
-    "lint": "nx workspace-lint && nx lint",
+    "lint": "nx run-many --all --target=lint --fix",
     "check": "nx affected:lint --fix --files && nx format:write --files",
     "affected": "nx affected",
     "format": "nx format:write",

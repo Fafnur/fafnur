@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { AboutExperienceDot } from './about-experience-dot';
 
 describe('AboutExperienceDot', () => {

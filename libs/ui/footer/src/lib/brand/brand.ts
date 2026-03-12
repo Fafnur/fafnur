@@ -1,7 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { ThemeSwitcher } from '../theme-switcher/theme-switcher';
 import { Unit } from '@fafnur/ui/unit';
+
+import { ThemeSwitcher } from '../theme-switcher/theme-switcher';
 
 @Component({
   selector: 'fafnur-brand',
