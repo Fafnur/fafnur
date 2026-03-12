@@ -19,4 +19,16 @@ describe('ThemeSwitcher', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render 3 theme radio buttons', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    const radios = el.querySelectorAll('fafnur-theme-radio');
+    expect(radios.length).toBe(3);
+  });
+
+  it('should expose current theme from service', () => {
+    expect(component.$currentTheme).toBeDefined();
+    expect(component.$currentTheme()).toBeDefined();
+  });
 });

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconGithub } from './icon-github';
+import { IconGamepad } from './icon-gamepad';
 
-describe('IconGithub', () => {
-  let component: IconGithub;
-  let fixture: ComponentFixture<IconGithub>;
+describe('IconGamepad', () => {
+  let component: IconGamepad;
+  let fixture: ComponentFixture<IconGamepad>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IconGithub],
+      imports: [IconGamepad],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(IconGithub);
+    fixture = TestBed.createComponent(IconGamepad);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

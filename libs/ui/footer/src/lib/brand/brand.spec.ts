@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { Brand } from './brand';
 
 describe('Brand', () => {
@@ -17,5 +18,17 @@ describe('Brand', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render brand name', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    expect(el.textContent).toContain('Fafnur');
+  });
+
+  it('should render theme switcher', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    expect(el.querySelector('fafnur-theme-switcher')).not.toBeNull();
   });
 });

@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { Contacts } from './contacts';
 
 describe('Contacts', () => {
@@ -17,5 +18,21 @@ describe('Contacts', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render telegram link', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    const links = el.querySelectorAll('a');
+    const hrefs = Array.from(links).map((l) => l.getAttribute('href'));
+    expect(hrefs.some((h) => h?.includes('t.me'))).toBe(true);
+  });
+
+  it('should render email link', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    const links = el.querySelectorAll('a');
+    const hrefs = Array.from(links).map((l) => l.getAttribute('href'));
+    expect(hrefs.some((h) => h?.startsWith('mailto:'))).toBe(true);
   });
 });

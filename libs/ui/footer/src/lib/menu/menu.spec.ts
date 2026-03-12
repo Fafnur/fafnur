@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+
 import { Menu } from './menu';
 
 describe('Menu', () => {
@@ -8,6 +10,7 @@ describe('Menu', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Menu],
+      providers: [provideRouter([])],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Menu);
@@ -17,5 +20,22 @@ describe('Menu', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have paths defined', () => {
+    expect(component.paths).toBeDefined();
+  });
+
+  it('should render navigation heading', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    expect(el.textContent).toContain('Navigation');
+  });
+
+  it('should render 3 navigation links', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    const links = el.querySelectorAll('a');
+    expect(links.length).toBe(3);
   });
 });

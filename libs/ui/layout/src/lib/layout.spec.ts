@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 
 import { Layout } from './layout';
 
@@ -9,6 +10,7 @@ describe('Layout', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Layout],
+      providers: [provideRouter([])],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Layout);
@@ -18,5 +20,11 @@ describe('Layout', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render main element', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    expect(el.querySelector('main')).not.toBeNull();
   });
 });

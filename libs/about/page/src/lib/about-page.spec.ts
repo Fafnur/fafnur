@@ -19,4 +19,22 @@ describe('AboutPage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render about-who section', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    expect(el.querySelector('fafnur-about-who')).not.toBeNull();
+  });
+
+  it('should render about-stack section', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    expect(el.querySelector('fafnur-about-stack')).not.toBeNull();
+  });
+
+  it('should render about-experience section', () => {
+    fixture.detectChanges();
+    const el: HTMLElement = fixture.nativeElement;
+    expect(el.querySelector('fafnur-about-experience')).not.toBeNull();
+  });
 });

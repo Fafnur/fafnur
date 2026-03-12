@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdventureQuest } from './adventure-quest';
+import { AboutStack } from './about-stack';
 
-describe('AdventureQuest', () => {
-  let component: AdventureQuest;
-  let fixture: ComponentFixture<AdventureQuest>;
+describe('AboutStack', () => {
+  let component: AboutStack;
+  let fixture: ComponentFixture<AboutStack>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AdventureQuest],
+      imports: [AboutStack],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(AdventureQuest);
+    fixture = TestBed.createComponent(AboutStack);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
@@ -20,17 +20,17 @@ describe('AdventureQuest', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render h2 heading', () => {
+  it('should render heading', () => {
     fixture.detectChanges();
     const el: HTMLElement = fixture.nativeElement;
     expect(el.querySelector('h2')).not.toBeNull();
-    expect(el.querySelector('h2')?.textContent).toContain('What is this?');
+    expect(el.querySelector('h2')?.textContent).toContain('Stack');
   });
 
-  it('should render description paragraphs', () => {
+  it('should render stack links', () => {
     fixture.detectChanges();
     const el: HTMLElement = fixture.nativeElement;
-    const paragraphs = el.querySelectorAll('p');
-    expect(paragraphs.length).toBe(2);
+    const links = el.querySelectorAll('fafnur-about-stack-link');
+    expect(links.length).toBeGreaterThan(0);
   });
 });

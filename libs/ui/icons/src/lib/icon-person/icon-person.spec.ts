@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconGithub } from './icon-github';
+import { IconPerson } from './icon-person';
 
-describe('IconGithub', () => {
-  let component: IconGithub;
-  let fixture: ComponentFixture<IconGithub>;
+describe('IconPerson', () => {
+  let component: IconPerson;
+  let fixture: ComponentFixture<IconPerson>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IconGithub],
+      imports: [IconPerson],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(IconGithub);
+    fixture = TestBed.createComponent(IconPerson);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
