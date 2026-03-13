@@ -1,28 +1,37 @@
-import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { afterNextRender, ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
 import { InkService } from '@fafnur/core';
-
-import { storyContent } from './story';
+import { Button } from '@fafnur/ui/buttons';
 
 @Component({
   selector: 'fafnur-novel-page',
-  imports: [],
+  imports: [Button],
   templateUrl: './novel.page.html',
   styleUrl: './novel.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    class: 'block p-2',
+  },
 })
-export class NovelPage implements OnInit {
+export class NovelPage {
   private readonly inkService = inject(InkService);
 
   readonly $lines = this.inkService.$lines;
   readonly $choices = this.inkService.$choices;
   readonly $hasChoices = this.inkService.$hasChoices;
+  readonly $loaded = this.inkService.$loaded;
 
-  ngOnInit() {
-    this.inkService.init(storyContent);
+  constructor() {
+    afterNextRender(() => {
+      this.inkService.load();
+    });
   }
 
-  choose(index: number) {
+  onChoose(index: number) {
     this.inkService.choose(index);
+  }
+
+  onReset(): void {
+    this.inkService.reset();
   }
 }

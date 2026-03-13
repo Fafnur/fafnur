@@ -1,19 +1,24 @@
-<div class="story">
-  @for (line of $lines(); track line.id) {
-    <p>{{ line.text }}</p>
-  }
-</div>
-
-@if ($hasChoices()) {
-  <ul class="list-disc">
-    @for (choice of $choices(); track choice.index) {
-      <li>
-        <button class="underline cursor-pointer" type="button" (click)="choose(choice.index)">
-          {{ choice.text }}
-        </button>
-      </li>
+@if ($loaded()) {
+  <div class="story">
+    @for (line of $lines(); track line.id) {
+      <p>{{ line.text }}</p>
     }
-  </ul>
+  </div>
+  @if ($hasChoices()) {
+    <ul class="list-disc">
+      @for (choice of $choices(); track choice.index) {
+        <li>
+          <button class="underline cursor-pointer" type="button" (click)="onChoose(choice.index)">
+            {{ choice.text }}
+          </button>
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>
+      <button fafnurButtons type="button" i18n="Novel|Reset" (click)="onReset()">Play the&nbsp;adventure again?</button>
+    </p>
+  }
 } @else {
-  <p>End of story</p>
+  <p i18n="Novel|Loading">Loading...</p>
 }
