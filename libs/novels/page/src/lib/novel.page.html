@@ -1,24 +1,34 @@
-@if ($loaded()) {
-  <div class="story">
-    @for (line of $lines(); track line.id) {
-      <p>{{ line.text }}</p>
-    }
-  </div>
-  @if ($hasChoices()) {
-    <ul class="list-disc">
-      @for (choice of $choices(); track choice.index) {
-        <li>
-          <button class="underline cursor-pointer" type="button" (click)="onChoose(choice.index)">
-            {{ choice.text }}
-          </button>
-        </li>
+<fafnur-container class="py-12">
+  @if ($loaded()) {
+    <div class="max-w-2xl flex flex-col gap-8">
+      <div class="flex flex-col gap-4">
+        @for (line of $lines(); track line.id) {
+          <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">{{ line.text }}</p>
+        }
+      </div>
+
+      @if ($hasChoices()) {
+        <ul class="flex flex-col gap-1 border-l-2 border-yellow-600 pl-6">
+          @for (choice of $choices(); track choice.index) {
+            <li>
+              <button
+                class="group flex items-baseline gap-2 w-full py-2 text-left text-gray-700 dark:text-gray-300 hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors cursor-pointer"
+                type="button"
+                (click)="onChoose(choice.index)"
+              >
+                <span class="text-yellow-600 opacity-0 group-hover:opacity-100 transition-opacity select-none shrink-0">›</span>
+                {{ choice.text }}
+              </button>
+            </li>
+          }
+        </ul>
+      } @else {
+        <div>
+          <button fafnurButtons type="button" (click)="onReset()" i18n="Novel|Reset">Play the&nbsp;adventure again?</button>
+        </div>
       }
-    </ul>
+    </div>
   } @else {
-    <p>
-      <button fafnurButtons type="button" i18n="Novel|Reset" (click)="onReset()">Play the&nbsp;adventure again?</button>
-    </p>
+    <p class="text-gray-500 dark:text-gray-400 animate-pulse" i18n="Novel|Loading">Loading…</p>
   }
-} @else {
-  <p i18n="Novel|Loading">Loading...</p>
-}
+</fafnur-container>

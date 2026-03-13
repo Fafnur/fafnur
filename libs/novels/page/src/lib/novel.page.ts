@@ -2,15 +2,15 @@ import { afterNextRender, ChangeDetectionStrategy, Component, inject } from '@an
 
 import { InkService } from '@fafnur/core';
 import { Button } from '@fafnur/ui/buttons';
+import { Container } from '@fafnur/ui/container';
 
 @Component({
   selector: 'fafnur-novel-page',
-  imports: [Button],
+  imports: [Button, Container],
   templateUrl: './novel.page.html',
-  styleUrl: './novel.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'block p-2',
+    class: 'block',
   },
 })
 export class NovelPage {
