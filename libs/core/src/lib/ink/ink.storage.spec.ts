@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { LocalStorage } from '../storages/local.storage';
-import { InkStorage } from './ink.storage';
+import { InkState, InkStorage } from './ink.storage';
 
 const mockLocalStorage = {
   getItem: vi.fn(),
@@ -40,7 +40,7 @@ describe('InkStorage', () => {
 
       const state = service.getState();
 
-      expect(state).toEqual({ story: '', lines: [], lineId: 0 });
+      expect(state).toEqual({ story: '', lines: [], lineId: 0, blockId: 0 });
     });
 
     it('should save initial state to storage when nothing is stored', () => {
@@ -48,13 +48,18 @@ describe('InkStorage', () => {
 
       service.getState();
 
-      expect(mockLocalStorage.setItem).toHaveBeenCalledWith('inkState', { story: '', lines: [], lineId: 0 });
+      expect(mockLocalStorage.setItem).toHaveBeenCalledWith('inkState', {
+        story: '',
+        lines: [],
+        lineId: 0,
+        blockId: 0,
+      });
     });
   });
 
   describe('saveState()', () => {
     it('should call setItem with inkState key and provided state', () => {
-      const state = { story: '{"state":"saved"}', lines: [], lineId: 0 };
+      const state = { story: '{"state":"saved"}', lines: [], lineId: 0, blockId: 0 };
 
       service.saveState(state);
 
@@ -62,7 +67,12 @@ describe('InkStorage', () => {
     });
 
     it('should save state with lines', () => {
-      const state = { story: '{}', lines: [{ id: 1, text: 'Line one' }], lineId: 1 };
+      const state: InkState = {
+        story: '{}',
+        lines: [{ id: 1, text: 'Line one', type: 'narrator', blockId: 0 }],
+        lineId: 1,
+        blockId: 0,
+      };
 
       service.saveState(state);
 
@@ -74,13 +84,18 @@ describe('InkStorage', () => {
     it('should save initial state to localStorage', () => {
       service.resetState();
 
-      expect(mockLocalStorage.setItem).toHaveBeenCalledWith('inkState', { story: '', lines: [], lineId: 0 });
+      expect(mockLocalStorage.setItem).toHaveBeenCalledWith('inkState', {
+        story: '',
+        lines: [],
+        lineId: 0,
+        blockId: 0,
+      });
     });
 
     it('should return initial state', () => {
       const state = service.resetState();
 
-      expect(state).toEqual({ story: '', lines: [], lineId: 0 });
+      expect(state).toEqual({ story: '', lines: [], lineId: 0, blockId: 0 });
     });
   });
 });

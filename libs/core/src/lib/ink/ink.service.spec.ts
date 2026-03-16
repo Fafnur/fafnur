@@ -38,8 +38,8 @@ describe('InkService', () => {
     mockStory.currentChoices = [];
     vi.clearAllMocks();
     mockStory.state.toJson.mockReturnValue('{"state":"saved"}');
-    mockInkStorage.getState.mockReturnValue({ story: '', lines: [], lineId: 0 });
-    mockInkStorage.resetState.mockReturnValue({ story: '', lines: [], lineId: 0 });
+    mockInkStorage.getState.mockReturnValue({ story: '', lines: [], lineId: 0, blockId: 0 });
+    mockInkStorage.resetState.mockReturnValue({ story: '', lines: [], lineId: 0, blockId: 0 });
 
     TestBed.configureTestingModule({
       providers: [{ provide: InkStorage, useValue: mockInkStorage }],
@@ -77,7 +77,7 @@ describe('InkService', () => {
 
     it('should restore lines from storage state', () => {
       const savedLines = [{ id: 1, text: 'Hello' }];
-      mockInkStorage.getState.mockReturnValue({ story: '', lines: savedLines, lineId: 1 });
+      mockInkStorage.getState.mockReturnValue({ story: '', lines: savedLines, lineId: 1, blockId: 0 });
 
       service.load();
 
@@ -85,7 +85,7 @@ describe('InkService', () => {
     });
 
     it('should call LoadJson when saved story state exists', () => {
-      mockInkStorage.getState.mockReturnValue({ story: '{"saved":"state"}', lines: [], lineId: 0 });
+      mockInkStorage.getState.mockReturnValue({ story: '{"saved":"state"}', lines: [], lineId: 0, blockId: 0 });
 
       service.load();
 
@@ -93,7 +93,7 @@ describe('InkService', () => {
     });
 
     it('should not call LoadJson when story state is empty', () => {
-      mockInkStorage.getState.mockReturnValue({ story: '', lines: [], lineId: 0 });
+      mockInkStorage.getState.mockReturnValue({ story: '', lines: [], lineId: 0, blockId: 0 });
 
       service.load();
 
@@ -114,7 +114,7 @@ describe('InkService', () => {
 
     it('should restore lineId counter so new lines continue incrementing', () => {
       const savedLines = [{ id: 1, text: 'First' }];
-      mockInkStorage.getState.mockReturnValue({ story: '', lines: savedLines, lineId: 1 });
+      mockInkStorage.getState.mockReturnValue({ story: '', lines: savedLines, lineId: 1, blockId: 0 });
       mockStory.canContinue = true;
       mockStory.Continue.mockImplementationOnce(function () {
         mockStory.canContinue = false;
@@ -201,10 +201,10 @@ describe('InkService', () => {
 
     it('should reset lineId so new lines start from 1', () => {
       const savedLines = [{ id: 1, text: 'Old' }];
-      mockInkStorage.getState.mockReturnValue({ story: '', lines: savedLines, lineId: 1 });
+      mockInkStorage.getState.mockReturnValue({ story: '', lines: savedLines, lineId: 1, blockId: 0 });
       service.load();
 
-      mockInkStorage.getState.mockReturnValue({ story: '', lines: [], lineId: 0 });
+      mockInkStorage.getState.mockReturnValue({ story: '', lines: [], lineId: 0, blockId: 0 });
       mockStory.canContinue = true;
       mockStory.Continue.mockImplementationOnce(function () {
         mockStory.canContinue = false;
@@ -293,6 +293,7 @@ describe('InkService', () => {
         story: '{"state":"saved"}',
         lines: [],
         lineId: 0,
+        blockId: 0,
       });
     });
 
