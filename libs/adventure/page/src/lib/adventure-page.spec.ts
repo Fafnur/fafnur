@@ -54,7 +54,7 @@ describe('AdventurePage', () => {
   it('should render start link', () => {
     fixture.detectChanges();
     const el: HTMLElement = fixture.nativeElement;
-    const link = el.querySelector('a[fafnurButtons]');
+    const link = el.querySelector('a[fafnurButton]');
     expect(link).not.toBeNull();
     expect(link?.textContent?.trim()).toBe('Начать приключение');
   });
