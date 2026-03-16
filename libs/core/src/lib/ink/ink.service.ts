@@ -15,10 +15,30 @@ export class InkService {
   private story = new Story(store);
   private lineId = 0;
 
+  private $blockId = signal<number>(0);
+
   // state
   readonly $lines = signal<InkLine[]>([]);
   readonly $choices = signal<Choice[]>([]);
   readonly $loaded = signal<boolean>(false);
+
+  readonly $historyBlocks = computed<InkLine[][]>(() => {
+    const lines = this.$lines().filter((line) => line.blockId < this.$blockId());
+
+    const map = new Map<number, InkLine[]>();
+
+    for (const item of lines) {
+      if (!map.has(item.blockId)) {
+        map.set(item.blockId, []);
+      }
+
+      map.get(item.blockId)?.push(item);
+    }
+
+    return Array.from(map.values());
+  });
+
+  readonly $currentLines = computed(() => this.$lines().filter((line) => line.blockId === this.$blockId()));
 
   // derived
   readonly $hasChoices = computed(() => this.$choices().length > 0);
@@ -29,6 +49,7 @@ export class InkService {
       this.story.state.LoadJson(state.story);
     }
     this.lineId = state.lineId;
+    this.$blockId.set(state.blockId);
     this.$lines.set(state.lines);
     this.$choices.set(this.story.currentChoices);
     this.flush();
@@ -36,6 +57,7 @@ export class InkService {
   }
 
   choose(index: number) {
+    this.$blockId.set(this.$blockId() + 1);
     this.story.ChooseChoiceIndex(index);
     this.flush();
   }
@@ -49,18 +71,29 @@ export class InkService {
 
   flush(): void {
     const newLines: InkLine[] = [];
+
+    let first = true;
     while (this.story.canContinue) {
       const next = this.story.Continue();
+
       if (next) {
         newLines.push({
           id: ++this.lineId,
           text: next.trim(),
+          type: first && this.$loaded() ? 'player' : 'narrator',
+          blockId: first && this.$loaded() ? this.$blockId() - 1 : this.$blockId(),
         });
       }
+      first = false;
     }
 
     this.$lines.update((lines) => [...lines, ...newLines]);
     this.$choices.set(this.story.currentChoices);
-    this.inkStorage.saveState({ story: this.story.state.toJson(), lines: this.$lines(), lineId: this.lineId });
+    this.inkStorage.saveState({
+      story: this.story.state.toJson(),
+      lines: this.$lines(),
+      lineId: this.lineId,
+      blockId: this.$blockId(),
+    });
   }
 }

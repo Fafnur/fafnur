@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Color } from '@fafnur/ui/common';
 
 @Component({
-  selector: 'fafnur-buttons,[fafnurButtons]',
+  selector: 'fafnur-button,[fafnurButton]',
   template: '<ng-content />',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {

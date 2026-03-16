@@ -16,10 +16,10 @@ import { Container } from '@fafnur/ui/container';
 export class NovelPage {
   private readonly inkService = inject(InkService);
 
-  readonly $lines = this.inkService.$lines;
   readonly $choices = this.inkService.$choices;
-  readonly $hasChoices = this.inkService.$hasChoices;
   readonly $loaded = this.inkService.$loaded;
+  readonly $historyBlocks = this.inkService.$historyBlocks;
+  readonly $currentLines = this.inkService.$currentLines;
 
   constructor() {
     afterNextRender(() => {

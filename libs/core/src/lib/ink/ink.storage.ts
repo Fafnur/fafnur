@@ -7,6 +7,7 @@ export interface InkState {
   readonly story: string;
   readonly lines: InkLine[];
   readonly lineId: number;
+  readonly blockId: number;
 }
 
 const STATE_KEY = 'inkState';
@@ -15,6 +16,7 @@ const initialState: InkState = {
   story: '',
   lines: [],
   lineId: 0,
+  blockId: 0,
 } as const;
 
 @Injectable({
