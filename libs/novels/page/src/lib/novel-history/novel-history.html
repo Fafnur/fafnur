@@ -1,0 +1,18 @@
+@if ($historyBlocks().length) {
+  <div class="flex flex-col gap-4">
+    @for (block of $historyBlocks(); track $index) {
+      <div class="flex flex-col gap-0.5">
+        <fafnur-novel-actor color="primary">Fafnur:</fafnur-novel-actor>
+        @for (line of block; track line.id; let last = $last) {
+          @if (last) {
+            <fafnur-novel-actor color="secondary">Вы:</fafnur-novel-actor>
+          }
+          <fafnur-novel-text [color]="line.type === 'player' ? 'secondary' : 'primary'">
+            {{ line.text }}
+          </fafnur-novel-text>
+        }
+      </div>
+    }
+  </div>
+  <hr class="mt-2 border-gray-200 dark:border-gray-800" />
+}

@@ -36,29 +36,7 @@ describe('NovelPage', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should delegate $choices to inkService.$choices', () => {
-    expect(component.$choices).toBe(mockInkService.$choices);
-  });
-
   it('should delegate $loaded to inkService.$loaded', () => {
     expect(component.$loaded).toBe(mockInkService.$loaded);
-  });
-
-  it('should delegate $historyBlocks to inkService.$historyBlocks', () => {
-    expect(component.$historyBlocks).toBe(mockInkService.$historyBlocks);
-  });
-
-  it('should delegate $currentLines to inkService.$currentLines', () => {
-    expect(component.$currentLines).toBe(mockInkService.$currentLines);
-  });
-
-  it('should call inkService.choose with the given index on onChoose', () => {
-    component.onChoose(2);
-    expect(mockInkService.choose).toHaveBeenCalledWith(2);
-  });
-
-  it('should call inkService.reset on onReset', () => {
-    component.onReset();
-    expect(mockInkService.reset).toHaveBeenCalled();
   });
 });
