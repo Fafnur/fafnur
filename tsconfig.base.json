@@ -32,7 +32,8 @@
       "@fafnur/ui/layout": ["libs/ui/layout/src/index.ts"],
       "@fafnur/ui/link": ["libs/ui/link/src/index.ts"],
       "@fafnur/ui/title": ["libs/ui/title/src/index.ts"],
-      "@fafnur/ui/unit": ["libs/ui/unit/src/index.ts"]
+      "@fafnur/ui/unit": ["libs/ui/unit/src/index.ts"],
+      "@fafnur/ui/popup": ["libs/ui/popup/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

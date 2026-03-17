@@ -1,0 +1,11 @@
+<div
+  class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+  (click)="onBackdropClick($event)"
+>
+  <div
+    class="relative w-full max-w-sm mx-4 rounded-2xl bg-white dark:bg-gray-900 shadow-2xl p-6"
+    (click)="$event.stopPropagation()"
+  >
+    <ng-container [ngComponentOutlet]="$content()" />
+  </div>
+</div>
