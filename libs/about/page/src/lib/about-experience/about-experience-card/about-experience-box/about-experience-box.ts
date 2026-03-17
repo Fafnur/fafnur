@@ -3,7 +3,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 @Component({
   selector: 'fafnur-about-experience-box',
   template: '<ng-content/>',
-  styleUrl: './about-experience-box.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:

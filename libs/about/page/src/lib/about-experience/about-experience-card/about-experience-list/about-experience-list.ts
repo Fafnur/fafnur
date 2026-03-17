@@ -1,12 +1,11 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
-import { Unit } from '@fafnur/ui/unit';
-
 import { AboutExperienceItem } from './about-experience-item/about-experience-item';
+import { AboutExperiencePoint } from './about-experience-point/about-experience-point';
 
 @Component({
   selector: 'fafnur-about-experience-list',
-  imports: [AboutExperienceItem, Unit],
+  imports: [AboutExperienceItem, AboutExperiencePoint],
   templateUrl: './about-experience-list.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
