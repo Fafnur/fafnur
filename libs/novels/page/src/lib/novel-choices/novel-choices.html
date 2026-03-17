@@ -16,7 +16,10 @@
     }
   </ul>
 } @else {
-  <div>
-    <button fafnurButton type="button" (click)="onReset()" i18n="Novel|Reset">Play the&nbsp;adventure again?</button>
+  <div class="flex flex-col gap-6">
+    <fafnur-novel-end />
+    <div>
+      <button fafnurButton type="button" (click)="onReset()" i18n="Novel|Reset">Play the&nbsp;adventure again?</button>
+    </div>
   </div>
 }

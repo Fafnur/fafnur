@@ -670,6 +670,56 @@
         <note priority="1" from="description">How it works</note>
         <note priority="1" from="meaning">Adventure Works</note>
       </trans-unit>
+      <trans-unit id="3728170710718500004" datatype="html">
+        <source>If you want to continue the dialogue:</source>
+        <target state="translated">Если хотите продолжить диалог:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-choices/novel-end/novel-end.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <note priority="1" from="description">End description</note>
+        <note priority="1" from="meaning">Novel</note>
+      </trans-unit>
+      <trans-unit id="3469288615906230739" datatype="html">
+        <source>Contact me</source>
+        <target state="translated">Написать мне</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-choices/novel-end/novel-end.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">End contact</note>
+        <note priority="1" from="meaning">Novel</note>
+      </trans-unit>
+      <trans-unit id="1598570710421734782" datatype="html">
+        <source>View GitHub</source>
+        <target state="translated">Посмотреть GitHub</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-choices/novel-end/novel-end.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">End github</note>
+        <note priority="1" from="meaning">Novel</note>
+      </trans-unit>
+      <trans-unit id="6294795857799095101" datatype="html">
+        <source>Read the blog</source>
+        <target state="translated">Почитать блог</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-choices/novel-end/novel-end.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">End blog</note>
+        <note priority="1" from="meaning">Novel</note>
+      </trans-unit>
+      <trans-unit id="5708022497680870000" datatype="html">
+        <source>Leave</source>
+        <target state="translated">Уйти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-choices/novel-end/novel-end.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">End leave</note>
+        <note priority="1" from="meaning">Novel</note>
+      </trans-unit>
       <trans-unit id="1824587779968049682" datatype="html">
         <source>Play the adventure again?</source>
         <target state="translated">Сыграть в приключение снова?</target>

@@ -3,9 +3,11 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { InkService } from '@fafnur/core';
 import { Button } from '@fafnur/ui/buttons';
 
+import { NovelEnd } from './novel-end/novel-end';
+
 @Component({
   selector: 'fafnur-novel-choices',
-  imports: [Button],
+  imports: [Button, NovelEnd],
   templateUrl: './novel-choices.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
