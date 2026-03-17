@@ -3,7 +3,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 @Component({
   selector: 'fafnur-social-link,a[fafnurSocialLink]',
   template: '<ng-content />',
-  styleUrl: './social-link.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:

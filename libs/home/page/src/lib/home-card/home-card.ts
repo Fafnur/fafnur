@@ -10,7 +10,6 @@ import { Unit } from '@fafnur/ui/unit';
   selector: 'fafnur-home-card',
   imports: [RouterLink, Unit, Button, Headline],
   templateUrl: './home-card.html',
-  styleUrl: './home-card.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'm-auto px-6 py-24 text-center',

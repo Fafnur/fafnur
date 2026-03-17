@@ -6,7 +6,6 @@ import { Unit } from '@fafnur/ui/unit';
   selector: 'fafnur-adventure-item',
   imports: [Unit],
   templateUrl: './adventure-item.html',
-  styleUrl: './adventure-item.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex gap-3 items-start',

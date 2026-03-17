@@ -6,7 +6,6 @@ import { AdventureItem } from './adventure-item/adventure-item';
   selector: 'fafnur-adventure-list',
   imports: [AdventureItem],
   templateUrl: './adventure-list.html',
-  styleUrl: './adventure-list.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-3 max-w-xl',

@@ -7,7 +7,6 @@ import { Button } from '@fafnur/ui/buttons';
   selector: 'fafnur-novel-choices',
   imports: [Button],
   templateUrl: './novel-choices.html',
-  styleUrl: './novel-choices.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NovelChoices {

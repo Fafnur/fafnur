@@ -9,7 +9,6 @@ import { ThemeRadio } from './theme-radio/theme-radio';
   selector: 'fafnur-theme-switcher',
   imports: [ThemeRadio, IconDisplay, IconSun, IconMoon],
   templateUrl: './theme-switcher.html',
-  styleUrl: './theme-switcher.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:

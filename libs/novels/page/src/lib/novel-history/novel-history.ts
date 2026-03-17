@@ -9,7 +9,6 @@ import { NovelText } from '../novel-text/novel-text';
   selector: 'fafnur-novel-history',
   imports: [NovelActor, NovelText],
   templateUrl: './novel-history.html',
-  styleUrl: './novel-history.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NovelHistory {

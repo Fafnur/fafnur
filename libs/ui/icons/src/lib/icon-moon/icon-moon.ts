@@ -5,7 +5,6 @@ import { Icon } from '../icon';
 @Component({
   selector: 'fafnur-icon-moon',
   templateUrl: './icon-moon.html',
-  styleUrl: './icon-moon.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IconMoon extends Icon {}

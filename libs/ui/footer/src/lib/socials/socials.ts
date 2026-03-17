@@ -8,7 +8,6 @@ import { SocialLink } from './social-link/social-link';
   selector: 'fafnur-socials',
   imports: [IconDevto, IconGithub, IconHabr, IconLinkedin, IconMedium, IconX, IconTelegram, SocialLink],
   templateUrl: './socials.html',
-  styleUrl: './socials.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex justify-center gap-4 flex-wrap',

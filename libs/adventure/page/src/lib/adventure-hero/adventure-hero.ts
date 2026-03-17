@@ -7,7 +7,6 @@ import { Unit } from '@fafnur/ui/unit';
   selector: 'fafnur-adventure-hero',
   imports: [Unit, Headline],
   templateUrl: './adventure-hero.html',
-  styleUrl: './adventure-hero.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-4',

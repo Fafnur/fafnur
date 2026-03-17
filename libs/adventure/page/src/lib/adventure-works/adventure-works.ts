@@ -8,7 +8,6 @@ import { AdventureList } from './adventure-list/adventure-list';
   selector: 'fafnur-adventure-works',
   imports: [AdventureList, Title],
   templateUrl: './adventure-works.html',
-  styleUrl: './adventure-works.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-4',

@@ -6,7 +6,6 @@ import { Header } from '../header/header';
   selector: 'fafnur-contacts',
   imports: [Header],
   templateUrl: './contacts.html',
-  styleUrl: './contacts.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Contacts {}

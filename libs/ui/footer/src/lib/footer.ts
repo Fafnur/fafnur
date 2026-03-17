@@ -13,7 +13,6 @@ import { Socials } from './socials/socials';
   selector: 'fafnur-footer',
   imports: [Container, Copyright, Unit, Contacts, Menu, Brand, Socials],
   templateUrl: './footer.html',
-  styleUrl: './footer.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:

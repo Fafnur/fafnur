@@ -10,7 +10,6 @@ import { AboutWho } from './about-who/about-who';
   selector: 'fafnur-about-page',
   imports: [Container, AboutWho, AboutStack, AboutExperience],
   templateUrl: './about-page.html',
-  styleUrl: './about-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutPage {}

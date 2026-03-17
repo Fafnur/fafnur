@@ -9,7 +9,6 @@ import { AdventureCard } from './adventure-card/adventure-card';
   selector: 'fafnur-adventure-whom',
   imports: [Unit, AdventureCard, Title],
   templateUrl: './adventure-whom.html',
-  styleUrl: './adventure-whom.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-6',

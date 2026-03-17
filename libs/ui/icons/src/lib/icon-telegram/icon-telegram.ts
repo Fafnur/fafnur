@@ -6,7 +6,6 @@ import { Icon } from '../icon';
   selector: 'fafnur-icon-telegram',
   imports: [],
   templateUrl: './icon-telegram.html',
-  styleUrl: './icon-telegram.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IconTelegram extends Icon {}

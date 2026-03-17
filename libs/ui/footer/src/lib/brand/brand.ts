@@ -8,7 +8,6 @@ import { ThemeSwitcher } from '../theme-switcher/theme-switcher';
   selector: 'fafnur-brand',
   imports: [ThemeSwitcher, Unit],
   templateUrl: './brand.html',
-  styleUrl: './brand.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Brand {}

@@ -6,7 +6,6 @@ import { Icon } from '../icon';
   selector: 'fafnur-icon-linkedin',
   imports: [],
   templateUrl: './icon-linkedin.html',
-  styleUrl: './icon-linkedin.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IconLinkedin extends Icon {}

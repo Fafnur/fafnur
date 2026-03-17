@@ -11,7 +11,6 @@ import { MenuLink } from './menu-link/menu-link';
   selector: 'fafnur-menu',
   imports: [Header, MenuLink, RouterLink, Unit],
   templateUrl: './menu.html',
-  styleUrl: './menu.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Menu {

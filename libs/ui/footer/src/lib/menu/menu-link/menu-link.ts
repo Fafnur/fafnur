@@ -4,7 +4,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'fafnur-menu-link,[fafnurMenuLink]',
   imports: [],
   template: '<ng-content />',
-  styleUrl: './menu-link.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:

@@ -5,7 +5,6 @@ import { RouterOutlet } from '@angular/router';
   selector: 'fafnur-layout',
   imports: [RouterOutlet],
   templateUrl: './layout.html',
-  styleUrl: './layout.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col min-h-screen',

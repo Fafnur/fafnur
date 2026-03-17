@@ -3,7 +3,6 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 @Component({
   selector: 'fafnur-theme-radio',
   template: '<ng-content />',
-  styleUrl: './theme-radio.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:

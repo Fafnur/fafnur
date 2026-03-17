@@ -15,7 +15,6 @@ import { AdventureWorks } from './adventure-works/adventure-works';
   selector: 'fafnur-adventure-page',
   imports: [Container, RouterLink, Unit, Button, AdventureHero, AdventureQuest, AdventureWhom, AdventureWorks],
   templateUrl: './adventure-page.html',
-  styleUrl: './adventure-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AdventurePage {

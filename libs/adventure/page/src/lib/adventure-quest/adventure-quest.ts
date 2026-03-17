@@ -8,7 +8,6 @@ import { Unit } from '@fafnur/ui/unit';
   selector: 'fafnur-adventure-quest',
   imports: [Unit, Link, Title],
   templateUrl: './adventure-quest.html',
-  styleUrl: './adventure-quest.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-4',

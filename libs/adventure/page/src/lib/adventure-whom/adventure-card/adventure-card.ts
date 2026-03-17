@@ -10,7 +10,6 @@ export interface AdventureHuman {
   selector: 'fafnur-adventure-card',
   imports: [],
   templateUrl: './adventure-card.html',
-  styleUrl: './adventure-card.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'rounded-xl border border-gray-200 dark:border-gray-800 p-5 flex flex-col gap-2',

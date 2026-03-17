@@ -11,7 +11,6 @@ import { NavLink } from './nav-link/nav-link';
   selector: 'fafnur-header',
   imports: [Container, RouterLink, RouterLinkActive, NavLink, IconHome, IconGamepad, IconPerson],
   templateUrl: './header.html',
-  styleUrl: './header.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:

@@ -8,7 +8,6 @@ import { HomeCard } from './home-card/home-card';
   selector: 'fafnur-home-page',
   imports: [HomeCard],
   templateUrl: './home-page.html',
-  styleUrl: './home-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex align-middle justify-center min-h-[calc(100vh-4rem)]',
