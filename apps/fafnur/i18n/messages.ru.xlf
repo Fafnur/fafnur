@@ -670,6 +670,26 @@
         <note priority="1" from="description">How it works</note>
         <note priority="1" from="meaning">Adventure Works</note>
       </trans-unit>
+      <trans-unit id="1824587779968049682" datatype="html">
+        <source>Play the adventure again?</source>
+        <target state="translated">Сыграть в приключение снова?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-choices/novel-choices.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+        <note priority="1" from="description">Reset</note>
+        <note priority="1" from="meaning">Novel</note>
+      </trans-unit>
+      <trans-unit id="5901331860792486736" datatype="html">
+        <source>Loading…</source>
+        <target state="translated">Загрузка…</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel.page.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+        <note priority="1" from="description">Loading</note>
+        <note priority="1" from="meaning">Novel</note>
+      </trans-unit>
       <trans-unit id="9087434948841008337" datatype="html">
         <source>Fafnur</source>
         <target state="translated">Fafnur</target>
