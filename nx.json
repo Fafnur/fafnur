@@ -78,17 +78,17 @@
     "@nx/angular:library": {
       "linter": "eslint",
       "unitTestRunner": "vitest-analog",
-      "style": "scss",
+      "style": "none",
       "prefix": "fafnur",
       "changeDetection": "OnPush"
     },
     "@nx/angular:component": {
-      "style": "scss",
+      "style": "none",
       "changeDetection": "OnPush",
       "prefix": "fafnur"
     },
     "@schematics/angular:component": {
-      "style": "scss",
+      "style": "none",
       "changeDetection": "OnPush",
       "prefix": "fafnur"
     },
