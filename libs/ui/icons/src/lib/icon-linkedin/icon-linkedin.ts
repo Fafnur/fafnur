@@ -4,7 +4,6 @@ import { Icon } from '../icon';
 
 @Component({
   selector: 'fafnur-icon-linkedin',
-  imports: [],
   templateUrl: './icon-linkedin.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

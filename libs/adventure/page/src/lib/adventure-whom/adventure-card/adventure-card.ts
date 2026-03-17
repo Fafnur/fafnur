@@ -8,7 +8,6 @@ export interface AdventureHuman {
 
 @Component({
   selector: 'fafnur-adventure-card',
-  imports: [],
   templateUrl: './adventure-card.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
