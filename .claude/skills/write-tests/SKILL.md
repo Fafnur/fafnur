@@ -1,4 +1,4 @@
-АА ---
+---
 name: write-tests
 description: Write or fill out Angular component tests in the fafnur NX monorepo. Activate when user asks to "write tests", "add tests", "fill out tests", "допиши тесты", "напиши тесты", "добавь тесты", or mentions that tests are auto-generated and need to be completed.
 ---
