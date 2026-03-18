@@ -1,44 +1,77 @@
-import { ApplicationRef, createComponent, inject, Injectable, signal, Type } from '@angular/core';
+import {
+  ApplicationRef,
+  ComponentRef,
+  createComponent,
+  DOCUMENT,
+  EnvironmentInjector,
+  inject,
+  Injectable,
+  Injector,
+  Type,
+} from '@angular/core';
+import { Observable, Subject } from 'rxjs';
+import { v4 } from 'uuid';
 
+import { POPUP_DATA, POPUP_REF, PopupOptions } from './popup.type';
 import { Popup } from './popup/popup';
-import { PopupRef } from './popup-ref';
 
-@Injectable({ providedIn: 'root' })
+@Injectable({
+  providedIn: 'root',
+})
 export class PopupService {
-  private readonly appRef = inject(ApplicationRef);
+  private readonly injector = inject(Injector);
+  private readonly document = inject(DOCUMENT);
+  private readonly applicationRef = inject(ApplicationRef);
+  private readonly environmentInjector = inject(EnvironmentInjector);
 
-  readonly $isOpen = signal(false);
+  private readonly map = new Map<string, ComponentRef<Popup>>();
 
-  private currentRef: PopupRef | null = null;
+  has(): boolean {
+    return this.map.size > 0;
+  }
 
-  open(component: Type<unknown>): void {
-    if (this.$isOpen()) return;
-
+  open<T>(component: Type<unknown>, options?: PopupOptions): Observable<T | undefined> {
     const componentRef = createComponent(Popup, {
-      environmentInjector: this.appRef.injector,
+      environmentInjector: this.environmentInjector,
+    });
+    const widgetId = v4();
+
+    const childInjector = Injector.create({
+      providers: [
+        {
+          provide: POPUP_REF,
+          useValue: componentRef.instance,
+        },
+        {
+          provide: POPUP_DATA,
+          useValue: options?.data,
+        },
+      ],
+      parent: this.injector,
     });
 
-    const popupRef = new PopupRef(componentRef, this.appRef);
+    componentRef.setInput('child', component);
+    componentRef.setInput('injector', childInjector);
 
-    componentRef.setInput('content', component);
-    componentRef.setInput('popupRef', popupRef);
+    this.applicationRef.attachView(componentRef.hostView);
+    this.document.body.appendChild(componentRef.location.nativeElement);
 
-    this.appRef.attachView(componentRef.hostView);
-    document.body.appendChild(componentRef.location.nativeElement);
+    this.map.set(widgetId, componentRef);
+    const subject = new Subject<T | undefined>();
 
-    this.currentRef = popupRef;
-    this.$isOpen.set(true);
+    componentRef.instance.closed.subscribe((value) => {
+      this.applicationRef.detachView(componentRef.hostView);
+      componentRef.location.nativeElement.remove();
+      componentRef.destroy();
+      subject.next(value as T | undefined);
+      subject.complete();
+      this.map.delete(widgetId);
+    });
 
-    // Wrap close to update state
-    const originalClose = popupRef.close.bind(popupRef);
-    popupRef.close = () => {
-      originalClose();
-      this.currentRef = null;
-      this.$isOpen.set(false);
-    };
+    return subject.asObservable();
   }
 
   close(): void {
-    this.currentRef?.close();
+    this.map.forEach((componentRef) => componentRef.instance.onClose());
   }
 }

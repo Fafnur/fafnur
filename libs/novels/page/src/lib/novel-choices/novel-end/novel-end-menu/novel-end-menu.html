@@ -1,4 +1,19 @@
-<a href="mailto:fafnur@yandex.ru" fafnurNovelLink i18n="Novel|End contact">Contact me</a>
-<a href="https://github.com/fafnur" target="_blank" rel="noopener noreferrer" fafnurNovelLink i18n="Novel|End github">View GitHub</a>
-<a href="https://telegram.me/f_a_f_n_u_r" target="_blank" rel="noopener noreferrer" fafnurNovelLink i18n="Novel|End blog">Read the blog</a>
-<a [routerLink]="paths.home" fafnurNovelLink i18n="Novel|End leave">Leave</a>
+<a href="mailto:fafnur@yandex.ru" fafnurNovelLink i18n="Novel|End contact" (click)="onClick()">Contact me</a>
+<a
+  href="https://github.com/fafnur"
+  target="_blank"
+  rel="noopener noreferrer"
+  fafnurNovelLink
+  i18n="Novel|End github"
+  (click)="onClick()"
+  >View GitHub</a
+>
+<a
+  href="https://telegram.me/f_a_f_n_u_r"
+  target="_blank"
+  rel="noopener noreferrer"
+  fafnurNovelLink
+  i18n="Novel|End blog"
+  >Read the blog</a
+>
+<a [routerLink]="paths.home" fafnurNovelLink i18n="Novel|End leave" (click)="onClick()">Leave</a>

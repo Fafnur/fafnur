@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { PATHS } from '@fafnur/core';
+import { POPUP_REF } from '@fafnur/ui/popup';
 
 import { NovelLink } from './novel-link/novel-link';
 
@@ -13,5 +14,11 @@ import { NovelLink } from './novel-link/novel-link';
   host: { class: 'flex flex-col gap-1 border-l-2 border-yellow-600 pl-6' },
 })
 export class NovelEndMenu {
+  private readonly popupRef = inject(POPUP_REF, { optional: true });
+
   readonly paths = PATHS;
+
+  onClick(): void {
+    this.popupRef?.onClose();
+  }
 }
