@@ -7,13 +7,15 @@ import {
   inject,
   Injectable,
   Injector,
+  reflectComponentType,
   Type,
 } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
-import { v4 } from 'uuid';
+import { EMPTY, Observable, Subject } from 'rxjs';
 
 import { POPUP_DATA, POPUP_REF, PopupOptions } from './popup.type';
 import { Popup } from './popup/popup';
+
+let uniqueId = 0;
 
 @Injectable({
   providedIn: 'root',
@@ -31,10 +33,16 @@ export class PopupService {
   }
 
   open<T>(component: Type<unknown>, options?: PopupOptions): Observable<T | undefined> {
+    const mirror = reflectComponentType(Popup);
+    const widgetId = mirror?.selector ?? String(++uniqueId);
+
+    if (this.map.has(widgetId)) {
+      return EMPTY;
+    }
+
     const componentRef = createComponent(Popup, {
       environmentInjector: this.environmentInjector,
     });
-    const widgetId = v4();
 
     const childInjector = Injector.create({
       providers: [
