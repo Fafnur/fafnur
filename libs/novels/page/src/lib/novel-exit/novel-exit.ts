@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, HostListener, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
 import { PopupService } from '@fafnur/ui/popup';
 
@@ -9,17 +9,19 @@ import { NovelEndMenu } from '../novel-choices/novel-end/novel-end-menu/novel-en
   imports: [],
   templateUrl: './novel-exit.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { class: 'fixed bottom-6 right-6 z-50' },
+  host: {
+    class: 'fixed bottom-6 right-6 z-50',
+    '(document:keydown.escape)': 'onEsc()',
+  },
 })
 export class NovelExit {
   private readonly popupService = inject(PopupService);
 
-  onExitClick(): void {
+  onExit(): void {
     this.popupService.open(NovelEndMenu);
   }
 
-  @HostListener('document:keydown.escape')
-  onEscKey(): void {
+  onEsc(): void {
     this.popupService.open(NovelEndMenu);
   }
 }

@@ -10,6 +10,7 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 
+import { PopupOptions } from '../popup.type';
 import { PopupPanel } from './popup-panel/popup-panel';
 
 @Component({
@@ -25,6 +26,7 @@ import { PopupPanel } from './popup-panel/popup-panel';
 export class Popup {
   readonly $child = input.required<Type<unknown>>({ alias: 'child' });
   readonly $injector = input.required<Injector>({ alias: 'injector' });
+  readonly $options = input.required<PopupOptions>({ alias: 'options' });
 
   private readonly $viewContainerRef = viewChild.required('outlet', { read: ViewContainerRef });
 
@@ -38,7 +40,7 @@ export class Popup {
   }
 
   onBackdrop(event: Event): void {
-    if (event.target === event.currentTarget) {
+    if (event.target === event.currentTarget && !this.$options().disableClose) {
       this.closed.emit(undefined);
     }
   }

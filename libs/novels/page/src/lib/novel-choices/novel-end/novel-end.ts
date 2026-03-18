@@ -7,6 +7,8 @@ import { NovelEndMenu } from './novel-end-menu/novel-end-menu';
   imports: [NovelEndMenu],
   templateUrl: './novel-end.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { class: 'flex flex-col gap-3' },
+  host: {
+    class: 'flex flex-col gap-3',
+  },
 })
 export class NovelEnd {}

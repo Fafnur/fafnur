@@ -2,6 +2,7 @@ import { InjectionToken } from '@angular/core';
 
 export interface PopupOptions {
   readonly data?: unknown;
+  readonly disableClose?: boolean;
   readonly panelClass?: string;
 }
 

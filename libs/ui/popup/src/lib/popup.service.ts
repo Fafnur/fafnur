@@ -52,6 +52,7 @@ export class PopupService {
 
     componentRef.setInput('child', component);
     componentRef.setInput('injector', childInjector);
+    componentRef.setInput('options', options ?? {});
 
     this.applicationRef.attachView(componentRef.hostView);
     this.document.body.appendChild(componentRef.location.nativeElement);
