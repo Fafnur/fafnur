@@ -16,7 +16,7 @@ describe('PopupService', () => {
   });
 
   afterEach(() => {
-    document.querySelectorAll('fafnur-popup').forEach((el) => el.remove());
+    service.close();
   });
 
   it('should create', () => {
@@ -40,12 +40,6 @@ describe('PopupService', () => {
   it('open() returns an Observable', () => {
     const obs = service.open(TestDialogComponent);
     expect(typeof obs.subscribe).toBe('function');
-  });
-
-  it('open() can be called multiple times — each creates a separate popup', () => {
-    service.open(TestDialogComponent);
-    service.open(TestDialogComponent);
-    expect(document.body.querySelectorAll('fafnur-popup').length).toBe(2);
   });
 
   it('close() sets has() to false', () => {

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { signal } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { vi } from 'vitest';
@@ -41,14 +42,14 @@ describe('NovelExit', () => {
     expect(el.querySelector('button')).toBeTruthy();
   });
 
-  it('should call toggle on button click', () => {
+  it('should call open on button click', () => {
     const el: HTMLElement = fixture.nativeElement;
     el.querySelector('button')!.click();
-    expect(mockPopupService.toggle).toHaveBeenCalledTimes(1);
+    expect(mockPopupService.open).toHaveBeenCalledTimes(1);
   });
 
-  it('should call toggle on ESC keydown', () => {
+  it('should call open on ESC keydown', () => {
     document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
-    expect(mockPopupService.toggle).toHaveBeenCalledTimes(1);
+    expect(mockPopupService.open).toHaveBeenCalledTimes(1);
   });
 });
