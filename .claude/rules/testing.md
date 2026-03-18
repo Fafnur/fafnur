@@ -71,6 +71,87 @@ vi.mock('some-module', () => ({
 }));
 ```
 
+## RxJS Marble Testing
+
+Use `TestScheduler` to test async RxJS code synchronously with virtual time.
+
+**Limitation:** only works with RxJS schedulers (e.g. `delay`, `interval`, `timer`). Promise-based code requires traditional async testing.
+
+```typescript
+import { TestScheduler } from 'rxjs/testing';
+
+describe('MyService', () => {
+  let scheduler: TestScheduler;
+
+  beforeEach(() => {
+    scheduler = new TestScheduler((actual, expected) => {
+      expect(actual).toEqual(expected);
+    });
+  });
+
+  it('delays emission by 1 second', () => {
+    scheduler.run(({ cold, expectObservable }) => {
+      const source = cold('a|');
+      const result = source.pipe(delay(1000));
+      expectObservable(result).toBe('1s a|');
+    });
+  });
+});
+```
+
+### Marble syntax
+
+| Symbol | Meaning |
+|--------|---------|
+| `-` | 1 virtual frame (1ms inside `run()`) |
+| `\|` | Complete |
+| `#` | Error |
+| `a-z` | Emitted value (map via values object) |
+| `()` | Synchronous group |
+| `^` | Subscription point (hot only) |
+| `1s`, `100ms` | Time progression |
+
+```typescript
+// Custom values
+cold('--a--b|', { a: { id: 1 }, b: { id: 2 } })
+
+// Error
+cold('--a--#', { a: 'x' }, new Error('fail'))
+
+// Hot observable with subscription point
+hot('--^--a--b--|')
+```
+
+### Testing side effects (flush)
+
+```typescript
+scheduler.run(({ cold, expectObservable, flush }) => {
+  let count = 0;
+  const source = cold('--a--b|').pipe(tap(() => count++));
+  expectObservable(source).toBe('--a--b|');
+  flush(); // execute virtual time before asserting side effects
+  expect(count).toBe(2);
+});
+```
+
+### Testing subscriptions
+
+```typescript
+scheduler.run(({ hot, expectObservable, expectSubscriptions }) => {
+  const source = hot('--a--b--c--|');
+  const sub =        '--^-----!';
+  const expected =   '--a--b--';
+
+  expectObservable(source, sub).toBe(expected);
+  expectSubscriptions(source.subscriptions).toBe(sub);
+});
+```
+
+### When NOT to use marble testing
+
+- Observable wraps a `Promise` (use `async/await` + `firstValueFrom` instead)
+- `delay(0)` — schedules a macrotask, not virtualizable
+
 ## Run tests
 
 ```bash

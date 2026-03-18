@@ -1,4 +1,4 @@
----
+АА ---
 name: write-tests
 description: Write or fill out Angular component tests in the fafnur NX monorepo. Activate when user asks to "write tests", "add tests", "fill out tests", "допиши тесты", "напиши тесты", "добавь тесты", or mentions that tests are auto-generated and need to be completed.
 ---
@@ -173,6 +173,87 @@ Without it tests will throw at runtime.
 | Has `@if` / conditional blocks | test both truthy and falsy branch |
 
 Always keep tests focused: test behavior visible in the DOM, not implementation details.
+
+## RxJS Marble Testing
+
+Use `TestScheduler` to test async RxJS code synchronously with virtual time.
+
+**Limitation:** only works with RxJS schedulers (`delay`, `interval`, `timer`, etc.). Promise-based code requires `async/await` + `firstValueFrom` instead.
+
+```typescript
+import { TestScheduler } from 'rxjs/testing';
+
+describe('MyService', () => {
+  let scheduler: TestScheduler;
+
+  beforeEach(() => {
+    scheduler = new TestScheduler((actual, expected) => {
+      expect(actual).toEqual(expected);
+    });
+  });
+
+  it('delays emission by 1 second', () => {
+    scheduler.run(({ cold, expectObservable }) => {
+      const source = cold('a|');
+      const result = source.pipe(delay(1000));
+      expectObservable(result).toBe('1s a|');
+    });
+  });
+});
+```
+
+### Marble syntax
+
+| Symbol | Meaning |
+|--------|---------|
+| `-` | 1 virtual frame (1ms inside `run()`) |
+| `\|` | Complete |
+| `#` | Error |
+| `a-z` | Emitted value (map via values object) |
+| `()` | Synchronous group |
+| `^` | Subscription point (hot only) |
+| `1s`, `100ms` | Time progression |
+
+```typescript
+// Custom values
+cold('--a--b|', { a: { id: 1 }, b: { id: 2 } })
+
+// Error
+cold('--a--#', { a: 'x' }, new Error('fail'))
+
+// Hot observable with subscription point
+hot('--^--a--b--|')
+```
+
+### Side effects — use flush()
+
+```typescript
+scheduler.run(({ cold, expectObservable, flush }) => {
+  let count = 0;
+  const source = cold('--a--b|').pipe(tap(() => count++));
+  expectObservable(source).toBe('--a--b|');
+  flush();
+  expect(count).toBe(2);
+});
+```
+
+### Testing subscriptions
+
+```typescript
+scheduler.run(({ hot, expectObservable, expectSubscriptions }) => {
+  const source = hot('--a--b--c--|');
+  const sub =        '--^-----!';
+  const expected =   '--a--b--';
+
+  expectObservable(source, sub).toBe(expected);
+  expectSubscriptions(source.subscriptions).toBe(sub);
+});
+```
+
+### When NOT to use marble testing
+
+- Observable wraps a `Promise` → use `async/await` + `firstValueFrom`
+- `delay(0)` — schedules macrotask, not virtualizable
 
 ## Running tests
 
