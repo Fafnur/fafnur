@@ -15,7 +15,7 @@ import { NovelHistory } from './novel-history/novel-history';
   templateUrl: './novel.page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'block',
+    class: 'flex flex-col h-vh',
   },
 })
 export class NovelPage {
