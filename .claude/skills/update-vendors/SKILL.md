@@ -41,13 +41,19 @@ If `migrations.json` is present in git status output — run the migrations:
 yarn nx migrate --run-migrations=migrations.json
 ```
 
-## Step 4: Run tests
+## Step 4: Run tests and build
 
 ```bash
 yarn test
 ```
 
-If any tests fail — **stop and report the failures**. Do not proceed to commit.
+If any tests fail — **stop and report the failures**. Do not proceed.
+
+```bash
+yarn build
+```
+
+If the build fails — **stop and report the errors**. Do not proceed to commit.
 
 ## Step 5: Commit NX migration result
 
@@ -72,13 +78,19 @@ Use `yarn add` / `yarn add -D` to update packages in batches by category. After 
 yarn install
 ```
 
-## Step 7: Run tests again
+## Step 7: Run tests and build again
 
 ```bash
 yarn test
 ```
 
-If any tests fail — **stop and report the failures**. Do not proceed to commit.
+If any tests fail — **stop and report the failures**. Do not proceed.
+
+```bash
+yarn build
+```
+
+If the build fails — **stop and report the errors**. Do not proceed to commit.
 
 ## Step 8: Commit dependency updates
 
