@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { NovelArrow } from './novel-arrow';
 
 describe('NovelArrow', () => {

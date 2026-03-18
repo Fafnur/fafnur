@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { NovelText } from './novel-text';
 
 describe('NovelText', () => {
