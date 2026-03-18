@@ -46,8 +46,7 @@ Thumbs.db
 __screenshots__/
 
 # Claude Code
-.claude/*
-!.claude/skills/
+.claude/settings.local.json
 
 # Custom
 .yarn

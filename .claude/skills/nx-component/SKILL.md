@@ -51,9 +51,7 @@ import { ChangeDetectionStrategy, Component, inject, input, computed, signal } f
 @Component({
   selector: 'fafnur-component-name',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [],
   templateUrl: './component-name.html',
-  styleUrl: './component-name.scss',
   host: { class: '' },
 })
 export class ComponentName {
