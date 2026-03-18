@@ -730,6 +730,16 @@
         <note priority="1" from="description">Reset</note>
         <note priority="1" from="meaning">Novel</note>
       </trans-unit>
+      <trans-unit id="5367498027785915338" datatype="html">
+        <source>Menu</source>
+        <target state="translated">Меню</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-exit/novel-exit.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <note priority="1" from="description">Exit button</note>
+        <note priority="1" from="meaning">Novel</note>
+      </trans-unit>
       <trans-unit id="5901331860792486736" datatype="html">
         <source>Loading…</source>
         <target state="translated">Загрузка…</target>
@@ -849,16 +859,6 @@
         </context-group>
         <note priority="1" from="description">About me</note>
         <note priority="1" from="meaning">Header nav</note>
-      </trans-unit>
-      <trans-unit id="novelExitAriaLabel" datatype="html">
-        <source>Menu</source>
-        <target state="translated">Меню</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/novels/page/src/lib/novel-exit/novel-exit.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <note priority="1" from="description">Exit button</note>
-        <note priority="1" from="meaning">Novel</note>
       </trans-unit>
     </body>
   </file>
