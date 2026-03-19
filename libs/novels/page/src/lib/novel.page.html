@@ -1,15 +1,10 @@
 <fafnur-novel-exit />
 <fafnur-container type="flex" class="flex-col flex-1">
   @if ($loaded()) {
-    <fafnur-unit class="flex flex-col flex-1 min-h-[100vh]">
-      <div class="h-[50vh] overflow-y-auto">
-        <fafnur-novel-history />
-      </div>
-      <hr class="py-2 border-gray-200 dark:border-gray-800" />
-      <div class="h-[50vh] overflow-y-auto">
-        <fafnur-novel-current />
-        <fafnur-novel-choices />
-      </div>
+    <fafnur-unit class="max-w-2xl flex flex-col gap-8">
+      <fafnur-novel-history />
+      <fafnur-novel-current />
+      <fafnur-novel-choices />
     </fafnur-unit>
   } @else {
     <fafnur-unit class="flex text-gray-500 dark:text-gray-400 animate-pulse" i18n="Novel|Loading">Loading…</fafnur-unit>
