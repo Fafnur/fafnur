@@ -12,7 +12,7 @@ import { NovelWindow } from './novel-window/novel-window';
   templateUrl: './novel.page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'relative flex flex-col h-screen overflow-hidden',
+    class: 'flex flex-col h-screen overflow-hidden',
   },
 })
 export class NovelPage {
