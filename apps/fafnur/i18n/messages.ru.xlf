@@ -750,6 +750,56 @@
         <note priority="1" from="description">Loading</note>
         <note priority="1" from="meaning">Novel</note>
       </trans-unit>
+      <trans-unit id="2055903971449922321" datatype="html">
+        <source>Fafnur:</source>
+        <target state="translated">Fafnur:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-window/novel-dialog/novel-current/novel-current.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <note priority="1" from="description">Narrator label</note>
+        <note priority="1" from="meaning">NovelCurrent</note>
+      </trans-unit>
+      <trans-unit id="8942997809152805498" datatype="html">
+        <source>Fafnur:</source>
+        <target state="translated">Fafnur:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-window/novel-dialog/novel-history/novel-history.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <note priority="1" from="description">Narrator label</note>
+        <note priority="1" from="meaning">NovelHistory</note>
+      </trans-unit>
+      <trans-unit id="8118636676880403281" datatype="html">
+        <source>You:</source>
+        <target state="translated">Вы:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-window/novel-dialog/novel-history/novel-history.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+        <note priority="1" from="description">Player label</note>
+        <note priority="1" from="meaning">NovelHistory</note>
+      </trans-unit>
+      <trans-unit id="7043948937018960755" datatype="html">
+        <source>Dialog</source>
+        <target state="translated">Диалог</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-window/novel-dialog/novel-tabs/novel-tabs.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+        <note priority="1" from="description">Dialog</note>
+        <note priority="1" from="meaning">NovelTab</note>
+      </trans-unit>
+      <trans-unit id="7899685462609148543" datatype="html">
+        <source>History</source>
+        <target state="translated">История</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-window/novel-dialog/novel-tabs/novel-tabs.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+        <note priority="1" from="description">History</note>
+        <note priority="1" from="meaning">NovelTab</note>
+      </trans-unit>
       <trans-unit id="9087434948841008337" datatype="html">
         <source>Fafnur</source>
         <target state="translated">Fafnur</target>

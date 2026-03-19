@@ -7,7 +7,4 @@ import { Icon } from '../icon';
   templateUrl: './icon-image.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class IconImage extends Icon {
-  protected override defaultWidth = 148;
-  protected override defaultHeight = 148;
-}
+export class IconImage extends Icon {}

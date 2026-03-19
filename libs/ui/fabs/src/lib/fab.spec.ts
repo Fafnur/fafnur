@@ -1,8 +1,15 @@
+import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Fab } from './fab';
 
-describe('UiFabs', () => {
+@Component({
+  template: `<button fafnurFab>+</button>`,
+  imports: [Fab],
+})
+class TestHostComponent {}
+
+describe('Fab', () => {
   let component: Fab;
   let fixture: ComponentFixture<Fab>;
 
@@ -18,5 +25,19 @@ describe('UiFabs', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should apply primary color classes by default', () => {
+    expect(fixture.nativeElement.classList).toContain('bg-yellow-600');
+  });
+
+  it('should have rounded-full class', () => {
+    expect(fixture.nativeElement.classList).toContain('rounded-full');
+  });
+
+  it('should project content', async () => {
+    const hostFixture = TestBed.createComponent(TestHostComponent);
+    await hostFixture.whenStable();
+    expect(hostFixture.nativeElement.textContent).toContain('+');
   });
 });

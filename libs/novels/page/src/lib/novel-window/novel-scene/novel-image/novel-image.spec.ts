@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { NovelImage } from './novel-image';
 
 describe('NovelImage', () => {
