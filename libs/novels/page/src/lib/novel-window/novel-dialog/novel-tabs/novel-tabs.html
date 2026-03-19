@@ -1,0 +1,21 @@
+@let tab = $tab();
+<button
+  type="button"
+  fafnurTab
+  [active]="tab === 'dialog'"
+  class="flex-1"
+  (click)="onTab('dialog')"
+  i18n="NovelTab|Dialog"
+>
+  Dialog
+</button>
+<button
+  type="button"
+  class="flex-1"
+  fafnurTab
+  [active]="tab === 'history'"
+  (click)="onTab('history')"
+  i18n="NovelTab|History"
+>
+  History
+</button>

@@ -1,0 +1,8 @@
+<fafnur-novel-tabs [(tab)]="$tab" />
+<fafnur-novel-scroll class="md:border-b md:border-gray-200 dark:border-gray-700" [active]="$tab() === 'dialog'">
+  <fafnur-novel-history />
+</fafnur-novel-scroll>
+<fafnur-novel-scroll class="flex-col gap-6" [active]="$tab() === 'history'">
+  <fafnur-novel-current />
+  <fafnur-novel-choices />
+</fafnur-novel-scroll>

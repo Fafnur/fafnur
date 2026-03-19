@@ -4,7 +4,7 @@ import { Fab } from '@fafnur/ui/fabs';
 import { IconSettings } from '@fafnur/ui/icons';
 import { PopupService } from '@fafnur/ui/popup';
 
-import { NovelEndMenu } from '../novel-choices/novel-end/novel-end-menu/novel-end-menu';
+import { NovelEndMenu } from '../novel-window/novel-dialog/novel-choices/novel-end/novel-end-menu/novel-end-menu';
 
 @Component({
   selector: 'fafnur-novel-exit',
