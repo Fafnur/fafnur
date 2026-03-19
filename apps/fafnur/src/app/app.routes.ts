@@ -29,6 +29,14 @@ export const appRoutes: Route[] = [
         path: PATHS.adventure,
         loadComponent: () => import('@fafnur/adventure/page'),
       },
+      {
+        path: PATHS.notFound,
+        loadComponent: () => import('@fafnur/not-found/page'),
+      },
+      {
+        path: PATHS.any,
+        loadComponent: () => import('@fafnur/not-found/page'),
+      },
     ]),
   },
   {

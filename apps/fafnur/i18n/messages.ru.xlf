@@ -82,6 +82,96 @@
         <note priority="1" from="description">SEO Description</note>
         <note priority="1" from="meaning">Novels Page</note>
       </trans-unit>
+      <trans-unit id="5420296177575010946" datatype="html">
+        <source>404 — Page Not Found</source>
+        <target state="translated">404 — Страница не найдена</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/not-found/page/src/lib/not-found-page/not-found-page.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">SEO Title</note>
+        <note priority="1" from="meaning">Not Found Page</note>
+      </trans-unit>
+      <trans-unit id="4206921964065316037" datatype="html">
+        <source>The page you are looking for doesn&apos;t exist. It may have been moved, deleted, or the URL might be incorrect. Navigate back to explore the site.</source>
+        <target state="translated">Такой страницы не существует. Возможно, она была перемещена, удалена или URL указан неверно. Вернитесь назад или выберите раздел ниже.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/not-found/page/src/lib/not-found-page/not-found-page.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">SEO Description</note>
+        <note priority="1" from="meaning">Not Found Page</note>
+      </trans-unit>
+      <trans-unit id="914057823988872713" datatype="html">
+        <source>Page not found</source>
+        <target state="translated">Страница не найдена</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/not-found/page/src/lib/not-found-page/not-found-page.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+        <note priority="1" from="description">Title</note>
+        <note priority="1" from="meaning">Not Found Page</note>
+      </trans-unit>
+      <trans-unit id="2783122491394549949" datatype="html">
+        <source> Looks like this page got lost in the codebase. No commit, no trace — just a dead end. </source>
+        <target state="translated"> Похоже, эта страница потерялась в кодовой базе. Ни коммита, ни следа — просто тупик. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/not-found/page/src/lib/not-found-page/not-found-page.html</context>
+          <context context-type="linenumber">6,10</context>
+        </context-group>
+        <note priority="1" from="description">Description</note>
+        <note priority="1" from="meaning">Not Found Page</note>
+      </trans-unit>
+      <trans-unit id="4508053383710549303" datatype="html">
+        <source> // Maybe you were looking for one of these: </source>
+        <target state="translated"> // Возможно, вы искали одну из этих страниц: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/not-found/page/src/lib/not-found-page/not-found-page.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+        <note priority="1" from="description">Suggestion</note>
+        <note priority="1" from="meaning">Not Found Page</note>
+      </trans-unit>
+      <trans-unit id="2005759505350742712" datatype="html">
+        <source>Home</source>
+        <target state="translated">Главная</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/not-found/page/src/lib/not-found-page/not-found-page.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Home link</note>
+        <note priority="1" from="meaning">Not Found Page</note>
+      </trans-unit>
+      <trans-unit id="3487800580897024726" datatype="html">
+        <source>About me</source>
+        <target state="translated">Обо мне</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/not-found/page/src/lib/not-found-page/not-found-page.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <note priority="1" from="description">About link</note>
+        <note priority="1" from="meaning">Not Found Page</note>
+      </trans-unit>
+      <trans-unit id="5572225527298090096" datatype="html">
+        <source>Adventure</source>
+        <target state="translated">Приключение</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/not-found/page/src/lib/not-found-page/not-found-page.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <note priority="1" from="description">Adventure link</note>
+        <note priority="1" from="meaning">Not Found Page</note>
+      </trans-unit>
+      <trans-unit id="1478216684601970811" datatype="html">
+        <source>Start quest</source>
+        <target state="translated">Начать квест</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/not-found/page/src/lib/not-found-page/not-found-page.html</context>
+          <context context-type="linenumber">18,21</context>
+        </context-group>
+        <note priority="1" from="description">Novels link</note>
+        <note priority="1" from="meaning">Not Found Page</note>
+      </trans-unit>
       <trans-unit id="8886645571949924143" datatype="html">
         <source>Experience</source>
         <target state="translated">Опыт</target>
