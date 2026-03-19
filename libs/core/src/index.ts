@@ -5,3 +5,4 @@ export * from './lib/navigation/path.pipe';
 export * from './lib/storages/local.storage';
 export * from './lib/theme/theme.service';
 export * from './lib/utils/json.util';
+export * from './lib/window/window.service';

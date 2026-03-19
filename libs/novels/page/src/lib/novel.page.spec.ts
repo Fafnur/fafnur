@@ -2,7 +2,7 @@ import { signal } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 
-import { InkService } from '@fafnur/core';
+import { InkService, WindowService } from '@fafnur/core';
 import { PopupService } from '@fafnur/ui/popup';
 
 import { NovelPage } from './novel.page';
@@ -24,6 +24,11 @@ const mockPopupService = {
   close: vi.fn(),
 };
 
+const mockHistory = { pushState: vi.fn() };
+const mockWindowService = {
+  window: { history: mockHistory, location: { href: 'http://localhost/' } },
+};
+
 describe('NovelPage', () => {
   let component: NovelPage;
   let fixture: ComponentFixture<NovelPage>;
@@ -38,6 +43,7 @@ describe('NovelPage', () => {
         provideRouter([]),
         { provide: InkService, useValue: mockInkService },
         { provide: PopupService, useValue: mockPopupService },
+        { provide: WindowService, useValue: mockWindowService },
       ],
     }).compileComponents();
 
@@ -69,5 +75,11 @@ describe('NovelPage', () => {
 
   it('should always render exit button', () => {
     expect(fixture.nativeElement.querySelector('fafnur-novel-exit')).toBeTruthy();
+  });
+
+  it('should open popup and push state on back navigation', () => {
+    component.onBack();
+    expect(mockHistory.pushState).toHaveBeenCalledWith(null, '', 'http://localhost/');
+    expect(mockPopupService.open).toHaveBeenCalledTimes(1);
   });
 });
