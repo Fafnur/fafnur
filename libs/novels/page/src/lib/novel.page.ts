@@ -1,6 +1,6 @@
 import { afterNextRender, ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
-import { InkService, WindowService } from '@fafnur/core';
+import { InkService, SeoService, WindowService } from '@fafnur/core';
 import { PopupService } from '@fafnur/ui/popup';
 
 import { NovelExit } from './novel-exit/novel-exit';
@@ -26,6 +26,11 @@ export class NovelPage {
   readonly $loaded = this.inkService.$loaded;
 
   constructor() {
+    inject(SeoService).update({
+      title: $localize`:Novels Page|SEO Title:Quest — Start the Interactive Story`,
+      description: $localize`:Novels Page|SEO Description:Play through an interactive text quest. Choose your path as HR, developer, blog reader or curious visitor, and discover the developer behind the portfolio.`,
+    });
+
     afterNextRender(() => {
       this.inkService.load();
       this.pushState();

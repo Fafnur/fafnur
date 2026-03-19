@@ -2,6 +2,86 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="4449572190060113063" datatype="html">
+        <source>Fafnur — Interactive Adventure by an Angular Master</source>
+        <target state="translated">Интерактивное приключение от Angular Master</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/home/page/src/lib/home-page.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">SEO Title</note>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
+      <trans-unit id="7230026623263948403" datatype="html">
+        <source>Explore an interactive text quest that reveals the story of a frontend developer. Discover who I am through choices and dialogue — not just a list of skills.</source>
+        <target state="translated">Пройди интерактивный текстовый квест и узнай историю фронтенд-разработчика. Открой, кто я, через выборы и диалоги — а не просто список технологий.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/home/page/src/lib/home-page.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">SEO Description</note>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
+      <trans-unit id="396889453468249152" datatype="html">
+        <source>Aleksandr Serenko — Senior frontend, Angular evangelist, Nx apologist &amp; NodeJS warlock.</source>
+        <target state="translated">Александр Серенко — Сеньор фронтенда, Angular евангелист, Апологет NX и NodeJS чернокнижник</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">SEO Title</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="4543591336724709549" datatype="html">
+        <source>Frontend developer with 9 years of experience specializing in Angular. I build enterprise applications for fintech, write about Angular on Medium, and care about clean, maintainable code.</source>
+        <target state="translated">Фронтенд-разработчик с 9-летним опытом, специализируюсь на Angular. Создаю enterprise-приложения для финтеха, пишу об Angular на Medium и забочусь о чистом, поддерживаемом коде.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">SEO Description</note>
+        <note priority="1" from="meaning">About Page</note>
+      </trans-unit>
+      <trans-unit id="7688499717612592238" datatype="html">
+        <source>Interactive Quest — Choose Your Path and Discover Who You Are</source>
+        <target state="translated">Интерактивный квест. Выбери свой путь и узнай кто ты</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/adventure/page/src/lib/adventure-page.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">SEO Title</note>
+        <note priority="1" from="meaning">Adventure Page</note>
+      </trans-unit>
+      <trans-unit id="15753940936046423" datatype="html">
+        <source>An interactive text quest written in Ink. Instead of a boring about-me section — a dialogue where you choose answers and receive a personalized developer profile.</source>
+        <target state="translated">Интерактивный текстовый квест, написанный на Ink. Вместо скучного раздела «обо мне» — диалог: ты выбираешь ответы и получаешь персонализированный профиль разработчика.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/adventure/page/src/lib/adventure-page.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">SEO Description</note>
+        <note priority="1" from="meaning">Adventure Page</note>
+      </trans-unit>
+      <trans-unit id="2497524948058379666" datatype="html">
+        <source>Quest — Start the Interactive Story</source>
+        <target state="translated">Квест — Начни интерактивную историю</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel.page.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">SEO Title</note>
+        <note priority="1" from="meaning">Novels Page</note>
+      </trans-unit>
+      <trans-unit id="8330437609321516439" datatype="html">
+        <source>Play through an interactive text quest. Choose your path as HR, developer, blog reader or curious visitor, and discover the developer behind the portfolio.</source>
+        <target state="translated">Пройди интерактивный текстовый квест. Выбери свой путь — HR, разработчик, читатель блога или случайный гость — и узнай разработчика за этим портфолио.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel.page.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">SEO Description</note>
+        <note priority="1" from="meaning">Novels Page</note>
+      </trans-unit>
       <trans-unit id="8886645571949924143" datatype="html">
         <source>Experience</source>
         <target state="translated">Опыт</target>
@@ -469,9 +549,9 @@
         <note priority="1" from="description">Who Title</note>
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
-      <trans-unit id="3620733998739588846" datatype="html">
-        <source> I&apos;m a frontend developer with 9 years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes JavaScript, TypeScript, Redux, Git, and a monorepo approach. </source>
-        <target state="translated"> Я фронтенд-разработчик с более чем 9-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, NX, Flutter, Claude, NxRx, GraphQL, NestJS.</target>
+      <trans-unit id="5536250804164863694" datatype="html">
+        <source> Aleksandr Serenko, a frontend developer with 9 years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes JavaScript, TypeScript, Redux, Git, and a monorepo approach. </source>
+        <target state="translated"> Александр Серенко, фронтенд-разработчик с более чем 9-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, NX, Flutter, Claude, NxRx, GraphQL, NestJS.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
           <context context-type="linenumber">4,7</context>

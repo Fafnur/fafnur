@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
-import { PATHS } from '@fafnur/core';
+import { PATHS, SeoService } from '@fafnur/core';
 
 import { HomeCard } from './home-card/home-card';
 
@@ -15,4 +15,11 @@ import { HomeCard } from './home-card/home-card';
 })
 export class HomePage {
   readonly paths = PATHS;
+
+  constructor() {
+    inject(SeoService).update({
+      title: $localize`:Home Page|SEO Title:Fafnur — Interactive Adventure by an Angular Master`,
+      description: $localize`:Home Page|SEO Description:Explore an interactive text quest that reveals the story of a frontend developer. Discover who I am through choices and dialogue — not just a list of skills.`,
+    });
+  }
 }
