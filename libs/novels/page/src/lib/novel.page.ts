@@ -13,7 +13,7 @@ import { NovelHistory } from './novel-history/novel-history';
   templateUrl: './novel.page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'flex flex-col h-vh',
+    class: 'flex flex-col h-screen overflow-hidden',
   },
 })
 export class NovelPage {

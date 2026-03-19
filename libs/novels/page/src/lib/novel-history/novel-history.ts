@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { afterRenderEffect, ChangeDetectionStrategy, Component, ElementRef, inject } from '@angular/core';
 
 import { InkService } from '@fafnur/core';
 
@@ -10,9 +10,24 @@ import { NovelText } from '../novel-text/novel-text';
   imports: [NovelActor, NovelText],
   templateUrl: './novel-history.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    class: 'block h-full overflow-y-auto',
+  },
 })
 export class NovelHistory {
   private readonly inkService = inject(InkService);
+  private readonly elementRef = inject(ElementRef);
 
   readonly $historyBlocks = this.inkService.$historyBlocks;
+
+  constructor() {
+    afterRenderEffect(() => {
+      this.$historyBlocks();
+
+      this.elementRef.nativeElement.scrollTo({
+        top: this.elementRef.nativeElement.scrollHeight,
+        behavior: 'smooth',
+      });
+    });
+  }
 }

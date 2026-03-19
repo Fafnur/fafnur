@@ -6,7 +6,12 @@
   <div class="relative w-full aspect-video bg-gray-100 dark:bg-gray-800 shrink-0 overflow-hidden">
     <div class="w-full h-full flex items-center justify-center text-gray-300 dark:text-gray-600">
       <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+        />
       </svg>
     </div>
   </div>
@@ -23,7 +28,9 @@
         [class.text-gray-500]="$activeTab() !== 'current'"
         (click)="onTabChange('current')"
         i18n="Novel|Tab dialog"
-      >Диалог</button>
+      >
+        Диалог
+      </button>
       <button
         type="button"
         class="flex-1 py-3 text-sm font-medium transition-colors border-b-2"
@@ -33,7 +40,9 @@
         [class.text-gray-500]="$activeTab() !== 'history'"
         (click)="onTabChange('history')"
         i18n="Novel|Tab history"
-      >История</button>
+      >
+        История
+      </button>
     </div>
 
     <!-- Tab content -->
@@ -48,7 +57,12 @@
       }
     </div>
   } @else {
-    <div class="flex-1 flex items-center justify-center text-gray-500 dark:text-gray-400 animate-pulse" i18n="Novel|Loading">Loading…</div>
+    <div
+      class="flex-1 flex items-center justify-center text-gray-500 dark:text-gray-400 animate-pulse"
+      i18n="Novel|Loading"
+    >
+      Loading…
+    </div>
   }
 </div>
 
@@ -58,16 +72,21 @@
   <div class="col-span-3 relative bg-gray-100 dark:bg-gray-800 overflow-hidden">
     <div class="w-full h-full flex items-center justify-center text-gray-300 dark:text-gray-600">
       <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+        />
       </svg>
     </div>
   </div>
 
   <!-- Right column: dialog (40%) -->
-  <div class="col-span-2 flex flex-col min-h-0 border-l border-gray-200 dark:border-gray-700">
+  <div class="col-span-2 flex flex-col min-h-0 overflow-hidden border-l border-gray-200 dark:border-gray-700">
     @if ($loaded()) {
       <!-- History: 50% -->
-      <div class="flex-1 overflow-y-auto p-6 min-h-0 border-b border-gray-200 dark:border-gray-700">
+      <div class="flex-1 overflow-hidden p-6 min-h-0 border-b border-gray-200 dark:border-gray-700">
         <fafnur-novel-history />
       </div>
       <!-- Current + Choices: 50% -->
@@ -76,7 +95,12 @@
         <fafnur-novel-choices />
       </div>
     } @else {
-      <div class="flex-1 flex items-center justify-center text-gray-500 dark:text-gray-400 animate-pulse" i18n="Novel|Loading">Loading…</div>
+      <div
+        class="flex-1 flex items-center justify-center text-gray-500 dark:text-gray-400 animate-pulse"
+        i18n="Novel|Loading"
+      >
+        Loading…
+      </div>
     }
   </div>
 </div>
