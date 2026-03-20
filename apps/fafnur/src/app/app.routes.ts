@@ -8,6 +8,16 @@ export const appRoutes: Route[] = [
     loadComponent: () => import('@fafnur/ui/layout'),
     children: withNavigationRoutes([
       {
+        path: PATHS.novels,
+        loadComponent: () => import('@fafnur/novels/page'),
+      },
+    ]),
+  },
+  {
+    path: '',
+    loadComponent: () => import('@fafnur/ui/layout'),
+    children: withNavigationRoutes([
+      {
         path: PATHS.current,
         loadComponent: () => import('@fafnur/ui/header'),
         outlet: 'header',
@@ -33,19 +43,10 @@ export const appRoutes: Route[] = [
         path: PATHS.notFound,
         loadComponent: () => import('@fafnur/not-found/page'),
       },
+      // Notice: This must be the last one
       {
         path: PATHS.any,
         loadComponent: () => import('@fafnur/not-found/page'),
-      },
-    ]),
-  },
-  {
-    path: '',
-    loadComponent: () => import('@fafnur/ui/layout'),
-    children: withNavigationRoutes([
-      {
-        path: PATHS.novels,
-        loadComponent: () => import('@fafnur/novels/page'),
       },
     ]),
   },
