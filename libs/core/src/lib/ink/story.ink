@@ -5,17 +5,13 @@ VAR corp = 0
 VAR legacy = 0
 VAR rewrite = 0
 
-Вы зашли на сайт. Он немного странный.
-Не переживайте. Это безопасно.
-
-* Я люблю странное
--> start
-* Я просто посмотреть
--> start
-* Это что, тест?
+`[INFO]` Обнаружен пользователь.
+`[WARN]` Намерения неизвестны.
+`[INFO]` Запускаю протокол знакомства...
+* Нажать enter
 -> start
 
-=== start
+=== start ===
 Кто вы?
 
 * HR
@@ -377,7 +373,7 @@ VAR rewrite = 0
 
 = hr_end
 Если честно — мне понравился этот разговор.
-Осталось только рассказать про ваш путь. 
+Осталось только рассказать про ваш путь.
 * Узнать
 -> finale
 
@@ -1083,11 +1079,11 @@ Concept drift — вечная боль.
     Вы бы всё переписали и исчезли.
     Легенда гласит, что через год всё снова станет legacy.
 
-- legacy >= corp and legacy >= startup:
+- legacy > corp and legacy > startup and legacy > rewrite:
     Вы бы выжили в legacy и сделали его чуть менее страшным.
     Это редкий талант.
 
-- startup > corp:
+- startup > corp and startup > legacy and startup > rewrite:
     Вам стоит идти в стартап. Хаос вас не пугает.
     Иногда вы сами его создаёте.
 
@@ -1126,15 +1122,15 @@ Concept drift — вечная боль.
 Но система всё равно пыталась вас классифицировать. Вот что вышло:
 
 {
-- startup > corp and startup > legacy:
+- startup > corp and startup > legacy and startup > rewrite:
     Вам подойдёт мир, где можно пробовать, ошибаться, и начинать заново.
     Это редкая смелость.
 
-- legacy >= rewrite and legacy > startup:
+- legacy > corp and legacy > startup and legacy > rewrite:
     Вы умеете жить в сложных системах. Не ломать их.
     А постепенно приручать. Это очень взрослый подход.
 
-- rewrite > legacy:
+- rewrite > corp and rewrite > legacy and rewrite > startup:
     В глубине души вы хотите переписать правила. Не код — жизнь.
     И это сильнее, чем кажется.
 
