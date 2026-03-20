@@ -14,7 +14,7 @@ import { NovelWindow } from './novel-window/novel-window';
   templateUrl: './novel.page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'flex flex-col h-screen overflow-hidden',
+    class: 'flex flex-col h-screen bg-white dark:bg-mauve-900',
     '(window:popstate)': 'onBack()',
   },
 })

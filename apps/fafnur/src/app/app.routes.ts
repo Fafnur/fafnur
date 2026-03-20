@@ -1,22 +1,16 @@
 import { Route } from '@angular/router';
 
-import { PATHS, withNavigationRoutes } from '@fafnur/core';
+import { PATHS, toRoutes } from '@fafnur/core';
 
-export const appRoutes: Route[] = [
+export const appRoutes: Route[] = toRoutes([
   {
-    path: '',
-    loadComponent: () => import('@fafnur/ui/layout'),
-    children: withNavigationRoutes([
-      {
-        path: PATHS.novels,
-        loadComponent: () => import('@fafnur/novels/page'),
-      },
-    ]),
+    path: PATHS.novels,
+    loadComponent: () => import('@fafnur/novels/page'),
   },
   {
     path: '',
     loadComponent: () => import('@fafnur/ui/layout'),
-    children: withNavigationRoutes([
+    children: [
       {
         path: PATHS.current,
         loadComponent: () => import('@fafnur/ui/header'),
@@ -48,6 +42,6 @@ export const appRoutes: Route[] = [
         path: PATHS.any,
         loadComponent: () => import('@fafnur/not-found/page'),
       },
-    ]),
+    ],
   },
-];
+]);

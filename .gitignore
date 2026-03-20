@@ -61,5 +61,5 @@ junit.xml
 # APPS
 /apps/**/.env
 /apps/**/source.xlf
-
+/apps/**/sitemap.xml
 vitest.config.*.timestamp*

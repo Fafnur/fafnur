@@ -35,6 +35,7 @@ export interface NavigationLink {
 
 export interface NavigationRoute extends Route {
   readonly path: PathValues;
+  readonly children?: NavigationRoute[];
 }
 
 export interface NavigationServerRoute extends ServerRouteCommon {
@@ -67,22 +68,23 @@ export function toPath(path: PathValues, params?: GetPathParams<PathValues>): st
   return route.length > 1 ? `/${route.slice(1).join('/')}` : `${route[0]}`;
 }
 
-export function withNavigationRoutes<T extends NavigationRoute | NavigationServerRoute>(
-  routes: T[],
-  parent?: string,
-): T[] {
-  if (!parent) {
-    parent = PATHS.current;
-  }
-
+export function toRoutes<T extends NavigationRoute | NavigationServerRoute>(routes: T[], parent = ''): T[] {
   return routes.map((route) => {
     if (!route.path || route.path === PATHS.any) {
-      return route;
+      return {
+        ...route,
+        children: 'children' in route && route.children ? toRoutes(route.children, parent) : undefined,
+      };
     }
+
+    const normalizedPath = route.path.replace(/^\//, '');
+    const path = parent ? normalizedPath.replace(`${parent}/`, '') : normalizedPath;
+    const children = 'children' in route && route.children ? toRoutes(route.children, normalizedPath) : undefined;
 
     return {
       ...route,
-      path: route.path.substring(parent.length + 1),
+      path,
+      children,
     };
   });
 }
