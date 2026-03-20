@@ -3,15 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>fafnur</title>
-    <script>
-      (function () {
-        var theme = localStorage.getItem('user-theme');
-        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (theme === 'dark' || ((!theme || theme === 'system') && prefersDark)) {
-          document.documentElement.classList.add('dark');
-        }
-      })();
-    </script>
+    <!-- prettier-ignore -->
+    <script>!function(){var e=localStorage.getItem("user-theme"),t=window.matchMedia("(prefers-color-scheme: dark)").matches;"dark"!==e&&(e&&"system"!==e||!t)||document.documentElement.classList.add("dark")}();</script>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />

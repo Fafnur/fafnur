@@ -9,7 +9,7 @@ export function hasSitemap(fileName: string): boolean {
     return false;
   }
 
-  const sitemapPath = resolve(NX_WORKSPACE_ROOT, 'apps', NX_TASK_TARGET_PROJECT.replace('-', '/'), 'public', fileName);
+  const sitemapPath = resolve(NX_WORKSPACE_ROOT, 'apps', NX_TASK_TARGET_PROJECT.replace(/-/g, '/'), 'public', fileName);
 
   return existsSync(sitemapPath);
 }
@@ -20,7 +20,7 @@ export function generateSitemap(links: string[], appHost: string, fileName: stri
   if (!NX_WORKSPACE_ROOT || !NX_TASK_TARGET_PROJECT) {
     return;
   }
-  const sitemapPath = resolve(NX_WORKSPACE_ROOT, 'apps', NX_TASK_TARGET_PROJECT.replace('-', '/'), `public`, fileName);
+  const sitemapPath = resolve(NX_WORKSPACE_ROOT, 'apps', NX_TASK_TARGET_PROJECT.replace(/-/g, '/'), `public`, fileName);
 
   const current = new Date().toISOString().slice(0, -5) + '+00:00';
   let data = '';
