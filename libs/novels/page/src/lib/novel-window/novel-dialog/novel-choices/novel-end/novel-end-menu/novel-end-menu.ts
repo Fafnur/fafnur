@@ -11,7 +11,9 @@ import { NovelLink } from './novel-link/novel-link';
   imports: [NovelLink, RouterLink],
   templateUrl: './novel-end-menu.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { class: 'flex flex-col gap-1 border-l-2 border-yellow-600 pl-6' },
+  host: {
+    class: 'flex flex-col gap-1',
+  },
 })
 export class NovelEndMenu {
   private readonly popupRef = inject(POPUP_REF, { optional: true });

@@ -1,5 +1,5 @@
 @if ($choices().length > 0) {
-  <ul class="flex flex-col gap-1 border-l-2 border-yellow-600 pl-6">
+  <ul class="flex flex-col gap-1">
     @for (choice of $choices(); track choice.index; let i = $index) {
       <li>
         <button
@@ -8,8 +8,14 @@
           type="button"
           (click)="onChoose(choice.index)"
         >
-          <span class="text-xs font-mono text-yellow-600 opacity-40 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity select-none shrink-0 w-3">{{ i + 1 }}</span>
-          <span class="opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity select-none shrink-0 text-yellow-600">›</span>
+          <span
+            class="text-xs font-mono text-yellow-600 opacity-40 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity select-none shrink-0 w-3"
+            >{{ i + 1 }}</span
+          >
+          <span
+            class="opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity select-none shrink-0 text-yellow-600"
+            >›</span
+          >
           <span>{{ choice.text }}</span>
         </button>
       </li>
