@@ -36,7 +36,8 @@
       "@fafnur/ui/tabs": ["libs/ui/tabs/src/index.ts"],
       "@fafnur/ui/title": ["libs/ui/title/src/index.ts"],
       "@fafnur/ui/unit": ["libs/ui/unit/src/index.ts"],
-      "@fafnur/not-found/page": ["libs/not-found/page/src/index.ts"]
+      "@fafnur/not-found/page": ["libs/not-found/page/src/index.ts"],
+      "@fafnur/server/sitemap": ["libs/server/sitemap/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
