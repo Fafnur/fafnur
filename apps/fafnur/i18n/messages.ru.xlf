@@ -22,6 +22,46 @@
         <note priority="1" from="description">SEO Description</note>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
+      <trans-unit id="5520382922443355549" datatype="html">
+        <source>Start a new</source>
+        <target state="translated">Начать новое</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/home/page/src/lib/home-card/home-card.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+        <note priority="1" from="description">Headline first line</note>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
+      <trans-unit id="797588013242570601" datatype="html">
+        <source>adventure</source>
+        <target state="translated">приключение</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/home/page/src/lib/home-card/home-card.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+        <note priority="1" from="description">Headline second line</note>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
+      <trans-unit id="6984857761385941832" datatype="html">
+        <source>Choose who you are — HR, developer, or just a person — and answer questions to discover where you belong.</source>
+        <target state="translated">Выбираете, кто вы — HR, разработчик, обычный человек — и отвечайте на вопросы, чтобы понять, где вам будет лучше.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/home/page/src/lib/home-card/home-card.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+        <note priority="1" from="description">Description</note>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
+      <trans-unit id="1403898706327299327" datatype="html">
+        <source>Start the adventure</source>
+        <target state="translated">Начать приключение</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/home/page/src/lib/home-card/home-card.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+        <note priority="1" from="description">Start button</note>
+        <note priority="1" from="meaning">Home Page</note>
+      </trans-unit>
       <trans-unit id="396889453468249152" datatype="html">
         <source>Aleksandr Serenko — Senior frontend, Angular evangelist, Nx apologist &amp; NodeJS warlock.</source>
         <target state="translated">Александр Серенко — Сеньор фронтенда, Angular евангелист, Апологет NX и NodeJS чернокнижник</target>
