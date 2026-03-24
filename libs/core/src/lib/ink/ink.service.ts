@@ -13,14 +13,14 @@ export class InkService {
   private readonly inkStorage = inject(InkStorage);
 
   private story = new Story(store);
-  private lineId = 0;
-
-  private $blockId = signal<number>(0);
 
   // state
+  readonly $lineId = signal<number>(0);
+  readonly $blockId = signal<number>(0);
   readonly $lines = signal<InkLine[]>([]);
   readonly $choices = signal<Choice[]>([]);
   readonly $loaded = signal<boolean>(false);
+  readonly $currentView = signal<string>('');
 
   readonly $historyBlocks = computed<InkLine[][]>(() => {
     const lines = this.$lines().filter((line) => line.blockId < this.$blockId());
@@ -48,10 +48,11 @@ export class InkService {
     if (state.story) {
       this.story.state.LoadJson(state.story);
     }
-    this.lineId = state.lineId;
+    this.$lineId.set(state.lineId);
     this.$blockId.set(state.blockId);
     this.$lines.set(state.lines);
     this.$choices.set(this.story.currentChoices);
+    this.$currentView.set(this.story.state.previousPathString?.split('.')[0] ?? '');
     this.flush();
     this.$loaded.set(true);
   }
@@ -77,8 +78,9 @@ export class InkService {
       const next = this.story.Continue();
 
       if (next) {
+        this.$lineId.set(this.$lineId() + 1);
         newLines.push({
-          id: ++this.lineId,
+          id: this.$lineId(),
           text: next.trim(),
           type: first && this.$loaded() ? 'player' : 'narrator',
           blockId: first && this.$loaded() ? this.$blockId() - 1 : this.$blockId(),
@@ -92,8 +94,10 @@ export class InkService {
     this.inkStorage.saveState({
       story: this.story.state.toJson(),
       lines: this.$lines(),
-      lineId: this.lineId,
+      lineId: this.$lineId(),
       blockId: this.$blockId(),
     });
+    this.$currentView.set(this.story.state.previousPathString?.split('.')[0] ?? '');
+    console.log(this.story.state);
   }
 }

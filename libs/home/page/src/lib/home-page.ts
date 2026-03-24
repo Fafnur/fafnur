@@ -10,7 +10,8 @@ import { HomeCard } from './home-card/home-card';
   templateUrl: './home-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'flex align-middle justify-center min-h-[calc(100vh-4rem)]',
+    class:
+      'relative flex align-middle justify-center min-h-[calc(100vh-4rem)] bg-[url(/novel/who.jpg)] bg-cover bg-center',
   },
 })
 export class HomePage {

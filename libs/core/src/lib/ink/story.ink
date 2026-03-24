@@ -4,14 +4,16 @@ VAR startup = 0
 VAR corp = 0
 VAR legacy = 0
 VAR rewrite = 0
+-> start
 
+=== start ===
 `[INFO]` Обнаружен пользователь.
 `[WARN]` Намерения неизвестны.
 `[INFO]` Запускаю протокол знакомства...
 * Нажать enter
--> start
+-> who
 
-=== start ===
+=== who ===
 Кто вы?
 
 * HR
@@ -92,6 +94,7 @@ VAR rewrite = 0
 === human ===
 ~ role = "human"
 Отлично. Тогда без терминов. Просто немного о вас.
+* Продолжить
 -> animal
 
 === animal ===

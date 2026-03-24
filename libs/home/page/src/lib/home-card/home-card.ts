@@ -12,7 +12,7 @@ import { Unit } from '@fafnur/ui/unit';
   templateUrl: './home-card.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'm-auto px-6 py-24 text-center',
+    class: ' m-auto px-6 py-24 text-center',
   },
 })
 export class HomeCard {
