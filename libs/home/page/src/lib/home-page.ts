@@ -11,7 +11,7 @@ import { HomeCard } from './home-card/home-card';
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:
-      'relative flex align-middle justify-center min-h-[calc(100vh-4rem)] bg-[url(/novel/who.jpg)] bg-cover bg-center',
+      'relative flex align-middle justify-center min-h-[calc(100vh-4rem)] bg-[url(/images/novel/who.webp)] bg-cover bg-center',
   },
 })
 export class HomePage {

@@ -24,7 +24,7 @@ export class NovelImage {
 
   readonly $error = signal(false);
   readonly $currentView = this.inkService.$currentView;
-  readonly $src = computed(() => `/novel/${this.$currentView()}.jpg`);
+  readonly $src = computed(() => `/images/novel/${this.$currentView()}.webp`);
 
   constructor() {
     effect(() => {
