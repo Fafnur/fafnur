@@ -44,17 +44,23 @@ export class InkService {
   readonly $hasChoices = computed(() => this.$choices().length > 0);
 
   load() {
-    const state = this.inkStorage.getState();
-    if (state.story) {
-      this.story.state.LoadJson(state.story);
+    try {
+      const state = this.inkStorage.getState();
+      if (state.story) {
+        this.story.state.LoadJson(state.story);
+      }
+      this.$lineId.set(state.lineId);
+      this.$blockId.set(state.blockId);
+      this.$lines.set(state.lines);
+      this.$choices.set(this.story.currentChoices);
+      const prev = this.story.state.previousPathString ? this.story.state.previousPathString : 'out';
+      this.$currentView.set(prev.split('.')[0] ?? '');
+      this.flush();
+      this.$loaded.set(true);
+    } catch (error: unknown) {
+      console.error(error);
+      this.reset();
     }
-    this.$lineId.set(state.lineId);
-    this.$blockId.set(state.blockId);
-    this.$lines.set(state.lines);
-    this.$choices.set(this.story.currentChoices);
-    this.$currentView.set(this.story.state.previousPathString?.split('.')[0] ?? '');
-    this.flush();
-    this.$loaded.set(true);
   }
 
   choose(index: number) {
@@ -97,7 +103,7 @@ export class InkService {
       lineId: this.$lineId(),
       blockId: this.$blockId(),
     });
-    this.$currentView.set(this.story.state.previousPathString?.split('.')[0] ?? '');
-    console.log(this.story.state);
+    const prev = this.story.state.previousPathString ? this.story.state.previousPathString : 'out';
+    this.$currentView.set(prev.split('.')[0] ?? '');
   }
 }

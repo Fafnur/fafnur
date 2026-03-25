@@ -88,7 +88,6 @@ VAR rewrite = 0
 
 === go ===
 Это талант. {~ Присаживайтесь|Проходите|Садитесь|Заходите}.
-* Продолжить
 -> developer
 
 === human ===
@@ -581,7 +580,6 @@ JavaScript любит сюрпризы.
 
 === backend_questions ===
 Теперь немного бэкендной классики.
-* Слушаю
 -> solid
 
 === solid ===
@@ -1143,7 +1141,6 @@ Concept drift — вечная боль.
 -> finale_role
 
 === finale_role ===
-
 { role:
 - "frontend": -> dev_result
 - "backend": -> dev_result
@@ -1176,7 +1173,7 @@ Concept drift — вечная боль.
     И прод без сюрпризов в 19:00.
 }
 
-* Понятно
+* И это все?
 -> end_block
 
 === hr_result ===
@@ -1198,7 +1195,7 @@ Concept drift — вечная боль.
     И ещё сложнее сломать.
 }
 
-* Понятно
+* И это все?
 -> end_block
 
 === human_result ===
@@ -1220,7 +1217,7 @@ Concept drift — вечная боль.
     И это не скучно. Это осознанность.
 }
 
-* Понятно
+* И это все?
 -> end_block
 
 === end_block ===
