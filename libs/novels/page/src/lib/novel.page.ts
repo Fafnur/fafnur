@@ -29,6 +29,9 @@ export class NovelPage {
     inject(SeoService).update({
       title: $localize`:Novels Page|SEO Title:Quest — Start the Interactive Story`,
       description: $localize`:Novels Page|SEO Description:Play through an interactive text quest. Choose your path as HR, developer, blog reader or curious visitor, and discover the developer behind the portfolio.`,
+      image: '/images/game.webp',
+      imageWidth: '2048',
+      imageHeight: '1152',
     });
 
     afterNextRender(() => {

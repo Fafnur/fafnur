@@ -24,6 +24,9 @@ export class AdventurePage {
     inject(SeoService).update({
       title: $localize`:Adventure Page|SEO Title:Interactive Quest — Choose Your Path and Discover Who You Are`,
       description: $localize`:Adventure Page|SEO Description:An interactive text quest written in Ink. Instead of a boring about-me section — a dialogue where you choose answers and receive a personalized developer profile.`,
+      image: '/images/adventure.webp',
+      imageWidth: '2048',
+      imageHeight: '1152',
     });
   }
 }
