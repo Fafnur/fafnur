@@ -1,9 +1,10 @@
-import { InjectionToken } from '@angular/core';
+import { ComponentRef, InjectionToken } from '@angular/core';
 
 export interface PopupOptions {
   readonly data?: unknown;
   readonly disableClose?: boolean;
   readonly panelClass?: string;
+  readonly unique?: boolean;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

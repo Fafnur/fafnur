@@ -1,6 +1,5 @@
 import {
   ApplicationRef,
-  ComponentRef,
   createComponent,
   DOCUMENT,
   EnvironmentInjector,
@@ -10,10 +9,10 @@ import {
   reflectComponentType,
   Type,
 } from '@angular/core';
-import { EMPTY, Observable, Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 import { POPUP_DATA, POPUP_REF, PopupOptions } from './popup.type';
-import { Popup } from './popup/popup';
+import { Popup, PopupRef } from './popup/popup';
 
 let uniqueId = 0;
 
@@ -26,18 +25,19 @@ export class PopupService {
   private readonly applicationRef = inject(ApplicationRef);
   private readonly environmentInjector = inject(EnvironmentInjector);
 
-  private readonly map = new Map<string, ComponentRef<Popup>>();
+  private readonly map = new Map<string, { readonly ref: Popup; readonly closed: Observable<any> }>();
 
   has(): boolean {
     return this.map.size > 0;
   }
 
-  open<T>(component: Type<unknown>, options?: PopupOptions): Observable<T | undefined> {
+  open<T>(component: Type<unknown>, options?: PopupOptions): PopupRef<T> {
     const mirror = reflectComponentType(Popup);
     const widgetId = mirror?.selector ?? String(++uniqueId);
 
-    if (this.map.has(widgetId)) {
-      return EMPTY;
+    if (this.map.has(widgetId) && options?.unique) {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      return this.map.get(widgetId)!;
     }
 
     const componentRef = createComponent(Popup, {
@@ -65,8 +65,9 @@ export class PopupService {
     this.applicationRef.attachView(componentRef.hostView);
     this.document.body.appendChild(componentRef.location.nativeElement);
 
-    this.map.set(widgetId, componentRef);
     const subject = new Subject<T | undefined>();
+    const ref = { ref: componentRef.instance, closed: subject.asObservable() };
+    this.map.set(widgetId, ref);
 
     componentRef.instance.closed.subscribe((value) => {
       this.applicationRef.detachView(componentRef.hostView);
@@ -77,10 +78,10 @@ export class PopupService {
       this.map.delete(widgetId);
     });
 
-    return subject.asObservable();
+    return ref;
   }
 
   close(): void {
-    this.map.forEach((componentRef) => componentRef.instance.onClose());
+    this.map.forEach((componentRef) => componentRef.ref.onClose());
   }
 }
