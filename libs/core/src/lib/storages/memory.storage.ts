@@ -1,9 +1,6 @@
-import { Injectable } from '@angular/core';
-
 /**
  * Memory storage for support SSR.
  */
-@Injectable()
 export class MemoryStorage implements Storage {
   /**
    * Storage

@@ -42,12 +42,12 @@
         <note priority="1" from="description">Headline second line</note>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
-      <trans-unit id="6984857761385941832" datatype="html">
-        <source>Choose who you are — HR, developer, or just a person — and answer questions to discover where you belong.</source>
-        <target state="translated">Выбираете, кто вы — HR, разработчик, обычный человек — и отвечайте на вопросы, чтобы понять, где вам будет лучше.</target>
+      <trans-unit id="7860730153983527046" datatype="html">
+        <source>A world where corporations and startups reign, and every choice matters. Answer questions — and find out where you belong.</source>
+        <target state="translated">Мир, где правят корпорации и стартапы, а каждый выбор что-то значит. Ответь на вопросы — и узнай, где твоё место.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/home/page/src/lib/home-card/home-card.html</context>
-          <context context-type="linenumber">6,8</context>
+          <context context-type="linenumber">7,10</context>
         </context-group>
         <note priority="1" from="description">Description</note>
         <note priority="1" from="meaning">Home Page</note>
