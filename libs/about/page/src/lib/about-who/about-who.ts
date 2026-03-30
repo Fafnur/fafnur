@@ -9,7 +9,7 @@ import { Unit } from '@fafnur/ui/unit';
   templateUrl: './about-who.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'flex flex-col gap-4',
+    class: 'flex flex-col gap-8',
   },
 })
 export class AboutWho {}

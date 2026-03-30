@@ -684,7 +684,7 @@
         <target state="translated"> Александр Серенко, фронтенд-разработчик с более чем 9-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, NX, Flutter, Claude, NxRx, GraphQL, NestJS.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
-          <context context-type="linenumber">4,7</context>
+          <context context-type="linenumber">12,15</context>
         </context-group>
         <note priority="1" from="description">Who Description First</note>
         <note priority="1" from="meaning">About Page</note>
@@ -694,7 +694,7 @@
         <target state="translated"> Сейчас я работаю в международной финтех компании, где отвечаю за разработку и поддержку проектов для микрофинонсирования в нескольких странах.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
-          <context context-type="linenumber">8,12</context>
+          <context context-type="linenumber">16,20</context>
         </context-group>
         <note priority="1" from="description">Who Description Second</note>
         <note priority="1" from="meaning">About Page</note>
@@ -704,7 +704,7 @@
         <target state="translated">Я активно делюсь знаниями и опытом в своем блоге на Хабре и Medium. Кроме того, веду группы в Telegram и ВК о фронтенде.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
-          <context context-type="linenumber">13,16</context>
+          <context context-type="linenumber">21,24</context>
         </context-group>
         <note priority="1" from="description">Who Description Third</note>
         <note priority="1" from="meaning">About Page</note>
@@ -714,7 +714,7 @@
         <target state="translated">Вы можете посмотреть мои работы в профиле на GitHub. Я всегда стремлюсь к совершенствованию своих навыков и изучению новых технологий. Ищу интересные и сложные задачи, которые позволят мне реализовать свой потенциал и принести пользу обществу.е.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
-          <context context-type="linenumber">17,21</context>
+          <context context-type="linenumber">25,29</context>
         </context-group>
         <note priority="1" from="description">Who Description Fouth</note>
         <note priority="1" from="meaning">About Page</note>

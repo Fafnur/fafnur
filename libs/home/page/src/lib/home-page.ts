@@ -21,6 +21,9 @@ export class HomePage {
     inject(SeoService).update({
       title: $localize`:Home Page|SEO Title:Fafnur — Interactive Adventure by an Angular Master`,
       description: $localize`:Home Page|SEO Description:Explore an interactive text quest that reveals the story of a frontend developer. Discover who I am through choices and dialogue — not just a list of skills.`,
+      image: '/images/site.webp',
+      imageWidth: '2048',
+      imageHeight: '1152',
     });
   }
 }
