@@ -42,7 +42,10 @@ export class Popup {
   constructor() {
     effect(() => {
       this.$viewContainerRef().clear();
-      this.$viewContainerRef().createComponent(this.$child(), { injector: this.$injector() });
+      this.$viewContainerRef().createComponent(this.$child(), {
+        injector: this.$injector(),
+        bindings: this.$options().bindings,
+      });
     });
   }
 

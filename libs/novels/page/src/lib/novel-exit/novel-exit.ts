@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, inputBinding, signal } from '@angular/core';
 
 import { Fab } from '@fafnur/ui/fabs';
 import { IconSettings } from '@fafnur/ui/icons';
@@ -27,7 +27,11 @@ export class NovelExit {
       popupRef.ref.onClose();
       this.$popupRef.set(undefined);
     } else {
-      this.$popupRef.set(this.popupService.open(NovelEndMenu));
+      this.$popupRef.set(
+        this.popupService.open(NovelEndMenu, {
+          bindings: [inputBinding('withThemeSwitcher', () => true)],
+        }),
+      );
     }
   }
 }

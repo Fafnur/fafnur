@@ -930,6 +930,16 @@
         <note priority="1" from="description">End leave</note>
         <note priority="1" from="meaning">Novel</note>
       </trans-unit>
+      <trans-unit id="6145650449301831153" datatype="html">
+        <source>Theme</source>
+        <target state="translated">Тема</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/novels/page/src/lib/novel-window/novel-dialog/novel-choices/novel-end/novel-end-menu/novel-theme/novel-theme.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <note priority="1" from="description">Theme label</note>
+        <note priority="1" from="meaning">Novel</note>
+      </trans-unit>
       <trans-unit id="1824587779968049682" datatype="html">
         <source>Play the adventure again?</source>
         <target state="translated">Сыграть в приключение снова?</target>
