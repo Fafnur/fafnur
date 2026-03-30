@@ -1120,12 +1120,22 @@
         <note priority="1" from="description">Adventure</note>
         <note priority="1" from="meaning">Header nav</note>
       </trans-unit>
+      <trans-unit id="5815276699907217611" datatype="html">
+        <source>Info</source>
+        <target state="translated">Инфо</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/header/src/lib/header.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <note priority="1" from="description">Info</note>
+        <note priority="1" from="meaning">Header nav</note>
+      </trans-unit>
       <trans-unit id="3087673264061026057" datatype="html">
         <source>About me</source>
         <target state="translated">Обо мне</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/header/src/lib/header.html</context>
-          <context context-type="linenumber">28,30</context>
+          <context context-type="linenumber">37,39</context>
         </context-group>
         <note priority="1" from="description">About me</note>
         <note priority="1" from="meaning">Header nav</note>

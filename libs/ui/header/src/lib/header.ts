@@ -3,13 +3,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
 import { PATHS } from '@fafnur/core';
 import { Container } from '@fafnur/ui/container';
-import { IconGamepad, IconHome, IconPerson } from '@fafnur/ui/icons';
+import { IconGamepad, IconHome, IconInfo, IconPerson } from '@fafnur/ui/icons';
 
 import { NavLink } from './nav-link/nav-link';
 
 @Component({
   selector: 'fafnur-header',
-  imports: [Container, RouterLink, RouterLinkActive, NavLink, IconHome, IconGamepad, IconPerson],
+  imports: [Container, RouterLink, RouterLinkActive, NavLink, IconHome, IconGamepad, IconPerson, IconInfo],
   templateUrl: './header.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {

@@ -5,6 +5,7 @@ export * from './lib/icon-github/icon-github';
 export * from './lib/icon-habr/icon-habr';
 export * from './lib/icon-home/icon-home';
 export * from './lib/icon-image/icon-image';
+export * from './lib/icon-info/icon-info';
 export * from './lib/icon-linkedin/icon-linkedin';
 export * from './lib/icon-logo/icon-logo';
 export * from './lib/icon-medium/icon-medium';
