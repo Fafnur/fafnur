@@ -8,11 +8,11 @@ import { Color } from '@fafnur/ui/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'text-xs font-bold uppercase tracking-widest',
-    '[class.text-gray-400]': `$color() === 'primary'`,
-    '[class.dark:text-gray-600]': `$color() === 'primary'`,
-    '[class.text-mist-400]': `$color() === 'secondary'`,
-    '[class.dark:text-mist-600]': `$color() === 'secondary'`,
-    '[class.text-yellow-600]': `$color() === 'tertiary'`,
+    '[class.text-gray-500]': `$color() === 'primary'`,
+    '[class.dark:text-gray-500]': `$color() === 'primary'`,
+    '[class.text-mist-500]': `$color() === 'secondary'`,
+    '[class.dark:text-mist-500]': `$color() === 'secondary'`,
+    '[class.text-yellow-500]': `$color() === 'tertiary'`,
     '[class.dark:text-yellow-500]': `$color() === 'tertiary'`,
   },
 })

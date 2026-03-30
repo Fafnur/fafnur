@@ -7,16 +7,19 @@ import { Color } from '@fafnur/ui/common';
   template: '<ng-content/>',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'text-sm leading-relaxed',
-    '[class.text-gray-400]': `$color() === 'primary'`,
-    '[class.dark:text-gray-500]': `$color() === 'primary'`,
-    '[class.text-mist-400]': `$color() === 'secondary'`,
-    '[class.dark:text-mist-500]': `$color() === 'secondary'`,
-    '[class.text-gray-900]': `$color() === 'tertiary'`,
-    '[class.dark:text-gray-100]': `$color() === 'tertiary'`,
+    class: 'leading-relaxed',
+    '[class.text-sm]': `$size() === 'sm'`,
+    '[class.text-base]': `$size() === 'base'`,
+    '[class.text-gray-500]': `$color() === 'primary'`,
+    '[class.dark:text-gray-400]': `$color() === 'primary'`,
+    '[class.text-mist-500]': `$color() === 'secondary'`,
+    '[class.dark:text-mist-400]': `$color() === 'secondary'`,
+    '[class.text-gray-800]': `$color() === 'tertiary'`,
+    '[class.dark:text-gray-200]': `$color() === 'tertiary'`,
   },
 })
 export class NovelText {
   readonly $color = input<Color>('primary', { alias: 'color' });
+  readonly $size = input<'sm' | 'base'>('sm', { alias: 'size' });
   readonly $inline = input(false, { alias: 'inline', transform: booleanAttribute });
 }
