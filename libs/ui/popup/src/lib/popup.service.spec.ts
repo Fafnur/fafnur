@@ -37,9 +37,19 @@ describe('PopupService', () => {
     expect(document.body.querySelector('fafnur-popup')).toBeTruthy();
   });
 
-  it('open() returns an Observable', () => {
-    const obs = service.open(TestDialogComponent);
-    expect(typeof obs.subscribe).toBe('function');
+  it('open() returns a PopupRef with widgetId and closed observable', () => {
+    const ref = service.open(TestDialogComponent);
+    expect(ref.widgetId).toBeTruthy();
+    expect(typeof ref.closed.subscribe).toBe('function');
+  });
+
+  it('hasPopup() returns true for the widgetId of an open popup', () => {
+    const ref = service.open(TestDialogComponent);
+    expect(service.hasPopup(ref.widgetId)).toBe(true);
+  });
+
+  it('hasPopup() returns false for an unknown widgetId', () => {
+    expect(service.hasPopup('unknown')).toBe(false);
   });
 
   it('close() sets has() to false', () => {
@@ -62,9 +72,15 @@ describe('PopupService', () => {
     expect(service.has()).toBe(false);
   });
 
-  it('observable emits undefined and completes when popup is closed', async () => {
-    const result$ = service.open<string>(TestDialogComponent);
-    const promise = firstValueFrom(result$);
+  it('hasPopup() returns false after popup is closed', () => {
+    const ref = service.open(TestDialogComponent);
+    service.close();
+    expect(service.hasPopup(ref.widgetId)).toBe(false);
+  });
+
+  it('closed observable emits undefined and completes when popup is closed', async () => {
+    const ref = service.open<string>(TestDialogComponent);
+    const promise = firstValueFrom(ref.closed);
     service.close();
     const value = await promise;
     expect(value).toBeUndefined();

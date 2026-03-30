@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { signal } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { EMPTY } from 'rxjs';
 import { vi } from 'vitest';
 
 import { PopupService } from '@fafnur/ui/popup';
@@ -11,11 +10,14 @@ describe('NovelExit', () => {
   let component: NovelExit;
   let fixture: ComponentFixture<NovelExit>;
 
+  const mockPopupRef = {
+    ref: { onClose: vi.fn() },
+    closed: EMPTY,
+    widgetId: '1',
+  };
+
   const mockPopupService = {
-    $isOpen: signal(false),
-    toggle: vi.fn(),
-    open: vi.fn(),
-    close: vi.fn(),
+    open: vi.fn().mockReturnValue(mockPopupRef),
   };
 
   beforeEach(async () => {
@@ -42,13 +44,26 @@ describe('NovelExit', () => {
     expect(el.querySelector('button')).toBeTruthy();
   });
 
-  it('should call open on button click', () => {
-    const el: HTMLElement = fixture.nativeElement;
-    el.querySelector('button')!.click();
+  it('onPopup() opens popup when no popup is open', () => {
+    component.onPopup();
     expect(mockPopupService.open).toHaveBeenCalledTimes(1);
   });
 
-  it('should call open on ESC keydown', () => {
+  it('onPopup() closes popup when one is already open', () => {
+    component.onPopup(); // open
+    component.onPopup(); // close
+    expect(mockPopupRef.ref.onClose).toHaveBeenCalledTimes(1);
+    expect(mockPopupService.open).toHaveBeenCalledTimes(1);
+  });
+
+  it('onPopup() resets ref after close so next call opens again', () => {
+    component.onPopup(); // open
+    component.onPopup(); // close
+    component.onPopup(); // open again
+    expect(mockPopupService.open).toHaveBeenCalledTimes(2);
+  });
+
+  it('ESC keydown triggers onPopup()', () => {
     document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
     expect(mockPopupService.open).toHaveBeenCalledTimes(1);
   });

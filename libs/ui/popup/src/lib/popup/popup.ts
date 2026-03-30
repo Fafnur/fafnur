@@ -17,6 +17,7 @@ import { Observable } from 'rxjs';
 export interface PopupRef<T = unknown> {
   readonly ref: Popup;
   readonly closed: Observable<T | undefined>;
+  readonly widgetId: string;
 }
 
 @Component({

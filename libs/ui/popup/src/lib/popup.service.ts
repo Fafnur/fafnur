@@ -6,10 +6,9 @@ import {
   inject,
   Injectable,
   Injector,
-  reflectComponentType,
   Type,
 } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 
 import { POPUP_DATA, POPUP_REF, PopupOptions } from './popup.type';
 import { Popup, PopupRef } from './popup/popup';
@@ -25,20 +24,18 @@ export class PopupService {
   private readonly applicationRef = inject(ApplicationRef);
   private readonly environmentInjector = inject(EnvironmentInjector);
 
-  private readonly map = new Map<string, { readonly ref: Popup; readonly closed: Observable<any> }>();
+  private readonly map = new Map<string, PopupRef<any>>();
 
   has(): boolean {
     return this.map.size > 0;
   }
 
-  open<T>(component: Type<unknown>, options?: PopupOptions): PopupRef<T> {
-    const mirror = reflectComponentType(Popup);
-    const widgetId = mirror?.selector ?? String(++uniqueId);
+  hasPopup(widgetId: string): boolean {
+    return this.map.has(widgetId);
+  }
 
-    if (this.map.has(widgetId) && options?.unique) {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      return this.map.get(widgetId)!;
-    }
+  open<T>(component: Type<unknown>, options?: PopupOptions): PopupRef<T> {
+    const widgetId = String(++uniqueId);
 
     const componentRef = createComponent(Popup, {
       environmentInjector: this.environmentInjector,
@@ -66,7 +63,7 @@ export class PopupService {
     this.document.body.appendChild(componentRef.location.nativeElement);
 
     const subject = new Subject<T | undefined>();
-    const ref = { ref: componentRef.instance, closed: subject.asObservable() };
+    const ref = { ref: componentRef.instance, closed: subject.asObservable(), widgetId };
     this.map.set(widgetId, ref);
 
     componentRef.instance.closed.subscribe((value) => {
