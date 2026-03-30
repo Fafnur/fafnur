@@ -1,4 +1,4 @@
-import { getRoute, PATHS, PathValues, toPath, withNavigationRoutes } from './navigation';
+import { getRoute, PATHS, PathValues, toPath, toRoutes } from './navigation';
 
 describe('PATHS', () => {
   it('should define home path', () => {
@@ -62,34 +62,34 @@ describe('toPath', () => {
   });
 });
 
-describe('withNavigationRoutes', () => {
+describe('toRoutes', () => {
   it('should strip leading slash from path', () => {
     const routes = [{ path: '/about' as PathValues }];
-    const result = withNavigationRoutes(routes);
+    const result = toRoutes(routes);
     expect(result[0].path).toBe('about');
   });
 
   it('should leave wildcard route unchanged', () => {
     const routes = [{ path: '**' as PathValues }];
-    const result = withNavigationRoutes(routes);
+    const result = toRoutes(routes);
     expect(result[0].path).toBe('**');
   });
 
   it('should leave empty path unchanged', () => {
     const routes = [{ path: '' as PathValues }];
-    const result = withNavigationRoutes(routes);
+    const result = toRoutes(routes);
     expect(result[0].path).toBe('');
   });
 
   it('should strip parent prefix from path', () => {
     const routes = [{ path: '/parent/child' as PathValues }];
-    const result = withNavigationRoutes(routes, 'parent');
-    expect(result[0].path).toBe('/child');
+    const result = toRoutes(routes, 'parent');
+    expect(result[0].path).toBe('child');
   });
 
   it('should preserve other route properties', () => {
     const routes = [{ path: '/about' as PathValues, title: 'About' }];
-    const result = withNavigationRoutes(routes);
+    const result = toRoutes(routes);
     expect(result[0]).toMatchObject({ title: 'About' });
   });
 });

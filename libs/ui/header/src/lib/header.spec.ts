@@ -37,6 +37,6 @@ describe('Header', () => {
     fixture.detectChanges();
     const el: HTMLElement = fixture.nativeElement;
     const navLinks = el.querySelectorAll('nav a');
-    expect(navLinks.length).toBe(3);
+    expect(navLinks.length).toBe(4);
   });
 });

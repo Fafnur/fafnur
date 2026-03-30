@@ -28,19 +28,19 @@ describe('NovelActor', () => {
   });
 
   it('should apply primary color class by default', () => {
-    expect(fixture.nativeElement.classList).toContain('text-gray-400');
+    expect(fixture.nativeElement.classList).toContain('text-gray-500');
   });
 
   it('should apply secondary color class', () => {
     fixture.componentRef.setInput('color', 'secondary');
     fixture.detectChanges();
-    expect(fixture.nativeElement.classList).toContain('text-mist-400');
+    expect(fixture.nativeElement.classList).toContain('text-mist-500');
   });
 
   it('should apply tertiary color class', () => {
     fixture.componentRef.setInput('color', 'tertiary');
     fixture.detectChanges();
-    expect(fixture.nativeElement.classList).toContain('text-yellow-600');
+    expect(fixture.nativeElement.classList).toContain('text-yellow-500');
   });
 
   it('should project content', async () => {

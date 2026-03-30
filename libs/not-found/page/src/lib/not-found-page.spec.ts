@@ -54,29 +54,29 @@ describe('NotFoundPage', () => {
 
   it('should render link to home', () => {
     const el: HTMLElement = fixture.nativeElement;
-    const links = el.querySelectorAll('a[ng-reflect-router-link]');
-    const hrefs = Array.from(links).map((a) => a.getAttribute('ng-reflect-router-link'));
+    const links = el.querySelectorAll('a[href]');
+    const hrefs = Array.from(links).map((a) => a.getAttribute('href'));
     expect(hrefs).toContain(PATHS.home);
   });
 
   it('should render link to about', () => {
     const el: HTMLElement = fixture.nativeElement;
-    const links = el.querySelectorAll('a[ng-reflect-router-link]');
-    const hrefs = Array.from(links).map((a) => a.getAttribute('ng-reflect-router-link'));
+    const links = el.querySelectorAll('a[href]');
+    const hrefs = Array.from(links).map((a) => a.getAttribute('href'));
     expect(hrefs).toContain(PATHS.about);
   });
 
   it('should render link to adventure', () => {
     const el: HTMLElement = fixture.nativeElement;
-    const links = el.querySelectorAll('a[ng-reflect-router-link]');
-    const hrefs = Array.from(links).map((a) => a.getAttribute('ng-reflect-router-link'));
+    const links = el.querySelectorAll('a[href]');
+    const hrefs = Array.from(links).map((a) => a.getAttribute('href'));
     expect(hrefs).toContain(PATHS.adventure);
   });
 
   it('should render link to novels', () => {
     const el: HTMLElement = fixture.nativeElement;
-    const links = el.querySelectorAll('a[ng-reflect-router-link]');
-    const hrefs = Array.from(links).map((a) => a.getAttribute('ng-reflect-router-link'));
+    const links = el.querySelectorAll('a[href]');
+    const hrefs = Array.from(links).map((a) => a.getAttribute('href'));
     expect(hrefs).toContain(PATHS.novels);
   });
 });

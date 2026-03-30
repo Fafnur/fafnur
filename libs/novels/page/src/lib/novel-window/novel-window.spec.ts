@@ -10,6 +10,7 @@ const mockInkService = {
   $choices: signal([] as unknown[]),
   $historyBlocks: signal([] as unknown[][]),
   $currentLines: signal([] as unknown[]),
+  $currentView: signal(''),
   choose: vi.fn(),
   reset: vi.fn(),
 };

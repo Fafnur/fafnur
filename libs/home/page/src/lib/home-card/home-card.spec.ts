@@ -27,8 +27,8 @@ describe('HomeCard', () => {
     const el: HTMLElement = fixture.nativeElement;
     const heading = el.querySelector('h1');
     expect(heading).not.toBeNull();
-    expect(heading?.textContent).toContain('Начать новое');
-    expect(heading?.textContent).toContain('приключение');
+    expect(heading?.textContent).toContain('Start a new');
+    expect(heading?.textContent).toContain('adventure');
   });
 
   it('should render link to novels', () => {
@@ -36,7 +36,7 @@ describe('HomeCard', () => {
     const el: HTMLElement = fixture.nativeElement;
     const link = el.querySelector('a');
     expect(link).not.toBeNull();
-    expect(link?.textContent?.trim()).toBe('Начать сейчас');
+    expect(link?.textContent?.trim()).toBe('Start the adventure');
   });
 
   it('should have paths defined', () => {
