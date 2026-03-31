@@ -98,3 +98,33 @@ If the build fails — **stop and report the errors**. Do not proceed to commit.
 git add -A
 git commit -m "[vendors] Updating vendors other"
 ```
+
+## Step 9: Clean reinstall to refresh yarn.lock
+
+Delete `node_modules` and `yarn.lock`, then reinstall from scratch so `yarn.lock` reflects the latest resolved versions:
+
+```bash
+rm -rf node_modules yarn.lock
+yarn install
+```
+
+## Step 10: Run tests and e2e after clean install
+
+```bash
+yarn test
+```
+
+If any tests fail — **stop and report the failures**. Do not proceed.
+
+```bash
+yarn nx e2e fafnur-e2e --no-tui
+```
+
+If any e2e tests fail — **stop and report the failures**. Do not proceed to commit.
+
+## Step 11: Commit refreshed yarn.lock
+
+```bash
+git add -A
+git commit -m "[vendors] Refresh yarn.lock"
+```
