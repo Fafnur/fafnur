@@ -52,9 +52,9 @@ function createGitRelease(version: string): void {
   execSync('git checkout develop');
   execSync(`git merge ${branch} -m "Merge branch '${branch}' into develop" --no-ff`);
   execSync(`git branch --delete ${branch}`);
-  execSync(`git checkout master`);
+  execSync(`git checkout main`);
   execSync(`git rebase develop`);
-  execSync(`git push -u origin master develop`);
+  execSync(`git push -u origin main develop`);
   execSync(`git checkout develop`);
 }
 
@@ -66,14 +66,14 @@ function runChecks(): void {
   execSync('yarn nx run-many --all --target=test', { stdio: 'inherit' });
 }
 
-function ensureCleanDevelopAndMaster(): void {
+function ensureCleanDevelopAndMain(): void {
   const status = execSync('git status --porcelain', { encoding: 'utf8' }).trim();
   if (status) {
     output.error({ title: 'Develop branch has uncommitted changes. Commit or stash them before releasing.\n' });
     process.exit(1);
   }
 
-  execSync('git fetch origin develop master', { stdio: 'inherit' });
+  execSync('git fetch origin develop main', { stdio: 'inherit' });
 
   const localHash = execSync('git rev-parse develop', { encoding: 'utf8' }).trim();
   const remoteHash = execSync('git rev-parse origin/develop', { encoding: 'utf8' }).trim();
@@ -83,11 +83,11 @@ function ensureCleanDevelopAndMaster(): void {
     process.exit(1);
   }
 
-  const localMasterHash = execSync('git rev-parse master', { encoding: 'utf8' }).trim();
-  const remoteMasterHash = execSync('git rev-parse origin/master', { encoding: 'utf8' }).trim();
+  const localMainHash = execSync('git rev-parse main', { encoding: 'utf8' }).trim();
+  const remoteMainHash = execSync('git rev-parse origin/main', { encoding: 'utf8' }).trim();
 
-  if (localMasterHash !== remoteMasterHash) {
-    output.error({ title: 'Master branch is not in sync with origin/master. Please fetch origin changes first.\n' });
+  if (localMainHash !== remoteMainHash) {
+    output.error({ title: 'Main branch is not in sync with origin/main. Please fetch origin changes first.\n' });
     process.exit(1);
   }
 }
@@ -109,7 +109,7 @@ function release(): void {
       process.exit(1);
     }
 
-    ensureCleanDevelopAndMaster();
+    ensureCleanDevelopAndMain();
     runChecks();
 
     const lastCommitMessage = execSync('git log --format=%B -n 1 HEAD', { encoding: 'utf8' }).trim();
