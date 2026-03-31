@@ -44,6 +44,10 @@
       },
       "configurations": {
         "production": {
+          "index": {
+            "input": "apps/fafnur/src/index.prod.html",
+            "output": "index.html"
+          },
           "indexHtmlTransformer": "apps/fafnur/index-html.transformer.ts",
           "budgets": [
             {
