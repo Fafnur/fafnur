@@ -16,7 +16,7 @@
     "update": "nx migrate latest",
     "dep-graph": "nx dep-graph",
     "---- Release ----": "",
-    "release": "ts-node tools/scripts/release.ts",
+    "release": "node --require @swc-node/register tools/scripts/release.ts",
     "---- Hooks ----": "",
     "prepare": "husky install"
   },
