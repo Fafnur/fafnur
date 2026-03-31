@@ -4,7 +4,6 @@
   "projectType": "application",
   "prefix": "app",
   "sourceRoot": "apps/fafnur/src",
-  "tags": [],
   "i18n": {
     "sourceLocale": "en-US",
     "locales": {
@@ -14,19 +13,30 @@
       }
     }
   },
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/fafnur",
         "browser": "apps/fafnur/src/main.ts",
         "tsConfig": "apps/fafnur/tsconfig.app.json",
-        "polyfills": ["@angular/localize/init", "core-js/actual"],
-        "localize": ["ru"],
+        "polyfills": [
+          "@angular/localize/init",
+          "core-js/actual"
+        ],
+        "localize": [
+          "ru"
+        ],
         "inlineStyleLanguage": "scss",
         "stylePreprocessorOptions": {
-          "includePaths": ["node_modules", "./"]
+          "includePaths": [
+            "node_modules",
+            "./"
+          ]
         },
         "assets": [
           {
@@ -34,8 +44,12 @@
             "input": "apps/fafnur/public"
           }
         ],
-        "externalDependencies": ["assets/*"],
-        "styles": ["apps/fafnur/src/styles.scss"],
+        "externalDependencies": [
+          "assets/*"
+        ],
+        "styles": [
+          "apps/fafnur/src/styles.scss"
+        ],
         "server": "apps/fafnur/src/main.server.ts",
         "ssr": {
           "entry": "apps/fafnur/src/server.ts"
@@ -103,9 +117,11 @@
     },
     "test": {
       "executor": "@nx/vitest:test",
-      "outputs": ["{options.reportsDirectory}"],
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
       "options": {
-        "reportsDirectory": "../../coverage/apps/fafnur"
+        "reportsDirectory": "{projectRoot}/../../coverage/apps/fafnur"
       }
     },
     "extract-i18n": {

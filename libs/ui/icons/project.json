@@ -8,9 +8,11 @@
   "targets": {
     "test": {
       "executor": "@nx/vitest:test",
-      "outputs": ["{options.reportsDirectory}"],
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
       "options": {
-        "reportsDirectory": "../../../coverage/libs/ui/icons"
+        "reportsDirectory": "{projectRoot}/../../../coverage/libs/ui/icons"
       }
     },
     "lint": {

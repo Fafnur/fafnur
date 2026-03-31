@@ -63,3 +63,5 @@ junit.xml
 /apps/**/source.xlf
 /apps/**/sitemap.xml
 vitest.config.*.timestamp*
+
+.claude/worktrees
