@@ -26,7 +26,7 @@ test.describe('Adventure Page', () => {
 
   test('navigates to adventure via header link', async ({ page }) => {
     await page.goto('/');
-    await page.locator('nav').getByRole('link', { name: 'Приключение' }).click();
+    await page.locator('nav').getByRole('link', { name: 'Инфо' }).click();
     await expect(page).toHaveURL('/adventure');
   });
 });

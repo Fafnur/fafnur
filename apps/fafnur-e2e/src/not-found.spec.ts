@@ -15,17 +15,17 @@ test.describe('Not Found Page', () => {
 
   test('has link to home', async ({ page }) => {
     await page.goto('/404');
-    await expect(page.getByRole('link', { name: 'Главная' })).toBeVisible();
+    await expect(page.locator('main').getByRole('link', { name: 'Главная' })).toBeVisible();
   });
 
   test('has link to about', async ({ page }) => {
     await page.goto('/404');
-    await expect(page.getByRole('link', { name: 'Обо мне' })).toBeVisible();
+    await expect(page.locator('main').getByRole('link', { name: 'Обо мне' })).toBeVisible();
   });
 
   test('has link to adventure', async ({ page }) => {
     await page.goto('/404');
-    await expect(page.getByRole('link', { name: 'Приключение' })).toBeVisible();
+    await expect(page.locator('main').getByRole('link', { name: 'Приключение' })).toBeVisible();
   });
 
   test('has link to quest', async ({ page }) => {
@@ -35,7 +35,7 @@ test.describe('Not Found Page', () => {
 
   test('home link navigates to /', async ({ page }) => {
     await page.goto('/404');
-    await page.getByRole('link', { name: 'Главная' }).click();
+    await page.locator('main').getByRole('link', { name: 'Главная' }).click();
     await expect(page).toHaveURL('/');
   });
 });

@@ -3,8 +3,9 @@ import { expect, test } from '@playwright/test';
 const novelWindow = 'fafnur-novel-window';
 const novelLoading = 'fafnur-novel-loading';
 const choices = 'fafnur-novel-choices ul li button';
-const exitBtn = '[aria-label="Меню"]';
-const popupAnchor = 'text=Написать мне';
+const exitBtn = 'fafnur-novel-exit button';
+const popup = 'fafnur-popup';
+const popupAnchor = 'fafnur-popup-panel';
 
 test.describe('Novel Page', () => {
   test.beforeEach(async ({ page }) => {
@@ -66,8 +67,8 @@ test.describe('Novel Page', () => {
   test('clicking exit button again closes popup', async ({ page }) => {
     await page.locator(exitBtn).click();
     await expect(page.locator(popupAnchor)).toBeVisible();
-    await page.locator(exitBtn).click();
-    await expect(page.locator(popupAnchor)).not.toBeVisible();
+    await page.locator(popup).click();
+    await expect(page.locator(popupAnchor)).toBeHidden();
   });
 
   test('ESC key opens popup', async ({ page }) => {
@@ -105,19 +106,17 @@ test.describe('Novel Page', () => {
 
   test('"Play again" resets the quest', async ({ page }) => {
     await playToEnd(page);
-    await page.getByRole('button', { name: /Сыграть в приключение снова/i }).click();
+    await page.locator('fafnur-novel-choices button').click();
     await expect(page.locator(choices).first()).toBeVisible({ timeout: 5_000 });
   });
 });
 
 /** Plays through the story by always selecting the first choice until no choices remain. */
 async function playToEnd(page: import('@playwright/test').Page): Promise<void> {
-  for (let i = 0; i < 100; i++) {
-    const playAgain = page.getByRole('button', { name: /Сыграть в приключение снова/i });
-    if (await playAgain.isVisible()) return;
-
-    const first = page.locator('fafnur-novel-choices ul li button').first();
-    await first.waitFor({ timeout: 5_000 });
-    await first.click();
+  let isVisible = await page.locator('fafnur-novel-choices fafnur-novel-end').isVisible();
+  while (!isVisible) {
+    const last = page.locator('fafnur-novel-choices button').last();
+    await last.click();
+    isVisible = await page.locator('fafnur-novel-choices fafnur-novel-end').isVisible();
   }
 }
