@@ -60,10 +60,10 @@ function createGitRelease(version: string): void {
 
 function runChecks(): void {
   output.log({ title: 'Running lint...' });
-  execSync('yarn nx run-many --all --target=lint', { stdio: 'inherit' });
+  execSync('yarn nx run-many --all --target=lint --no-tui', { stdio: 'inherit' });
 
   output.log({ title: 'Running tests...' });
-  execSync('yarn nx run-many --all --target=test', { stdio: 'inherit' });
+  execSync('yarn nx run-many --all --target=test --no-tui', { stdio: 'inherit' });
 }
 
 function ensureCleanDevelopAndMain(): void {
