@@ -6,15 +6,42 @@
   "affected": {
     "defaultBase": "develop"
   },
+  "defaultProject": "fafnur",
+  "useInferencePlugins": false,
+  "defaultBase": "develop",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": [
+      "default",
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/eslint.config.mjs",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json"
+    ],
+    "sharedGlobals": []
+  },
   "targetDefaults": {
-    "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"],
-      "cache": true
-    },
-    "@nx/jest:jest": {
-      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
+    "@angular/build:application": {
       "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "@nx/eslint:lint": {
+      "cache": true,
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore",
+        "{workspaceRoot}/eslint.config.mjs"
+      ]
+    },
+    "@angular/build:unit-test": {
+      "cache": true,
+      "inputs": ["default", "^production"]
+    },
+    "@nx/vitest:test": {
+      "cache": true,
+      "inputs": ["default", "^production"],
       "options": {
         "passWithNoTests": true
       },
@@ -24,56 +51,76 @@
           "codeCoverage": true
         }
       }
-    },
-    "@nx/eslint:lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json", "{workspaceRoot}/.eslintignore"],
-      "cache": true
     }
   },
-  "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": [
-      "default",
-      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
-      "!{projectRoot}/tsconfig.spec.json",
-      "!{projectRoot}/jest.config.[jt]s",
-      "!{projectRoot}/src/test-setup.[jt]s",
-      "!{projectRoot}/test-setup.[jt]s",
-      "!{projectRoot}/.eslintrc.json"
-    ],
-    "sharedGlobals": []
-  },
+  "plugins": [
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
   "generators": {
     "@nx/angular:application": {
-      "style": "scss",
+      "e2eTestRunner": "playwright",
       "linter": "eslint",
-      "unitTestRunner": "jest",
-      "e2eTestRunner": "none",
-      "projectNameAndRootFormat": "derived",
-      "standalone": true,
-      "changeDetection": "OnPush"
+      "style": "scss",
+      "unitTestRunner": "vitest-analog",
+      "prefix": "fafnur"
     },
     "@nx/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "jest",
-      "projectNameAndRootFormat": "derived",
-      "standalone": true,
-      "style": "scss"
+      "unitTestRunner": "vitest-analog",
+      "style": "none",
+      "prefix": "fafnur",
+      "changeDetection": "OnPush"
     },
     "@nx/angular:component": {
-      "style": "scss",
+      "style": "none",
       "changeDetection": "OnPush",
-      "standalone": true
-    },
-    "@nx/angular:pipe": {
-      "standalone": true
+      "prefix": "fafnur"
     },
     "@schematics/angular:component": {
-      "style": "scss",
+      "style": "none",
       "changeDetection": "OnPush",
-      "standalone": true
+      "prefix": "fafnur"
+    },
+    "@nx/angular:guard": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:guard": {
+      "typeSeparator": "."
+    },
+    "@nx/angular:interceptor": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:interceptor": {
+      "typeSeparator": "."
+    },
+    "@nx/angular:module": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:module": {
+      "typeSeparator": "."
+    },
+    "@nx/angular:pipe": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:pipe": {
+      "typeSeparator": "."
+    },
+    "@nx/angular:resolver": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:resolver": {
+      "typeSeparator": "."
     }
-  },
-  "defaultProject": "fafn.ru",
-  "nxCloudAccessToken": "ZmY0M2Q1MTAtZDUxMi00Y2ZkLTk1NWEtNWI5MWJiY2FjZTcwfHJlYWQtd3JpdGU="
+  }
 }

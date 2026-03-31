@@ -1,0 +1,31 @@
+@if ($choices().length > 0) {
+  <ul class="flex flex-col gap-1">
+    @for (choice of $choices(); track choice.index; let i = $index) {
+      <li>
+        <button
+          #choiceButton
+          class="group flex items-baseline gap-2 w-full py-2 text-left text-gray-700 dark:text-gray-300 hover:text-yellow-600 dark:hover:text-yellow-400 focus-visible:text-yellow-600 dark:focus-visible:text-yellow-400 transition-colors cursor-pointer"
+          type="button"
+          (click)="onChoose(choice.index)"
+        >
+          <span
+            class="text-xs font-mono text-yellow-600 opacity-40 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity select-none shrink-0 w-3"
+            >{{ i + 1 }}</span
+          >
+          <span
+            class="opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity select-none shrink-0 text-yellow-600"
+            >›</span
+          >
+          <span>{{ choice.text }}</span>
+        </button>
+      </li>
+    }
+  </ul>
+} @else {
+  <div class="flex flex-col gap-6">
+    <fafnur-novel-end />
+    <div>
+      <button fafnurButton type="button" (click)="onReset()" i18n="Novel|Reset">Play the&nbsp;adventure again?</button>
+    </div>
+  </div>
+}

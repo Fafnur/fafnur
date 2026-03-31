@@ -1,9 +1,9 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # compiled output
 dist
 tmp
-/out-tsc
+out-tsc
 
 # dependencies
 node_modules
@@ -38,24 +38,28 @@ testem.log
 .DS_Store
 Thumbs.db
 
+.nx/cache
+.nx/workspace-data
+
 .angular
 
+__screenshots__/
+
+# Claude Code
+.claude/settings.local.json
+
 # Custom
+.yarn
+.yarnrc
 /mocks/tmp
-/apps/**/src/assets/locale
-package-lock.json
 .env
-/apps/**/.env
-/apps/**/source.xlf
 .husky/*
 junit.xml
 /junit
-/apps/**/dynamic-routes.txt
+*.patch
+
+# APPS
+/apps/**/.env
+/apps/**/source.xlf
 /apps/**/sitemap.xml
-.yarnrc
-yarn.lock
-/apps/**/routes/blog.routes.ts
-/apps/**/routes/blog-*.routes.ts
-
-
-.nx/cache
+vitest.config.*.timestamp*

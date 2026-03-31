@@ -1,0 +1,10 @@
+@let theme = $currentTheme();
+<fafnur-theme-radio aria-label="System theme" [checked]="theme === 'system'" (click)="onSelect('system')">
+  <fafnur-icon-display />
+</fafnur-theme-radio>
+<fafnur-theme-radio aria-label="Light theme" [checked]="theme === 'light'" tabindex="-1" (click)="onSelect('light')">
+  <fafnur-icon-sun />
+</fafnur-theme-radio>
+<fafnur-theme-radio aria-label="Dark theme" [checked]="theme === 'dark'" tabindex="-1" (click)="onSelect('dark')">
+  <fafnur-icon-moon />
+</fafnur-theme-radio>

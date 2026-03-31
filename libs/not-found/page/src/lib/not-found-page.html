@@ -1,0 +1,21 @@
+<fafnur-container class="py-24 flex flex-col items-center text-center gap-10">
+  <div class="flex flex-col items-center gap-4">
+    <div class="font-mono text-[8rem] font-bold leading-none text-yellow-600 sm:text-[10rem]">404</div>
+    <h1 fafnurHeadline i18n="Not Found Page|Title">Page not found</h1>
+    <fafnur-unit class="max-w-lg text-lg text-gray-600 dark:text-gray-400" i18n="Not Found Page|Description">
+      Looks like this page got lost in the codebase. No commit, no trace — just a dead end.
+    </fafnur-unit>
+  </div>
+
+  <div class="flex flex-col gap-4 w-full max-w-xl">
+    <p class="font-mono text-sm text-gray-400 dark:text-gray-500" i18n="Not Found Page|Suggestion">
+      // Maybe you were looking for one of these:
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a fafnurButton [routerLink]="paths.home" i18n="Not Found Page|Home link">Home</a>
+      <a fafnurButton [routerLink]="paths.about" i18n="Not Found Page|About link">About me</a>
+      <a fafnurButton [routerLink]="paths.adventure" i18n="Not Found Page|Adventure link">Adventure</a>
+      <a fafnurButton [routerLink]="paths.novels" i18n="Not Found Page|Novels link">Start quest</a>
+    </div>
+  </div>
+</fafnur-container>

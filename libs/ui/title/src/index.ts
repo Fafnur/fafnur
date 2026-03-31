@@ -1,1 +1,1 @@
-export * from './lib/title.component';
+export * from './lib/title';

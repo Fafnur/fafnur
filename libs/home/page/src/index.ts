@@ -1,1 +1,3 @@
-export * from './lib/home-page.component';
+import { HomePage } from './lib/home-page';
+
+export default HomePage;

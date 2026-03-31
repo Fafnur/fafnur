@@ -1,1 +1,3 @@
-export * from './lib/footer.component';
+import { Footer } from './lib/footer';
+
+export default Footer;

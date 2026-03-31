@@ -1,0 +1,15 @@
+@use 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+@layer base {
+  *,
+  *::before,
+  *::after {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-orange-700;
+  }
+}

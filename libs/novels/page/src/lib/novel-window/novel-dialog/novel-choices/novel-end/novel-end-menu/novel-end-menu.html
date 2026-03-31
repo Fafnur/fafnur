@@ -1,0 +1,24 @@
+<a href="mailto:fafnur@yandex.ru" fafnurNovelLink i18n="Novel|End contact" (click)="onClick()">Contact me</a>
+<a
+  href="https://github.com/fafnur"
+  target="_blank"
+  rel="noopener noreferrer"
+  fafnurNovelLink
+  i18n="Novel|End github"
+  (click)="onClick()"
+  >View GitHub</a
+>
+<a
+  href="https://telegram.me/f_a_f_n_u_r"
+  target="_blank"
+  rel="noopener noreferrer"
+  fafnurNovelLink
+  i18n="Novel|End blog"
+  (click)="onClick()"
+  >Read the blog</a
+>
+<a [routerLink]="paths.home" fafnurNovelLink i18n="Novel|End leave" (click)="onClick()">Leave</a>
+@if ($withThemeSwitcher()) {
+  <hr class="p-2 border-gray-200 dark:border-mauve-800" />
+  <fafnur-unit class="flex justify-center"><fafnur-theme-switcher /></fafnur-unit>
+}

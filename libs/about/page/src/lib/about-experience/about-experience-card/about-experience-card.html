@@ -1,0 +1,12 @@
+<fafnur-about-experience-dot />
+<fafnur-about-experience-box>
+  <fafnur-about-experience-header>
+    <fafnur-about-experience-company>{{ $experience().company }}</fafnur-about-experience-company>
+    <fafnur-about-experience-period [experience]="$experience()" />
+  </fafnur-about-experience-header>
+  <fafnur-about-experience-post>{{ $experience().post }}</fafnur-about-experience-post>
+  @let list = $experience().description;
+  @if (list) {
+    <fafnur-about-experience-list [list]="list" />
+  }
+</fafnur-about-experience-box>
