@@ -21,7 +21,9 @@
       "@fafnur/adventure/page": ["libs/adventure/page/src/index.ts"],
       "@fafnur/core": ["libs/core/src/index.ts"],
       "@fafnur/home/page": ["libs/home/page/src/index.ts"],
+      "@fafnur/not-found/page": ["libs/not-found/page/src/index.ts"],
       "@fafnur/novels/page": ["libs/novels/page/src/index.ts"],
+      "@fafnur/server/sitemap": ["libs/server/sitemap/src/index.ts"],
       "@fafnur/ui/buttons": ["libs/ui/buttons/src/index.ts"],
       "@fafnur/ui/common": ["libs/ui/common/src/index.ts"],
       "@fafnur/ui/container": ["libs/ui/container/src/index.ts"],
@@ -34,11 +36,9 @@
       "@fafnur/ui/link": ["libs/ui/link/src/index.ts"],
       "@fafnur/ui/popup": ["libs/ui/popup/src/index.ts"],
       "@fafnur/ui/tabs": ["libs/ui/tabs/src/index.ts"],
+      "@fafnur/ui/theme-switcher": ["libs/ui/theme-switcher/src/index.ts"],
       "@fafnur/ui/title": ["libs/ui/title/src/index.ts"],
-      "@fafnur/ui/unit": ["libs/ui/unit/src/index.ts"],
-      "@fafnur/not-found/page": ["libs/not-found/page/src/index.ts"],
-      "@fafnur/server/sitemap": ["libs/server/sitemap/src/index.ts"],
-      "@fafnur/ui/theme-switcher": ["libs/ui/theme-switcher/src/index.ts"]
+      "@fafnur/ui/unit": ["libs/ui/unit/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

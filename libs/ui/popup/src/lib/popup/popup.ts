@@ -9,10 +9,10 @@ import {
   viewChild,
   ViewContainerRef,
 } from '@angular/core';
+import { Observable } from 'rxjs';
 
 import { PopupOptions } from '../popup.type';
 import { PopupPanel } from './popup-panel/popup-panel';
-import { Observable } from 'rxjs';
 
 export interface PopupRef<T = unknown> {
   readonly ref: Popup;

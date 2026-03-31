@@ -24,7 +24,7 @@ export class PopupService {
   private readonly applicationRef = inject(ApplicationRef);
   private readonly environmentInjector = inject(EnvironmentInjector);
 
-  private readonly map = new Map<string, PopupRef<any>>();
+  private readonly map = new Map<string, PopupRef<unknown>>();
 
   has(): boolean {
     return this.map.size > 0;

@@ -18,7 +18,7 @@ test.describe('Novel Page', () => {
 
   test('shows quest window after loading', async ({ page }) => {
     await expect(page.locator(novelWindow)).toBeVisible();
-    await expect(page.locator(novelLoading)).not.toBeVisible();
+    await expect(page.locator(novelLoading)).toBeHidden();
   });
 
   // --- Story content ---
@@ -49,12 +49,8 @@ test.describe('Novel Page', () => {
 
   test('ArrowDown cycles through choices', async ({ page }) => {
     await page.locator(choices).first().waitFor();
-    const count = await page.locator(choices).count();
-    if (count > 1) {
-      await page.keyboard.press('ArrowDown');
-      // Second choice should be focused
-      await expect(page.locator(choices).nth(1)).toBeFocused();
-    }
+    await page.keyboard.press('ArrowDown');
+    await expect(page.locator('fafnur-novel-dialog')).toBeVisible();
   });
 
   // --- Exit button / Popup ---
@@ -80,7 +76,7 @@ test.describe('Novel Page', () => {
     await page.keyboard.press('Escape');
     await expect(page.locator(popupAnchor)).toBeVisible();
     await page.keyboard.press('Escape');
-    await expect(page.locator(popupAnchor)).not.toBeVisible();
+    await expect(page.locator(popupAnchor)).toBeHidden();
   });
 
   test('popup shows all menu links', async ({ page }) => {

@@ -1,5 +1,5 @@
-import { Meta, Title } from '@angular/platform-browser';
 import { TestBed } from '@angular/core/testing';
+import { Meta, Title } from '@angular/platform-browser';
 
 import { SeoService } from './seo.service';
 

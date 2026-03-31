@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { existsSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
