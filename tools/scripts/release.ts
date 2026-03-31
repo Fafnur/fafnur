@@ -64,6 +64,9 @@ function runChecks(): void {
 
   output.log({ title: 'Running tests...' });
   execSync('yarn nx run-many --all --target=test --no-tui', { stdio: 'inherit' });
+
+  output.log({ title: 'Running e2e tests...' });
+  execSync('yarn nx e2e fafnur-e2e --no-tui', { stdio: 'inherit' });
 }
 
 function ensureCleanDevelopAndMain(): void {
