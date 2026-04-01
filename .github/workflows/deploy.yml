@@ -26,6 +26,9 @@ jobs:
 
       - name: Build
         run: yarn build
+        env:
+          NX_WORKSPACE_ROOT: ${{ github.workspace }}
+          NX_TASK_TARGET_PROJECT: fafnur
 
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@8.0.4
