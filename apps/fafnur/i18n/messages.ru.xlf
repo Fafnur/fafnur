@@ -930,16 +930,7 @@
         <note priority="1" from="description">End leave</note>
         <note priority="1" from="meaning">Novel</note>
       </trans-unit>
-      <trans-unit id="6145650449301831153" datatype="html">
-        <source>Theme</source>
-        <target state="translated">Тема</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/novels/page/src/lib/novel-window/novel-dialog/novel-choices/novel-end/novel-end-menu/novel-theme/novel-theme.html</context>
-          <context context-type="linenumber">1,2</context>
-        </context-group>
-        <note priority="1" from="description">Theme label</note>
-        <note priority="1" from="meaning">Novel</note>
-      </trans-unit>
+
       <trans-unit id="1824587779968049682" datatype="html">
         <source>Play the adventure again?</source>
         <target state="translated">Сыграть в приключение снова?</target>
@@ -1019,6 +1010,76 @@
         </context-group>
         <note priority="1" from="description">History</note>
         <note priority="1" from="meaning">NovelTab</note>
+      </trans-unit>
+      <trans-unit id="7704349527246061104" datatype="html">
+        <source>GitHub</source>
+        <target state="translated">GitHub</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/socials/socials.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">GitHub social link</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="2649146658212529325" datatype="html">
+        <source>Telegram</source>
+        <target state="translated">Telegram</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/socials/socials.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Telegram social link</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="7665389092445667162" datatype="html">
+        <source>Habr</source>
+        <target state="translated">Habr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/socials/socials.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Habr social link</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="7377912751770821526" datatype="html">
+        <source>Medium</source>
+        <target state="translated">Medium</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/socials/socials.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Medium social link</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="6178448925249892097" datatype="html">
+        <source>Dev.to</source>
+        <target state="translated">Dev.to</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/socials/socials.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Dev.to social link</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="729069198865790861" datatype="html">
+        <source>X (Twitter)</source>
+        <target state="translated">X (Twitter)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/socials/socials.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">X Twitter social link</note>
+        <note priority="1" from="meaning">Footer</note>
+      </trans-unit>
+      <trans-unit id="4293082642788618104" datatype="html">
+        <source>LinkedIn</source>
+        <target state="translated">LinkedIn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/footer/src/lib/socials/socials.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">LinkedIn social link</note>
+        <note priority="1" from="meaning">Footer</note>
       </trans-unit>
       <trans-unit id="9087434948841008337" datatype="html">
         <source>Fafnur</source>
