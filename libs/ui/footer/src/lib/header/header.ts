@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: '<ng-content />',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'block text-sm font-semibold uppercase tracking-wider text-mauve-500 dark:text-mauve-400',
+    class: 'block text-sm font-semibold uppercase tracking-wider text-mauve-700 dark:text-mauve-400',
   },
 })
 export class Header {}
