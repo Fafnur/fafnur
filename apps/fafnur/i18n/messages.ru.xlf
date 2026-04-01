@@ -930,9 +930,9 @@
         <note priority="1" from="description">End blog</note>
         <note priority="1" from="meaning">Novel</note>
       </trans-unit>
-      <trans-unit id="5708022497680870000" datatype="html">
-        <source>Leave</source>
-        <target state="translated">Уйти</target>
+      <trans-unit id="578047342209163287" datatype="html">
+        <source>Back to Home</source>
+        <target state="translated">Вернуться на главную</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/novels/page/src/lib/novel-choices/novel-end/novel-end.html</context>
           <context context-type="linenumber">35</context>
