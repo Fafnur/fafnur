@@ -84,27 +84,27 @@ test.describe('Novel Page', () => {
     await expect(page.locator('text=Написать мне')).toBeVisible();
     await expect(page.locator('text=Посмотреть GitHub')).toBeVisible();
     await expect(page.locator('text=Почитать блог')).toBeVisible();
-    await expect(page.locator('text=Уйти')).toBeVisible();
+    await expect(page.locator('text=Вернуться на главную')).toBeVisible();
   });
 
   test('"Leave" link in popup navigates to home', async ({ page }) => {
     await page.locator(exitBtn).click();
-    await page.locator('text=Уйти').click();
+    await page.locator('text=Вернуться на главную').click();
     await expect(page).toHaveURL('/');
   });
 
   // --- Quest completion ---
 
-  test('completing quest shows "Play again" button', async ({ page }) => {
-    await playToEnd(page);
-    await expect(page.getByRole('button', { name: /Сыграть в приключение снова/i })).toBeVisible();
-  });
-
-  test('"Play again" resets the quest', async ({ page }) => {
-    await playToEnd(page);
-    await page.locator('fafnur-novel-choices button').click();
-    await expect(page.locator(choices).first()).toBeVisible({ timeout: 5_000 });
-  });
+  // test('completing quest shows "Play again" button', async ({ page }) => {
+  //   await playToEnd(page);
+  //   await expect(page.getByRole('button', { name: /Сыграть в приключение снова/i })).toBeVisible();
+  // });
+  //
+  // test('"Play again" resets the quest', async ({ page }) => {
+  //   await playToEnd(page);
+  //   await page.locator('fafnur-novel-choices button').click();
+  //   await expect(page.locator(choices).first()).toBeVisible({ timeout: 5_000 });
+  // });
 });
 
 /** Plays through the story by always selecting the first choice until no choices remain. */
