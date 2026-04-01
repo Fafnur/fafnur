@@ -8,7 +8,7 @@ import { Color } from '@fafnur/ui/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:
-      'inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm text-white font-semibold transition cursor-pointer',
+      'inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm text-gray-900 font-semibold transition cursor-pointer',
     '[class.bg-yellow-600]': `$color() === 'primary'`,
     '[class.hover:bg-yellow-700]': `$color() === 'primary'`,
   },
