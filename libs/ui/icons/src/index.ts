@@ -10,6 +10,7 @@ export * from './lib/icon-linkedin/icon-linkedin';
 export * from './lib/icon-logo/icon-logo';
 export * from './lib/icon-medium/icon-medium';
 export * from './lib/icon-moon/icon-moon';
+export * from './lib/icon-pdf/icon-pdf';
 export * from './lib/icon-person/icon-person';
 export * from './lib/icon-settings/icon-settings';
 export * from './lib/icon-sun/icon-sun';
