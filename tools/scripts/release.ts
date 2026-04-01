@@ -47,7 +47,8 @@ function createGitRelease(version: string): void {
   const branch = `release/v${version}`;
 
   execSync(`git checkout -b ${branch}`);
-  execSync('git add package.json');
+  execSync('node --require @swc-node/register tools/scripts/sitemap.ts');
+  execSync('git add package.json apps/fafnur/public/sitemap.xml');
   execSync(`git commit -m "version up v${version}"`);
   execSync('git checkout develop');
   execSync(`git merge ${branch} -m "Merge branch '${branch}' into develop" --no-ff`);

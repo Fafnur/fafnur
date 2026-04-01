@@ -23,7 +23,6 @@
       "@fafnur/home/page": ["libs/home/page/src/index.ts"],
       "@fafnur/not-found/page": ["libs/not-found/page/src/index.ts"],
       "@fafnur/novels/page": ["libs/novels/page/src/index.ts"],
-      "@fafnur/server/sitemap": ["libs/server/sitemap/src/index.ts"],
       "@fafnur/ui/buttons": ["libs/ui/buttons/src/index.ts"],
       "@fafnur/ui/common": ["libs/ui/common/src/index.ts"],
       "@fafnur/ui/container": ["libs/ui/container/src/index.ts"],
