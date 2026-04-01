@@ -15,17 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- prettier-ignore -->
     <script>!function(){var e=localStorage.getItem("user-theme"),t=window.matchMedia("(prefers-color-scheme: dark)").matches;"dark"!==e&&(e&&"system"!==e||!t)||document.documentElement.classList.add("dark")}();</script>
-    <meta name="google-adsense-account" content="ca-pub-3412340647651351" />
-    <script>
-      if (typeof document !== 'undefined') {
-        let theme = ('; ' + document.cookie).split(`; themePreference=`).pop().split(';')[0];
-        if (!theme) {
-          theme = 'light';
-          document.cookie = 'themePreference=light;expires=Mon, 01 Jun 2037 07:00:00 GMT;SameSite=Lax;secure;';
-        }
-        document.documentElement.setAttribute('data-theme', theme);
-      }
-    </script>
+  </head>
+  <body>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM4WX8C0M1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -52,14 +43,6 @@
       })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
       ym(88052285, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
     </script>
-    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3412340647651351"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
     <!-- eslint-disable-next-line @angular-eslint/template/prefer-self-closing-tags -->
     <fafnur-root></fafnur-root>
   </body>
