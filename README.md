@@ -53,16 +53,3 @@ my skill set.
 [![Twitter](https://img.shields.io/badge/-Twitter-1da1f2?style=flat-square&labelColor=1da1f2&logo=twitter&logoColor=white&link=https://www.twitter.com/fafnur1)](https://www.twitter.com/fafnur1)
 [![Medium](https://img.shields.io/badge/-Medium-000?style=flat-square&logo=Medium&logoColor=white&&link=https://medium.com/@fafnur)](https://medium.com/@fafnur)
 
-## Github stats
-
-### My profile Statistics
-
-![Stats](https://github-readme-stats.vercel.app/api?username=Fafnur&show_icons=true&theme=tokyonight)
-
-### Top langs
-
-![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Fafnur&langs_count=10&theme=tokyonight&layout=compact)
-
-
-
-
