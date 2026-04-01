@@ -25,8 +25,7 @@
         "browser": "apps/fafnur/src/main.ts",
         "tsConfig": "apps/fafnur/tsconfig.app.json",
         "polyfills": [
-          "@angular/localize/init",
-          "core-js/actual"
+          "@angular/localize/init"
         ],
         "localize": [
           "ru"
