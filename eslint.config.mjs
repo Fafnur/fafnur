@@ -7,7 +7,7 @@ export default [
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/javascript'],
   {
-    ignores: ['**/dist', '**/out-tsc', '**/public', '**/vitest.config.*.timestamp*'],
+    ignores: ['node_modules/*', '**/dist', '**/out-tsc', '**/public', '**/vitest.config.*.timestamp*'],
   },
   {
     files: ['**/*.html'],
