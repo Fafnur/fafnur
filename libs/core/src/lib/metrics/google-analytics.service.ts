@@ -76,7 +76,7 @@ export class GoogleAnalyticsService {
 
       for (const key of this.config.ids) {
         this.gtag('config', key, {
-          page_title: this.title,
+          page_title: this.title.getTitle(),
           page_path: url,
         });
       }
