@@ -1,5 +1,4 @@
 import { DOCUMENT, inject, Injectable } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 import { METRIC_CONFIG } from './metrics.interface';
 
@@ -14,7 +13,6 @@ declare global {
   providedIn: 'root',
 })
 export class YandexMetrikaService {
-  private readonly activatedRoute = inject(ActivatedRoute);
   private readonly document = inject(DOCUMENT);
   private readonly config = inject(METRIC_CONFIG);
 
@@ -42,12 +40,8 @@ export class YandexMetrikaService {
   }
 
   hit(url: string, options?: object): void {
-    const { error, forward } = this.activatedRoute.snapshot.queryParams;
-
     let clearReferrer = false;
     if (
-      error ||
-      forward ||
       !this.config.domains.every((domain) => this.document && this.document.referrer.indexOf(domain) < 0) ||
       !this.config.paths.every((path) => this.document && this.document.location.pathname.indexOf(path) < 0)
     ) {

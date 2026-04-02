@@ -4,6 +4,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { filter, tap } from 'rxjs/operators';
 
 import { VisitorService } from '../visitors/visitor.service';
+import { WindowService } from '../window/window.service';
 import { GoogleAnalyticsService } from './google-analytics.service';
 import type { MetricOptions } from './metrics.interface';
 import { YandexMetrikaService } from './yandex-metrika.service';
@@ -13,11 +14,15 @@ export class MetricService {
   private readonly destroyRef = inject(DestroyRef);
   private readonly router = inject(Router);
   private readonly visitorService = inject(VisitorService);
+  private readonly windowService = inject(WindowService);
 
   private readonly yandexMetrikaService = inject(YandexMetrikaService);
   private readonly googleAnalyticsService = inject(GoogleAnalyticsService);
 
   init(): void {
+    if (!this.windowService.isBrowser) {
+      return;
+    }
     this.setVisitor(this.visitorService.get());
     this.router.events
       .pipe(
