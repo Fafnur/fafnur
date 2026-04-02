@@ -2,6 +2,8 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZonelessC
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
+import { provideMetrics } from '@fafnur/core';
+
 import { appRoutes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -16,7 +18,11 @@ export const appConfig: ApplicationConfig = {
         scrollPositionRestoration: 'enabled',
       }),
     ),
-    // Setup system
-    // provideAppInitializer(() => {}),
+    provideMetrics({
+      counter: 88052285,
+      ids: ['G-SM4WX8C0M1'],
+      domains: ['fafn.ru'],
+      paths: [],
+    }),
   ],
 };
