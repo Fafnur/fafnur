@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
-import { METRIC_CONFIG, MetricConfig } from './metrics.interface';
 import { GoogleAnalyticsService } from './google-analytics.service';
+import { METRIC_CONFIG, MetricConfig } from './metrics.interface';
 
 const config: MetricConfig = {
   ids: ['GA-TEST-1', 'GA-TEST-2'],
@@ -19,10 +19,7 @@ describe('GoogleAnalyticsService', () => {
     (window as any).gtag = mockGtag;
 
     TestBed.configureTestingModule({
-      providers: [
-        GoogleAnalyticsService,
-        { provide: METRIC_CONFIG, useValue: config },
-      ],
+      providers: [GoogleAnalyticsService, { provide: METRIC_CONFIG, useValue: config }],
     });
 
     service = TestBed.inject(GoogleAnalyticsService);
@@ -46,10 +43,7 @@ describe('GoogleAnalyticsService', () => {
     it('should return noop when config has no ids', () => {
       TestBed.resetTestingModule();
       TestBed.configureTestingModule({
-        providers: [
-          GoogleAnalyticsService,
-          { provide: METRIC_CONFIG, useValue: { ...config, ids: [] } },
-        ],
+        providers: [GoogleAnalyticsService, { provide: METRIC_CONFIG, useValue: { ...config, ids: [] } }],
       });
       service = TestBed.inject(GoogleAnalyticsService);
       service.set({ user_id: 'u1' });
