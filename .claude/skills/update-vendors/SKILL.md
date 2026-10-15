@@ -1,11 +1,11 @@
 ---
 name: update-vendors
-description: Update all project dependencies (Yarn, Nx, Angular, npm packages, agent skills) to latest versions following a safe migration workflow, ending with a merge into develop. Activate when user asks to "update vendors", "update dependencies", "обновить зависимости", "обновить вендоры".
+description: Update all project dependencies (Yarn, Nx, Angular, npm packages, agent skills) to latest versions following a safe migration workflow, ending with a pull request into main. Activate when user asks to "update vendors", "update dependencies", "обновить зависимости", "обновить вендоры".
 ---
 
 # Update Vendors — fafnur
 
-Goal: one branch `feature/vendors` with up to two commits, all checks green, merged into `develop` with `--no-ff`.
+Goal: one branch `feature/vendors` with up to two commits, all checks green, opened as a pull request into `main`.
 
 **Stop rule:** if any check fails at any step — **stop and report** the failing command and its output. Do not try
 to "fix" failures by downgrading random packages or changing code without asking the user first.
@@ -24,10 +24,11 @@ git status --porcelain
 
 If there are any uncommitted changes — **stop immediately** and tell the user to commit or stash them first.
 
-## Step 2: Create feature branch from develop
+## Step 2: Create feature branch from main
 
 ```bash
-git switch develop
+git switch main
+git pull --ff-only
 git switch -c feature/vendors
 ```
 
@@ -176,24 +177,24 @@ Otherwise skip this commit.
 If a major version changed (Angular, Nx, TypeScript, Tailwind, Vitest) — update the **Stack** section of
 `.claude/CLAUDE.md` and amend it into the last commit.
 
-## Step 14: Merge into develop or clean up
+## Step 14: Open a pull request or clean up
 
 ```bash
-git log develop..feature/vendors --oneline
+git log main..feature/vendors --oneline
 ```
 
-If there are commits — merge into develop (do not push, the user does it):
+If there are commits — push the branch and open a pull request into `main` (the user merges it after CI is green;
+the merge deploys the site):
 
 ```bash
-git switch develop
-git merge feature/vendors --no-ff -m "Merge branch 'feature/vendors' into develop"
-git branch -d feature/vendors
+git push -u origin feature/vendors
+gh pr create --base main --title "[vendors] Update dependencies" --body "<versions before → after, migrations>"
 ```
 
 If there are **no commits** — delete the branch and report that everything is already up to date:
 
 ```bash
-git switch develop
+git switch main
 git branch -D feature/vendors
 ```
 

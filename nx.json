@@ -7,11 +7,11 @@
     "enabled": false
   },
   "affected": {
-    "defaultBase": "develop"
+    "defaultBase": "main"
   },
   "defaultProject": "fafnur",
   "useInferencePlugins": false,
-  "defaultBase": "develop",
+  "defaultBase": "main",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [

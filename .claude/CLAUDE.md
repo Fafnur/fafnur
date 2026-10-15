@@ -71,7 +71,10 @@ The Nx TUI is off in `nx.json` — no need for `--no-tui`.
 
 ## Git
 
-- Git flow: `feature/<name>` from `develop`, merged back with `--no-ff`; releases via `yarn release`.
+- Single protected branch `main`: `feature/<name>` from `main`, pushed and merged via a pull request once the CI
+  check `Lint, test, build, e2e` is green. No direct pushes to `main`.
+- Every merge into `main` is a release: CI runs all checks, generates the sitemap, deploys via rsync and tags the
+  commit `vYYYY.MM.DD.N`. Roll back by reverting the PR.
 - Commits — `[scope] Short imperative summary` in English: `[e2e] Fix web server`, `[vendors] Nx migrate`.
 
 ---
