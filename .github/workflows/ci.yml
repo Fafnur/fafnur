@@ -1,5 +1,7 @@
 name: CI
 
+# Pull requests run the checks; `main` is protected and only accepts up-to-date PRs with green checks,
+# so a push to `main` only builds and deploys the already verified commit.
 on:
   pull_request:
   push:
@@ -16,6 +18,7 @@ permissions:
 jobs:
   checks:
     name: Lint, test, build, e2e
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -33,7 +36,7 @@ jobs:
 
       - run: yarn install --immutable
 
-      # Base/head SHAs for `nx affected`: on main, the last commit with a successful CI run.
+      # Base/head SHAs for `nx affected`.
       - uses: nrwl/nx-set-shas@v5
 
       - name: Restore Nx cache
@@ -63,25 +66,7 @@ jobs:
         run: yarn playwright install-deps chromium
 
       - name: Affected checks
-        if: github.event_name == 'pull_request'
         run: yarn nx affected -t lint test build e2e
-
-      # The sitemap's lastmod is the deploy date, so it is generated right before the production build.
-      - name: Generate sitemap
-        if: github.event_name == 'push'
-        run: node --require @swc-node/register tools/scripts/sitemap.ts
-
-      - name: All checks
-        if: github.event_name == 'push'
-        run: yarn nx run-many -t lint test build e2e
-
-      - name: Upload site
-        if: github.event_name == 'push'
-        uses: actions/upload-artifact@v7
-        with:
-          name: site
-          path: dist/apps/fafnur/browser
-          retention-days: 7
 
       - name: Upload Playwright report
         if: failure()
@@ -94,9 +79,8 @@ jobs:
   deploy:
     name: Deploy
     if: github.event_name == 'push'
-    needs: checks
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: write
     steps:
@@ -104,16 +88,28 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/download-artifact@v8
+      # Corepack must be enabled before setup-node so that its Yarn cache uses Yarn 4 from `packageManager`.
+      - run: corepack enable
+
+      - uses: actions/setup-node@v7
         with:
-          name: site
-          path: site
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - run: yarn install --immutable
+
+      # The sitemap's lastmod is the deploy date, so it is generated right before the production build.
+      - name: Generate sitemap
+        run: node --require @swc-node/register tools/scripts/sitemap.ts
+
+      - name: Build
+        run: yarn build
 
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@9.0.2
         with:
           switches: -avz --delete
-          path: site/
+          path: dist/apps/fafnur/browser/
           remote_path: ${{ secrets.DEPLOY_PATH }}
           remote_host: ${{ secrets.DEPLOY_HOST }}
           remote_port: ${{ secrets.DEPLOY_PORT }}
