@@ -13,13 +13,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
+      # Corepack must be enabled before setup-node so that its Yarn cache uses Yarn 4 from `packageManager`.
+      - name: Enable Corepack (Yarn 4)
+        run: corepack enable
+
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: '24'
-
-      - name: Enable Corepack (Yarn 4)
-        run: corepack enable
+          node-version-file: .nvmrc
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
