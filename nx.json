@@ -3,6 +3,9 @@
   "cli": {
     "packageManager": "yarn"
   },
+  "tui": {
+    "enabled": false
+  },
   "affected": {
     "defaultBase": "develop"
   },

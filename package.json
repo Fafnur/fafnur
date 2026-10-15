@@ -8,17 +8,18 @@
     "extract-i18n": "nx extract-i18n fafnur --out-file=apps/fafnur/i18n/source.xlf",
     "watch": "nx build fafnur --watch --configuration development",
     "serve": "nx serve-static fafnur",
-    "test": "nx run-many --all --target=test",
-    "lint": "nx run-many --all --target=lint --fix",
-    "check": "nx affected:lint --fix --files && nx format:write --files",
-    "affected": "nx affected",
+    "test": "nx run-many -t test",
+    "lint": "nx run-many -t lint --fix",
+    "e2e": "nx e2e fafnur-e2e",
+    "check": "nx run-many -t lint test build e2e",
+    "affected": "nx affected -t lint test build e2e",
     "format": "nx format:write",
     "update": "nx migrate latest",
     "dep-graph": "nx dep-graph",
     "---- Release ----": "",
     "release": "node --require @swc-node/register tools/scripts/release.ts",
     "---- Hooks ----": "",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "private": true,
   "contributors": [

@@ -53,7 +53,6 @@ __screenshots__/
 .yarnrc
 /mocks/tmp
 .env
-.husky/*
 junit.xml
 /junit
 *.patch
