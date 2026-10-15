@@ -11,7 +11,15 @@ import { IconImage } from '@fafnur/ui/icons';
       <fafnur-icon-image width="62" height="62" />
       {{ $currentView() }}
     } @else {
-      <img class="w-full h-full object-cover object-center" [src]="$src()" (error)="onError()" alt="" />
+      <img
+        class="w-full h-full object-cover object-center"
+        [src]="$src()"
+        [srcset]="$srcset()"
+        sizes="(min-width: 768px) 60vw, 100vw"
+        fetchpriority="high"
+        (error)="onError()"
+        alt=""
+      />
     }
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -25,6 +33,10 @@ export class NovelImage {
   readonly $error = signal(false);
   readonly $currentView = this.inkService.$currentView;
   readonly $src = computed(() => `/images/novel/${this.$currentView()}.webp`);
+  readonly $srcset = computed(() => {
+    const path = `/images/novel/${this.$currentView()}`;
+    return `${path}-480w.webp 480w, ${path}-768w.webp 768w, ${path}-1280w.webp 1280w, ${path}.webp 1920w`;
+  });
 
   constructor() {
     effect(() => {
