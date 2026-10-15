@@ -90,8 +90,9 @@
     "serve-static": {
       "continuous": true,
       "executor": "@nx/web:file-server",
+      "dependsOn": ["build"],
       "options": {
-        "buildTarget": "fafnur:build",
+        "watch": false,
         "port": 4200,
         "staticFilePath": "dist/apps/fafnur/browser",
         "spa": true,
