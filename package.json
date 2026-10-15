@@ -52,6 +52,7 @@
     "@angular/ssr": "22.1.9",
     "@axe-core/playwright": "^4.13.0",
     "@eslint/js": "^10.0.1",
+    "@lhci/cli": "^0.15.1",
     "@nx/angular": "23.3.0",
     "@nx/devkit": "23.3.0",
     "@nx/eslint": "23.3.0",

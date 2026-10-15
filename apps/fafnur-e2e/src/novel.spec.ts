@@ -1,4 +1,4 @@
-import { expect, Page, test } from '@playwright/test';
+import { expect, Page, test } from './fixtures';
 
 const novelWindow = 'fafnur-novel-window';
 const novelLoading = 'fafnur-novel-loading';

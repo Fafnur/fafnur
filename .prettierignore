@@ -21,3 +21,4 @@ yarn.lock
 skills-lock.json
 
 .nx/self-healing
+.lighthouseci
