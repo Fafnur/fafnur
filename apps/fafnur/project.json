@@ -17,25 +17,16 @@
   "targets": {
     "build": {
       "executor": "@nx/angular:application",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/fafnur",
         "browser": "apps/fafnur/src/main.ts",
         "tsConfig": "apps/fafnur/tsconfig.app.json",
-        "polyfills": [
-          "@angular/localize/init"
-        ],
-        "localize": [
-          "ru"
-        ],
+        "polyfills": ["@angular/localize/init"],
+        "localize": ["ru"],
         "inlineStyleLanguage": "scss",
         "stylePreprocessorOptions": {
-          "includePaths": [
-            "node_modules",
-            "./"
-          ]
+          "includePaths": ["node_modules", "./"]
         },
         "assets": [
           {
@@ -43,12 +34,8 @@
             "input": "apps/fafnur/public"
           }
         ],
-        "externalDependencies": [
-          "assets/*"
-        ],
-        "styles": [
-          "apps/fafnur/src/styles.scss"
-        ],
+        "externalDependencies": ["assets/*"],
+        "styles": ["apps/fafnur/src/styles.scss"],
         "server": "apps/fafnur/src/main.server.ts",
         "ssr": {
           "entry": "apps/fafnur/src/server.ts"
@@ -103,8 +90,9 @@
     "serve-static": {
       "continuous": true,
       "executor": "@nx/web:file-server",
+      "dependsOn": ["build"],
       "options": {
-        "buildTarget": "fafnur:build",
+        "watch": false,
         "port": 4200,
         "staticFilePath": "dist/apps/fafnur/browser",
         "spa": true,
@@ -116,9 +104,7 @@
     },
     "test": {
       "executor": "@nx/vitest:test",
-      "outputs": [
-        "{options.reportsDirectory}"
-      ],
+      "outputs": ["{options.reportsDirectory}"],
       "options": {
         "reportsDirectory": "{projectRoot}/../../coverage/apps/fafnur"
       }
@@ -127,6 +113,13 @@
       "executor": "@angular/build:extract-i18n",
       "options": {
         "buildTarget": "fafnur:build"
+      }
+    },
+    "lighthouse": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "command": "lhci autorun --config=apps/fafnur/lighthouserc.json"
       }
     }
   }

@@ -1,5 +1,6 @@
 import { AxeBuilder } from '@axe-core/playwright';
-import { expect, Page, test } from '@playwright/test';
+
+import { expect, Page, test } from './fixtures';
 
 const PAGES = ['/', '/about', '/adventure', '/novels', '/404'];
 
