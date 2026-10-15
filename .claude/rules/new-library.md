@@ -49,7 +49,20 @@ import { setupTestBed } from '@analogjs/vitest-angular/setup-testbed';
 setupTestBed();
 ```
 
-## 5. Reset NX cache
+## 5. `vite.config.mts` — drop deprecated Nx plugins
+
+The generator still emits `nxViteTsPaths()` and `nxCopyAssetsPlugin(['*.md'])` (deprecated, removed in Nx 24).
+Remove both imports and the commented-out `worker` block, use Vite's native tsconfig paths:
+
+```ts
+plugins: [angular()],
+resolve: { tsconfigPaths: true },
+```
+
+The generator also adds `@oxc-project/runtime` to `package.json` and `yarn.lock` — the workspace tests pass
+without it, so revert both unless a test actually fails on a missing `@oxc-project/runtime` import.
+
+## 6. Reset NX cache
 
 After all setup is done, reset NX so it picks up the new library:
 
