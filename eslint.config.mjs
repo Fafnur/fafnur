@@ -1,5 +1,5 @@
 import nx from '@nx/eslint-plugin';
-import importPlugin from 'eslint-plugin-import';
+import importPlugin from 'eslint-plugin-import-x';
 import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
 
 export default [
