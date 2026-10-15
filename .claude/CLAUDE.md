@@ -41,6 +41,41 @@ libs/feature/lib-name/
 
 ---
 
+## Commands
+
+```bash
+yarn start           # nx serve fafnur — dev server
+yarn build           # nx build fafnur — SSG, ru locale
+yarn serve           # nx serve-static fafnur — built static site
+yarn test            # unit tests of all projects
+yarn lint            # lint of all projects with --fix
+yarn e2e             # Playwright against the built static site
+yarn check           # lint test build e2e — a task is done when it is green
+yarn affected        # the same for affected projects
+yarn format          # Prettier
+```
+
+The Nx TUI is off in `nx.json` — no need for `--no-tui`.
+
+---
+
+## Skills
+
+- `.claude/skills/angular-developer` — official Angular skill (`angular/skills`): signals, forms, routing,
+  SSR/prerender, ARIA, testing. Update: `npx skills update -p`; version pinned in `skills-lock.json`. Never edit
+  its files by hand. Where it conflicts with this file — this file wins: Nx generators and targets instead of
+  `ng generate`/`ng build`, Tailwind in templates, no component style files.
+- Own skills: `update-vendors`, `update-i18n`, `nx-component`, `write-tests`, `lint`.
+
+---
+
+## Git
+
+- Git flow: `feature/<name>` from `develop`, merged back with `--no-ff`; releases via `yarn release`.
+- Commits — `[scope] Short imperative summary` in English: `[e2e] Fix web server`, `[vendors] Nx migrate`.
+
+---
+
 ## Behavior Notes
 
 - If Aleksandr mentions something informational ("I fixed X") — it's context, not a task. Don't take action unless explicitly asked.
