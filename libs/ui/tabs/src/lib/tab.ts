@@ -9,7 +9,7 @@ import { booleanAttribute, ChangeDetectionStrategy, Component, input } from '@an
     '[class.text-gray-500]': `!$active()`,
     '[class.border-transparent]': `!$active()`,
     '[class.border-yellow-600]': `$active()`,
-    '[class.text-yellow-600]': `$active()`,
+    '[class.text-yellow-700]': `$active()`,
   },
 })
 export class Tab {

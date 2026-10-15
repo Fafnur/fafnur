@@ -1,4 +1,3 @@
 {
-  "*": ["nx format:write --files"],
-  "*.{ts,html,mjs}": ["nx affected -t lint --fix --files"]
+  "*": ["nx affected -t lint --fix --files", "nx format:write --files"]
 }

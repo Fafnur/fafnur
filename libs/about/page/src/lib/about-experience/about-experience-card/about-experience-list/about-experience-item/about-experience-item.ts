@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: '<ng-content/>',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'flex gap-2 text-sm text-yellow-600 dark:text-yellow-200',
+    class: 'flex gap-2 text-sm text-yellow-700 dark:text-yellow-200',
   },
 })
 export class AboutExperienceItem {}

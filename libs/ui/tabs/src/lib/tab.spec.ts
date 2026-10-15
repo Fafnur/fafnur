@@ -36,7 +36,7 @@ describe('Tab', () => {
   it('should apply active classes when active is true', () => {
     fixture.componentRef.setInput('active', true);
     fixture.detectChanges();
-    expect(fixture.nativeElement.classList).toContain('text-yellow-600');
+    expect(fixture.nativeElement.classList).toContain('text-yellow-700');
     expect(fixture.nativeElement.classList).toContain('border-yellow-600');
   });
 

@@ -9,7 +9,7 @@ import { AboutExperienceTime } from './about-experience-time/about-experience-ti
   templateUrl: './about-experience-period.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'text-xs text-yellow-600 dark:text-yellow-200 whitespace-nowrap',
+    class: 'text-xs text-yellow-700 dark:text-yellow-200 whitespace-nowrap',
   },
 })
 export class AboutExperiencePeriod {
