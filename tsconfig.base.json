@@ -38,7 +38,11 @@
       "@fafnur/ui/theme-switcher": ["libs/ui/theme-switcher/src/index.ts"],
       "@fafnur/ui/title": ["libs/ui/title/src/index.ts"],
       "@fafnur/ui/unit": ["libs/ui/unit/src/index.ts"]
-    }
+    },
+    "strict": false,
+    "noUncheckedSideEffectImports": false,
+    "types": ["*"],
+    "ignoreDeprecations": "6.0"
   },
   "exclude": ["node_modules", "tmp"]
 }

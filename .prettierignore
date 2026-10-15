@@ -19,3 +19,5 @@ yarn.lock
 # Agent skills: vendored ones are managed by `npx skills`, own ones are hand-written
 /.claude
 skills-lock.json
+
+.nx/self-healing

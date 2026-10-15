@@ -7,7 +7,7 @@ Author: Aleksandr (Александр)
 
 ## Stack
 
-- **Angular 21**, NX 22, TypeScript ~5.9, Tailwind CSS 4, Vitest 4
+- **Angular 22**, NX 23, TypeScript 6.0, Tailwind CSS 4, Vitest 4, Playwright + axe
 - **Package manager**: yarn (never npm/bun)
 - **Test runner**: vitest via `@nx/vitest:test` + `@analogjs/vitest-angular`
 
