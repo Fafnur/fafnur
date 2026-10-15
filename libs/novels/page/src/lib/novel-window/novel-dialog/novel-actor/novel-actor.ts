@@ -12,7 +12,7 @@ import { Color } from '@fafnur/ui/common';
     '[class.dark:text-gray-500]': `$color() === 'primary'`,
     '[class.text-mist-500]': `$color() === 'secondary'`,
     '[class.dark:text-mist-500]': `$color() === 'secondary'`,
-    '[class.text-yellow-500]': `$color() === 'tertiary'`,
+    '[class.text-yellow-700]': `$color() === 'tertiary'`,
     '[class.dark:text-yellow-500]': `$color() === 'tertiary'`,
   },
 })

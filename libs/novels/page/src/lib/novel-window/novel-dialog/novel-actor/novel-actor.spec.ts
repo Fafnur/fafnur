@@ -40,7 +40,7 @@ describe('NovelActor', () => {
   it('should apply tertiary color class', () => {
     fixture.componentRef.setInput('color', 'tertiary');
     fixture.detectChanges();
-    expect(fixture.nativeElement.classList).toContain('text-yellow-500');
+    expect(fixture.nativeElement.classList).toContain('text-yellow-700');
   });
 
   it('should project content', async () => {

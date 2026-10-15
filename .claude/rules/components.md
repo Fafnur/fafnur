@@ -78,6 +78,8 @@ Only move a component up to a shared level when it is used in more than one plac
 - **Tailwind CSS only** — `.scss` files usually empty
 - Classes in `host: { class: '...' }`
 - Dark mode: `dark:`, responsive: `sm:`, `md:`, `lg:`
+- Text contrast ≥ 4.5:1 (checked by axe in e2e): accent text in the light theme is `text-yellow-700`, muted text
+  `text-gray-500` — `yellow-500`/`600` and `gray-400` on light backgrounds fail
 
 ## Templates
 

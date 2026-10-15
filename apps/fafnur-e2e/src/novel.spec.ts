@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { expect, Page, test } from '@playwright/test';
 
 const novelWindow = 'fafnur-novel-window';
 const novelLoading = 'fafnur-novel-loading';
@@ -95,24 +95,36 @@ test.describe('Novel Page', () => {
 
   // --- Quest completion ---
 
-  // test('completing quest shows "Play again" button', async ({ page }) => {
-  //   await playToEnd(page);
-  //   await expect(page.getByRole('button', { name: /Сыграть в приключение снова/i })).toBeVisible();
-  // });
-  //
-  // test('"Play again" resets the quest', async ({ page }) => {
-  //   await playToEnd(page);
-  //   await page.locator('fafnur-novel-choices button').click();
-  //   await expect(page.locator(choices).first()).toBeVisible({ timeout: 5_000 });
-  // });
+  test('completing quest shows "Play again" button', async ({ page }) => {
+    await playToEnd(page);
+    await expect(page.getByRole('button', { name: /Сыграть в приключение снова/i })).toBeVisible();
+  });
+
+  test('"Play again" resets the quest', async ({ page }) => {
+    await playToEnd(page);
+    await page.locator('fafnur-novel-choices button').click();
+    await expect(page.locator(choices).first()).toBeVisible({ timeout: 5_000 });
+  });
 });
 
-/** Plays through the story by always selecting the first choice until no choices remain. */
-async function playToEnd(page: import('@playwright/test').Page): Promise<void> {
-  let isVisible = await page.locator('fafnur-novel-choices fafnur-novel-end').isVisible();
-  while (!isVisible) {
-    const last = page.locator('fafnur-novel-choices button').last();
-    await last.click();
-    isVisible = await page.locator('fafnur-novel-choices fafnur-novel-end').isVisible();
+/**
+ * Plays through the story by always selecting the last choice until the end screen appears.
+ * Choices are picked with digit keys: the dialog scrolls smoothly after each step, so a mouse click may hit
+ * a different button.
+ */
+async function playToEnd(page: Page): Promise<void> {
+  const dialog = page.locator('fafnur-novel-dialog');
+  const end = page.locator('fafnur-novel-choices fafnur-novel-end');
+  const choice = page.locator(choices);
+
+  for (let step = 0; step < 50; step++) {
+    await expect(end.or(choice.first())).toBeVisible();
+    if (await end.isVisible()) {
+      return;
+    }
+    const before = await dialog.innerText();
+    await page.keyboard.press(String(await choice.count()));
+    await expect(dialog).not.toHaveText(before);
   }
+  throw new Error('The story did not end in 50 steps');
 }

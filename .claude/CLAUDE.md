@@ -65,7 +65,7 @@ The Nx TUI is off in `nx.json` — no need for `--no-tui`.
   SSR/prerender, ARIA, testing. Update: `npx skills update -p`; version pinned in `skills-lock.json`. Never edit
   its files by hand. Where it conflicts with this file — this file wins: Nx generators and targets instead of
   `ng generate`/`ng build`, Tailwind in templates, no component style files.
-- Own skills: `update-vendors`, `update-i18n`, `nx-component`, `write-tests`, `lint`.
+- Own skills: `e2e`, `update-vendors`, `update-i18n`, `nx-component`, `write-tests`, `lint`.
 
 ---
 
