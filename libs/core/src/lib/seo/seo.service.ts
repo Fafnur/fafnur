@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { inject, Injectable } from '@angular/core';
+import { inject, Service } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 export type SeoType = 'website' | 'article';
@@ -14,9 +14,7 @@ export interface SeoMeta {
   readonly type?: SeoType;
 }
 
-@Injectable({
-  providedIn: 'root',
-})
+@Service()
 export class SeoService {
   private readonly title = inject(Title);
   private readonly meta = inject(Meta);

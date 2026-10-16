@@ -1,4 +1,4 @@
-import { DOCUMENT, inject, Injectable } from '@angular/core';
+import { DOCUMENT, inject, Service } from '@angular/core';
 
 import { METRIC_CONFIG } from './metrics.interface';
 
@@ -9,9 +9,7 @@ declare global {
   }
 }
 
-@Injectable({
-  providedIn: 'root',
-})
+@Service()
 export class YandexMetrikaService {
   private readonly document = inject(DOCUMENT);
   private readonly config = inject(METRIC_CONFIG);
