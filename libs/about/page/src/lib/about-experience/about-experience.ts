@@ -18,14 +18,15 @@ export class AboutExperience {
   readonly experiences: Experience[] = [
     {
       company: $localize`:About Experience|:LLC "RUSINTERFINANS", Novosibirsk,`,
-      post: $localize`:About Experience|:Frontend developer`,
+      post: $localize`:About Experience|:Frontend team lead`,
       start: $localize`:About Experience|:September 2018`,
       end: $localize`:About Experience|:until now`,
-      time: $localize`:About Experience|:7 years`,
+      time: $localize`:About Experience|:8 years`,
       description: [
         $localize`:About Experience|:Migrating old code to new stack: angular, nx, ngrx, ssr, l18n.`,
         $localize`:About Experience|:Management of the front-end development team (setting tasks, rallies, code review).`,
         $localize`:About Experience|:Development of new services on a new stack.`,
+        $localize`:About Experience|:Development of a Flutter mobile app: native authorization, cookies, in-app WebView (BLoC, get_it).`,
       ],
     },
     {

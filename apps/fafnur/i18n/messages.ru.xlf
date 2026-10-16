@@ -72,9 +72,9 @@
         <note priority="1" from="description">SEO Title</note>
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
-      <trans-unit id="4543591336724709549" datatype="html">
-        <source>Frontend developer with 9 years of experience specializing in Angular. I build enterprise applications for fintech, write about Angular on Medium, and care about clean, maintainable code.</source>
-        <target state="translated">Фронтенд-разработчик с 9-летним опытом, специализируюсь на Angular. Создаю enterprise-приложения для финтеха, пишу об Angular на Medium и забочусь о чистом, поддерживаемом коде.</target>
+      <trans-unit id="4617350395137638998" datatype="html">
+        <source>Frontend team lead with 11 years of experience specializing in Angular. I build enterprise applications for fintech, write about Angular on Habr, dev.to and Medium, and care about clean, maintainable code.</source>
+        <target state="translated">Тимлид фронтенд-команды с 11-летним опытом, специализируюсь на Angular. Создаю enterprise-приложения для финтеха, пишу об Angular на Хабре, dev.to и Medium и забочусь о чистом, поддерживаемом коде.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
           <context context-type="linenumber">20</context>
@@ -231,9 +231,9 @@
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
-      <trans-unit id="2601494370153657721" datatype="html">
-        <source>Frontend developer</source>
-        <target state="translated">Фронтенд-разработчик</target>
+      <trans-unit id="1659798716804522044" datatype="html">
+        <source>Frontend team lead</source>
+        <target state="translated">Тимлид фронтенд-команды</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
           <context context-type="linenumber">21</context>
@@ -258,9 +258,9 @@
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
-      <trans-unit id="6161742884466509047" datatype="html">
-        <source>7 years</source>
-        <target state="translated">7 лет</target>
+      <trans-unit id="8571532395946363436" datatype="html">
+        <source>8 years</source>
+        <target state="translated">8 лет</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
           <context context-type="linenumber">24</context>
@@ -291,6 +291,15 @@
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
           <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="meaning">About Experience</note>
+      </trans-unit>
+      <trans-unit id="7956039838981946540" datatype="html">
+        <source>Development of a Flutter mobile app: native authorization, cookies, in-app WebView (BLoC, get_it).</source>
+        <target state="translated">Разработка мобильного приложения на Flutter: нативная авторизация, куки, WebView внутри приложения (BLoC, get_it).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -679,12 +688,12 @@
         <note priority="1" from="description">Who Title</note>
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
-      <trans-unit id="5536250804164863694" datatype="html">
-        <source> Aleksandr Serenko, a frontend developer with 9 years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes JavaScript, TypeScript, Redux, Git, and a monorepo approach. </source>
-        <target state="translated"> Александр Серенко, фронтенд-разработчик с более чем 9-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, NX, Flutter, Claude, NxRx, GraphQL, NestJS.</target>
+      <trans-unit id="936857214261324944" datatype="html">
+        <source> Aleksandr Serenko, a frontend team lead with 11 years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes Angular, Nx, NgRx, GraphQL, NestJS, Flutter and Claude. </source>
+        <target state="translated"> Александр Серенко, тимлид фронтенд-команды с 11-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, Nx, NgRx, GraphQL, NestJS, Flutter, Claude.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
-          <context context-type="linenumber">12,15</context>
+          <context context-type="linenumber">26,29</context>
         </context-group>
         <note priority="1" from="description">Who Description First</note>
         <note priority="1" from="meaning">About Page</note>
@@ -699,12 +708,12 @@
         <note priority="1" from="description">Who Description Second</note>
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
-      <trans-unit id="310674257961422389" datatype="html">
-        <source> In addition to my work, I also write articles about Angular on Medium, sharing my knowledge and insights with the wider development community. </source>
-        <target state="translated">Я активно делюсь знаниями и опытом в своем блоге на Хабре и Medium. Кроме того, веду группы в Telegram и ВК о фронтенде.</target>
+      <trans-unit id="1573370529553899844" datatype="html">
+        <source> In addition to my work, I also write articles about Angular on Habr, dev.to and Medium, sharing my knowledge and insights with the wider development community. </source>
+        <target state="translated">Я активно делюсь знаниями и опытом в своём блоге на Хабре, dev.to и Medium. Кроме того, веду группы в Telegram и ВК о фронтенде.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
-          <context context-type="linenumber">21,24</context>
+          <context context-type="linenumber">35,38</context>
         </context-group>
         <note priority="1" from="description">Who Description Third</note>
         <note priority="1" from="meaning">About Page</note>
