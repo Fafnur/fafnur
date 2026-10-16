@@ -53,9 +53,13 @@ yarn e2e             # Playwright against the built static site
 yarn check           # lint test build e2e — a task is done when it is green
 yarn affected        # the same for affected projects
 yarn format          # Prettier
+yarn og              # build + regenerate OG images of home, adventure and about
 ```
 
 The Nx TUI is off in `nx.json` — no need for `--no-tui`.
+
+After changing the text of the home, adventure or about page, run `yarn og` and commit the updated images together
+with the change. `game.webp` (a frame from the middle of the game) is made by hand.
 
 ---
 
