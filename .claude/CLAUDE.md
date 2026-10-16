@@ -71,6 +71,9 @@ The Nx TUI is off in `nx.json` — no need for `--no-tui`.
 
 ## Git
 
+- Before starting any task, sync branches: `git fetch --prune`, fast-forward `main` to `origin/main`, check the
+  state of open PRs. A new `feature/<name>` always starts from the fresh `main` — never from a branch that has already
+  been merged.
 - Single protected branch `main`: `feature/<name>` from `main`, pushed and merged via a pull request once the CI
   check `Lint, test, build, e2e` is green. No direct pushes to `main`.
 - `main` only accepts PRs that are up to date with it, so checks run once — on the PR. Every merge into `main` is a
@@ -82,6 +85,10 @@ The Nx TUI is off in `nx.json` — no need for `--no-tui`.
 
 ## Behavior Notes
 
+- **Grill me before any task.** Before writing code, interview Aleksandr until there is a shared understanding of
+  the task: one question at a time, walking each branch of the decision tree (scope, edge cases, trade-offs, what
+  "done" means), each question with a recommended answer. If a question can be answered from the code, the docs or
+  the git history — look it up instead of asking. Start the work only after the plan is confirmed.
 - If Aleksandr mentions something informational ("I fixed X") — it's context, not a task. Don't take action unless explicitly asked.
 - Always follow existing conventions exactly when generating new code.
 - Don't create files manually when an NX generator exists.
