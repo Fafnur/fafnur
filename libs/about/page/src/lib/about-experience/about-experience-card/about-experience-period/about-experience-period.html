@@ -1,2 +1,21 @@
-{{ $experience().start }} — {{ $experience().end }}
-<fafnur-about-experience-time>{{ $experience().time }}</fafnur-about-experience-time>
+<span class="capitalize">{{ $start() | date: 'LLLL y' }}</span> —
+@if ($end(); as end) {
+  <span class="capitalize">{{ end | date: 'LLLL y' }}</span>
+} @else {
+  <ng-container i18n="About Experience|End of the current job">until now</ng-container>
+}
+<fafnur-about-experience-time>
+  @let duration = $duration();
+  @if (duration.years) {
+    <span i18n="About Experience|Duration in years">{duration.years, plural,
+      =1 {1 year}
+      other {{{ duration.years }} years}
+    }</span>
+  }
+  @if (duration.months) {
+    <span i18n="About Experience|Duration in months">{duration.months, plural,
+      =1 {1 month}
+      other {{{ duration.months }} months}
+    }</span>
+  }
+</fafnur-about-experience-time>

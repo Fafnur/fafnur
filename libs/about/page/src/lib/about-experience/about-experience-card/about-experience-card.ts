@@ -1,5 +1,7 @@
 import { Component, input } from '@angular/core';
 
+import { YearMonth } from '@fafnur/core';
+
 import { AboutExperienceBox } from './about-experience-box/about-experience-box';
 import { AboutExperienceCompany } from './about-experience-company/about-experience-company';
 import { AboutExperienceDot } from './about-experience-dot/about-experience-dot';
@@ -12,9 +14,9 @@ export interface Experience {
   readonly company: string;
   readonly post: string;
   readonly description: string[];
-  readonly start: string;
-  readonly end: string;
-  readonly time: string;
+  readonly start: YearMonth;
+  /** Absent for the current job */
+  readonly end?: YearMonth;
 }
 
 @Component({

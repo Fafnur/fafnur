@@ -5,9 +5,8 @@ import { AboutExperienceCard, Experience } from './about-experience-card';
 const mockExperience: Experience = {
   company: 'Test Company',
   post: 'Frontend developer',
-  start: 'January 2020',
-  end: 'December 2022',
-  time: '3 years',
+  start: { year: 2020, month: 0 },
+  end: { year: 2022, month: 11 },
   description: ['Task one', 'Task two'],
 };
 

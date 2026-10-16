@@ -1,3 +1,4 @@
+export * from './lib/build-date/build-date.service';
 export * from './lib/ink/ink.interface';
 export * from './lib/ink/ink.service';
 export * from './lib/metrics/google-analytics.service';

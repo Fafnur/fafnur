@@ -72,12 +72,12 @@
         <note priority="1" from="description">SEO Title</note>
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
-      <trans-unit id="4617350395137638998" datatype="html">
-        <source>Frontend team lead with 11 years of experience specializing in Angular. I build enterprise applications for fintech, write about Angular on Habr, dev.to and Medium, and care about clean, maintainable code.</source>
-        <target state="translated">Тимлид фронтенд-команды с 11-летним опытом, специализируюсь на Angular. Создаю enterprise-приложения для финтеха, пишу об Angular на Хабре, dev.to и Medium и забочусь о чистом, поддерживаемом коде.</target>
+      <trans-unit id="5035987484104200870" datatype="html">
+        <source>Frontend team lead with <x id="years" equiv-text="years"/> years of experience specializing in Angular. I build enterprise applications for fintech, write about Angular on Habr, dev.to and Medium, and care about clean, maintainable code.</source>
+        <target state="translated">Тимлид фронтенд-команды с <x id="years" equiv-text="years"/>-летним опытом, специализируюсь на Angular. Создаю enterprise-приложения для финтеха, пишу об Angular на Хабре, dev.to и Medium и забочусь о чистом, поддерживаемом коде.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">22</context>
         </context-group>
         <note priority="1" from="description">SEO Description</note>
         <note priority="1" from="meaning">About Page</note>
@@ -240,15 +240,6 @@
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
-      <trans-unit id="6126325114713199981" datatype="html">
-        <source>September 2018</source>
-        <target state="translated">Сентябрь 2018</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">22</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
       <trans-unit id="4932860787433946388" datatype="html">
         <source>until now</source>
         <target state="translated">по настоящее время</target>
@@ -258,13 +249,14 @@
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
-      <trans-unit id="8571532395946363436" datatype="html">
-        <source>8 years</source>
-        <target state="translated">8 лет</target>
+      <trans-unit id="1352655143938938417" datatype="html">
+        <source>{VAR_PLURAL, plural, =1 {1 year} other {<x id="INTERPOLATION"/> years}}</source>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> год} few {<x id="INTERPOLATION"/> года} many {<x id="INTERPOLATION"/> лет} other {<x id="INTERPOLATION"/> года}}</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience-card/about-experience-period/about-experience-period.html</context>
+          <context context-type="linenumber">11,14</context>
         </context-group>
+        <note priority="1" from="description">Duration in years</note>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
       <trans-unit id="4152104284146615582" datatype="html">
@@ -321,33 +313,6 @@
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
-      <trans-unit id="5221661098428225451" datatype="html">
-        <source>July 2018</source>
-        <target state="translated">Июль 2018</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">34</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="3986791618890291619" datatype="html">
-        <source>december 2020</source>
-        <target state="translated">Декабрь 2020</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">35</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="6990997841138240105" datatype="html">
-        <source>2 years 6 months</source>
-        <target state="translated">2 года 6 месяцев</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">36</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
       <trans-unit id="7364705231609398320" datatype="html">
         <source>Development of new numerical methods for partial differential equations for gas, magnetic gas dynamics.</source>
         <target state="translated">Разработка новых численных методов для уравнений в частных производных для газовой, магнитной газовой динамики.</target>
@@ -372,33 +337,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
           <context context-type="linenumber">43</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="312061479284097193" datatype="html">
-        <source>August 2016</source>
-        <target state="translated">Август 2016</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">44</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="7721866004492726961" datatype="html">
-        <source>may 2019</source>
-        <target state="translated">май 2019</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="3593115263448220338" datatype="html">
-        <source>2 years 10 months</source>
-        <target state="translated">2 года 10 месяцев</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">46</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -435,33 +373,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
           <context context-type="linenumber">54</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="6563713617569409693" datatype="html">
-        <source>October 2017</source>
-        <target state="translated">Октябрь 2017</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">55</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="6984166666042268922" datatype="html">
-        <source>march 2019</source>
-        <target state="translated">март 2019</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">56</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="432512811874972343" datatype="html">
-        <source>1 year 6 months</source>
-        <target state="translated">1 год 6 месяцев</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">57</context>
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
@@ -505,33 +416,6 @@
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
-      <trans-unit id="5756241174525358310" datatype="html">
-        <source>January 2015</source>
-        <target state="translated">Январь 2015</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">66</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="8806823051957509126" datatype="html">
-        <source>january 2017</source>
-        <target state="translated">январь 2017</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">67</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="8209582849693189688" datatype="html">
-        <source>2 years 1 month</source>
-        <target state="translated">2 года 1 месяц</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">68</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
       <trans-unit id="2913480692161950318" datatype="html">
         <source>UI/UX development for several marketing agencies.</source>
         <target state="translated">Разработка frontend составляющей (верстка, интеграция) для нескольких маркетинговых агентств.</target>
@@ -568,33 +452,6 @@
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
-      <trans-unit id="5832113267053577015" datatype="html">
-        <source>February 2012</source>
-        <target state="translated">Февраль 2012</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">78</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="272761762270772025" datatype="html">
-        <source>february 2015</source>
-        <target state="translated">Февраль 2015</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">79</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="1288718859925796755" datatype="html">
-        <source>3 years</source>
-        <target state="translated">3 года</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">80</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
       <trans-unit id="3572145420709323082" datatype="html">
         <source>Creation and support of the company website.</source>
         <target state="translated">Создание и поддержка сайта компании</target>
@@ -622,31 +479,14 @@
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
-      <trans-unit id="7096487005438374878" datatype="html">
-        <source>September 2011</source>
-        <target state="translated">Сентябрь 2011</target>
+      <trans-unit id="1910681217433213643" datatype="html">
+        <source>{VAR_PLURAL, plural, =1 {1 month} other {<x id="INTERPOLATION"/> months}}</source>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> месяц} few {<x id="INTERPOLATION"/> месяца} many {<x id="INTERPOLATION"/> месяцев} other {<x id="INTERPOLATION"/> месяца}}</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">86</context>
+          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience-card/about-experience-period/about-experience-period.html</context>
+          <context context-type="linenumber">16,19</context>
         </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="3850634883445513877" datatype="html">
-        <source>february 2012</source>
-        <target state="translated">февраль 2012</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">87</context>
-        </context-group>
-        <note priority="1" from="meaning">About Experience</note>
-      </trans-unit>
-      <trans-unit id="1442880605164035001" datatype="html">
-        <source>6 months</source>
-        <target state="translated">6 месяцев</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
-          <context context-type="linenumber">88</context>
-        </context-group>
+        <note priority="1" from="description">Duration in months</note>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
       <trans-unit id="4995463987272927270" datatype="html">
@@ -688,9 +528,9 @@
         <note priority="1" from="description">Who Title</note>
         <note priority="1" from="meaning">About Page</note>
       </trans-unit>
-      <trans-unit id="936857214261324944" datatype="html">
-        <source> Aleksandr Serenko, a frontend team lead with 11 years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes Angular, Nx, NgRx, GraphQL, NestJS, Flutter and Claude. </source>
-        <target state="translated"> Александр Серенко, тимлид фронтенд-команды с 11-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, Nx, NgRx, GraphQL, NestJS, Flutter, Claude.</target>
+      <trans-unit id="8323202393707028840" datatype="html">
+        <source> Aleksandr Serenko, a frontend team lead with <x id="INTERPOLATION" equiv-text="{{ years }}"/> years of experience specializing in creating beautiful user interfaces with Angular. My technical stack includes Angular, Nx, NgRx, GraphQL, NestJS, Flutter and Claude. </source>
+        <target state="translated"> Александр Серенко, тимлид фронтенд-команды с <x id="INTERPOLATION" equiv-text="{{ years }}"/>-летним опытом в создании современных и функциональных веб-приложений. Мой основной стек это: Angular, Nx, NgRx, GraphQL, NestJS, Flutter, Claude.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
           <context context-type="linenumber">26,29</context>
