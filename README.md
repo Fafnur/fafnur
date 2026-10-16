@@ -1,7 +1,7 @@
 <h1 align="center">Aleksandr Serenko 👋</h1>
 
 <p align="center">
-  <b>Frontend Team Lead · Angular evangelist · Nx apologist · NodeJS warlock</b>
+  <b>Frontend Team Lead · Angular evangelist · Nx apologist · AI agent wrangler</b>
 </p>
 
 <p align="center">

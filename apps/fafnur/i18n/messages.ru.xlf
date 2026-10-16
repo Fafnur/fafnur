@@ -62,12 +62,12 @@
         <note priority="1" from="description">Start button</note>
         <note priority="1" from="meaning">Home Page</note>
       </trans-unit>
-      <trans-unit id="396889453468249152" datatype="html">
-        <source>Aleksandr Serenko — Senior frontend, Angular evangelist, Nx apologist &amp; NodeJS warlock.</source>
-        <target state="translated">Александр Серенко — Сеньор фронтенда, Angular евангелист, Апологет NX и NodeJS чернокнижник</target>
+      <trans-unit id="5178292571099443638" datatype="html">
+        <source>Aleksandr Serenko — Frontend Team Lead, Angular evangelist, Nx apologist &amp; AI agent wrangler.</source>
+        <target state="translated">Александр Серенко — тимлид фронтенда, Angular-евангелист, апологет Nx и укротитель AI-агентов</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-page.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">21</context>
         </context-group>
         <note priority="1" from="description">SEO Title</note>
         <note priority="1" from="meaning">About Page</note>
@@ -950,9 +950,9 @@
         <note priority="1" from="description">Brand</note>
         <note priority="1" from="meaning">Footer</note>
       </trans-unit>
-      <trans-unit id="6721008685464796581" datatype="html">
-        <source>Senior Frontend Developer, Angular evangelist, Nx apologist and NodeJS warlock.</source>
-        <target state="translated">Senior frontend, Angular evangelist, Nx apologist & NodeJS warlock.</target>
+      <trans-unit id="2370740062136680444" datatype="html">
+        <source>Frontend Team Lead, Angular evangelist, Nx apologist and AI agent wrangler.</source>
+        <target state="translated">Frontend Team Lead, Angular evangelist, Nx apologist &amp; AI agent wrangler.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/ui/footer/src/lib/brand/brand.html</context>
           <context context-type="linenumber">3,5</context>
