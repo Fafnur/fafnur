@@ -4,8 +4,8 @@ import {
   DOCUMENT,
   EnvironmentInjector,
   inject,
-  Injectable,
   Injector,
+  Service,
   Type,
 } from '@angular/core';
 import { Subject } from 'rxjs';
@@ -15,9 +15,7 @@ import { Popup, PopupRef } from './popup/popup';
 
 let uniqueId = 0;
 
-@Injectable({
-  providedIn: 'root',
-})
+@Service()
 export class PopupService {
   private readonly injector = inject(Injector);
   private readonly document = inject(DOCUMENT);

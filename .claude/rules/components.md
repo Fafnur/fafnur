@@ -33,6 +33,8 @@ export class FeatureName {
   when a component really needs it
 - **No `imports: []`** — omit the imports array entirely when empty
 - Services via `inject()`, not constructor
+- Services are declared with `@Service()` (auto-provided in root); `@Service({ autoProvided: false })` for those
+  provided by hand (e.g. in `provideMetrics`). Never `@Injectable`
 - Dual selector example: `selector: 'fafnur-buttons,[fafnurButtons]'`
 - **Event listeners in `host`** — never use `@HostListener` decorator:
   ```typescript

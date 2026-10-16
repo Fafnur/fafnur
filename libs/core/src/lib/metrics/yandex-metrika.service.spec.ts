@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import type { Mock } from 'vitest';
 
 import { METRIC_CONFIG, MetricConfig } from './metrics.interface';
 import { YandexMetrikaService } from './yandex-metrika.service';
@@ -12,29 +13,26 @@ const config: MetricConfig = {
 
 describe('YandexMetrikaService', () => {
   let service: YandexMetrikaService;
-  let mockYm: ReturnType<typeof vi.fn>;
-  let mockDataLayer: { push: ReturnType<typeof vi.fn> };
+  let mockYm: Mock<(...params: unknown[]) => void>;
+  let mockDataLayer: { push: Mock<(params: object) => void> };
 
   beforeEach(() => {
     mockYm = vi.fn();
     mockDataLayer = { push: vi.fn() };
 
-    (window as any).ym = mockYm;
-    (window as any).dataLayer = mockDataLayer;
+    window.ym = mockYm;
+    window.dataLayer = mockDataLayer;
 
     TestBed.configureTestingModule({
-      providers: [
-        YandexMetrikaService,
-        { provide: METRIC_CONFIG, useValue: config },
-      ],
+      providers: [YandexMetrikaService, { provide: METRIC_CONFIG, useValue: config }],
     });
 
     service = TestBed.inject(YandexMetrikaService);
   });
 
   afterEach(() => {
-    delete (window as any).ym;
-    delete (window as any).dataLayer;
+    delete window.ym;
+    delete window.dataLayer;
   });
 
   it('should be created', () => {
@@ -53,7 +51,7 @@ describe('YandexMetrikaService', () => {
     });
 
     it('should not throw when ym is not defined on window', () => {
-      delete (window as any).ym;
+      delete window.ym;
       expect(() => service.hit('/page')).not.toThrow();
       expect(mockYm).not.toHaveBeenCalled();
     });
@@ -92,7 +90,7 @@ describe('YandexMetrikaService', () => {
     });
 
     it('should not throw when dataLayer is not defined', () => {
-      delete (window as any).dataLayer;
+      delete window.dataLayer;
       expect(() => service.purchase({ orderId: 'order-1' })).not.toThrow();
     });
   });

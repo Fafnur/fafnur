@@ -1,4 +1,4 @@
-import { inject, Injectable } from '@angular/core';
+import { inject, Service } from '@angular/core';
 import { v4 } from 'uuid';
 
 import { LocalStorage } from '../storages/local.storage';
@@ -7,9 +7,7 @@ interface VisitorStorage {
   readonly visitorUuid: string;
 }
 
-@Injectable({
-  providedIn: 'root',
-})
+@Service()
 export class VisitorService {
   private readonly localStorage = inject<LocalStorage<VisitorStorage>>(LocalStorage);
 

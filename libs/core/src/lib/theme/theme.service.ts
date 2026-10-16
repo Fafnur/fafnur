@@ -1,11 +1,11 @@
 import { DOCUMENT } from '@angular/common';
-import { effect, inject, Injectable, RendererFactory2, signal } from '@angular/core';
+import { effect, inject, RendererFactory2, Service, signal } from '@angular/core';
 
 export type Theme = 'system' | 'light' | 'dark';
 
 const USER_THEME = 'user-theme';
 
-@Injectable({ providedIn: 'root' })
+@Service()
 export class ThemeService {
   private readonly document = inject(DOCUMENT);
   private readonly renderer = inject(RendererFactory2).createRenderer(null, null);

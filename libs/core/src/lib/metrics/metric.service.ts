@@ -1,4 +1,4 @@
-import { DestroyRef, inject, Injectable } from '@angular/core';
+import { DestroyRef, inject, Service } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter, tap } from 'rxjs/operators';
@@ -9,7 +9,7 @@ import { GoogleAnalyticsService } from './google-analytics.service';
 import type { MetricOptions } from './metrics.interface';
 import { YandexMetrikaService } from './yandex-metrika.service';
 
-@Injectable()
+@Service({ autoProvided: false })
 export class MetricService {
   private readonly destroyRef = inject(DestroyRef);
   private readonly router = inject(Router);

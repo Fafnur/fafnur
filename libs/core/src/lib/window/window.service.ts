@@ -1,13 +1,11 @@
 import { isPlatformBrowser } from '@angular/common';
-import { DOCUMENT, inject, Injectable, PLATFORM_ID } from '@angular/core';
+import { DOCUMENT, inject, PLATFORM_ID, Service } from '@angular/core';
 import { v4 } from 'uuid';
 
 /**
  * Service for providing access to Window in Angular browser application.
  */
-@Injectable({
-  providedIn: 'root',
-})
+@Service()
 export class WindowService {
   /**
    * Current document

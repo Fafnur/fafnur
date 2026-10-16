@@ -1,4 +1,4 @@
-import { inject, Injectable } from '@angular/core';
+import { inject, Service } from '@angular/core';
 
 import { LocalStorage } from '../storages/local.storage';
 import { InkLine } from './ink.interface';
@@ -19,9 +19,7 @@ const initialState: InkState = {
   blockId: 0,
 } as const;
 
-@Injectable({
-  providedIn: 'root',
-})
+@Service()
 export class InkStorage {
   private readonly localStorage = inject<LocalStorage<{ readonly [STATE_KEY]: InkState }>>(LocalStorage);
 

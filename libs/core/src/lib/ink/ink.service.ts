@@ -1,4 +1,4 @@
-import { computed, inject, Injectable, signal } from '@angular/core';
+import { computed, inject, Service, signal } from '@angular/core';
 import { Story } from 'inkjs';
 import { Choice } from 'inkjs/engine/Choice';
 
@@ -6,9 +6,7 @@ import { InkLine } from './ink.interface';
 import { InkStorage } from './ink.storage';
 import store from './story.ink.json';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Service()
 export class InkService {
   private readonly inkStorage = inject(InkStorage);
 

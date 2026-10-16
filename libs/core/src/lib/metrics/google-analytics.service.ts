@@ -1,4 +1,4 @@
-import { DOCUMENT, inject, Injectable } from '@angular/core';
+import { DOCUMENT, inject, Service } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 import { METRIC_CONFIG } from './metrics.interface';
@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-@Injectable()
+@Service({ autoProvided: false })
 export class GoogleAnalyticsService {
   private readonly document = inject(DOCUMENT);
   private readonly title = inject(Title);
