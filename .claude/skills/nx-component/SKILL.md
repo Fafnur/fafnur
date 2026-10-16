@@ -30,9 +30,11 @@ yarn nx g @nx/angular:component libs/ui/buttons/src/lib/icon-button/icon-button
 ```
 
 Generator defaults from `nx.json`:
-- `style=scss`
-- `changeDetection=OnPush`
+- `style=none` — no style file
 - `prefix=fafnur`
+
+OnPush is the default in Angular 22 — never add `changeDetection` (`ChangeDetectionStrategy.Eager` only when a
+component really needs it).
 
 Use `--dry-run` to preview before generating:
 ```bash
@@ -46,11 +48,10 @@ After generation, update the `.ts` file to match these conventions.
 ### Component structure
 
 ```typescript
-import { ChangeDetectionStrategy, Component, inject, input, computed, signal } from '@angular/core';
+import { Component, inject, input, computed, signal } from '@angular/core';
 
 @Component({
   selector: 'fafnur-component-name',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './component-name.html',
   host: { class: '' },
 })
@@ -82,7 +83,7 @@ Rule: **alias = property name without `$`** — used in templates as `[name]="..
 
 ### Styling
 
-- Tailwind CSS only — `.scss` file stays empty
+- Tailwind CSS only — no component style file
 - Classes go in `host: { class: '...' }` on the component
 - Dark mode: `dark:`, responsive: `sm:`, `md:`, `lg:`
 

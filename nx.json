@@ -76,7 +76,7 @@
     "@nx/angular:application": {
       "e2eTestRunner": "playwright",
       "linter": "eslint",
-      "style": "scss",
+      "style": "css",
       "unitTestRunner": "vitest-analog",
       "prefix": "fafnur"
     },
@@ -84,17 +84,14 @@
       "linter": "eslint",
       "unitTestRunner": "vitest-analog",
       "style": "none",
-      "prefix": "fafnur",
-      "changeDetection": "OnPush"
+      "prefix": "fafnur"
     },
     "@nx/angular:component": {
       "style": "none",
-      "changeDetection": "OnPush",
       "prefix": "fafnur"
     },
     "@schematics/angular:component": {
       "style": "none",
-      "changeDetection": "OnPush",
       "prefix": "fafnur"
     },
     "@nx/angular:guard": {

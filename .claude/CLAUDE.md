@@ -27,7 +27,7 @@ fafnur/
     home/page/
     novels/
   tsconfig.base.json    # Path aliases
-  nx.json               # NX config (generator defaults: scss, OnPush, prefix=fafnur)
+  nx.json               # NX config (generator defaults: style=none, prefix=fafnur)
 ```
 
 Each library:

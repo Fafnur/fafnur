@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { Headline } from '@fafnur/ui/headline';
 import { Unit } from '@fafnur/ui/unit';
@@ -7,7 +7,6 @@ import { Unit } from '@fafnur/ui/unit';
   selector: 'fafnur-adventure-hero',
   imports: [Unit, Headline],
   templateUrl: './adventure-hero.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-4',
   },

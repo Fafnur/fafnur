@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, model } from '@angular/core';
+import { Component, model } from '@angular/core';
 
 import { Tab } from '@fafnur/ui/tabs';
 
@@ -8,7 +8,6 @@ export type NovelTab = 'dialog' | 'history';
   selector: 'fafnur-novel-tabs',
   imports: [Tab],
   templateUrl: './novel-tabs.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex md:hidden shrink-0 border-b border-gray-200 dark:border-gray-700',
   },

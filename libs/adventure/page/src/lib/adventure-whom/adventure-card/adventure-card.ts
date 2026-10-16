@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 export interface AdventureHuman {
   readonly icon: string;
@@ -9,7 +9,6 @@ export interface AdventureHuman {
 @Component({
   selector: 'fafnur-adventure-card',
   templateUrl: './adventure-card.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'rounded-xl border border-gray-200 dark:border-gray-800 p-5 flex flex-col gap-2',
   },

@@ -1,14 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  effect,
-  Injector,
-  input,
-  output,
-  Type,
-  viewChild,
-  ViewContainerRef,
-} from '@angular/core';
+import { Component, effect, Injector, input, output, Type, viewChild, ViewContainerRef } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { PopupOptions } from '../popup.type';
@@ -24,7 +14,6 @@ export interface PopupRef<T = unknown> {
   selector: 'fafnur-popup',
   imports: [PopupPanel],
   templateUrl: './popup.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm',
     '(click)': 'onBackdrop($event)',

@@ -1,9 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'fafnur-copyright',
   templateUrl: './copyright.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex justify-center mt-5',
   },

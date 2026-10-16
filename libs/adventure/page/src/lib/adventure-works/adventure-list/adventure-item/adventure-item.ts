@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 import { Unit } from '@fafnur/ui/unit';
 
@@ -6,7 +6,6 @@ import { Unit } from '@fafnur/ui/unit';
   selector: 'fafnur-adventure-item',
   imports: [Unit],
   templateUrl: './adventure-item.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex gap-3 items-start',
   },

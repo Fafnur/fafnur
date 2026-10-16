@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { Title } from '@fafnur/ui/title';
 import { Unit } from '@fafnur/ui/unit';
@@ -9,7 +9,6 @@ import { AboutExperienceCard, Experience } from './about-experience-card/about-e
   selector: 'fafnur-about-experience',
   imports: [AboutExperienceCard, Title, Unit],
   templateUrl: './about-experience.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-4',
   },

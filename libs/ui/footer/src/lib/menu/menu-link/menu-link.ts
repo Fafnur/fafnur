@@ -1,9 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'fafnur-menu-link,[fafnurMenuLink]',
   template: '<ng-content />',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:
       'block transition hover:underline text-mauve-600 hover:text-mauve-900 dark:text-mauve-400 dark:hover:text-white',
