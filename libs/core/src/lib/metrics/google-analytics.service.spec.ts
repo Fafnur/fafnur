@@ -10,13 +10,16 @@ const config: MetricConfig = {
   domains: ['internal.example.com'],
 };
 
+// `Window.gtag` is readonly in the app — tests need to set and remove it
+const testWindow = window as { gtag?: unknown };
+
 describe('GoogleAnalyticsService', () => {
   let service: GoogleAnalyticsService;
   let mockGtag: ReturnType<typeof vi.fn>;
 
   beforeEach(() => {
     mockGtag = vi.fn();
-    (window as any).gtag = mockGtag;
+    testWindow.gtag = mockGtag;
 
     TestBed.configureTestingModule({
       providers: [GoogleAnalyticsService, { provide: METRIC_CONFIG, useValue: config }],
@@ -26,7 +29,7 @@ describe('GoogleAnalyticsService', () => {
   });
 
   afterEach(() => {
-    delete (window as any).gtag;
+    delete testWindow.gtag;
   });
 
   it('should be created', () => {
@@ -35,7 +38,7 @@ describe('GoogleAnalyticsService', () => {
 
   describe('gtag getter', () => {
     it('should return noop and not throw when gtag is not on window', () => {
-      delete (window as any).gtag;
+      delete testWindow.gtag;
       expect(() => service.set({})).not.toThrow();
       expect(mockGtag).not.toHaveBeenCalled();
     });
