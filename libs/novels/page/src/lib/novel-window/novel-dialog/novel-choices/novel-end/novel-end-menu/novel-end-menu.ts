@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { PATHS } from '@fafnur/core';
@@ -12,7 +12,6 @@ import { NovelLink } from './novel-link/novel-link';
   selector: 'fafnur-novel-end-menu',
   imports: [NovelLink, RouterLink, ThemeSwitcher, Unit],
   templateUrl: './novel-end-menu.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-1',
   },

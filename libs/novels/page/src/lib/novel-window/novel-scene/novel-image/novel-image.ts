@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
+import { Component, computed, effect, inject, signal } from '@angular/core';
 
 import { InkService } from '@fafnur/core';
 import { IconImage } from '@fafnur/ui/icons';
@@ -22,7 +22,6 @@ import { IconImage } from '@fafnur/ui/icons';
       />
     }
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'w-full h-full flex items-center justify-center text-gray-300 dark:text-gray-600',
   },

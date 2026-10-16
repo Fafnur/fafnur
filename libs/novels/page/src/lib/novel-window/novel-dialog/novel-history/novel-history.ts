@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { InkService } from '@fafnur/core';
 
@@ -9,7 +9,6 @@ import { NovelText } from '../novel-text/novel-text';
   selector: 'fafnur-novel-history',
   imports: [NovelActor, NovelText],
   templateUrl: './novel-history.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NovelHistory {
   private readonly inkService = inject(InkService);

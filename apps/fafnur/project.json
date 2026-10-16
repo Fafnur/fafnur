@@ -24,10 +24,6 @@
         "tsConfig": "apps/fafnur/tsconfig.app.json",
         "polyfills": ["@angular/localize/init"],
         "localize": ["ru"],
-        "inlineStyleLanguage": "scss",
-        "stylePreprocessorOptions": {
-          "includePaths": ["node_modules", "./"]
-        },
         "assets": [
           {
             "glob": "**/*",
@@ -35,7 +31,7 @@
           }
         ],
         "externalDependencies": ["assets/*"],
-        "styles": ["apps/fafnur/src/styles.scss"],
+        "styles": ["apps/fafnur/src/styles.css"],
         "server": "apps/fafnur/src/main.server.ts",
         "ssr": {
           "entry": "apps/fafnur/src/server.ts"

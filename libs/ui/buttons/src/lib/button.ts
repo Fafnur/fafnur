@@ -1,11 +1,10 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 import { Color } from '@fafnur/ui/common';
 
 @Component({
   selector: 'fafnur-button,[fafnurButton]',
   template: '<ng-content />',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:
       'inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm text-gray-900 font-semibold transition cursor-pointer',

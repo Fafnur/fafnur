@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { NovelEndMenu } from './novel-end-menu/novel-end-menu';
 
@@ -6,7 +6,6 @@ import { NovelEndMenu } from './novel-end-menu/novel-end-menu';
   selector: 'fafnur-novel-end',
   imports: [NovelEndMenu],
   templateUrl: './novel-end.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-3',
   },

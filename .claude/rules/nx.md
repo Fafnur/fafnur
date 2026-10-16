@@ -1,6 +1,7 @@
 # NX Generators
 
-**ALWAYS use NX generators** instead of manually creating files. Generator defaults in `nx.json`: `style=scss`, `changeDetection=OnPush`, `prefix=fafnur`.
+**ALWAYS use NX generators** instead of manually creating files. Generator defaults in `nx.json`: `style=none` (no style files), `prefix=fafnur`.
+OnPush is the Angular 22 default, so generated components have no `changeDetection`.
 
 ```bash
 # Component (path = full path including component folder and name)

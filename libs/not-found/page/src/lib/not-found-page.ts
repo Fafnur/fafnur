@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { PATHS, SeoService } from '@fafnur/core';
@@ -11,7 +11,6 @@ import { Unit } from '@fafnur/ui/unit';
   selector: 'fafnur-not-found-page',
   imports: [RouterLink, Button, Container, Headline, Unit],
   templateUrl: './not-found-page.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex items-center justify-center min-h-[calc(100vh-4rem)]',
   },

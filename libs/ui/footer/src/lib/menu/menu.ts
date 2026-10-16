@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { PATHS } from '@fafnur/core';
@@ -11,7 +11,6 @@ import { MenuLink } from './menu-link/menu-link';
   selector: 'fafnur-menu',
   imports: [Header, MenuLink, RouterLink, Unit],
   templateUrl: './menu.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Menu {
   readonly paths = PATHS;

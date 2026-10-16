@@ -1,4 +1,4 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
+import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideClientHydration, withEventReplay, withNoIncrementalHydration } from '@angular/platform-browser';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
@@ -8,7 +8,6 @@ import { appRoutes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideZonelessChangeDetection(),
     provideClientHydration(withEventReplay(), withNoIncrementalHydration()),
     provideBrowserGlobalErrorListeners(),
     provideRouter(

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { AdventureItem } from './adventure-item/adventure-item';
 
@@ -6,7 +6,6 @@ import { AdventureItem } from './adventure-item/adventure-item';
   selector: 'fafnur-adventure-list',
   imports: [AdventureItem],
   templateUrl: './adventure-list.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-3 max-w-xl',
   },

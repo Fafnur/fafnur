@@ -17,7 +17,6 @@ Rule: alias = property name without `$` — used in templates as `[experience]="
 ```typescript
 @Component({
   selector: 'fafnur-feature-name',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [...],
   templateUrl: './feature-name.html',
   host: { class: 'tailwind classes here' },
@@ -29,7 +28,9 @@ export class FeatureName {
 ```
 
 - Always **standalone**
-- **No `styleUrl`** — `.scss` files do not exist in this project, Tailwind only
+- **No `styleUrl`** — components have no style files, Tailwind only
+- **No `changeDetection`** — OnPush is the default in Angular 22, never write it; `ChangeDetectionStrategy.Eager` only
+  when a component really needs it
 - **No `imports: []`** — omit the imports array entirely when empty
 - Services via `inject()`, not constructor
 - Dual selector example: `selector: 'fafnur-buttons,[fafnurButtons]'`
@@ -75,7 +76,7 @@ Only move a component up to a shared level when it is used in more than one plac
 
 ## Styling
 
-- **Tailwind CSS only** — `.scss` files usually empty
+- **Tailwind CSS only** — no component style files
 - Classes in `host: { class: '...' }`
 - Dark mode: `dark:`, responsive: `sm:`, `md:`, `lg:`
 - Text contrast ≥ 4.5:1 (checked by axe in e2e): accent text in the light theme is `text-yellow-700`, muted text

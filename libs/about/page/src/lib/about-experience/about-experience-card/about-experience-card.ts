@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 import { AboutExperienceBox } from './about-experience-box/about-experience-box';
 import { AboutExperienceCompany } from './about-experience-company/about-experience-company';
@@ -29,7 +29,6 @@ export interface Experience {
     AboutExperienceBox,
   ],
   templateUrl: './about-experience-card.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'block relative pl-8 pb-8 last:pb-0',
   },

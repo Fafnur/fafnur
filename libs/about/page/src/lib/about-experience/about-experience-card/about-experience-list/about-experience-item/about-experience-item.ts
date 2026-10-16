@@ -1,9 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'fafnur-about-experience-item',
   template: '<ng-content/>',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex gap-2 text-sm text-yellow-700 dark:text-yellow-200',
   },

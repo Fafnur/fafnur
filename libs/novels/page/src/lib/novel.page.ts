@@ -1,4 +1,4 @@
-import { afterNextRender, ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { afterNextRender, Component, inject } from '@angular/core';
 
 import { InkService, SeoService, WindowService } from '@fafnur/core';
 import { PopupService } from '@fafnur/ui/popup';
@@ -12,7 +12,6 @@ import { NovelWindow } from './novel-window/novel-window';
   selector: 'fafnur-novel-page',
   imports: [NovelExit, NovelLoading, NovelWindow],
   templateUrl: './novel.page.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col h-screen bg-white dark:bg-mauve-900',
     '(window:popstate)': 'onBack()',

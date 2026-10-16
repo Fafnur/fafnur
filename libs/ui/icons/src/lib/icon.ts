@@ -1,8 +1,7 @@
-import { ChangeDetectionStrategy, Component, input, numberAttribute } from '@angular/core';
+import { Component, input, numberAttribute } from '@angular/core';
 
 @Component({
   template: '<ng-content/>',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Icon {
   protected get defaultWidth(): number {

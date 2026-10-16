@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, DOCUMENT, ElementRef, inject, signal, viewChildren } from '@angular/core';
+import { Component, DOCUMENT, ElementRef, inject, signal, viewChildren } from '@angular/core';
 
 import { InkService } from '@fafnur/core';
 import { Button } from '@fafnur/ui/buttons';
@@ -9,7 +9,6 @@ import { NovelEnd } from './novel-end/novel-end';
   selector: 'fafnur-novel-choices',
   imports: [Button, NovelEnd],
   templateUrl: './novel-choices.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     '(document:keydown)': 'onKeydown($event)',
   },

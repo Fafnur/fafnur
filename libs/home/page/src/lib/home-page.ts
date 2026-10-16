@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { PATHS, SeoService } from '@fafnur/core';
 
@@ -8,7 +8,6 @@ import { HomeCard } from './home-card/home-card';
   selector: 'fafnur-home-page',
   imports: [HomeCard],
   templateUrl: './home-page.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'relative flex align-middle justify-center min-h-[calc(100vh-4rem)]',
   },

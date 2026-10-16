@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { Link } from '@fafnur/ui/link';
 import { Title } from '@fafnur/ui/title';
@@ -8,7 +8,6 @@ import { Unit } from '@fafnur/ui/unit';
   selector: 'fafnur-adventure-quest',
   imports: [Unit, Link, Title],
   templateUrl: './adventure-quest.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-col gap-4',
   },

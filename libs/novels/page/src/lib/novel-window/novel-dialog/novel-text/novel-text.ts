@@ -1,11 +1,10 @@
-import { booleanAttribute, ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { booleanAttribute, Component, input } from '@angular/core';
 
 import { Color } from '@fafnur/ui/common';
 
 @Component({
   selector: 'fafnur-novel-text',
   template: '<ng-content/>',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'leading-relaxed',
     '[class.text-sm]': `$size() === 'sm'`,

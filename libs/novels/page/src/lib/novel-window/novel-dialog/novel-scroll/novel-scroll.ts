@@ -1,19 +1,10 @@
-import {
-  afterRenderEffect,
-  booleanAttribute,
-  ChangeDetectionStrategy,
-  Component,
-  ElementRef,
-  inject,
-  input,
-} from '@angular/core';
+import { afterRenderEffect, booleanAttribute, Component, ElementRef, inject, input } from '@angular/core';
 
 import { InkService } from '@fafnur/core';
 
 @Component({
   selector: 'fafnur-novel-scroll',
   template: '<ng-content/>',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-1 overflow-y-auto p-6 min-h-0',
     '[class.hidden]': '$active()',

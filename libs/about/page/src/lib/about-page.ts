@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { SeoService } from '@fafnur/core';
 import { Container } from '@fafnur/ui/container';
@@ -11,7 +11,6 @@ import { AboutWho } from './about-who/about-who';
   selector: 'fafnur-about-page',
   imports: [Container, AboutWho, AboutStack, AboutExperience],
   templateUrl: './about-page.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutPage {
   constructor() {
