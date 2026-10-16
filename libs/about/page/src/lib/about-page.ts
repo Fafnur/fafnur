@@ -18,7 +18,7 @@ export class AboutPage {
     const years = experienceDuration(CAREER_START, inject(BuildDateService).month).years;
 
     inject(SeoService).update({
-      title: $localize`:About Page|SEO Title:Aleksandr Serenko — Senior frontend, Angular evangelist, Nx apologist & NodeJS warlock.`,
+      title: $localize`:About Page|SEO Title:Aleksandr Serenko — Frontend Team Lead, Angular evangelist, Nx apologist & AI agent wrangler.`,
       description: $localize`:About Page|SEO Description:Frontend team lead with ${years}:years: years of experience specializing in Angular. I build enterprise applications for fintech, write about Angular on Habr, dev.to and Medium, and care about clean, maintainable code.`,
       image: '/images/about.webp',
       imageWidth: '2048',
