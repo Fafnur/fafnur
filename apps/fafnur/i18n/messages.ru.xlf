@@ -224,7 +224,7 @@
       </trans-unit>
       <trans-unit id="381807893664766456" datatype="html">
         <source>LLC &quot;RUSINTERFINANS&quot;, Novosibirsk,</source>
-        <target state="translated">ООО &quot;Информационные Технологии&quot;, Новосибирск</target>
+        <target state="translated">ООО &quot;РУСИНТЕРФИНАНС&quot;, Новосибирск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
           <context context-type="linenumber">20</context>
@@ -267,9 +267,9 @@
         </context-group>
         <note priority="1" from="meaning">About Experience</note>
       </trans-unit>
-      <trans-unit id="5783658164496672884" datatype="html">
-        <source>Migrating old code to new stack: angular, nx, ngrx, ssr, l18n.</source>
-        <target state="translated">Миграция старого кода на новый стек: angular, nx, ngrx, ssr, l18n.</target>
+      <trans-unit id="4152104284146615582" datatype="html">
+        <source>Migrating old code to new stack: angular, nx, ngrx, ssr, i18n.</source>
+        <target state="translated">Миграция старого кода на новый стек: angular, nx, ngrx, ssr, i18n.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
           <context context-type="linenumber">26</context>
@@ -670,7 +670,7 @@
       </trans-unit>
       <trans-unit id="4410774756615645020" datatype="html">
         <source>My technology stack that I use:</source>
-        <target state="translated">Мой стек технологий, который я использую и популизирую:</target>
+        <target state="translated">Мой стек технологий, который я использую и популяризирую:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-stack/about-stack.html</context>
           <context context-type="linenumber">3,5</context>
@@ -700,7 +700,7 @@
       </trans-unit>
       <trans-unit id="8783890519714583936" datatype="html">
         <source> Throughout my career, I&apos;ve developed enterprise applications for the fintech industry, working on projects that have delivered significant value to my clients. I take pride in my ability to work collaboratively with cross-functional teams to deliver high-quality software solutions. </source>
-        <target state="translated"> Сейчас я работаю в международной финтех компании, где отвечаю за разработку и поддержку проектов для микрофинонсирования в нескольких странах.</target>
+        <target state="translated"> Сейчас я работаю в международной финтех компании, где отвечаю за разработку и поддержку проектов для микрофинансирования в нескольких странах.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
           <context context-type="linenumber">16,20</context>
@@ -720,7 +720,7 @@
       </trans-unit>
       <trans-unit id="3831604764663723930" datatype="html">
         <source> I believe in the importance of continuously learning and improving, and I&apos;m always seeking out new challenges and opportunities to expand my skill set. </source>
-        <target state="translated">Вы можете посмотреть мои работы в профиле на GitHub. Я всегда стремлюсь к совершенствованию своих навыков и изучению новых технологий. Ищу интересные и сложные задачи, которые позволят мне реализовать свой потенциал и принести пользу обществу.е.</target>
+        <target state="translated">Вы можете посмотреть мои работы в профиле на GitHub. Я всегда стремлюсь к совершенствованию своих навыков и изучению новых технологий. Ищу интересные и сложные задачи, которые позволят мне реализовать свой потенциал и принести пользу обществу.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-who/about-who.html</context>
           <context context-type="linenumber">25,29</context>
