@@ -369,7 +369,7 @@
       </trans-unit>
       <trans-unit id="35255064933533398" datatype="html">
         <source>CEO</source>
-        <target state="translated">Разработчик</target>
+        <target state="translated">Директор</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/about/page/src/lib/about-experience/about-experience.ts</context>
           <context context-type="linenumber">54</context>
