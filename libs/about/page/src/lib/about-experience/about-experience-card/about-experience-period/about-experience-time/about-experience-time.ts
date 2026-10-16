@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'fafnur-about-experience-time',
-  template: '.<ng-content/>',
+  template: '<span class="sr-only">.</span><ng-content/>',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'ml-1 px-2 py-0.5 rounded-full bg-yellow-100 dark:bg-yellow-800 text-yellow-700 dark:text-yellow-200',
